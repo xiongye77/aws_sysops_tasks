@@ -9,10 +9,12 @@ should  keep application logging level optimized as per need. Don’t create unn
 ![image](https://user-images.githubusercontent.com/36766101/156666941-ba03bf80-0919-4a0c-a82d-e7ad11058a97.png)
 
 
-Delete all EBS volumes in available status 
+Use eventbridge to trigger lambda function to delete all EBS volumes in available status and do not have related tags.  
 
 ![image](https://user-images.githubusercontent.com/36766101/156667805-3749ab7a-e497-47e1-97cd-6362c2ead6d3.png)
 
+
+Use eventbridge to trigger lambda function to delete all snapshots longer than 15 days and do not have related tags.  
 
 Change EBS snapshot lifecycle to sensible days
 
