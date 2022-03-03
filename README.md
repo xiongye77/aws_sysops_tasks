@@ -1,13 +1,25 @@
-AWS Cost explorer 
+# AWS cost optimization 
+
+AWS Cost explorer verify which service cost mostly
 
 found cloudwatch cost 3000$ per month. 
+
 should  keep application logging level optimized as per need. Don’t create unnecessary logs/For AWS provided resources, enable only required amount of logging (for example, RDS provides 3–4 various categories of logs. In Development environment, none of them is being used)/VPC logs, Flow logs should be configured carefully (should be enabled only for those where it is required)/Log-Retention Period: Many AWS services directly creates log-groups and starts logging. These kinds of log-groups keep storing more and more data without archiving.
 
 ![image](https://user-images.githubusercontent.com/36766101/156666941-ba03bf80-0919-4a0c-a82d-e7ad11058a97.png)
 
 
+Delete all EBS volumes in available status 
 
-# aws_rds_tasks
+![image](https://user-images.githubusercontent.com/36766101/156667805-3749ab7a-e497-47e1-97cd-6362c2ead6d3.png)
+
+
+Change EBS snapshot lifecycle to sensible days
+
+![image](https://user-images.githubusercontent.com/36766101/156670238-9504a73c-cc05-4ff6-a090-92ea566afddf.png)
+
+
+aws_rds_tasks
 
 Purchase reserved DB instances
 
