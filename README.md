@@ -18,6 +18,11 @@ Use eventbridge to trigger lambda function to delete all snapshots longer than 1
 
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/lambda_python_delete_obsoleted_snapshots.py
 
+
+Use eventbridge to trigger lambda function to set cloudwatch log group retention to 3 days
+
+https://github.com/xiongye77/aws_sysops_tasks/blob/main/lambda_python_set_cloudwatch_retention.py
+
 Change EBS snapshot lifecycle to sensible days
 
 ![image](https://user-images.githubusercontent.com/36766101/156670238-9504a73c-cc05-4ff6-a090-92ea566afddf.png)
