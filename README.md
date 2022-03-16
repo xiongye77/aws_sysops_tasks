@@ -80,3 +80,11 @@ Some information from the viewer request, such as URL query strings, HTTP header
 
 ![image](https://user-images.githubusercontent.com/36766101/158493350-385d1170-75ae-4e05-a495-e3748621e9da.png)
 
+
+# AWS config managed rule for S3 
+![image](https://user-images.githubusercontent.com/36766101/158534351-48507195-fa34-42f1-9c88-ba36c974ac29.png)
+
+s3-bucket-public-read-prohibited
+s3-bucket-public-read-prohibited
+s3-bucket-server-side-encryption-enabled
+s3-bucket-versioning-enabled
