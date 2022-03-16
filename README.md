@@ -75,3 +75,8 @@ Some information from the viewer request, such as URL query strings, HTTP header
 ![image](https://user-images.githubusercontent.com/36766101/157431965-b7544cd5-374f-486c-a7cf-663f09d4d675.png)
 
 
+
+# Bucket policy to control IP access bucket 
+
+![image](https://user-images.githubusercontent.com/36766101/158493350-385d1170-75ae-4e05-a495-e3748621e9da.png)
+
