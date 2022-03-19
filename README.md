@@ -29,6 +29,9 @@ Change EBS snapshot lifecycle to sensible days
 
 
 # AWS_RDS_tasks
+RDS Architecture
+![image](https://user-images.githubusercontent.com/36766101/159101346-984f200f-1798-4d6c-8efb-e280a9ff283d.png)
+
 
 Purchase reserved DB instances
 
