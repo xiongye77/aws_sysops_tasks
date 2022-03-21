@@ -1,5 +1,9 @@
 # AWS cost optimization 
 
+Disable EC2 instance detailed monitor since we have new relic for performance and Sumologic for log analyze.
+https://github.com/xiongye77/aws_sysops_tasks/blob/main/disable_ec2_detailed_monitor.py
+
+
 AWS Cost explorer verify which service cost mostly
 
 found cloudwatch cost 3000$ per month. 
