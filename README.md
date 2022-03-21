@@ -77,6 +77,8 @@ Resume DB writing applications/batch jobs
 # Cross account cloudtrail gather to one dedicated S3 bucket under security review account 
 
 ![image](https://user-images.githubusercontent.com/36766101/159195015-f08b19f9-d6ef-472e-bc2e-a6795f1a0b3c.png)
+![image](https://user-images.githubusercontent.com/36766101/159195104-66626a0d-9cd7-41c1-b348-bb906441930f.png)
+
 
 
 # cloudfront access log check 
