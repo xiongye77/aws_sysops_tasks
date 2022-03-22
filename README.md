@@ -42,6 +42,13 @@ RDS will automatically perform minor verion upgrade if option is enabled, even i
 ![image](https://user-images.githubusercontent.com/36766101/159425050-3a65d722-77e6-44ee-a54f-1c56c13f4dff.png)
 
 
+Check production AWS RDS backup automatically backup is enabled and configure cross region replication if needed (Also check RDS has proper maintenance windows and backup window.)/Delete old RDS snapshots 
+
+![image](https://user-images.githubusercontent.com/36766101/159447132-3df36689-56f4-496d-a7d2-472caf8634df.png)
+
+
+
+
 Purchase reserved DB instances
 
 
