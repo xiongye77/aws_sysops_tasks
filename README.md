@@ -1,5 +1,16 @@
 # AWS cost optimization 
 
+
+Deploy and enable Cost Anomaly Alerts to your AWS organization payer account.Make sure you have slack channel prepared as parameter for 
+defaultSlackWebhookURL	https://hooks.slack.com/services/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   
+https://github.com/ighanim/aws-cost-anomaly-alerts
+
+![image](https://user-images.githubusercontent.com/36766101/159828197-6f239317-6af7-46c5-ad9f-ffd2cdf7f8ca.png)
+![image](https://user-images.githubusercontent.com/36766101/159828368-566f4a80-45f1-4fd8-834b-b3a0bf0b0745.png)
+![image](https://user-images.githubusercontent.com/36766101/159828396-eea4787d-31e2-425b-bd1f-417db0ac1154.png)
+
+
+
 Disable EC2 instance detailed monitor since we have new relic for performance and Sumologic for log analyze.
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/disable_ec2_detailed_monitor.py
 
