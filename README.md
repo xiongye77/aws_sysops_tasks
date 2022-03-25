@@ -96,6 +96,10 @@ Switch production applications to the new DB clusters
 Resume DB writing applications/batch jobs
 
 
+# AWS shield protect against layer 3 or layer 4 attacktion and WAF protect against layer 7
+Sheild protect against SYN/UDP floods, reflection attacks ,DDos attacks.
+WAF protect against sql injection/cross site scripting/Block specific IPs or Countries. 
+
 # WAF block traffic based on rules.
 
 ![image](https://user-images.githubusercontent.com/36766101/156465746-e23c285c-0ea5-4e2c-a884-c16e28ddeda1.png)
