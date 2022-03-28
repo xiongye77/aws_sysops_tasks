@@ -144,3 +144,7 @@ s3-bucket-public-read-prohibited
 s3-bucket-public-read-prohibited
 s3-bucket-server-side-encryption-enabled
 s3-bucket-versioning-enabled
+
+
+# AWS S3 Increasing S3 Transfer Speeds with Transfer Acceleration
+Use Cloudfront edge location to accelerate S3 upload performance , create dedicated upload endpoint which incur an additional fee
