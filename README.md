@@ -147,4 +147,8 @@ s3-bucket-versioning-enabled
 
 
 # AWS S3 Increasing S3 Transfer Speeds with Transfer Acceleration
-Use Cloudfront edge location to accelerate S3 upload performance , create dedicated upload endpoint which incur an additional fee
+Use Cloudfront edge location to accelerate S3 upload performance , create dedicated upload endpoint which incur an additional fee.
+Enhancing S3 Performance with Multipart Upload.This feature lets a service breaks a big file into smaller chunks and then uploads them; once all parts are uploaded, S3 could merge all in one single file. By doing this, you could also benefit from multithreading and start uploading many chunks simultaneously
+
+
+AWS S3 presigned url for temporary access of private contents.
