@@ -1,0 +1,53 @@
+Cloudwatch agent configuration file as following , put it to S3 bucket and name it with cloud_watch_mem.json. 
+
+{
+
+    "metrics": {
+        "append_dimensions": {
+            "AutoScalingGroupName": "${aws:AutoScalingGroupName}",
+            "ImageId": "${aws:ImageId}",
+            "InstanceId": "${aws:InstanceId}",
+            "InstanceType": "${aws:InstanceType}"
+        },
+        "metrics_collected": {
+
+            "Memory": {
+                "measurement": [
+                    "% Committed Bytes In Use","Available Mbytes"
+                ],
+                "metrics_collection_interval": 60
+            }
+      
+        }
+    }
+}
+
+Use SSM to run following command on Windows EC2 instancs. 
+
+Read-S3Object -BucketName "XXXXX-operations"-Key "cloud_watch_mem.json" -file "C:\cloud_watch_mem.json"
+Invoke-WebRequest -Uri  https://s3.amazonaws.com/amazoncloudwatch-agent/windows/amd64/latest/amazon-cloudwatch-agent.msi  -OutFile c:\amazon-cloudwatch-agent.msi
+msiexec /i "C:\amazon-cloudwatch-agent.msi" /quiet
+cd 'C:\Program Files\Amazon\AmazonCloudWatchAgent\'
+.\amazon-cloudwatch-agent-ctl.ps1 -a fetch-config -m EC2 -c file:c:\cloud_watch_mem.json -s
+
+
+
+Use Ansible to install cloudwatch agent and load configuration file. 
+
+install_package_amz.yml  file as following
+- hosts: all
+  user: ec2-user   
+  become: True
+  tasks:
+    - name: Install cloudwatch  package
+      command: yum install amazon-cloudwatch-agent -y
+      ignore_errors: yes
+    - name: copy file to remote host
+      copy:
+        src: /home/yexiong/ansible/config.json
+        dest: /opt/aws/amazon-cloudwatch-agent/bin/config.json
+    - name:  load configuration and start cloudwatch
+      command: /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json -s
+      
+if we use pem file, we do not need username/password information. 
+ansible-playbook  -i hosts install_package_centos.yml --extra-vars "ansible_user=xxxxx ansible_password=xxxxx ansible_sudo_pass=xxxxx" ansible_ssh_common_args='-o StrictHostKeyChecking=no'
