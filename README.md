@@ -1,5 +1,15 @@
 # AWS cost optimization 
 
+Trust advisor suggestions check. 
+
+Adjust EC2 instance size not only based on cpu usage, but also based on memory usage, some EC2 instances cpu usage is low ,but memory usage is high.
+Use SSM run command with powershell to install cloudwatch agent on Windows and Ansible to install cloudwatch agent on Linux.Load cloudwatch agent configuration file from S3. 
+
+Check ALB if they have active target instances. Sometimes ALB does not have healthy targets and even no targets, those can be safely dropped. 
+https://github.com/xiongye77/aws_sysops_tasks/blob/main/alb_no_active_target.py
+
+
+
 
 Deploy and enable Cost Anomaly Alerts to your AWS organization payer account.Make sure you have slack channel prepared as parameter for 
 defaultSlackWebhookURL	https://hooks.slack.com/services/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   
