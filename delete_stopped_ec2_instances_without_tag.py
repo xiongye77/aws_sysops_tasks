@@ -20,23 +20,26 @@ for region in regions:
     for r in response["Reservations"]:
         status = r["Instances"][0]["State"]["Name"]
         if status == "stopped":
-            if str(r["Instances"][0]['Tags']).upper().find('KEEP') == -1 :
-                try:
-                    stopped_time = re.findall('.*\((.*)\)', r["Instances"][0]['StateTransitionReason'])[0].replace(' GMT', '')
-                    #print ('Stopped time:', stopped_time)
-                    a=datetime.fromisoformat(stopped_time).date()
-                    b=datetime.now().date()
-                    c = b-a
-                    if c.days > 20:
-                        print(f"EC2 Instance" ,r["Instances"][0]["InstanceId"] ,"has stopped about",  c.days, "days and it does not have KEEP tag,will terminate it")
+            try:
+                if str(r["Instances"][0]['Tags']).upper().find('KEEP') == -1 :
+                    try:
+                        stopped_time = re.findall('.*\((.*)\)', r["Instances"][0]['StateTransitionReason'])[0].replace(' GMT', '')
+                        #print ('Stopped time:', stopped_time)
+                        a=datetime.fromisoformat(stopped_time).date()
+                        b=datetime.now().date()
+                        c = b-a
+                        if c.days > 20:
+                            print(f"EC2 Instance" ,r["Instances"][0]["InstanceId"] ,"has stopped about",  c.days, "days and it does not have KEEP tag,will terminate it")
+                            client.terminate_instances(InstanceIds=r["Instances"][0]["InstanceId"].split())
+                    except Exception:
+                        #traceback.print_exception(*sys.exc_info())
+                        print(f"EC2 Instance" ,r["Instances"][0]["InstanceId"] ,"does not have stopped time and it does not have KEEP tag,will terminate it")
                         client.terminate_instances(InstanceIds=r["Instances"][0]["InstanceId"].split())
-                except Exception:
-                    #traceback.print_exception(*sys.exc_info())
-                    print(f"EC2 Instance" ,r["Instances"][0]["InstanceId"] ,"does not have stopped time and it does not have KEEP tag,will terminate it")
-                    client.terminate_instances(InstanceIds=r["Instances"][0]["InstanceId"].split())
-                    continue
-
-
-
+                        continue
+            except Exception:
+                #traceback.print_exception(*sys.exc_info())
+                
+                print(f"EC2 Instance" ,r["Instances"][0]["InstanceId"], "in region" , region ,"does not have any tag cause some excpetion,check later")
+                continue
 sys.stdout = orig_stdout
 f.close()
