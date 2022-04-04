@@ -12,6 +12,7 @@ ec2 = boto3.client('ec2')
 regions = [region['RegionName']
                for region in ec2.describe_regions()['Regions']]
 
+# We only check Sydney region here. 
 regions=["ap-southeast-2"]
 measurable_metrics = [
     ('BucketSizeBytes', 'StandardStorage'),
