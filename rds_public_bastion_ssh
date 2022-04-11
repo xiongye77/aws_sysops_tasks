@@ -1,0 +1,80 @@
+yexiong@ubuntu:~$ ssh -i "k8stest.pem" -f -N -L 3306:rds-endpoint-url.ap-southeast-2.rds.amazonaws.com:3306 ec2-user@bastion_host_public_ip -v
+OpenSSH_8.2p1 Ubuntu-4ubuntu0.2, OpenSSL 1.1.1f  31 Mar 2020
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 19: include /etc/ssh/ssh_config.d/*.conf matched no files
+debug1: /etc/ssh/ssh_config line 21: Applying options for *
+debug1: Connecting to 13.211.3.157 [13.211.3.157] port 22.
+debug1: Connection established.
+debug1: identity file k8stest.pem type -1
+debug1: identity file k8stest.pem-cert type -1
+debug1: Local version string SSH-2.0-OpenSSH_8.2p1 Ubuntu-4ubuntu0.2
+debug1: Remote protocol version 2.0, remote software version OpenSSH_7.4
+debug1: match: OpenSSH_7.4 pat OpenSSH_7.0*,OpenSSH_7.1*,OpenSSH_7.2*,OpenSSH_7.3*,OpenSSH_7.4*,OpenSSH_7.5*,OpenSSH_7.6*,OpenSSH_7.7* compat 0x04000002
+debug1: Authenticating to 13.211.3.157:22 as 'ec2-user'
+debug1: SSH2_MSG_KEXINIT sent
+debug1: SSH2_MSG_KEXINIT received
+debug1: kex: algorithm: curve25519-sha256
+debug1: kex: host key algorithm: ecdsa-sha2-nistp256
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: none
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug1: Server host key: ecdsa-sha2-nistp256 SHA256:U4yZVaOCLUwaSOjTdrvA7SfOAkisNY2gvfIdYqs0k7g
+debug1: Host '13.211.3.157' is known and matches the ECDSA host key.
+debug1: Found key in /home/yexiong/.ssh/known_hosts:66
+debug1: rekey out after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug1: SSH2_MSG_NEWKEYS received
+debug1: rekey in after 134217728 blocks
+debug1: Will attempt key: k8stest.pem  explicit
+debug1: SSH2_MSG_EXT_INFO received
+debug1: kex_input_ext_info: server-sig-algs=<rsa-sha2-256,rsa-sha2-512>
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug1: Authentications that can continue: publickey,gssapi-keyex,gssapi-with-mic
+debug1: Next authentication method: gssapi-with-mic
+debug1: Unspecified GSS failure.  Minor code may provide more information
+No Kerberos credentials available (default cache: FILE:/tmp/krb5cc_1000)
+
+
+debug1: Unspecified GSS failure.  Minor code may provide more information
+No Kerberos credentials available (default cache: FILE:/tmp/krb5cc_1000)
+
+
+debug1: Next authentication method: publickey
+debug1: Trying private key: k8stest.pem
+debug1: Authentication succeeded (publickey).
+Authenticated to 13.211.3.157 ([13.211.3.157]:22).
+debug1: Local connections to LOCALHOST:3306 forwarded to remote address database-2.cb9hbb7ioeg5.ap-southeast-2.rds.amazonaws.com:3306
+debug1: Local forwarding listening on ::1 port 3306.
+debug1: channel 0: new [port listener]
+debug1: Local forwarding listening on 127.0.0.1 port 3306.
+debug1: channel 1: new [port listener]
+debug1: Requesting no-more-sessions@openssh.com
+debug1: forking to background
+debug1: Entering interactive session.
+debug1: pledge: network
+yexiong@ubuntu:~$ debug1: client_input_global_request: rtype hostkeys-00@openssh.com want_reply 0
+
+yexiong@ubuntu:~$ mysql -h 127.0.0.1 -u admin
+debug1: Connection to port 3306 forwarding to database-2.cb9hbb7ioeg5.ap-southeast-2.rds.amazonaws.com port 3306 requested.
+debug1: channel 2: new [direct-tcpip]
+ERROR 1045 (28000): Access denied for user 'admin'@'192.168.0.135' (using password: NO)
+yexiong@ubuntu:~$ debug1: channel 2: free: direct-tcpip: listening port 3306 for database-2.cb9hbb7ioeg5.ap-southeast-2.rds.amazonaws.com port 3306, connect from 127.0.0.1 port 58936 to 127.0.0.1 port 3306, nchannels 3
+
+yexiong@ubuntu:~$ mysql -h 127.0.0.1 -u admin -p
+Enter password:
+debug1: Connection to port 3306 forwarding to rds-endpoint-url.ap-southeast-2.rds.amazonaws.com port 3306 requested.
+debug1: channel 2: new [direct-tcpip]
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 47754
+Server version: 8.0.23 Source distribution
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql>
