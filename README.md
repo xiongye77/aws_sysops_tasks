@@ -164,4 +164,16 @@ Use Cloudfront edge location to accelerate S3 upload performance , create dedica
 Enhancing S3 Performance with Multipart Upload.This feature lets a service breaks a big file into smaller chunks and then uploads them; once all parts are uploaded, S3 could merge all in one single file. By doing this, you could also benefit from multithreading and start uploading many chunks simultaneously
 
 
-AWS S3 presigned url for temporary access of private contents.
+# Redshift access audit 
+Queries that are run are logged in STL_QUERY. DDL statements are logged in STL_DDLTEXT. 
+![image](https://user-images.githubusercontent.com/36766101/163095697-ea3c8684-1946-4029-9679-1df82e8b9091.png)
+![image](https://user-images.githubusercontent.com/36766101/163095746-f8e212d6-7ed0-448b-ade9-dd0eb72b9b75.png)
+
+For the user activity log, you must also enable the enable_user_activity_logging database parameter. If you enable only the audit logging feature, but not the associated parameter, the database audit logs log information for only the connection log and user log, but not for the user activity log. 
+
+For connection log, use AWS Glue to run crawler to S3 bucket and Use Athena to check the result
+![image](https://user-images.githubusercontent.com/36766101/163096475-03c64669-bade-4b5b-ad15-6680ed3a1e8c.png)
+
+
+
+# AWS S3 presigned url for temporary access of private contents.
