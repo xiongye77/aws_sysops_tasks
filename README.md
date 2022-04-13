@@ -175,5 +175,9 @@ For connection log, use AWS Glue to run crawler to S3 bucket and Use Athena to c
 ![image](https://user-images.githubusercontent.com/36766101/163096475-03c64669-bade-4b5b-ad15-6680ed3a1e8c.png)
 
 
+# AWS Security hub and GuardDuty integration 
+
+![image](https://user-images.githubusercontent.com/36766101/163169127-cbfdc4cc-9dec-48d8-8c39-d0f899e48ecd.png)
+![image](https://user-images.githubusercontent.com/36766101/163169541-0714e3f4-4146-4d57-9947-34f7488b4f25.png)
 
 # AWS S3 presigned url for temporary access of private contents.
