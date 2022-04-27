@@ -2,6 +2,9 @@
 
 Trust advisor suggestions check. 
 
+![image](https://user-images.githubusercontent.com/36766101/165426657-889af21a-f9f4-4e29-a3cf-d773a4d58589.png)
+
+
 Adjust EC2 instance size not only based on cpu usage, but also based on memory usage, some EC2 instances cpu usage is low ,but memory usage is high.
 Use SSM run command with powershell to install cloudwatch agent on Windows and Ansible to install cloudwatch agent on Linux.Load cloudwatch agent configuration file from S3. 
 
