@@ -82,7 +82,7 @@ if __name__ == "__main__":        # on running python app.py
 >>> import redis
 >>> client = redis.Redis.from_url('redis://<PrimaryEndpoint>')
 >>> client.ping()
-
+database.ini file as following 
 [postgresql]
 host=<RDS endpoint>
 database=postgres
