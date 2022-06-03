@@ -31,6 +31,17 @@ Disable EC2 instance detailed monitor since we have new relic for performance an
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/disable_ec2_detailed_monitor.py
 
 
+
+![image](https://user-images.githubusercontent.com/36766101/171834736-df29e1c9-eb9a-431d-be3c-1b861f1f7615.png)
+20222/06/03 Found one account NatGateway-Bytes cost spiked from 1 thousand to 11 thousands.
+Check VPC flow logs use query based on 
+https://aws.amazon.com/premiumsupport/knowledge-center/vpc-find-traffic-sources-nat-gateway/
+
+![image](https://user-images.githubusercontent.com/36766101/171835267-374df62c-b627-4fba-8b57-8250e263276c.png)
+Those source IPs belong to AWS cloudfront IPs (https://ip-ranges.amazonaws.com/ip-ranges.json), so guess lots of downloa traffic in private subnets from cloudfront. 
+
+
+
 AWS Cost explorer verify which service cost mostly
 
 found cloudwatch cost 3000$ per month. 
