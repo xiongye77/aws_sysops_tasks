@@ -206,7 +206,8 @@ For connection log, use AWS Glue to run crawler to S3 bucket and Use Athena to c
 # AWS CloudWatch Synthetics to monitor Jenkins
 We can use AWS CloudWatch Synthetics to monitor Jenkins master(10.240.10.35) server health status, if this page could not be loaded, we will use cloudwatch event bridge to reboot the Jenkins master 
 
- 
+ ![image](https://user-images.githubusercontent.com/36766101/178485174-eacb5a56-4217-47fc-af50-02a502c887d3.png)
+
 
 Based on document How do I monitor the performance of my website using CloudWatch Synthetics? (amazon.com) (https://aws.amazon.com/premiumsupport/knowledge-center/cloudwatch-synthetics-performance/)  We create jenkins-monitor and use command aws synthetics  describe-canaries --name jenkins-monitor  to get its id. 
 
