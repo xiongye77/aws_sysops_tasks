@@ -198,3 +198,54 @@ For connection log, use AWS Glue to run crawler to S3 bucket and Use Athena to c
 ![image](https://user-images.githubusercontent.com/36766101/163169541-0714e3f4-4146-4d57-9947-34f7488b4f25.png)
 
 # AWS S3 presigned url for temporary access of private contents.
+
+
+
+
+
+# AWS CloudWatch Synthetics to monitor Jenkins
+We can use AWS CloudWatch Synthetics to monitor Jenkins master(10.240.10.35) server health status, if this page could not be loaded, we will use cloudwatch event bridge to reboot the Jenkins master 
+
+ 
+
+Based on document How do I monitor the performance of my website using CloudWatch Synthetics? (amazon.com) (https://aws.amazon.com/premiumsupport/knowledge-center/cloudwatch-synthetics-performance/)  We create jenkins-monitor and use command aws synthetics  describe-canaries --name jenkins-monitor  to get its id. 
+
+During the configuration, just make sure we set 
+
+VPC/Subnet/Security Group information same as the Jenkins master server 
+The url check information to internal IP of the EC2 instance instead of Carsales internal Jenkins url or the lambda function could not reach target Jenkins master
+Schedule is Run continuously change to 5 minutes make sure there is enough time for application can accept request after EC2 instance reboot. 
+
+After setup, the Synthetics Canaries  configuration as  CloudWatch Management Console (amazon.com)  and monitor tab as following 
+
+
+Next step is create event bridge to response if the Synthetics Canaries check failed. 
+
+
+
+
+Create event pattern as following the  canary-id is get from aws synthetics  describe-canaries --name jenkins-monitor
+{
+  "source": ["aws.synthetics"],
+  "detail-type": ["Synthetics Canary TestRun Failure"],
+  "region": ["ap-southeast-2"],
+  "detail": {
+    "account-id": ["153576335202"],
+    "canary-id": ["e6f642ad-aa07-4699-93e2-3f9bdd77ff02"],
+    "canary-name": ["jenkins-monitor"]
+  }
+} 
+
+The targets of EventBridge  will be EC2 instance reboot, the input Constant id EC2 instance id
+
+
+![image](https://user-images.githubusercontent.com/36766101/178484626-96924d58-8706-4fc7-b6f5-0924419320a5.png)
+ 
+
+
+Optional configuration
+
+Synthetics Canaries jenkins-monitor  has one cloudwatch alarm, we can configure SNS Topics to send email alarm once it triggered.
+
+
+
