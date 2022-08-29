@@ -260,3 +260,15 @@ https://aws.amazon.com/premiumsupport/knowledge-center/athena-tables-search-clou
 https://docs.aws.amazon.com/athena/latest/ug/cloudtrail-logs.html#create-cloudtrail-table-partition-projection
 https://docs.aws.amazon.com/athena/latest/ug/partition-projection.html
 
+
+# AWS Secret Manager use KMS key for encryption
+Secrets Manager uses the KMS key that is associated with a secret to generate a data key for each secret value. Secrets Manager also uses the KMS key to decrypt that data key when it needs to decrypt the encrypted secret value. 
+
+If you don't specify an KMS encryption key, Secrets Manager uses the Amazon Web Services managed key aws/secretsmanager .
+
+ aws secretsmanager create-secret     --name MyTestSecret     --description "My test secret created with the CLI."     --secret-string "{\"user\":\"diegor\",\"password\":\"EXAMPLE-PASSWORD\"}" --region  ap-southeast-2  --kms-key-id arn:aws:kms:ap-southeast-2:333186395126:key/c89492e9-088a-4e09-b9bd-3515064fe6a3
+ aws secretsmanager update-secret --region ap-southeast-2 --secret-id key --kms-key-id arn:aws:kms:ap-southeast-2:333186395126:key/c89492e9-088a-4e09-b9bd-3515064fe6a3
+ 
+![image](https://user-images.githubusercontent.com/36766101/187192234-3c599927-e7ca-4077-afd1-130a090d7302.png)
+![image](https://user-images.githubusercontent.com/36766101/187194004-bba08e43-a86f-432e-ae1f-759cc186355d.png)
+
