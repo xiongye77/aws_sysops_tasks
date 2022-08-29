@@ -250,3 +250,13 @@ Synthetics Canaries jenkins-monitor  has one cloudwatch alarm, we can configure 
 
 
 
+
+
+Creating the table for CloudTrail logs in Athena using partition projection
+
+![image](https://user-images.githubusercontent.com/36766101/187150154-68efa3ae-f156-4054-ba4e-a83c1b4e363a.png)
+
+https://aws.amazon.com/premiumsupport/knowledge-center/athena-tables-search-cloudtrail-logs/
+https://docs.aws.amazon.com/athena/latest/ug/cloudtrail-logs.html#create-cloudtrail-table-partition-projection
+https://docs.aws.amazon.com/athena/latest/ug/partition-projection.html
+
