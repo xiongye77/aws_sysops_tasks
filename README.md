@@ -244,7 +244,7 @@ The targets of EventBridge  will be EC2 instance reboot, the input Constant id E
  
 
 
-Optional configuration
+# Optional configuration
 
 Synthetics Canaries jenkins-monitor  has one cloudwatch alarm, we can configure SNS Topics to send email alarm once it triggered.
 
@@ -252,7 +252,7 @@ Synthetics Canaries jenkins-monitor  has one cloudwatch alarm, we can configure 
 
 
 
-Creating the table for CloudTrail logs in Athena using partition projection
+# Creating the table for CloudTrail logs in Athena using partition projection
 
 ![image](https://user-images.githubusercontent.com/36766101/187150154-68efa3ae-f156-4054-ba4e-a83c1b4e363a.png)
 
