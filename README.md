@@ -272,3 +272,8 @@ If you don't specify an KMS encryption key, Secrets Manager uses the Amazon Web 
 ![image](https://user-images.githubusercontent.com/36766101/187192234-3c599927-e7ca-4077-afd1-130a090d7302.png)
 ![image](https://user-images.githubusercontent.com/36766101/187194004-bba08e43-a86f-432e-ae1f-759cc186355d.png)
 
+
+
+# AWS Dynamodb can export to S3 and import from S3
+![image](https://user-images.githubusercontent.com/36766101/187415321-af168a75-5c80-4b3f-ba3f-edc523f63ad8.png)
+
