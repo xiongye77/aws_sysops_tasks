@@ -278,8 +278,18 @@ If you don't specify an KMS encryption key, Secrets Manager uses the Amazon Web 
 
 
 
-# AWS Dynamodb can export to S3 and import from S3
-![image](https://user-images.githubusercontent.com/36766101/187415321-af168a75-5c80-4b3f-ba3f-edc523f63ad8.png)
+# AWS Dynamodb export table to S3 and use Glue/Athena to query data use SQL
+https://aws.amazon.com/blogs/database/export-and-analyze-amazon-dynamodb-data-in-an-amazon-s3-data-lake-in-apache-parquet-format/
+![image](https://user-images.githubusercontent.com/36766101/188264197-c0157a69-fba4-405d-b465-62ca2395a244.png)
+
+Step 1 Export Dynamodb table data to S3
+![image](https://user-images.githubusercontent.com/36766101/188264343-a37ffc8d-7e0d-420d-9944-2551de0244d2.png)
+
+Step2 Run Glue crawler on the exported S3 folder to get table created
+![image](https://user-images.githubusercontent.com/36766101/188264390-fc3d4998-8cac-4347-8639-9686f2893455.png)
+
+Step 3 Athena query table using SQL which could not run Dynamodb directly
+![image](https://user-images.githubusercontent.com/36766101/188264528-31fa841b-6ac5-49b2-b6e4-df38e985888e.png)
 
 
 
