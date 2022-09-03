@@ -284,6 +284,8 @@ If you don't specify an KMS encryption key, Secrets Manager uses the Amazon Web 
 
 
 # Utilize AWS RDS proxy when using lambda to connect RDS database
+https://github.com/xiongye77/aws_sysops_tasks/blob/main/rds.yml
+https://github.com/xiongye77/aws_sysops_tasks/blob/main/rds_proxy.yml
 ![image](https://user-images.githubusercontent.com/36766101/188251264-b2668b35-be80-489e-93a3-14c637ef6d58.png)
 RDS Proxy is a solution provided by AWS to manage database connections in a serverless architecture environment.In our problem, a large number of database connections will be created based on the number of Lambda functions invoked. RDS proxy solves this problem by sharing the database connections. Following is the flow when we configure the RDS proxy with our Lambda functions.
 
