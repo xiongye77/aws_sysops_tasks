@@ -1,0 +1,121 @@
+AWSTemplateFormatVersion: "2010-09-09"
+
+Parameters:
+  # DB Proxy
+  Environment:
+    Description: Deploying environment
+    Type: String
+    AllowedValues:
+      - dev
+      - qa
+      - stg
+      - prod
+    Default: dev
+  CreatedBy:
+    Description: Who is creating the cloudformation stack
+    Type: String
+    Default: CodePipeline
+  ProxyIdleClientTimeout:
+    Type: Number
+    Default: 1800
+  ProxyRequireTLS:
+    Type: String
+    AllowedValues:
+      - true
+      - false
+    Default: false
+  ParentVPCStack:
+    Description: 'Stack name of parent VPC stack based on vpc/vpc-*azs.yaml template.'
+    Type: String
+  ParentRDSStack:
+    Description: 'Stack name of parent RDS stack based on vpc/vpc-*azs.yaml template.'
+    Type: String
+
+  # DB Proxy Target Group
+  ProxyTargetConnectionBorrowTimeout:
+    Type: Number
+    Default: 120
+  ProxyTargetMaxConnectionsPercent:
+    Type: Number
+    Default: 100
+  ProxyTargetMaxIdleConnectionsPercent:
+    Type: Number
+    Default: 50
+  # ProxyTargetDBClusterIdentifiers:
+  #   Type: CommaDelimitedList
+
+  # Secrets Manager
+  SecretsManagerName:
+    Type: String
+
+Resources:
+  RDSProxy:
+    Type: "AWS::RDS::DBProxy"
+    Properties:
+      Auth:
+        - AuthScheme: SECRETS
+          IAMAuth: DISABLED
+          SecretArn: !Sub "arn:aws:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:${SecretsManagerName}"
+      DBProxyName: !Join ['-', ["rdx-proxy", !Ref Environment]]
+      EngineFamily: MYSQL
+      IdleClientTimeout: !Ref ProxyIdleClientTimeout
+      RequireTLS: !Ref ProxyRequireTLS
+      RoleArn: !GetAtt SecretsManagerRole.Arn
+      VpcSecurityGroupIds: [{'Fn::ImportValue': !Sub '${ParentRDSStack}-SecurityGroupId'}, {'Fn::ImportValue': !Sub '${ParentVPCStack}-ClientSecurityGroup'}]
+      VpcSubnetIds: !Split [',', {'Fn::ImportValue': !Sub '${ParentVPCStack}-SubnetsPublic'}]
+
+  RDSProxyTargetGroup:
+    Type: "AWS::RDS::DBProxyTargetGroup"
+    Properties:
+      ConnectionPoolConfigurationInfo:
+        ConnectionBorrowTimeout: !Ref ProxyTargetConnectionBorrowTimeout
+        MaxConnectionsPercent: !Ref ProxyTargetMaxConnectionsPercent
+        MaxIdleConnectionsPercent: !Ref ProxyTargetMaxIdleConnectionsPercent
+      # DBClusterIdentifiers: !Ref ProxyTargetDBClusterIdentifiers
+      # DBInstanceIdentifiers: [{'Fn::ImportValue': !Sub '${ParentRDSStack}-InstanceName'}]
+      DBProxyName: !Ref RDSProxy
+      TargetGroupName: default
+
+  SecretsManagerRole:
+    Type: "AWS::IAM::Role"
+    Properties:
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - "rds.amazonaws.com"
+            Action:
+              - "sts:AssumeRole"
+      Description: "Use for RDS Proxy"
+      ManagedPolicyArns:
+        - !Ref SecretsManagerManagedPolicy
+      Path: /
+      RoleName: !Join ['-', ["rdx-proxy-secret-role", !Ref Environment]]
+
+  SecretsManagerManagedPolicy:
+    Type: "AWS::IAM::ManagedPolicy"
+    Properties:
+      Description: "Get values from Secrets Manager"
+      ManagedPolicyName: !Join ['-', ["rdx-proxy-secretsmanager-policy", !Ref Environment]]
+      Path: /
+      PolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Effect: Allow
+            Action:
+              - "secretsmanager:GetSecretValue"
+              - "secretsmanager:GetResourcePolicy"
+              - "secretsmanager:DescribeSecret"
+              - "secretsmanager:ListSecretVersionIds"
+            # Resource: !Sub "arn:aws:secretsmanager:${AWS::Region}:${AWS::AccountId}:secret:${SecretsManagerName}"
+            Resource: "*"
+          - Effect: Allow
+            Action:
+              - "kms:Decrypt"
+            # Resource: !Sub "arn:aws:kms:${AWS::Region}:${AWS::AccountId}:key/${SecretsManagerKMSKeyId}"
+            Resource: "*"
+            Condition:
+              StringEquals:
+                kms:ViaService: !Sub "secretsmanager.${AWS::Region}.amazonaws.com"
