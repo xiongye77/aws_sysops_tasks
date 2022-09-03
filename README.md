@@ -198,8 +198,9 @@ For connection log, use AWS Glue to run crawler to S3 bucket and Use Athena to c
 ![image](https://user-images.githubusercontent.com/36766101/163169541-0714e3f4-4146-4d57-9947-34f7488b4f25.png)
 
 # AWS S3 presigned url for temporary access of private contents.
+We have one Windows bastion host could not use sftp to send fileout and could not use aws s3 cp command to send fileout due to IAM role limitation,but it can use internet, so we use S3 presigned url to allow it post file to S3.One python code running on EC2 will IAM role to generate presigned url and python program on Windows bastion host will wget it and post file 
 
-
+https://github.com/xiongye77/aws_sysops_tasks/blob/main/s3_presigned_url.py
 
 
 
@@ -265,6 +266,9 @@ https://docs.aws.amazon.com/athena/latest/ug/partition-projection.html
 Secrets Manager uses the KMS key that is associated with a secret to generate a data key for each secret value. Secrets Manager also uses the KMS key to decrypt that data key when it needs to decrypt the encrypted secret value. 
 
 If you don't specify an KMS encryption key, Secrets Manager uses the Amazon Web Services managed key aws/secretsmanager .
+
+
+
 
  aws secretsmanager create-secret     --name MyTestSecret     --description "My test secret created with the CLI."     --secret-string "{\"user\":\"diegor\",\"password\":\"EXAMPLE-PASSWORD\"}" --region  ap-southeast-2  --kms-key-id arn:aws:kms:ap-southeast-2:333186395126:key/c89492e9-088a-4e09-b9bd-3515064fe6a3
  aws secretsmanager update-secret --region ap-southeast-2 --secret-id key --kms-key-id arn:aws:kms:ap-southeast-2:333186395126:key/c89492e9-088a-4e09-b9bd-3515064fe6a3
