@@ -307,3 +307,6 @@ Lambda function will use this connection to connect to the database.
 
 Once function invocation is done this connection will be removed and returned back to connection pool.
 
+
+# AWS Service Catalog
+![image](https://user-images.githubusercontent.com/36766101/189024965-44ebe02d-49e5-48c9-ae59-062a7dae771e.png)
