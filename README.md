@@ -163,6 +163,12 @@ Some information from the viewer request, such as URL query strings, HTTP header
 
 
 # Bucket policy to control IP access bucket 
+Command to verify the ACL information of a specific object:
+
+aws s3api get-object-acl --bucket bucket_name --key filename.txt
+
+Command to upload object with specific ACL
+aws s3 cp filename.txt s3://bucket_name/ --acl bucket-owner-full-control
 
 ![image](https://user-images.githubusercontent.com/36766101/158493350-385d1170-75ae-4e05-a495-e3748621e9da.png)
 
