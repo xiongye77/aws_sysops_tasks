@@ -313,4 +313,6 @@ Once function invocation is done this connection will be removed and returned ba
 
 # AWS layer 7 firewall
 ![image](https://user-images.githubusercontent.com/36766101/189025758-3bbc2b83-3655-4f6a-9106-9321ea734e8a.png)
+WAF
+![image](https://user-images.githubusercontent.com/36766101/189032230-34589c04-a44c-49a3-8b92-a253a8a3481d.png)
 
