@@ -1,0 +1,22 @@
+What is Traffic Mirroring ? 
+a. Used for Content Inspection,Threat Monitoring,Troubleshooting 
+b. Can only be implemented with a Load Balancer 
+c. Needs Elastic Fabric Adapter 
+d. Flow logs capture mirrored traffic   
+Answer is at the end of the post, feel free to skip it, I just did not want to  make a spoiler residing just below the question
+
+Traffic Mirroring is an awesome concept which can now be implemented with an AWS VPC. You can mirror the traffic and send packets to a EC2 instance or specific appliances for further processing.
+
+Used for Content Inspection, Threat Monitoring and Troubleshooting.
+An interesting as aspect is Packet-Format
+*So when a packet gets mirrored it gets VXLAN encapsulated, end host/appliance should be able to decapsulate VXLAN header( we will see a PCAP ).
+
+
+4 Things for Implementation
+*Source (which should be monitored — Network Interface)
+
+*Target (Destination of mirrored Traffic)
+
+*Filter (What traffic types should be mirrored)
+
+*Session( Combines all the above parameters)
