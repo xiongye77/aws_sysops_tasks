@@ -317,6 +317,13 @@ Once function invocation is done this connection will be removed and returned ba
 # AWS Service Catalog
 ![image](https://user-images.githubusercontent.com/36766101/189024965-44ebe02d-49e5-48c9-ae59-062a7dae771e.png)
 
+
+# AWS Resource Access Manager 
+![image](https://user-images.githubusercontent.com/36766101/189049207-1e37572f-fa48-489f-b052-fe80c3033c94.png)
+
+![image](https://user-images.githubusercontent.com/36766101/189049255-c451eed4-9a69-4696-a99a-a07bcae13cf3.png)
+
+
 # AWS layer 7 firewall
 ![image](https://user-images.githubusercontent.com/36766101/189025758-3bbc2b83-3655-4f6a-9106-9321ea734e8a.png)
 WAF
