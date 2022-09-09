@@ -1,0 +1,4 @@
+sh-4.2$ nc -zv  myxero-replication.global.livestage6.test.xero.com 443
+Ncat: Version 7.50 ( https://nmap.org/ncat )
+Ncat: Connected to 10.160.118.42:443.
+Ncat: 0 bytes sent, 0 bytes received in 0.01 seconds.
