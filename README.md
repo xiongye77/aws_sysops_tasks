@@ -332,3 +332,9 @@ WAF
 
 
 ![image](https://user-images.githubusercontent.com/36766101/189041237-e2b3932c-61d2-4642-a9af-ba5644dea635.png)
+
+
+
+#RDS Event retention to Cloudwatch
+![image](https://user-images.githubusercontent.com/36766101/189503396-fcc06dd1-664e-4671-8e60-e8bf880b2dee.png)
+
