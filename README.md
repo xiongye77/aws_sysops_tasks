@@ -335,13 +335,16 @@ WAF
 
 
 
-#RDS Event retention to Cloudwatch
+# RDS Event retention to Cloudwatch
 ![image](https://user-images.githubusercontent.com/36766101/189503396-fcc06dd1-664e-4671-8e60-e8bf880b2dee.png)
 
 
 
 
-#Cross account event send through EventBridge
+# Cross account event send through EventBridge
+![image](https://user-images.githubusercontent.com/36766101/189504952-7121628b-31b2-4a76-a78a-fd2a7cb9ae7b.png)
+![image](https://user-images.githubusercontent.com/36766101/189504959-1553d0e8-a002-4e9b-b2da-79829ca2521b.png)
+
 ![image](https://user-images.githubusercontent.com/36766101/189504829-eb55613f-979b-4b35-9448-191299c63b12.png)
 ![image](https://user-images.githubusercontent.com/36766101/189504837-0d5c9ba8-a9f8-46fb-88ed-b93dbb96aa37.png)
 
