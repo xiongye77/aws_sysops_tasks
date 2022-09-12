@@ -344,7 +344,15 @@ WAF
 # Cross account event send through EventBridge
 ![image](https://user-images.githubusercontent.com/36766101/189504952-7121628b-31b2-4a76-a78a-fd2a7cb9ae7b.png)
 ![image](https://user-images.githubusercontent.com/36766101/189504959-1553d0e8-a002-4e9b-b2da-79829ca2521b.png)
+By putting a resource policy in place on the SecOps Event Bus in the security account, the SecOps team can easily allow all accounts within the organization (or specific Organizational Units) to send events to the centralized event bus. They can then put a pattern match in place via a rule on the event bus that looks for specific events generated from within the organizational accounts that need to be reviewed and potentially addressed.
 
+For this example above, we have a junior engineer who maliciously or accidentally deletes an Amazon Elastic Container Registry image from their development account. SecOps doesn’t want any junior engineers to be able to purge images; instead, they only want senior engineers to do so.
+
+To identify issues like this, they share their Event Bus to the organization, create a resource policy allowing the organization to send events cross-account and cross-region, and then implement a rule on every child AWS account’s default event bus.
+
+This default rule would be a pattern match for the DELETE action-type field in the incoming ECR events. Once it matches, it would send this event to the SecOps account event bus, which they can then handle however they see fit.
+
+In this example, they simply use SNS to send an alert to their SecOps engineer team. However, we could integrate with a SaaS like PagerDuty to handle alerts and notifications as well.
 ![image](https://user-images.githubusercontent.com/36766101/189504829-eb55613f-979b-4b35-9448-191299c63b12.png)
 ![image](https://user-images.githubusercontent.com/36766101/189504837-0d5c9ba8-a9f8-46fb-88ed-b93dbb96aa37.png)
 
