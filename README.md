@@ -342,8 +342,9 @@ WAF
 
 
 # Cross account event send through EventBridge
-![image](https://user-images.githubusercontent.com/36766101/189504952-7121628b-31b2-4a76-a78a-fd2a7cb9ae7b.png)
+![image](https://user-images.githubusercontent.com/36766101/190831177-1cf9bf25-fc13-4033-9687-58a6c3df76bb.png)
 ![image](https://user-images.githubusercontent.com/36766101/189504959-1553d0e8-a002-4e9b-b2da-79829ca2521b.png)
+![image](https://user-images.githubusercontent.com/36766101/189504952-7121628b-31b2-4a76-a78a-fd2a7cb9ae7b.png)
 ![image](https://user-images.githubusercontent.com/36766101/190830363-f5b29e4a-7149-4d6b-9212-befd42dec71d.png)
 
 By putting a resource policy in place on the SecOps Event Bus in the security account, the SecOps team can easily allow all accounts within the organization (or specific Organizational Units) to send events to the centralized event bus. They can then put a pattern match in place via a rule on the event bus that looks for specific events generated from within the organizational accounts that need to be reviewed and potentially addressed.
