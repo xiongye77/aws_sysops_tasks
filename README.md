@@ -372,3 +372,8 @@ Amazon Cognito identity pools (federated identities) enable you to create unique
 This lesson reviews the features of the product and talks through some example architectures.
 
 
+# Stream AWS Cloudwatch Logs to Amazon OpenSearch Service (successor to Amazon Elasticsearch Service)
+
+![image](https://user-images.githubusercontent.com/36766101/191262883-ebe59164-2ca9-4d85-aa15-43243bf7136c.png)
+
+
