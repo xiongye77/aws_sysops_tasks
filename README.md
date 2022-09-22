@@ -378,6 +378,7 @@ This lesson reviews the features of the product and talks through some example a
 
 
 
-# Eventbrige and Eventbus 
+# AWS Eventbrige
+four components:Event source,Event bus,Rule,Target
 ![image](https://user-images.githubusercontent.com/36766101/191629505-d38ffef7-fbb0-43ed-93f1-546a59c672a4.png)
 
