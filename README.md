@@ -382,3 +382,10 @@ This lesson reviews the features of the product and talks through some example a
 four components:Event source,Event bus,Rule,Target
 ![image](https://user-images.githubusercontent.com/36766101/191629505-d38ffef7-fbb0-43ed-93f1-546a59c672a4.png)
 
+
+
+
+# AWS Guardguty Cross account security check and send security finding to slack through cloudwatch event.
+![image](https://user-images.githubusercontent.com/36766101/191954018-ef6a7f45-b2d1-4891-bc92-1bf041e9eac5.png)
+![image](https://user-images.githubusercontent.com/36766101/191954490-eb6d077e-a8b3-4ea6-8207-1bdc36237612.png)
+
