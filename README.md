@@ -393,3 +393,12 @@ four components:Event source,Event bus,Rule,Target
 # Amazon Detective 
 Amazon Detective is a service that helps you analyze and investigate the root cause of security findings or suspicious activity. Using data from AWS Cloudtrail logs, VPC flow logs and AWS GuardDuty data, Amazon Detective will collate, filter the collected security data and using AWS Security Hub, GuardDuty, integrated partner security products, machine learning and statistical analysis investigates the security findings to get to the root cause of the problem or suspicious activity.
 ![image](https://user-images.githubusercontent.com/36766101/192092102-217c98f8-f5fe-4356-94d2-857619c990cf.png)
+
+
+# AWS ES for ingest log 
+![image](https://user-images.githubusercontent.com/36766101/194179837-a1f03e07-f11c-4331-9306-39706c5e5f32.png)
+
+You can configure a CloudWatch Logs log group to stream data it receives to your Amazon OpenSearch Service cluster in near real-time through a CloudWatch Logs subscription. 
+![image](https://user-images.githubusercontent.com/36766101/194182897-2c95253f-98ca-46d6-90a3-a7157d3e69ac.png)
+
+
