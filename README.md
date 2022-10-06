@@ -400,5 +400,6 @@ Amazon Detective is a service that helps you analyze and investigate the root ca
 
 You can configure a CloudWatch Logs log group to stream data it receives to your Amazon OpenSearch Service cluster in near real-time through a CloudWatch Logs subscription. 
 ![image](https://user-images.githubusercontent.com/36766101/194182897-2c95253f-98ca-46d6-90a3-a7157d3e69ac.png)
+![image](https://user-images.githubusercontent.com/36766101/194193722-4c5fab31-df3c-4595-8c08-08cde519e6c5.png)
 
 
