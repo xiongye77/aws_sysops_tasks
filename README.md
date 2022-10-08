@@ -403,3 +403,7 @@ You can configure a CloudWatch Logs log group to stream data it receives to your
 ![image](https://user-images.githubusercontent.com/36766101/194193722-4c5fab31-df3c-4595-8c08-08cde519e6c5.png)
 
 
+# AWS DMS migration task replication ongoing
+
+![image](https://user-images.githubusercontent.com/36766101/194701168-15426c6d-0f6e-416a-9fbe-2247a5b273b4.png)
+
