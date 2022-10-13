@@ -409,8 +409,9 @@ You can configure a CloudWatch Logs log group to stream data it receives to your
 
 
 # Kafka VS AWS SNS + SQS (2022/10/14)
-Apache Kafka, we have something called as consumer groups, where we can group our consumers into different groups and then start listening to the same topic. And because the services belong to different groups, each service gets a copy of the message. 
+Apache Kafka, we have something called as consumer groups, where we can group our consumers into different groups and then start listening to the same topic. so all consumer groups subscribe same topic will get same message that send to same topic.Each Consumer Group will maintain its own set of offsets and receive messages independently from other consumer groups on the same topic. To say it simply, a message received by Consumer Group 1 will also be received by Consumer Group 2. Within a single consumer group, a consumer will not receive the same messages as other consumers in the same consumer group.
 ![image](https://user-images.githubusercontent.com/36766101/195725403-73a89185-5fa0-4dda-8f04-20531e83e98f.png)
+![image](https://user-images.githubusercontent.com/36766101/195726963-4a3900f1-6f52-4983-8c74-4124bdf309e0.png)
 
 For AWS , We will create three different SQS queues which subscribe to same SNS topic. What happens here is, whenever we write something to the SNS topic, a copy of that message or data is sent to each SQS queue that has subscribed to the SNS topic.
 ![image](https://user-images.githubusercontent.com/36766101/195725446-c630471b-7708-4574-843b-6609839a93f0.png)
