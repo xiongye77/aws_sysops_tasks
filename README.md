@@ -415,3 +415,8 @@ Apache Kafka, we have something called as consumer groups, where we can group ou
 
 For AWS , We will create three different SQS queues which subscribe to same SNS topic. What happens here is, whenever we write something to the SNS topic, a copy of that message or data is sent to each SQS queue that has subscribed to the SNS topic.
 ![image](https://user-images.githubusercontent.com/36766101/195725446-c630471b-7708-4574-843b-6609839a93f0.png)
+
+
+# Security hub automaticaly send findings to SNS (2022/10/24)
+![image](https://user-images.githubusercontent.com/36766101/197424822-a4bdce79-6fed-4aa3-8e20-c9c00ce7849d.png)
+
