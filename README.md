@@ -420,3 +420,11 @@ For AWS , We will create three different SQS queues which subscribe to same SNS 
 # Security hub automaticaly send findings to SNS (2022/10/24)
 ![image](https://user-images.githubusercontent.com/36766101/197424822-a4bdce79-6fed-4aa3-8e20-c9c00ce7849d.png)
 
+
+# GuardDuty findings and export to S3 use KMS key(2022/11/22)
+![image](https://user-images.githubusercontent.com/36766101/203194553-4b657457-484b-4726-877a-be4b50b20538.png)
+![image](https://user-images.githubusercontent.com/36766101/203194819-6ddada14-3e6e-49f5-96cc-f2e92d277e6b.png)
+![image](https://user-images.githubusercontent.com/36766101/203194958-df648d6c-6401-4a3e-b07c-3225910e3755.png)
+
+
+
