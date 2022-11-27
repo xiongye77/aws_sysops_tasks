@@ -427,4 +427,19 @@ For AWS , We will create three different SQS queues which subscribe to same SNS 
 ![image](https://user-images.githubusercontent.com/36766101/203194958-df648d6c-6401-4a3e-b07c-3225910e3755.png)
 
 
+# Different 5xx errors and their corresponding means (2022/11/27)
+502 Bad Gateway
+A 502 error means that a website server that is serving as a reverse proxy for the website origin server (for example, a CDN PoP) did not receive a valid response from the origin server. This may be because the origin server is experiencing issues, there is an invalid or incorrect DNS name, or because a firewall on the origin server has blocked the reverse proxy server request.
+
+503 Service Unavailable
+The 503 service unavailable message means that the website origin server is not available and is usually a temporary state. This error could be triggered because something running on the website server side has crashed or your site is purposefully down for maintenance. This error is also commonly served when a site has more traffic than it can handle.
+
+504 Gateway Timeout
+Similar to the 502 error, the 504 Gateway Timeout error occurs if the server that is acting as a proxy for the website origin server did not receive a response from the website origin server within a set time period. 
+
+Troubleshooting 500 errors
+502 and 504 errors are related to a bad gateway, meaning that while the reverse proxy server is operational, something it needs to collect from the origin server is not working, or the connection between the reverse proxy server and the origin server is broken. To troubleshoot this issue, websites should check that their origin server and all the servers it needs to access are running correctly, and then check the configuration between the origin server and reverse proxy server.
+
+503 errors are often expected when your website is going through downtime in order to make updates or changes. They may also be triggered by a large influx of traffic to your website.
+
 
