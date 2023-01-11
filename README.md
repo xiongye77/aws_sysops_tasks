@@ -445,3 +445,5 @@ Troubleshooting 500 errors
 503 errors are often expected when your website is going through downtime in order to make updates or changes. They may also be triggered by a large influx of traffic to your website.
 
 
+# Patch EC2 instances use SSM patch manager/SSM patch baseline/SSM document
+https://github.com/xiongye77/ssm-patch-manager
