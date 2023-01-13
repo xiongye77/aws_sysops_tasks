@@ -429,7 +429,7 @@ For AWS , We will create three different SQS queues which subscribe to same SNS 
 
 # Different 5xx errors and their corresponding means (2022/11/27)
 ![image](https://user-images.githubusercontent.com/36766101/204116449-d552b4f2-62ae-48af-a220-ea4163984dd3.png)
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/36766101/212228004-9204a742-080e-4af9-bf61-e9567d6c983a.png)
 502 Bad Gateway
 A 502 error means that a website server that is serving as a reverse proxy for the website origin server (for example, a CDN PoP) did not receive a valid response from the origin server. This may be because the origin server is experiencing issues, there is an invalid or incorrect DNS name, or because a firewall on the origin server has blocked the reverse proxy server request.
 
@@ -460,3 +460,4 @@ We will use SAGA Orchestration to implement e-commerce place order use case for 
 
 4 Restoring data consistency in Amazon DynamoDB database
 
+![Uploading image.png…]()
