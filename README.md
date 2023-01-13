@@ -445,5 +445,18 @@ Troubleshooting 500 errors
 503 errors are often expected when your website is going through downtime in order to make updates or changes. They may also be triggered by a large influx of traffic to your website.
 
 
-# Patch EC2 instances use SSM patch manager/SSM patch baseline/SSM document
+# Patch EC2 instances use SSM patch manager/SSM patch baseline/SSM document (2023/01/11)
 https://github.com/xiongye77/ssm-patch-manager
+
+
+# Implement this SAGA pattern flows with using AWS Step Function (2023/01/13)
+We will use SAGA Orchestration to implement e-commerce place order use case for happy and failure states.
+
+1 Create API Gateway to trigger to AWS Step functions when place-order request comes from customer
+
+2 Saga orchestration pattern implementation with AWS Step Functions
+
+3 Success & Failure paths in a distributed transactions
+
+4 Restoring data consistency in Amazon DynamoDB database
+
