@@ -463,3 +463,6 @@ We will use SAGA Orchestration to implement e-commerce place order use case for 
 ![image](https://user-images.githubusercontent.com/36766101/212228168-804742ce-a6a0-40ce-8ddb-711f8cca356b.png)
 ![image](https://user-images.githubusercontent.com/36766101/212231331-c1baca90-f69d-4e3a-b494-8724ce705a38.png)
 
+![image](https://user-images.githubusercontent.com/36766101/212238147-e9abedf7-66aa-4577-9729-17f0b8b827ed.png)
+
+The saga pattern is a failure management pattern that helps establish consistency in distributed applications, and coordinates transactions between multiple microservices to maintain data consistency. A microservice publishes an event for every transaction, and the next transaction is initiated based on the event's outcome. It can take two different paths, depending on the success or failure of the transactions.
