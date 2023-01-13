@@ -460,4 +460,5 @@ We will use SAGA Orchestration to implement e-commerce place order use case for 
 
 4 Restoring data consistency in Amazon DynamoDB database
 
-![Uploading image.png…]()
+![image](https://user-images.githubusercontent.com/36766101/212228168-804742ce-a6a0-40ce-8ddb-711f8cca356b.png)
+
