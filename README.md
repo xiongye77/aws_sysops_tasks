@@ -489,4 +489,5 @@ A target is a resource or endpoint that EventBridge sends an event to when the e
 
 
 ![image](https://user-images.githubusercontent.com/36766101/212467520-5e117073-21d0-42b0-a326-49e9e0c455ab.png)
+![image](https://user-images.githubusercontent.com/36766101/212468993-85cb9aa9-330d-46a3-975d-1568620e0c30.png)
 
