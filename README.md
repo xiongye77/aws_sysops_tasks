@@ -469,3 +469,24 @@ The saga pattern is a failure management pattern that helps establish consistenc
 
 ![image](https://user-images.githubusercontent.com/36766101/212242458-8a75f2c7-617c-40d5-ad49-7bc38c08da46.png)
 
+
+# AWS eventbridge 
+Events
+An event is a real-time change in a system, data, or environment. This change can be either in your application or in an AWS service or a SaaS partner service.
+
+Event sources
+An event source is used to ingest events from a SaaS partner, AWS Services, or your own applications.
+
+Event buses
+An event bus is a pipeline that receives events. Rules associated with the event bus evaluate events as they arrive. Each rule checks whether an event matches the rule’s criteria.
+
+Rules
+A rule matches incoming events and sends them to targets for processing. A single rule can send an event to multiple targets, which then run in parallel.
+
+
+Targets
+A target is a resource or endpoint that EventBridge sends an event to when the event matches the event pattern defined for a rule. The rule processes the event data and sends the pertinent information to the target. To deliver event data to a target, EventBridge needs permission to access the target resource. You can define up to five targets for each rule.
+
+
+![image](https://user-images.githubusercontent.com/36766101/212467520-5e117073-21d0-42b0-a326-49e9e0c455ab.png)
+
