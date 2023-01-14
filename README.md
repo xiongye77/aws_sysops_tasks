@@ -470,7 +470,10 @@ The saga pattern is a failure management pattern that helps establish consistenc
 ![image](https://user-images.githubusercontent.com/36766101/212242458-8a75f2c7-617c-40d5-ad49-7bc38c08da46.png)
 
 
-# AWS eventbridge 
+# AWS eventbridge eventbus/event rule with pattern/targets
+
+![image](https://user-images.githubusercontent.com/36766101/212474081-b6a52f3f-4b61-4d96-86f9-3414465c34a7.png)
+
 Events
 An event is a real-time change in a system, data, or environment. This change can be either in your application or in an AWS service or a SaaS partner service.
 
