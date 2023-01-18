@@ -495,3 +495,11 @@ A target is a resource or endpoint that EventBridge sends an event to when the e
 ![image](https://user-images.githubusercontent.com/36766101/212468993-85cb9aa9-330d-46a3-975d-1568620e0c30.png)
 ![image](https://user-images.githubusercontent.com/36766101/212473006-4b9865c2-24dd-40e6-8ed6-79acc0e7bd15.png)
 
+
+
+# Dynamodb Table scan
+aws dynamodb scan --table-name ga4_offline_event --filter-expression 'begins_with(event_time,:event_time) AND event_name = :event_name' --expression-attribute-values '{ ":event_name" : {"S": "payingOrg"}, ":event_time" : {"S": "2023-01-13"} }'  --select "COUNT" --region=ap-southeast-2
+
+![image](https://user-images.githubusercontent.com/36766101/213093362-0b36f721-2e45-4ee8-84d8-e0d6eff985f1.png)
+
+
