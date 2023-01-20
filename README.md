@@ -506,3 +506,13 @@ aws dynamodb query --table-name ga4_offline_event  --key-condition-expression "b
 ![image](https://user-images.githubusercontent.com/36766101/213093362-0b36f721-2e45-4ee8-84d8-e0d6eff985f1.png)
 
 
+
+# AWS cloudwatch log insight to query log result and export 
+
+fields @message 
+    | filter @message like /payingOrg/ 
+    | stats count(*) as total_count by bin(1h)
+    | sort total_count desc
+    | limit 10000
+![image](https://user-images.githubusercontent.com/36766101/213669747-5fbdf96a-b39b-4db7-9123-8e3efc10550a.png)
+
