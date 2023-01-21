@@ -516,3 +516,9 @@ fields @message
     | limit 10000
 ![image](https://user-images.githubusercontent.com/36766101/213669747-5fbdf96a-b39b-4db7-9123-8e3efc10550a.png)
 
+
+# AWS Dyanmodb Point-in-time recovery (PITR) and use AWS backup to create backup protection (2023/01/21)
+![image](https://user-images.githubusercontent.com/36766101/213830802-29a72ae4-ddd4-4303-8899-1466fd527748.png)
+![image](https://user-images.githubusercontent.com/36766101/213830806-6579ce0d-8166-4627-bdc6-a1750272ce58.png)
+
+
