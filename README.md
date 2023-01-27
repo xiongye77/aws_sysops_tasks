@@ -526,13 +526,26 @@ fields @message
 
 
 # AWS DR solution （2023/01/27）
+Determine your RPO/RTO requirements to choose which option you 
+Pilot Light
 ![image](https://user-images.githubusercontent.com/36766101/214968280-155a056d-a3a2-4b5b-b063-01180d4b8aaf.png)
 ![image](https://user-images.githubusercontent.com/36766101/214970029-35b4cae5-ab1e-4dc1-b7d7-fc7044a43f74.png)
 ![image](https://user-images.githubusercontent.com/36766101/214979171-314c2fc2-db67-4616-9979-82303c7af18b.png)
 ![image](https://user-images.githubusercontent.com/36766101/214984796-98c6790a-ce11-4603-864c-6ecb2e4b5a18.png)
 ![image](https://user-images.githubusercontent.com/36766101/214991618-c7a06da8-5940-40f7-95a7-88c0aded4d69.png)
-Route53 health check for failover DNS
+Route53 health check for failover DNS and Use SG of LB to simulate site failure.
 ![image](https://user-images.githubusercontent.com/36766101/214994148-524e288d-1eae-4a9b-9492-9a6733a66c13.png)
+![image](https://user-images.githubusercontent.com/36766101/214996736-10936c63-7eea-453a-8e56-89feb9186f1a.png)
+![image](https://user-images.githubusercontent.com/36766101/214998620-d3e02bea-ecab-4a19-8300-7a791bead2c5.png)
+Multi-region Active/Active
+![image](https://user-images.githubusercontent.com/36766101/214999172-02ab72c2-e41b-4c8f-b80e-d16b271a7615.png)
+![image](https://user-images.githubusercontent.com/36766101/214999361-53020233-dfbe-4b6c-aa7f-1f2cdc809d12.png)
+Route53 latency routing policy
+![image](https://user-images.githubusercontent.com/36766101/215000313-aa46e945-25b7-4544-8130-79b9c8a40c37.png)
+![image](https://user-images.githubusercontent.com/36766101/215000473-6eea9c50-e4ff-4cbf-ba7d-5bcc7ffd0742.png)
 
-
+Aurora Global Database
+![image](https://user-images.githubusercontent.com/36766101/215016111-0bf2d564-d5af-425d-b25c-ce2d6d49c26c.png)
+![image](https://user-images.githubusercontent.com/36766101/215016034-8e4c17a1-0998-44c5-a681-ad5b1bc94562.png)
+![image](https://user-images.githubusercontent.com/36766101/215016946-99f6c3e7-ca58-43c6-94cd-bf01ba26d88b.png)
 
