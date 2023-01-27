@@ -548,4 +548,22 @@ Aurora Global Database
 ![image](https://user-images.githubusercontent.com/36766101/215016111-0bf2d564-d5af-425d-b25c-ce2d6d49c26c.png)
 ![image](https://user-images.githubusercontent.com/36766101/215016034-8e4c17a1-0998-44c5-a681-ad5b1bc94562.png)
 ![image](https://user-images.githubusercontent.com/36766101/215016946-99f6c3e7-ca58-43c6-94cd-bf01ba26d88b.png)
+Relational Database Failback Options
+Scenario
+Primary Database is in one region, and for disaster recovery, there is a cross-region read replica in the second region
 
+Disaster Recovery When Primary is Down
+When the primary region is down, you would detach the read replica in the DR region and promote it as a new primary
+
+At this point, this new primary is a separate system (in the DR region), and you would need to set up a new cross-region read replica
+
+The old primary database is no longer used
+
+Failback to Primary Region
+To failback to the primary region, you would need to have a cross-region read replica in the primary region
+
+And failback process depends on the relational product used
+
+With Aurora Global Database, when you do a managed failover to a different region, primary and cross region read-replica roles are reversed. This option is the easiest and cleanest
+
+If you use any other relational database, you would have to disconnect the read-replica in the primary region and promote it as the primary database. You then need to configure a read-replica for this new primary.
