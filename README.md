@@ -450,6 +450,9 @@ https://github.com/xiongye77/ssm-patch-manager
 
 
 # Implement this SAGA pattern flows with using AWS Step Function (2023/01/13)
+
+![image](https://user-images.githubusercontent.com/36766101/215025585-7a967a8a-90e7-423f-b192-52357ed1e412.png)
+
 We will use SAGA Orchestration to implement e-commerce place order use case for happy and failure states.
 
 1 Create API Gateway to trigger to AWS Step functions when place-order request comes from customer
