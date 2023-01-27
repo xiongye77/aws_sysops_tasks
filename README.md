@@ -531,5 +531,8 @@ fields @message
 ![image](https://user-images.githubusercontent.com/36766101/214979171-314c2fc2-db67-4616-9979-82303c7af18b.png)
 ![image](https://user-images.githubusercontent.com/36766101/214984796-98c6790a-ce11-4603-864c-6ecb2e4b5a18.png)
 ![image](https://user-images.githubusercontent.com/36766101/214991618-c7a06da8-5940-40f7-95a7-88c0aded4d69.png)
+Route53 health check for failover DNS
+![image](https://user-images.githubusercontent.com/36766101/214994148-524e288d-1eae-4a9b-9492-9a6733a66c13.png)
+
 
 
