@@ -522,3 +522,14 @@ fields @message
 ![image](https://user-images.githubusercontent.com/36766101/213830806-6579ce0d-8166-4627-bdc6-a1750272ce58.png)
 
 
+
+
+
+# AWS DR solution （2023/01/27）
+![image](https://user-images.githubusercontent.com/36766101/214968280-155a056d-a3a2-4b5b-b063-01180d4b8aaf.png)
+![image](https://user-images.githubusercontent.com/36766101/214970029-35b4cae5-ab1e-4dc1-b7d7-fc7044a43f74.png)
+![image](https://user-images.githubusercontent.com/36766101/214979171-314c2fc2-db67-4616-9979-82303c7af18b.png)
+![image](https://user-images.githubusercontent.com/36766101/214984796-98c6790a-ce11-4603-864c-6ecb2e4b5a18.png)
+![image](https://user-images.githubusercontent.com/36766101/214991618-c7a06da8-5940-40f7-95a7-88c0aded4d69.png)
+
+
