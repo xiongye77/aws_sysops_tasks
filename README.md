@@ -208,6 +208,9 @@ We have one Windows bastion host could not use sftp to send fileout and could no
 
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/s3_presigned_url.py
 
+# AWS DevSecOps and related tool 2023/01/31
+![image](https://user-images.githubusercontent.com/36766101/215660623-248f7429-e582-4ad5-ae8d-6e488a128a97.png)
+![image](https://user-images.githubusercontent.com/36766101/215669934-b3005317-72d5-4bec-88b8-5aaa824b1a67.png)
 
 
 # AWS CloudWatch Synthetics to monitor Jenkins
