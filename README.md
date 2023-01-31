@@ -570,3 +570,9 @@ And failback process depends on the relational product used
 With Aurora Global Database, when you do a managed failover to a different region, primary and cross region read-replica roles are reversed. This option is the easiest and cleanest
 
 If you use any other relational database, you would have to disconnect the read-replica in the primary region and promote it as the primary database. You then need to configure a read-replica for this new primary.
+
+ClickStream analyse using Kinesis data stream and Lambda
+
+![image](https://user-images.githubusercontent.com/36766101/215632086-9d9d3f9e-c03e-40ad-966d-ec7c0f59bbe0.png)
+
+![image](https://user-images.githubusercontent.com/36766101/215631957-208d4bb5-769a-47c9-b659-5f41801baf45.png)
