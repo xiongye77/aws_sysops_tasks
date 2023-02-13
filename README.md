@@ -579,3 +579,8 @@ ClickStream analyse using Kinesis data stream and Lambda
 ![image](https://user-images.githubusercontent.com/36766101/215632086-9d9d3f9e-c03e-40ad-966d-ec7c0f59bbe0.png)
 
 ![image](https://user-images.githubusercontent.com/36766101/215631957-208d4bb5-769a-47c9-b659-5f41801baf45.png)
+
+
+To determine your IP use dig
+dig +short myip.opendns.com @resolver1.opendns.com
+![image](https://user-images.githubusercontent.com/36766101/218381733-8d41db3d-21e0-4388-9c4c-7ce88841f48d.png)
