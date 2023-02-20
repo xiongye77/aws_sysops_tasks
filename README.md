@@ -588,6 +588,8 @@ dig +short myip.opendns.com @resolver1.opendns.com
 
 
 # AWS Inspector and Security Hub and AWS Config and GuardDuty (2023/02/20) 
+![image](https://user-images.githubusercontent.com/36766101/220090134-a579cc45-edaa-4daa-b804-fd24878d7363.png)
+
 ![image](https://user-images.githubusercontent.com/36766101/219993213-5c9b1e79-bfe5-4abf-b1c5-71c736eb7be2.png)
 ![image](https://user-images.githubusercontent.com/36766101/219995808-9de7769a-bd14-4f41-aff2-a726f3c5afcc.png)
 ![image](https://user-images.githubusercontent.com/36766101/220001017-4a5fde7f-29a3-4c8b-8d2e-ace8c1a6a004.png)
@@ -599,7 +601,8 @@ dig +short myip.opendns.com @resolver1.opendns.com
 ![image](https://user-images.githubusercontent.com/36766101/220082861-7012014a-3827-4138-a030-e28362fed802.png)
 ![image](https://user-images.githubusercontent.com/36766101/220085183-3d5c0aa1-0881-40a2-88ba-246665276f55.png)
 ![image](https://user-images.githubusercontent.com/36766101/220088171-fcfe4f9d-c129-469b-b26f-4ad11d7874fa.png)
-
+![image](https://user-images.githubusercontent.com/36766101/220093699-4f6a37c2-3cef-4262-b6d8-19a9617984dc.png)
+https://controltower.aws-management.tools/security/guardutydetect-securityhubremediate/
 
 # Executing Automation Workflow Using AWS SSM Automation    (2023/02/20) 
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/ssm-automation.json
