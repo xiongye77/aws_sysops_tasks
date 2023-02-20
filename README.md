@@ -587,13 +587,14 @@ dig +short myip.opendns.com @resolver1.opendns.com
 ![image](https://user-images.githubusercontent.com/36766101/218381733-8d41db3d-21e0-4388-9c4c-7ce88841f48d.png)
 
 
-# AWS Inspector and Security Hub and AWS Config
+# AWS Inspector and Security Hub and AWS Config (2023/02/20) 
 ![image](https://user-images.githubusercontent.com/36766101/219993213-5c9b1e79-bfe5-4abf-b1c5-71c736eb7be2.png)
 ![image](https://user-images.githubusercontent.com/36766101/219995808-9de7769a-bd14-4f41-aff2-a726f3c5afcc.png)
 ![image](https://user-images.githubusercontent.com/36766101/220001017-4a5fde7f-29a3-4c8b-8d2e-ace8c1a6a004.png)
 ![image](https://user-images.githubusercontent.com/36766101/220030600-9a3ab4f8-4b3f-4d3d-874b-0ec9c20c59e3.png)
 ![image](https://user-images.githubusercontent.com/36766101/220031454-f5664a80-cf34-4f04-a180-8efca3cdbf5a.png)
 ![image](https://user-images.githubusercontent.com/36766101/220034157-850e65a5-4917-4a0d-85a4-03efed00ea37.png)
+![image](https://user-images.githubusercontent.com/36766101/220034274-d8874c46-efb1-49e5-a996-9d2610a1a08c.png)
 
 
 # Executing Automation Workflow Using AWS SSM Automation    (2023/02/20) 
