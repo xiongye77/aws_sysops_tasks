@@ -587,7 +587,7 @@ dig +short myip.opendns.com @resolver1.opendns.com
 ![image](https://user-images.githubusercontent.com/36766101/218381733-8d41db3d-21e0-4388-9c4c-7ce88841f48d.png)
 
 
-# AWS Inspector and Security Hub and AWS Config (2023/02/20) 
+# AWS Inspector and Security Hub and AWS Config and GuardDuty (2023/02/20) 
 ![image](https://user-images.githubusercontent.com/36766101/219993213-5c9b1e79-bfe5-4abf-b1c5-71c736eb7be2.png)
 ![image](https://user-images.githubusercontent.com/36766101/219995808-9de7769a-bd14-4f41-aff2-a726f3c5afcc.png)
 ![image](https://user-images.githubusercontent.com/36766101/220001017-4a5fde7f-29a3-4c8b-8d2e-ace8c1a6a004.png)
@@ -596,6 +596,9 @@ dig +short myip.opendns.com @resolver1.opendns.com
 ![image](https://user-images.githubusercontent.com/36766101/220034157-850e65a5-4917-4a0d-85a4-03efed00ea37.png)
 ![image](https://user-images.githubusercontent.com/36766101/220034274-d8874c46-efb1-49e5-a996-9d2610a1a08c.png)
 ![image](https://user-images.githubusercontent.com/36766101/220038276-31fff420-9077-4e35-9584-074b69ec72bc.png)
+![image](https://user-images.githubusercontent.com/36766101/220082861-7012014a-3827-4138-a030-e28362fed802.png)
+![image](https://user-images.githubusercontent.com/36766101/220085183-3d5c0aa1-0881-40a2-88ba-246665276f55.png)
+![image](https://user-images.githubusercontent.com/36766101/220088171-fcfe4f9d-c129-469b-b26f-4ad11d7874fa.png)
 
 
 # Executing Automation Workflow Using AWS SSM Automation    (2023/02/20) 
