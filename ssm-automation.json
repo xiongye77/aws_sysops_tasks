@@ -1,0 +1,208 @@
+{
+    "description": "Automation for creating an instance, attaching an SSM role to it, figuring out it's platform type and patching it accordingly",
+    "schemaVersion": "0.3",
+    "assumeRole": "",
+    "parameters": {
+        "EC2IamRole": {
+            "type": "String",
+            "description": "IAM Instance Profile Name, usually is the name of the IAM role",
+            "default": "MyEC2SSMRole"
+        },
+        "Application":{
+            "type": "String",
+            "description": "Choose from one of the choices below to install",
+            "allowedValues": [
+                "mariadb-server",
+                "httpd"
+            ]
+        }
+    },
+    "mainSteps": [
+        {
+            "name": "getLatestLinuxAMI",
+            "action": "aws:executeAwsApi",
+            "inputs": {
+                "Service": "ssm",
+                "Api": "GetParameters",
+                "Names": ["/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2"]
+            },
+            "outputs": [
+                    {
+                    "Name": "AmiId",
+                    "Selector": "$.Parameters[0].Value",
+                    "Type": "String"
+                }
+            ]
+        },
+        {
+            "name": "ConditionalCreateSSMParameter",
+            "action": "aws:branch",
+            "inputs":{
+                "Choices": [
+                    {
+                        "NextStep": "createPasswordSSMParameter",
+                        "Variable": "{{Application}}",
+                        "StringEquals": "mariadb-server"
+                    }
+                ],
+                "Default": "getSubnetId"
+            }
+        },
+        {
+            "name": "createPasswordSSMParameter",
+            "action": "aws:executeAwsApi",
+            "inputs":{
+                "Service": "ssm",
+                "Api": "PutParameter",
+                "Name": "mysql-pass",
+                "Type": "SecureString",
+                "Value": "mysecureencryptedpassword",
+                "Overwrite": true
+            }
+        },
+        {
+            "name": "getSubnetId",
+            "action":"aws:executeAwsApi",
+            "inputs": {
+                "Service": "ec2",
+                "Api": "DescribeSubnets",
+                "Filters": [
+                    {
+                        "Name": "tag:Name",
+                        "Values": [
+                            "SubnetA"
+                        ]
+                    }
+                ]
+            },
+            "outputs": [
+                {
+                    "Name": "SubnetId",
+                    "Selector": "$.Subnets[0].SubnetId",
+                    "Type": "String"
+                }
+            ]
+        },
+        {
+            "name": "getSecurityGroupId",
+            "action": "aws:executeAwsApi",
+            "inputs": {
+                "Service": "ec2",
+                "Api": "DescribeSecurityGroups",
+                "Filters": [
+                    {
+                        "Name": "group-name",
+                        "Values": [
+                            "SGA"
+                        ]
+                    }
+                ]
+            },
+            "outputs": [
+                {
+                    "Name": "SecurityGroupId",
+                    "Selector": "$.SecurityGroups[0].GroupId",
+                    "Type": "String"
+                }
+            ]
+        },
+        {
+            "name": "create_ec2",
+            "action": "aws:runInstances",
+            "maxAttempts":2,
+            "timeoutSeconds": 300,
+            "onFailure": "Abort",
+            "inputs": {
+                "ImageId": "{{getLatestLinuxAMI.AmiId}}",
+                "SecurityGroupIds": ["{{getSecurityGroupId.SecurityGroupId}}"],
+                "SubnetId": "{{getSubnetId.SubnetId}}",
+                "InstanceType": "t2.medium",
+                "MinInstanceCount": 1,
+                "MaxInstanceCount": 1,
+                "IamInstanceProfileName": "{{EC2IamRole}}",
+                "TagSpecifications": [
+                    {
+                        "ResourceType": "instance",
+                        "Tags": [
+                            {
+                                "Key": "Name",
+                                "Value": "SSM-Created-EC2"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "name": "wait_for_ssm_info",
+            "action": "aws:waitForAwsResourceProperty",
+            "inputs": {
+                "Service": "ssm",
+                "Api": "DescribeInstanceInformation",
+                "Filters": [ { "Key" :"InstanceIds","Values":[ "{{create_ec2.InstanceIds}}"] }] ,
+                "PropertySelector": "$.InstanceInformationList[0].PingStatus",
+                "DesiredValues": [
+                    "Online"
+                ]
+            }
+        },
+        {
+            "name": "DeployApplicationByChoice",
+            "action": "aws:branch",
+            "inputs":{
+                "Choices": [
+                    {
+                        "NextStep": "InstallConfigureMariaDB",
+                        "Variable": "{{Application}}",
+                        "StringEquals": "mariadb-server"
+                    },
+                    {
+                        "NextStep": "InstallConfigureHttpd",
+                        "Variable":"{{Application}}",
+                        "StringEquals": "httpd"
+                    }
+
+                ],
+                "Default": "InstallConfigureHttpd"
+            }
+        },
+        {
+            "name": "InstallConfigureMariaDB",
+            "action": "aws:runCommand",
+            "inputs": {
+                "DocumentName": "AWS-RunShellScript",
+                "InstanceIds": [
+                    "{{create_ec2.InstanceIds}}"
+                ],
+                "Parameters": {
+                "commands": [
+                    "yum -y install {{Application}}",
+                    "systemctl enable mariadb; systemctl start mariadb",
+                    "sleep 5",
+                    "aws configure set default.region us-east-1",
+                    "mysqladmin password $(aws ssm get-parameter --name mysql-pass --with-decryption --output text --query 'Parameter.Value')"
+                ]
+
+            }
+        },
+        "isEnd":true
+    },
+        {
+            "name": "InstallConfigureHttpd",
+            "action": "aws:runCommand",
+            "inputs": {
+                "DocumentName":"AWS-RunShellScript",
+                "InstanceIds": [
+                    "{{create_ec2.InstanceIds}}"
+                ],
+                "Parameters": {
+                "commands": [
+                    "yum -y install {{Application}}",
+                    "systemctl enable {{Application}}; systemctl start {{Application}}"
+                ]
+            }
+        },
+        "isEnd": true
+        }
+    ]
+}
