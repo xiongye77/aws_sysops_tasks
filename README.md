@@ -592,3 +592,9 @@ dig +short myip.opendns.com @resolver1.opendns.com
 ![image](https://user-images.githubusercontent.com/36766101/220001017-4a5fde7f-29a3-4c8b-8d2e-ace8c1a6a004.png)
 
 
+# Executing Automation Workflow Using AWS SSM Automation    (2023/02/20) 
+https://github.com/xiongye77/aws_sysops_tasks/blob/main/ssm-automation.json
+![image](https://user-images.githubusercontent.com/36766101/220005717-496826d9-5c71-4a0a-b108-692c6d07b04e.png)
+![image](https://user-images.githubusercontent.com/36766101/220007995-ff7ea152-27b6-43a3-aabc-31f57afe36a8.png)
+![image](https://user-images.githubusercontent.com/36766101/220008073-fd22884f-8b79-45ab-bc07-6ff178d9d822.png)
+
