@@ -602,6 +602,10 @@ dig +short myip.opendns.com @resolver1.opendns.com
 ![image](https://user-images.githubusercontent.com/36766101/220085183-3d5c0aa1-0881-40a2-88ba-246665276f55.png)
 ![image](https://user-images.githubusercontent.com/36766101/220088171-fcfe4f9d-c129-469b-b26f-4ad11d7874fa.png)
 ![image](https://user-images.githubusercontent.com/36766101/220093699-4f6a37c2-3cef-4262-b6d8-19a9617984dc.png)
+![image](https://user-images.githubusercontent.com/36766101/220203287-3110e5f3-1321-42d4-b17a-0983e013dee1.png)
+![image](https://user-images.githubusercontent.com/36766101/220205340-04713f9b-ff70-4b02-a0c1-ad8247e703e0.png)
+![image](https://user-images.githubusercontent.com/36766101/220205796-1cf0207e-8873-4e88-8829-f149563570e6.png)
+
 https://controltower.aws-management.tools/security/guardutydetect-securityhubremediate/
 
 # Executing Automation Workflow Using AWS SSM Automation    (2023/02/20) 
@@ -615,4 +619,7 @@ https://github.com/xiongye77/aws_sysops_tasks/blob/main/ssm-automation.json
 ![image](https://user-images.githubusercontent.com/36766101/220063999-6e63b017-d6d0-4944-ab89-144631c6b51d.png)
 use cloudtrail data event only log data event to specific bucket
 ![image](https://user-images.githubusercontent.com/36766101/220074340-cdb79f0a-f525-419c-9a92-67822f65764c.png)
+![image](https://user-images.githubusercontent.com/36766101/220209105-14235f1c-0cea-459a-8756-03e0688089eb.png)
+![image](https://user-images.githubusercontent.com/36766101/220209823-98260b38-5db4-46f1-94cb-7982dc075de4.png)
+![image](https://user-images.githubusercontent.com/36766101/220210358-24830dea-672e-4d7e-bc89-8308e22d74fb.png)
 
