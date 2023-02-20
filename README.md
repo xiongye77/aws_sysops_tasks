@@ -604,3 +604,9 @@ https://github.com/xiongye77/aws_sysops_tasks/blob/main/ssm-automation.json
 ![image](https://user-images.githubusercontent.com/36766101/220007995-ff7ea152-27b6-43a3-aabc-31f57afe36a8.png)
 ![image](https://user-images.githubusercontent.com/36766101/220008073-fd22884f-8b79-45ab-bc07-6ff178d9d822.png)
 
+
+# Security your S3 from A to Z
+![image](https://user-images.githubusercontent.com/36766101/220063999-6e63b017-d6d0-4944-ab89-144631c6b51d.png)
+use cloudtrail data event only log data event to specific bucket
+![image](https://user-images.githubusercontent.com/36766101/220074340-cdb79f0a-f525-419c-9a92-67822f65764c.png)
+
