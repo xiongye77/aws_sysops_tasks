@@ -588,7 +588,7 @@ dig +short myip.opendns.com @resolver1.opendns.com
 
 
 # AWS Security Hub  and other security products Inspector and and AWS Config and GuardDuty (2023/02/20) 
-Security hub can ingest findings from different AWs products include AWS Config/AWS Firewall Manager/AWS GuardDuty/AWS Macie/AWS Inspector/AWS Health/AWS IAM Analyzer/AWS SSM Patch Manager and can egress data to AWS Audit Manager/Amazon Detective/AWS SSM OpsCenter and Explorer
+Security hub can ingest findings from different AWs products include AWS Config/AWS Firewall Manager/AWS GuardDuty/AWS Macie/AWS Inspector/AWS Health/AWS IAM Analyzer/AWS SSM Patch Manager and can egress data to AWS Audit Manager/Amazon Detective/AWS SSM OpsCenter and Explorer/AWS EventBridge
 ![image](https://user-images.githubusercontent.com/36766101/220090134-a579cc45-edaa-4daa-b804-fd24878d7363.png)
 
 ![image](https://user-images.githubusercontent.com/36766101/219993213-5c9b1e79-bfe5-4abf-b1c5-71c736eb7be2.png)
