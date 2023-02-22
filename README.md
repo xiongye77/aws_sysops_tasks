@@ -590,6 +590,7 @@ dig +short myip.opendns.com @resolver1.opendns.com
 # AWS Security Hub  and other security products Inspector and and AWS Config and GuardDuty (2023/02/20) 
 Security hub can ingest findings from different AWs products include AWS Config/AWS Firewall Manager/AWS GuardDuty/AWS Macie/AWS Inspector/AWS Health/AWS IAM Analyzer/AWS SSM Patch Manager and can egress data to AWS Audit Manager/Amazon Detective/AWS SSM OpsCenter and Explorer/AWS EventBridge
 ![image](https://user-images.githubusercontent.com/36766101/220090134-a579cc45-edaa-4daa-b804-fd24878d7363.png)
+![image](https://user-images.githubusercontent.com/36766101/220767065-d09a01a9-5b1a-46b3-8606-1aed1221c931.png)
 
 ![image](https://user-images.githubusercontent.com/36766101/219993213-5c9b1e79-bfe5-4abf-b1c5-71c736eb7be2.png)
 ![image](https://user-images.githubusercontent.com/36766101/219995808-9de7769a-bd14-4f41-aff2-a726f3c5afcc.png)
@@ -606,7 +607,7 @@ Security hub can ingest findings from different AWs products include AWS Config/
 ![image](https://user-images.githubusercontent.com/36766101/220203287-3110e5f3-1321-42d4-b17a-0983e013dee1.png)
 ![image](https://user-images.githubusercontent.com/36766101/220205340-04713f9b-ff70-4b02-a0c1-ad8247e703e0.png)
 ![image](https://user-images.githubusercontent.com/36766101/220205796-1cf0207e-8873-4e88-8829-f149563570e6.png)
-
+https://aws.amazon.com/blogs/security/how-to-visualize-multi-account-amazon-inspector-findings-with-amazon-elasticsearch-service/
 https://controltower.aws-management.tools/security/guardutydetect-securityhubremediate/
 
 # Executing Automation Workflow Using AWS SSM Automation    (2023/02/20) 
