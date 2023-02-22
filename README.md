@@ -623,3 +623,9 @@ use cloudtrail data event only log data event to specific bucket
 ![image](https://user-images.githubusercontent.com/36766101/220209823-98260b38-5db4-46f1-94cb-7982dc075de4.png)
 ![image](https://user-images.githubusercontent.com/36766101/220210358-24830dea-672e-4d7e-bc89-8308e22d74fb.png)
 
+
+
+# AWS Landing Zone and Control Tower
+![image](https://user-images.githubusercontent.com/36766101/220476946-6d1b6e9f-d542-4db1-8c70-cd7a23fd08c7.png)
+![image](https://user-images.githubusercontent.com/36766101/220477110-39c06959-2b72-4cc0-b798-1b62d1430f77.png)
+
