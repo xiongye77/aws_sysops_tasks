@@ -647,5 +647,6 @@ use cloudtrail data event only log data event to specific bucket
 
 ![image](https://user-images.githubusercontent.com/36766101/220838359-d0dba3e1-3941-4733-b247-9fd1ba3be13f.png)
 
+![image](https://user-images.githubusercontent.com/36766101/220839188-3a2ee99d-7c4c-4f1c-9ef6-f02977c0086d.png)
 
 
