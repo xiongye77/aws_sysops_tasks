@@ -632,3 +632,20 @@ use cloudtrail data event only log data event to specific bucket
 ![image](https://user-images.githubusercontent.com/36766101/220477110-39c06959-2b72-4cc0-b798-1b62d1430f77.png)
 ![image](https://user-images.githubusercontent.com/36766101/220527605-719bb5b8-7c69-439e-8b57-37f0904a6078.png)
 
+
+
+# Deny execution of non-compliant images on EKS/ECS using AWS Security Hub and ECR (2023/02/23)
+![image](https://user-images.githubusercontent.com/36766101/220838784-485bd949-8be3-449a-90e7-8f3d46b08b18.png)
+
+![image](https://user-images.githubusercontent.com/36766101/220838435-1e622cdd-4995-4d0d-9a1c-39c6e11acbce.png)
+![image](https://user-images.githubusercontent.com/36766101/220838620-d3ed0dff-8843-43df-b16d-65eff482b876.png)
+![image](https://user-images.githubusercontent.com/36766101/220838689-53d354f3-f290-44b3-a741-8875b02da72c.png)
+
+![image](https://user-images.githubusercontent.com/36766101/220837961-2e2c3577-5d8a-4158-a641-bff3dad10d88.png)
+![image](https://user-images.githubusercontent.com/36766101/220838281-1fa7218c-9f7d-4278-ad6c-b30ac9a606a6.png)
+
+
+![image](https://user-images.githubusercontent.com/36766101/220838359-d0dba3e1-3941-4733-b247-9fd1ba3be13f.png)
+
+
+
