@@ -635,6 +635,7 @@ use cloudtrail data event only log data event to specific bucket
 
 
 # Deny execution of non-compliant images on EKS/ECS using AWS Security Hub and ECR (2023/02/23)
+https://github.com/xiongye77/aws_sysops_tasks/blob/main/ecr-compliance.yaml
 ![image](https://user-images.githubusercontent.com/36766101/220838784-485bd949-8be3-449a-90e7-8f3d46b08b18.png)
 
 ![image](https://user-images.githubusercontent.com/36766101/220838435-1e622cdd-4995-4d0d-9a1c-39c6e11acbce.png)
