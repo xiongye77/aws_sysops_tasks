@@ -651,3 +651,5 @@ https://github.com/xiongye77/aws_sysops_tasks/blob/main/ecr-compliance.yaml
 ![image](https://user-images.githubusercontent.com/36766101/220839188-3a2ee99d-7c4c-4f1c-9ef6-f02977c0086d.png)
 
 
+# AWS SSM OpsCenter 
+![image](https://user-images.githubusercontent.com/36766101/220872211-7ef50820-9744-47e6-b4cd-63d1a57876b7.png)
