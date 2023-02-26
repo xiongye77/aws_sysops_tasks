@@ -1,4 +1,4 @@
-# AWS cost optimization 
+# AWS SYS Ops 
 
 Trust advisor suggestions check. 
 
@@ -587,7 +587,7 @@ dig +short myip.opendns.com @resolver1.opendns.com
 ![image](https://user-images.githubusercontent.com/36766101/218381733-8d41db3d-21e0-4388-9c4c-7ce88841f48d.png)
 
 
-# AWS Security Hub  and other security products Inspector and and AWS Config and GuardDuty (2023/02/20) 
+# AWS Security Hub  and other security products such as AWS Inspector(Inspector agent installed on EC2) and and AWS Config and GuardDuty (2023/02/20) 
 Security hub can ingest findings from different AWs products include AWS Config/AWS Firewall Manager/AWS GuardDuty/AWS Macie/AWS Inspector/AWS Health/AWS IAM Analyzer/AWS SSM Patch Manager and can egress data to AWS Audit Manager/Amazon Detective/AWS SSM OpsCenter and Explorer/AWS EventBridge
 ![image](https://user-images.githubusercontent.com/36766101/221387075-76b28861-8c77-447c-b560-40ee6af88d56.png)
 
@@ -655,3 +655,9 @@ https://github.com/xiongye77/aws_sysops_tasks/blob/main/ecr-compliance.yaml
 
 # AWS SSM OpsCenter 
 ![image](https://user-images.githubusercontent.com/36766101/220872211-7ef50820-9744-47e6-b4cd-63d1a57876b7.png)
+
+
+
+# AWS Security Hub check for Center for Internet Security/Payment Card Industry Data Security Standard/
+
+![image](https://user-images.githubusercontent.com/36766101/221387578-00965def-cc5a-418e-87ec-1b7f1edec6bf.png)
