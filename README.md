@@ -1,4 +1,4 @@
-# AWS SYS Ops 
+# AWS Sys Ops 
 
 Trust advisor suggestions check. 
 
@@ -588,7 +588,13 @@ dig +short myip.opendns.com @resolver1.opendns.com
 
 
 # AWS Security Hub  and other security products such as AWS Inspector(Inspector agent installed on EC2) and and AWS Config and GuardDuty (2023/02/20) 
-Security hub can ingest findings from different AWs products include AWS Config/AWS Firewall Manager/AWS GuardDuty/AWS Macie/AWS Inspector/AWS Health/AWS IAM Analyzer/AWS SSM Patch Manager and can egress data to AWS Audit Manager/Amazon Detective/AWS SSM OpsCenter and Explorer/AWS EventBridge
+Security hub can ingest findings from different AWs products include AWS Config/AWS Firewall Manager/AWS GuardDuty/AWS Macie/AWS Inspector/AWS Health/AWS IAM Analyzer/AWS SSM Patch Manager and can egress data to AWS Audit Manager/Amazon Detective/AWS SSM OpsCenter and Explorer/AWS EventBridge/AWS Trust Advisor.
+
+AWS Security Hub sends its findings to Trusted Advisor.
+![image](https://user-images.githubusercontent.com/36766101/221393297-a212bfb8-711b-4bab-92e9-1dd4e1f1ead2.png)
+![image](https://user-images.githubusercontent.com/36766101/221393392-d263d3b5-1d13-415f-a462-5aa40b68f189.png)
+![image](https://user-images.githubusercontent.com/36766101/221393843-08fb1a80-d6e7-4220-8eba-0b6af59bb900.png)
+
 ![image](https://user-images.githubusercontent.com/36766101/221387075-76b28861-8c77-447c-b560-40ee6af88d56.png)
 
 ![image](https://user-images.githubusercontent.com/36766101/220090134-a579cc45-edaa-4daa-b804-fd24878d7363.png)
