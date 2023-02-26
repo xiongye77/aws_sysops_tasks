@@ -615,6 +615,12 @@ AWS Security Hub sends its findings to Trusted Advisor.
 ![image](https://user-images.githubusercontent.com/36766101/220203287-3110e5f3-1321-42d4-b17a-0983e013dee1.png)
 ![image](https://user-images.githubusercontent.com/36766101/220205340-04713f9b-ff70-4b02-a0c1-ad8247e703e0.png)
 ![image](https://user-images.githubusercontent.com/36766101/220205796-1cf0207e-8873-4e88-8829-f149563570e6.png)
+
+![image](https://user-images.githubusercontent.com/36766101/221408610-e6474ad3-40e3-4332-a877-b932684f9c65.png)
+![image](https://user-images.githubusercontent.com/36766101/221408688-b2cbc2c0-03a4-4079-87b8-fcadd860fe12.png)
+![image](https://user-images.githubusercontent.com/36766101/221409966-24146904-c5da-4f67-8039-9f9e473444ca.png)
+![image](https://user-images.githubusercontent.com/36766101/221409996-63b89b22-823b-4949-8f68-260d4f4b725d.png)
+
 https://aws.amazon.com/blogs/security/how-to-visualize-multi-account-amazon-inspector-findings-with-amazon-elasticsearch-service/
 https://controltower.aws-management.tools/security/guardutydetect-securityhubremediate/
 
