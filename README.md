@@ -667,3 +667,16 @@ https://github.com/xiongye77/aws_sysops_tasks/blob/main/ecr-compliance.yaml
 # AWS Security Hub check for Center for Internet Security/Payment Card Industry Data Security Standard/
 
 ![image](https://user-images.githubusercontent.com/36766101/221387578-00965def-cc5a-418e-87ec-1b7f1edec6bf.png)
+
+
+# AWS Organization/OU/SCP
+![image](https://user-images.githubusercontent.com/36766101/221395413-002565d3-a590-40eb-962e-740628c7baa6.png)
+![image](https://user-images.githubusercontent.com/36766101/221395426-1e5a11f3-2064-4b50-8089-b00ea20894d1.png)
+![image](https://user-images.githubusercontent.com/36766101/221395665-55a68565-0445-4947-873c-fb91a74ddbbf.png)
+
+# Query Cloudtrail log on S3 use Athena (partition projection for CloudTrail logs with Athena) Or to Cloudwatch and to ElasticSearch
+![image](https://user-images.githubusercontent.com/36766101/221395820-76943082-3a90-40a4-b5ac-c28b7446e2a9.png)
+https://aws.amazon.com/premiumsupport/knowledge-center/athena-tables-search-cloudtrail-logs/
+
+
+
