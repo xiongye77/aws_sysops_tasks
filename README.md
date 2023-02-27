@@ -685,4 +685,6 @@ https://github.com/xiongye77/aws_sysops_tasks/blob/main/ecr-compliance.yaml
 https://aws.amazon.com/premiumsupport/knowledge-center/athena-tables-search-cloudtrail-logs/
 
 
+# Service control policy attach to OU or Organization to control only launch specific type of EC2 instance
+![image](https://user-images.githubusercontent.com/36766101/221479909-548f1915-f684-494c-a9ec-a60c55c476d2.png)
 
