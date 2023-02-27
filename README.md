@@ -641,10 +641,15 @@ use cloudtrail data event only log data event to specific bucket
 
 
 
-# AWS Landing Zone and Control Tower
+# AWS Landing Zone and Control Tower and Guardrail
 ![image](https://user-images.githubusercontent.com/36766101/220476946-6d1b6e9f-d542-4db1-8c70-cd7a23fd08c7.png)
 ![image](https://user-images.githubusercontent.com/36766101/220477110-39c06959-2b72-4cc0-b798-1b62d1430f77.png)
 ![image](https://user-images.githubusercontent.com/36766101/220527605-719bb5b8-7c69-439e-8b57-37f0904a6078.png)
+![image](https://user-images.githubusercontent.com/36766101/221493878-f3fec282-a6fd-48f6-9dda-44410ab7170b.png)
+![image](https://user-images.githubusercontent.com/36766101/221494146-f96c89b1-b401-49b2-9d01-109d5840646a.png)
+![image](https://user-images.githubusercontent.com/36766101/221496375-5cd9e18e-4b7c-45fb-a88c-e1ec600f7c44.png)
+![image](https://user-images.githubusercontent.com/36766101/221496934-b6d8c21f-3379-4426-aa8f-bc70333542c5.png)
+![image](https://user-images.githubusercontent.com/36766101/221497484-a7cf341a-3942-4a61-bcd9-8ff342d74e44.png)
 
 
 
@@ -686,5 +691,17 @@ https://aws.amazon.com/premiumsupport/knowledge-center/athena-tables-search-clou
 
 
 # Service control policy attach to OU or Organization to control only launch specific type of EC2 instance
+![image](https://user-images.githubusercontent.com/36766101/221493741-4b1f02bc-da7a-4d82-ba26-4a39e21009c5.png)
+
 ![image](https://user-images.githubusercontent.com/36766101/221479909-548f1915-f684-494c-a9ec-a60c55c476d2.png)
+![image](https://user-images.githubusercontent.com/36766101/221480664-9584df6e-e9b9-47ec-85b6-3ba7361b9263.png)
+
+
+# AWS Identity Federation 
+![image](https://user-images.githubusercontent.com/36766101/221486581-37e46c03-676f-4d6d-ac6d-5a3a229bb986.png)
+![image](https://user-images.githubusercontent.com/36766101/221490746-8ba3388d-9b70-4d0e-b602-455a26c96b24.png)
+![image](https://user-images.githubusercontent.com/36766101/221490819-78304b7a-c659-47b3-9672-c9f32dc99de9.png)
+
+
+![image](https://user-images.githubusercontent.com/36766101/221485431-7e586ed3-4f74-4e68-8a27-e401add0e63e.png)
 
