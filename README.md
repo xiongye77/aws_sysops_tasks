@@ -591,6 +591,12 @@ dig +short myip.opendns.com @resolver1.opendns.com
 Security hub can ingest findings from different AWs products include AWS Config/AWS Firewall Manager/AWS GuardDuty/AWS Macie/AWS Inspector/AWS Health/AWS IAM Analyzer/AWS SSM Patch Manager and can egress data to AWS Audit Manager/Amazon Detective/AWS SSM OpsCenter and Explorer/AWS EventBridge/AWS Trust Advisor.
 
 AWS Security Hub sends its findings to Trusted Advisor.
+
+Detective is a service that helps you analyze and investigate the root cause of security findings or suspicious activity. Using data from AWS Cloudtrail logs, VPC flow logs and AWS GuardDuty data, Amazon Detective will collate, filter the collected security data and using AWS Security Hub, GuardDuty, integrated partner security products, machine learning and statistical analysis investigates the security findings to get to the root cause of the problem or suspicious activity.
+
+![image](https://user-images.githubusercontent.com/36766101/221713364-78359c9f-f8c3-4971-9d92-5a2cf29935e2.png)
+
+
 ![image](https://user-images.githubusercontent.com/36766101/221393297-a212bfb8-711b-4bab-92e9-1dd4e1f1ead2.png)
 ![image](https://user-images.githubusercontent.com/36766101/221393392-d263d3b5-1d13-415f-a462-5aa40b68f189.png)
 ![image](https://user-images.githubusercontent.com/36766101/221393843-08fb1a80-d6e7-4220-8eba-0b6af59bb900.png)
