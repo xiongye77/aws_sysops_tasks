@@ -717,4 +717,5 @@ https://aws.amazon.com/premiumsupport/knowledge-center/athena-tables-search-clou
 ![image](https://user-images.githubusercontent.com/36766101/222339635-7539a175-26f1-4bf9-b55c-dd310881cb95.png)
 ![image](https://user-images.githubusercontent.com/36766101/222340014-e8ea8fe6-9397-4b82-8da9-98adb6ac4463.png)
 ![image](https://user-images.githubusercontent.com/36766101/222342160-4a32c894-6e19-4881-b454-d176d14d8b23.png)
+![image](https://user-images.githubusercontent.com/36766101/222346163-9bdde78e-2ac7-4d19-a648-e23f377b7c87.png)
 
