@@ -728,5 +728,6 @@ https://aws.amazon.com/premiumsupport/knowledge-center/athena-tables-search-clou
 
 
 # EC2 Reset passwords and SSH keys on EC2 instances
+https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-ec2reset.html#automation-ec2reset-how
 ![image](https://user-images.githubusercontent.com/36766101/224241045-de31ed2c-fa9d-4c7e-bf35-63358ba4e2d9.png)
 
