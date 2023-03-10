@@ -727,7 +727,24 @@ https://aws.amazon.com/premiumsupport/knowledge-center/athena-tables-search-clou
 ![image](https://user-images.githubusercontent.com/36766101/222558410-40609756-80c9-4bef-9200-611f8da510d8.png)
 
 
-# EC2 Reset passwords and SSH keys on EC2 instances
+# EC2 Reset passwords and SSH keys on EC2 instances (2023/03/10)
 https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-ec2reset.html#automation-ec2reset-how
 ![image](https://user-images.githubusercontent.com/36766101/224241045-de31ed2c-fa9d-4c7e-bf35-63358ba4e2d9.png)
 
+
+# AWS VPC private link (VPC endpoint service) (2023/03/10)
+![image](https://user-images.githubusercontent.com/36766101/224284676-742f2ed9-3ced-45de-af30-f20f891f3f52.png)
+![image](https://user-images.githubusercontent.com/36766101/224284833-2d501ee2-19ea-4c74-b0f7-290594360d1c.png)
+
+
+# AWS Cloudfront Signed URL
+![image](https://user-images.githubusercontent.com/36766101/224286591-af58d25d-09ae-4790-a5f0-7412da619d27.png)
+![image](https://user-images.githubusercontent.com/36766101/224287561-01b4b9f8-4e8c-4207-b387-8c01021fa078.png)
+
+
+# AWS Firewall Manager and Network Firewall
+![image](https://user-images.githubusercontent.com/36766101/224289049-a27e5f74-29f6-49d3-9fc6-c5e64a0bfbb9.png)
+![image](https://user-images.githubusercontent.com/36766101/224289117-7f23c518-8753-4456-964f-8e4e790ab716.png)
+![image](https://user-images.githubusercontent.com/36766101/224292137-fcfa26ca-e8de-4b6d-8298-ee2a4bac1300.png)
+![image](https://user-images.githubusercontent.com/36766101/224304445-fa445282-db8e-49da-ad99-07702ae6c616.png)
+![image](https://user-images.githubusercontent.com/36766101/224304926-e8d1a211-0c43-409a-8a33-e67b3d181a35.png)
