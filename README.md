@@ -726,3 +726,7 @@ https://aws.amazon.com/premiumsupport/knowledge-center/athena-tables-search-clou
 ![image](https://user-images.githubusercontent.com/36766101/222557503-f89e6d0f-c572-4434-b6c3-e97a6281e9b1.png)
 ![image](https://user-images.githubusercontent.com/36766101/222558410-40609756-80c9-4bef-9200-611f8da510d8.png)
 
+
+# EC2 Reset passwords and SSH keys on EC2 instances
+![image](https://user-images.githubusercontent.com/36766101/224241045-de31ed2c-fa9d-4c7e-bf35-63358ba4e2d9.png)
+
