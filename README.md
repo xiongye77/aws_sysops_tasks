@@ -757,3 +757,10 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-ec2reset
 # AWS S3 CROS
 ![image](https://user-images.githubusercontent.com/36766101/224309589-08c782e0-c188-4f5a-a069-3265e518faa2.png)
 ![image](https://user-images.githubusercontent.com/36766101/224311979-c602aa95-6560-4b3b-a228-40f6cb853c50.png)
+
+
+# AWS Glue
+![image](https://user-images.githubusercontent.com/36766101/224619038-d702d924-2acc-4292-9d7a-febe130dfb81.png)
+![image](https://user-images.githubusercontent.com/36766101/224619405-3c88eef6-2c58-48e1-a0d3-d514598ae13f.png)
+![image](https://user-images.githubusercontent.com/36766101/224622106-166c8f5d-055c-4a49-bb66-76dd10c99dcc.png)
+![image](https://user-images.githubusercontent.com/36766101/224623037-9479daf9-535b-4046-bbf5-813e19e55da7.png)
