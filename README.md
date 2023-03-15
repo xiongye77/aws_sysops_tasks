@@ -771,3 +771,17 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-ec2reset
 
 # AWS Asymmetric Encryption
 ![image](https://user-images.githubusercontent.com/36766101/224907933-fdd2efcd-c8ad-418e-a2c7-4a0fd428f524.png)
+
+
+# AWS Resource Group
+![image](https://user-images.githubusercontent.com/36766101/225219697-d07241ff-921c-4818-b86d-a0ae5fccc579.png)
+
+# AWS Creating an AWS Budget and Billing Alarm
+![image](https://user-images.githubusercontent.com/36766101/225229316-54010855-6ef9-4129-a3db-0e2797b0ddde.png)
+
+
+# AWS compute optimizer
+![image](https://user-images.githubusercontent.com/36766101/225272121-43780238-1bd5-418b-9c29-bd646c576850.png)
+
+# AWS EC2 placement group
+![image](https://user-images.githubusercontent.com/36766101/225278718-87c11133-9f65-41f8-8df0-a50d102e741e.png)
