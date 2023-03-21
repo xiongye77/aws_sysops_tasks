@@ -785,3 +785,6 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-ec2reset
 
 # AWS EC2 placement group
 ![image](https://user-images.githubusercontent.com/36766101/225278718-87c11133-9f65-41f8-8df0-a50d102e741e.png)
+
+# AWS cloudshell public IP
+![image](https://user-images.githubusercontent.com/36766101/226505432-02b7f245-58d4-4cc5-8bda-116bacbe3271.png)
