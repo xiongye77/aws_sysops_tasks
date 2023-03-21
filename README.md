@@ -792,3 +792,6 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-ec2reset
 # AWS lambda function url and monitor
 https://aws.amazon.com/blogs/aws/announcing-aws-lambda-function-urls-built-in-https-endpoints-for-single-function-microservices/
 ![image](https://user-images.githubusercontent.com/36766101/226512873-1cde2e7e-2ffc-4242-b659-44661e25c94a.png)
+
+# AWS EFS enforce in-transit encryption for all clients
+![image](https://user-images.githubusercontent.com/36766101/226559375-5c2ef059-c7ea-4951-a988-7ce9e0060ddf.png)
