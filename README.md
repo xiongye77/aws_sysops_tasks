@@ -793,5 +793,12 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-ec2reset
 https://aws.amazon.com/blogs/aws/announcing-aws-lambda-function-urls-built-in-https-endpoints-for-single-function-microservices/
 ![image](https://user-images.githubusercontent.com/36766101/226512873-1cde2e7e-2ffc-4242-b659-44661e25c94a.png)
 
-# AWS EFS enforce in-transit encryption for all clients
+# AWS EFS enforce in-transit encryption for all clients or Multiple AZ consideration
 ![image](https://user-images.githubusercontent.com/36766101/226559375-5c2ef059-c7ea-4951-a988-7ce9e0060ddf.png)
+![image](https://user-images.githubusercontent.com/36766101/226560553-cfe8e8e9-58e2-4335-8570-31ea484c9db3.png)
+
+
+# AWS S3 inventory and Athena query inventory information
+![image](https://user-images.githubusercontent.com/36766101/226574397-47578676-8f1d-4152-8da2-080a23fd551e.png)
+![image](https://user-images.githubusercontent.com/36766101/226574644-5e816036-d535-4823-9253-ae85f126ef45.png)
+![image](https://user-images.githubusercontent.com/36766101/226574746-fb66a2b5-a1b1-4221-a61c-49c8c791b09e.png)
