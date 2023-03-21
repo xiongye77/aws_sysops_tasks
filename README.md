@@ -788,3 +788,6 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-ec2reset
 
 # AWS cloudshell public IP
 ![image](https://user-images.githubusercontent.com/36766101/226505432-02b7f245-58d4-4cc5-8bda-116bacbe3271.png)
+
+# AWS lambda function url
+https://aws.amazon.com/blogs/aws/announcing-aws-lambda-function-urls-built-in-https-endpoints-for-single-function-microservices/
