@@ -815,4 +815,8 @@ https://aws.amazon.com/blogs/aws/announcing-aws-lambda-function-urls-built-in-ht
 ![image](https://user-images.githubusercontent.com/36766101/227435579-bc1b874e-c71d-44de-86e6-589df7900778.png)
 ![image](https://user-images.githubusercontent.com/36766101/227463267-51188ae7-60b2-4cb9-abd5-b3bd5001aa65.png)
 
+# RDS export to S3 , a new role for service export.rds.amazonaws.com
+![image](https://user-images.githubusercontent.com/36766101/227468640-59542315-fa39-4350-83b3-8671eed9cdfb.png)
+![image](https://user-images.githubusercontent.com/36766101/227476332-2fa09f9d-316d-442c-918d-4064f41886c6.png)
+![image](https://user-images.githubusercontent.com/36766101/227477267-a99f3cf4-1f25-42ed-9272-a8bafbd32a6d.png)
 
