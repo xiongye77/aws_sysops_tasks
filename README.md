@@ -806,3 +806,13 @@ https://aws.amazon.com/blogs/aws/announcing-aws-lambda-function-urls-built-in-ht
 
 # AWS Config use managed rule to perform checks such as s3-bucket-server-side-encryption-enabled
 ![image](https://user-images.githubusercontent.com/36766101/226596418-7094d471-0927-4d63-b787-f9e11b61d008.png)
+
+
+# RDS action item for upgrade and major version 
+![image](https://user-images.githubusercontent.com/36766101/227433715-6856031d-237c-41d3-af81-c8718856f8ae.png)
+![image](https://user-images.githubusercontent.com/36766101/227433745-31bb8dd0-8d1f-409b-b094-fda754f0f685.png)
+![image](https://user-images.githubusercontent.com/36766101/227435477-17bc978a-b213-4b0d-b2bf-1648ee4f0308.png)
+![image](https://user-images.githubusercontent.com/36766101/227435579-bc1b874e-c71d-44de-86e6-589df7900778.png)
+![image](https://user-images.githubusercontent.com/36766101/227463267-51188ae7-60b2-4cb9-abd5-b3bd5001aa65.png)
+
+
