@@ -626,6 +626,7 @@ Detective is a service that helps you analyze and investigate the root cause of 
 ![image](https://user-images.githubusercontent.com/36766101/221408688-b2cbc2c0-03a4-4079-87b8-fcadd860fe12.png)
 ![image](https://user-images.githubusercontent.com/36766101/221409966-24146904-c5da-4f67-8039-9f9e473444ca.png)
 ![image](https://user-images.githubusercontent.com/36766101/221409996-63b89b22-823b-4949-8f68-260d4f4b725d.png)
+![image](https://user-images.githubusercontent.com/36766101/229387687-d8fbf3c3-388c-45d2-b816-f945f412f97f.png)
 
 https://aws.amazon.com/blogs/security/how-to-visualize-multi-account-amazon-inspector-findings-with-amazon-elasticsearch-service/
 https://controltower.aws-management.tools/security/guardutydetect-securityhubremediate/
