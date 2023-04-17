@@ -395,6 +395,8 @@ four components:Event source,Event bus,Rule,Target
 
 # Amazon Detective 
 Amazon Detective is a service that helps you analyze and investigate the root cause of security findings or suspicious activity. Using data from AWS Cloudtrail logs, VPC flow logs and AWS GuardDuty data, Amazon Detective will collate, filter the collected security data and using AWS Security Hub, GuardDuty, integrated partner security products, machine learning and statistical analysis investigates the security findings to get to the root cause of the problem or suspicious activity.
+![image](https://user-images.githubusercontent.com/36766101/232459258-fd6957e6-5839-4d32-bc76-c57eeb2785f1.png)
+
 ![image](https://user-images.githubusercontent.com/36766101/192092102-217c98f8-f5fe-4356-94d2-857619c990cf.png)
 
 
@@ -593,6 +595,8 @@ Security hub can ingest findings from different AWs products include AWS Config/
 AWS Security Hub sends its findings to Trusted Advisor.
 
 Detective is a service that helps you analyze and investigate the root cause of security findings or suspicious activity. Using data from AWS Cloudtrail logs, VPC flow logs and AWS GuardDuty data, Amazon Detective will collate, filter the collected security data and using AWS Security Hub, GuardDuty, integrated partner security products, machine learning and statistical analysis investigates the security findings to get to the root cause of the problem or suspicious activity.
+![image](https://user-images.githubusercontent.com/36766101/232459470-6677d9ac-29f6-4bd2-a69a-f6ea9636922c.png)
+![image](https://user-images.githubusercontent.com/36766101/232461021-7a3ceb3e-f8a0-457d-a16c-0ea4a711d6d0.png)
 
 ![image](https://user-images.githubusercontent.com/36766101/221713364-78359c9f-f8c3-4971-9d92-5a2cf29935e2.png)
 
