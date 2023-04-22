@@ -732,6 +732,8 @@ https://aws.amazon.com/premiumsupport/knowledge-center/athena-tables-search-clou
 ![image](https://user-images.githubusercontent.com/36766101/222428291-6c77e656-2527-421e-8e7a-9cff8d5e3253.png)
 ![image](https://user-images.githubusercontent.com/36766101/222557503-f89e6d0f-c572-4434-b6c3-e97a6281e9b1.png)
 ![image](https://user-images.githubusercontent.com/36766101/222558410-40609756-80c9-4bef-9200-611f8da510d8.png)
+![image](https://user-images.githubusercontent.com/36766101/233751392-7374302d-0ddd-4c47-9599-319976c83515.png)
+![image](https://user-images.githubusercontent.com/36766101/233751444-e41db819-93a5-40ad-bc0a-5260d0b8fe3a.png)
 
 
 # EC2 Reset passwords and SSH keys on EC2 instances (2023/03/10)
@@ -824,4 +826,12 @@ https://aws.amazon.com/blogs/aws/announcing-aws-lambda-function-urls-built-in-ht
 ![image](https://user-images.githubusercontent.com/36766101/227468640-59542315-fa39-4350-83b3-8671eed9cdfb.png)
 ![image](https://user-images.githubusercontent.com/36766101/227476332-2fa09f9d-316d-442c-918d-4064f41886c6.png)
 ![image](https://user-images.githubusercontent.com/36766101/227477267-a99f3cf4-1f25-42ed-9272-a8bafbd32a6d.png)
+
+# AWS Config compliance check for ACM
+![image](https://user-images.githubusercontent.com/36766101/233748854-c73f77c3-31ec-4616-a911-75028fae88cf.png)
+![image](https://user-images.githubusercontent.com/36766101/233750856-777f5461-6f1d-4e65-b9c4-10c874ac3b43.png)
+
+
+# AWS Cloudwatch log Contributor Insights
+![image](https://user-images.githubusercontent.com/36766101/233754175-c66dd621-f935-4d07-8c26-ed61f3f4dfe0.png)
 
