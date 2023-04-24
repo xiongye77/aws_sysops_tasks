@@ -846,3 +846,5 @@ https://aws.amazon.com/blogs/aws/announcing-aws-lambda-function-urls-built-in-ht
 ![image](https://user-images.githubusercontent.com/36766101/233873185-e599115b-436d-4d66-a09c-a905d4a1e999.png)
 ![image](https://user-images.githubusercontent.com/36766101/233873211-1174f646-0c49-4d49-9153-a810619391ae.png)
 ![image](https://user-images.githubusercontent.com/36766101/233876076-3a5e8d2e-4a39-4b9e-98da-41935d080d1c.png)
+vpc endpoint policy and S3 bucket policy works together.
+![image](https://user-images.githubusercontent.com/36766101/233882792-2a423194-be6a-4133-a25e-3b3a13400f54.png)
