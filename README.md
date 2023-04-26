@@ -865,3 +865,10 @@ with S3 bucket key
 ![image](https://user-images.githubusercontent.com/36766101/233996268-039f0c21-6d01-4e73-a260-6712a83da4ff.png)
 ![image](https://user-images.githubusercontent.com/36766101/233996750-acc264ed-e06b-4994-8c28-e67dc8612365.png)
 
+
+# AWS RDS proxy 
+![image](https://user-images.githubusercontent.com/36766101/234430374-18475afa-1582-408c-9793-47b24bcb15c8.png)
+
+# AWS Cloudwatch Log subscription
+![image](https://user-images.githubusercontent.com/36766101/234446916-594ba469-43fd-4bec-8678-a754288c8d02.png)
+![image](https://user-images.githubusercontent.com/36766101/234447120-f5eab118-f5fd-4950-8d4c-f9287e4756da.png)
