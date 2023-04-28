@@ -872,3 +872,9 @@ with S3 bucket key
 # AWS Cloudwatch Log subscription
 ![image](https://user-images.githubusercontent.com/36766101/234446916-594ba469-43fd-4bec-8678-a754288c8d02.png)
 ![image](https://user-images.githubusercontent.com/36766101/234447120-f5eab118-f5fd-4950-8d4c-f9287e4756da.png)
+
+# AWS Glue Schema Registry
+AWS Glue Schema Registry is a fully managed service that provides a central schema repository for organizing, validating, and tracking the evolution of your data schemas. It enables you to store, manage, and discover schemas for your data in a single, centralized location.
+With AWS Glue Schema Registry, you can define and register schemas for your data in the registry. You can then use these schemas to validate the data being ingested into your streaming applications, ensuring that the data conforms to the expected structure and format.
+
+![image](https://user-images.githubusercontent.com/36766101/235057831-3126d32d-1a0a-40d3-92ef-67d7c078fd34.png)
