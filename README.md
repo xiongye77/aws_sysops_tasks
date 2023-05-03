@@ -878,3 +878,7 @@ AWS Glue Schema Registry is a fully managed service that provides a central sche
 With AWS Glue Schema Registry, you can define and register schemas for your data in the registry. You can then use these schemas to validate the data being ingested into your streaming applications, ensuring that the data conforms to the expected structure and format.
 
 ![image](https://user-images.githubusercontent.com/36766101/235057831-3126d32d-1a0a-40d3-92ef-67d7c078fd34.png)
+
+
+# AWS Firehose deliver stream parition data based on date
+![image](https://user-images.githubusercontent.com/36766101/235819579-3e899d36-300a-4b05-9bbf-585c2121fcfa.png)
