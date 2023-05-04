@@ -882,3 +882,4 @@ With AWS Glue Schema Registry, you can define and register schemas for your data
 
 # AWS Firehose deliver stream parition data based on date
 ![image](https://user-images.githubusercontent.com/36766101/235819579-3e899d36-300a-4b05-9bbf-585c2121fcfa.png)
+![image](https://user-images.githubusercontent.com/36766101/236347194-a55efb11-0ace-400c-880e-f85731577af3.png)
