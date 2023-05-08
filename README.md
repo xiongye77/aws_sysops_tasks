@@ -883,3 +883,15 @@ With AWS Glue Schema Registry, you can define and register schemas for your data
 # AWS Firehose deliver stream parition data based on date
 ![image](https://user-images.githubusercontent.com/36766101/235819579-3e899d36-300a-4b05-9bbf-585c2121fcfa.png)
 ![image](https://user-images.githubusercontent.com/36766101/236347194-a55efb11-0ace-400c-880e-f85731577af3.png)
+
+
+# AWS S3 replication
+Make sure check replication status 
+![image](https://user-images.githubusercontent.com/36766101/236732578-4d0904ef-fd8b-4f96-9083-2b4469934bd2.png)
+Make sure Prefix is correct, there is no / at the begin of Prefix
+![image](https://user-images.githubusercontent.com/36766101/236732656-dc82f1cf-aaa9-473a-8c51-0c7c6a9cca9b.png)
+Since source bucket and destination bucket use different kms key to encryption,make sure to use correct kms key 
+![image](https://user-images.githubusercontent.com/36766101/236733367-92b28027-c994-4c2d-b280-8893b916fe71.png)
+Make sure use IAM role with proper policy, it will involve use kms keys 
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/setting-repl-config-perm-overview.html
+
