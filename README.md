@@ -894,4 +894,7 @@ Since source bucket and destination bucket use different kms key to encryption,m
 ![image](https://user-images.githubusercontent.com/36766101/236733367-92b28027-c994-4c2d-b280-8893b916fe71.png)
 Make sure use IAM role with proper policy, it will involve use kms keys 
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/setting-repl-config-perm-overview.html
+Use Cloudtrail S3 data event to monitor all write operations to replication target bucket or use S3 access logging
+![image](https://user-images.githubusercontent.com/36766101/236764518-1c94c77b-95f2-4f7c-b5fb-04a60e51c3f1.png)
+![image](https://user-images.githubusercontent.com/36766101/236765444-1bc92b64-cabb-4c6c-8575-7b5ef2a07add.png)
 
