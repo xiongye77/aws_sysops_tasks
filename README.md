@@ -1,4 +1,4 @@
-# AWS Sys Ops 
+# AWS SYS OPS 
 
 Trust advisor suggestions check. 
 
@@ -885,9 +885,10 @@ With AWS Glue Schema Registry, you can define and register schemas for your data
 ![image](https://user-images.githubusercontent.com/36766101/236347194-a55efb11-0ace-400c-880e-f85731577af3.png)
 
 
-# AWS S3 replication
+# AWS S3 replication (2023/05/08)
 Make sure check replication status 
 ![image](https://user-images.githubusercontent.com/36766101/236732578-4d0904ef-fd8b-4f96-9083-2b4469934bd2.png)
+![image](https://user-images.githubusercontent.com/36766101/236956208-47b73aed-31ac-49da-a2c1-601ecb343f77.png)
 Make sure Prefix is correct, there is no / at the begin of Prefix
 ![image](https://user-images.githubusercontent.com/36766101/236732656-dc82f1cf-aaa9-473a-8c51-0c7c6a9cca9b.png)
 Since source bucket and destination bucket use different kms key to encryption,make sure to use correct kms key 
@@ -897,4 +898,7 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/setting-repl-config-perm-o
 Use Cloudtrail S3 data event to monitor all write operations to replication target bucket or use S3 access logging
 ![image](https://user-images.githubusercontent.com/36766101/236764518-1c94c77b-95f2-4f7c-b5fb-04a60e51c3f1.png)
 ![image](https://user-images.githubusercontent.com/36766101/236765444-1bc92b64-cabb-4c6c-8575-7b5ef2a07add.png)
+![image](https://user-images.githubusercontent.com/36766101/236960638-40fdeebd-d6c2-4dc8-9887-3e5b66f62316.png)
+
+
 
