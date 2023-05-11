@@ -901,4 +901,8 @@ Use Cloudtrail S3 data event to monitor all write operations to replication targ
 ![image](https://user-images.githubusercontent.com/36766101/236960638-40fdeebd-d6c2-4dc8-9887-3e5b66f62316.png)
 
 
+# AWS lambda function DLQ (2023/05/11)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/d22cd597-f4d6-4bba-91e8-c0dd1c89cc53)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/be43b739-55f1-4359-8f10-45339cf5262d)
+
 
