@@ -910,5 +910,5 @@ Use Cloudtrail S3 data event to monitor all write operations to replication targ
 https://repost.aws/knowledge-center/s3-multipart-upload-cli
 time aws s3 cp emailsentperjourney-1.csv s3://digital-data-eng-storage-integration-prod-ishz/  --sse-kms-key-id arn:aws:kms:us-east-1:333186395126:key/mrk-cc4c9049c0804590b0562bd38f6206a2 --sse aws:kms
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/25b99ee5-c296-4a1c-9477-458b86fec1e1)
-
+https://github.com/xiongye77/aws_sysops_tasks/blob/main/multipleupload.py
 
