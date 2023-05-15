@@ -912,3 +912,8 @@ time aws s3 cp emailsentperjourney-1.csv s3://digital-data-eng-storage-integrati
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/25b99ee5-c296-4a1c-9477-458b86fec1e1)
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/multipleupload.py
 
+# AWS Redis and Memcached for ElastiCache
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/22f78c19-ab23-48e4-93ac-205e3ab66828)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/aeb58ae9-0f9a-44c7-9ad0-84c1daa2da3a)
+
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/e8201802-d8d7-485a-b1a4-5a1512719d88)
