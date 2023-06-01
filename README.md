@@ -920,4 +920,4 @@ https://github.com/xiongye77/aws_sysops_tasks/blob/main/multipleupload.py
 
 
 # AWS S3 bucket file replication status (2023/06/01)
-![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/17613785-be1e-4bde-a4d8-03a9d96e9bad)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/7dd73119-1a86-43cb-ae8b-d261764f2585)
