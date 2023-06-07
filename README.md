@@ -921,3 +921,7 @@ https://github.com/xiongye77/aws_sysops_tasks/blob/main/multipleupload.py
 
 # AWS S3 bucket file replication status (2023/06/01)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/7dd73119-1a86-43cb-ae8b-d261764f2585)
+
+
+# RDS proxy multiple client connections single database connection (2023/06/07)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/e49ecfa0-8e81-4b2c-a09d-c5967524fa01)
