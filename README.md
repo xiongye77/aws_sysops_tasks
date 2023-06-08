@@ -926,3 +926,8 @@ https://github.com/xiongye77/aws_sysops_tasks/blob/main/multipleupload.py
 # RDS proxy multiple client connections single database connection (2023/06/07)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/e49ecfa0-8e81-4b2c-a09d-c5967524fa01)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/ed000383-f7a9-4a3b-83c9-db45de979c77)
+
+# RDS snapshot upgrade, upgrade to new database version (2023/06/08)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/40ce360d-a23f-4ebc-8206-69013ad18f36)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4cb413db-d146-4f9d-8e94-b47f08b4584d)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/d484b5ed-f3e3-4772-877f-1576212f8244)
