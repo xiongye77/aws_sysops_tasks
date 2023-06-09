@@ -935,3 +935,10 @@ https://github.com/xiongye77/aws_sysops_tasks/blob/main/multipleupload.py
 
 # RDS migrate to Aurora (2023/06/08)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/3e6f09c4-4a54-4706-b0e5-33d5f958ea7a)
+
+
+# AWS cloudwatch cost analysis (2023/06/09)
+APS2-DataProcessing-Bytes related to log entries put to cloudwatch log groups, query cloudwatch incomingbytes metric and sort with log group have most incoming bytes.
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/2d1db1b2-781f-4371-9d45-248c504100a8)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/6aaa56fd-2605-405f-a176-2c9a4efa7237)
+
