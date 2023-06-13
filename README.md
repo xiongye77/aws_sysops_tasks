@@ -966,3 +966,6 @@ CORS access bucket contents from another bucket , store different contents in di
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/cc2be801-1a1e-40ca-9ea8-286804ed9cba)
 
 Using SageMaker Canvas, business analysts can now build ML models and generate predictions on their own by importing any dataset from their Snowflake accounts and defining the model they would like to train in a few clicks. We can also generate single and batch predictions and maintain different versions of the model without writing a single line of code.
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/2028da33-501c-440a-96be-80f0ea140453)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/20dd59b8-9b25-45e3-a34e-d2d5024d44be)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/00ee3fd4-c635-40a7-8d09-fe9ce93c38f1)
