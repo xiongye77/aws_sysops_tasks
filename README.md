@@ -955,5 +955,6 @@ Encryption at rest: Client side encryption
 Client encrypted before upload
 
 
-CORS access bucket contents from another bucket 
+CORS access bucket contents from another bucket , store different contents in different buckets
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/5541bbbd-652b-4f5d-a3db-6865f5786a8d)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/5e377a45-3ce9-4ecb-bd58-4817c64d1302)
