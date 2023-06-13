@@ -942,3 +942,18 @@ APS2-DataProcessing-Bytes related to log entries put to cloudwatch log groups, q
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/2d1db1b2-781f-4371-9d45-248c504100a8)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/6aaa56fd-2605-405f-a176-2c9a4efa7237)
 
+# AWS S3 encryption and object level access control using ACL and bucket level access coontrol using bucket policy (2023/06/13)
+Encryption at transit(https/ssl/tls)
+
+
+Encryption at rest: Service side encryption
+
+SSE-S3 S3 managed key /SSE-KMS (Customer Managed Key cross account key/AWS Managed Key)/SSE-C customer provided key
+
+Encryption at rest: Client side encryption
+
+Client encrypted before upload
+
+
+CORS access bucket contents from another bucket 
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/5541bbbd-652b-4f5d-a3db-6865f5786a8d)
