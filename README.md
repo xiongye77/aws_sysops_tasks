@@ -969,3 +969,7 @@ Using SageMaker Canvas, business analysts can now build ML models and generate p
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/2028da33-501c-440a-96be-80f0ea140453)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/20dd59b8-9b25-45e3-a34e-d2d5024d44be)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/00ee3fd4-c635-40a7-8d09-fe9ce93c38f1)
+
+
+# Kafka schema registry
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/9f1cbd0c-b1e1-4d68-8078-fdf1a4ed2954)
