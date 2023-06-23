@@ -973,3 +973,9 @@ Using SageMaker Canvas, business analysts can now build ML models and generate p
 
 # Kafka schema registry
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/9f1cbd0c-b1e1-4d68-8078-fdf1a4ed2954)
+
+
+
+# AWS DynamoDB security (2023/06/23)
+different tables use different CMK keys so control users access
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/09e03215-add3-4b9c-839b-f1d6925c20bb)
