@@ -980,9 +980,14 @@ Using SageMaker Canvas, business analysts can now build ML models and generate p
 different tables use different CMK keys so control users access
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/09e03215-add3-4b9c-839b-f1d6925c20bb)
 
-# AWS S3 object lock
+# AWS S3 object lock and MFA delete (2023/06/25)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/373341f9-071e-445c-9bea-2af6b7ab44a7)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/86177581-1f62-411d-a04b-322570ac63fc)
 
 could not be handled on S3 console only available on commandline
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/6dd19833-b2c8-481c-b9f4-1286bdf16c31)
+
+
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/74c91f74-3a75-4534-a676-b3c856248342)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4e4d472d-0010-4bff-8cbc-19e38cef3954)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/93d83f2d-690e-4824-99f4-fd33703d966b)
