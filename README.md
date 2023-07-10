@@ -991,3 +991,8 @@ could not be handled on S3 console only available on commandline
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/74c91f74-3a75-4534-a676-b3c856248342)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4e4d472d-0010-4bff-8cbc-19e38cef3954)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/93d83f2d-690e-4824-99f4-fd33703d966b)
+
+
+# AWS S3 replication,source/destination bucket with different CMK
+Make sure prefix is correct without additional / at first, Make sure replication IAM role with permissions. For those failed replicated objects use S3 batch to replicate them again.
+https://docs.aws.amazon.com/AmazonS3/latest/userguide/setting-repl-config-perm-overview.html
