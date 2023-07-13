@@ -996,3 +996,9 @@ could not be handled on S3 console only available on commandline
 # AWS S3 replication,source/destination bucket with different CMK
 Make sure prefix is correct without additional / at first, Make sure replication IAM role with permissions. For those failed replicated objects use S3 batch to replicate them again.
 https://docs.aws.amazon.com/AmazonS3/latest/userguide/setting-repl-config-perm-overview.html
+
+
+# AWS Firewall Manager (2023/07/13)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/43145c0a-9fff-40c7-8716-c6429f706a03)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/7897e8f9-ff9f-4cf8-9e38-b28869efdf73)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4157437c-8baa-46f4-84b5-31434938f139)
