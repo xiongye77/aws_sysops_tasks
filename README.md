@@ -1002,3 +1002,7 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/setting-repl-config-perm-o
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/43145c0a-9fff-40c7-8716-c6429f706a03)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/7897e8f9-ff9f-4cf8-9e38-b28869efdf73)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4157437c-8baa-46f4-84b5-31434938f139)
+
+
+# AWS API GW with Cognito User Pools & Cognito Authorizer
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/080af6d3-3733-4215-95b3-ff49a421b155)
