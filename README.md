@@ -1012,3 +1012,5 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/setting-repl-config-perm-o
 
 # AWS Cognito Custom domain (2023/07/18)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/307972d1-10a6-4a79-b887-2823b4649ba0)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/54075c17-4849-4f52-886d-d6e546b0a927)
+
