@@ -372,6 +372,7 @@ In this example, they simply use SNS to send an alert to their SecOps engineer t
 A user pool is a user directory in Amazon Cognito. With a user pool, your users can sign in to your web or mobile app through Amazon Cognito. Your users can also sign in through social identity providers like Google, Facebook, Amazon, or Apple, and through SAML identity providers. Whether your users sign in directly or through a third party, all members of the user pool have a directory profile that you can access through a Software Development Kit (SDK).
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/f6d309fb-edce-40a7-a005-efdd5105a983)
 Amazon Cognito identity pools (federated identities) enable you to create unique identities for your users and federate them with identity providers. With an identity pool, you can obtain temporary, limited-privilege AWS credentials to access other AWS services. 
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/a06b3cf2-a3ae-480e-83f5-6e7559400b95)
 
 This lesson reviews the features of the product and talks through some example architectures.
 
@@ -1007,3 +1008,7 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/setting-repl-config-perm-o
 
 # AWS API GW with Cognito User Pools & Cognito Authorizer
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/080af6d3-3733-4215-95b3-ff49a421b155)
+
+
+# AWS Cognito Custom domain (2023/07/18)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/307972d1-10a6-4a79-b887-2823b4649ba0)
