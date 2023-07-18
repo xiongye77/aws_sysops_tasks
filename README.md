@@ -663,6 +663,8 @@ use cloudtrail data event only log data event to specific bucket
 ![image](https://user-images.githubusercontent.com/36766101/221496375-5cd9e18e-4b7c-45fb-a88c-e1ec600f7c44.png)
 ![image](https://user-images.githubusercontent.com/36766101/221496934-b6d8c21f-3379-4426-aa8f-bc70333542c5.png)
 ![image](https://user-images.githubusercontent.com/36766101/221497484-a7cf341a-3942-4a61-bcd9-8ff342d74e44.png)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/edf81efa-b27a-409e-9299-0e7ba9e57264)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/0d1450d2-f08a-464c-ba55-60b2b8dd03c9)
 
 
 
