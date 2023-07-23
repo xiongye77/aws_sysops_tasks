@@ -1012,7 +1012,9 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/setting-repl-config-perm-o
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/080af6d3-3733-4215-95b3-ff49a421b155)
 
 
-# AWS Cognito Custom domain (2023/07/18)
+# AWS Cognito Custom domain (2023/07/18) and ALB integration
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/307972d1-10a6-4a79-b887-2823b4649ba0)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/54075c17-4849-4f52-886d-d6e546b0a927)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/a56c03dc-ac44-4575-a437-00646269c742)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/ab3f2697-0615-4bd0-ad10-db16bdef4942)
 
