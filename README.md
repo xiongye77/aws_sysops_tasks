@@ -142,7 +142,7 @@ WAF protect against sql injection/cross site scripting/Block specific IPs or Cou
 
 
 
-# cloudfront access log check 
+# cloudfront access log check and S3 access log check (2023/07/25)
 Cloudfront connect to origin web site always report 502 error, check cloudfront log use Athena. After check AWS document, it related to Cloudfront could not connect to origin. 
 To fix this error, either have to change origin protocol policy from HTTPS to HTTP such that CloudFront does not use HTTPS while trying to connect to the origin rather uses HTTP. Alternatively, work with the origin to make sure that when CloudFront makes a request to the origin with SNI value of "aepcdp.carsales.com.au" it should respond with a certificate that either covers the origin domain name or the host header value that you will be forwarding.
 
@@ -160,6 +160,7 @@ Some information from the viewer request, such as URL query strings, HTTP header
 
 ![image](https://user-images.githubusercontent.com/36766101/157431965-b7544cd5-374f-486c-a7cf-663f09d4d675.png)
 
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/5208dfd4-0c64-4d76-aca5-cd9d3d99b21d)
 
 
 # Bucket policy to control IP access bucket 
