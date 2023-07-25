@@ -809,7 +809,9 @@ https://aws.amazon.com/blogs/aws/announcing-aws-lambda-function-urls-built-in-ht
 ![image](https://user-images.githubusercontent.com/36766101/226560553-cfe8e8e9-58e2-4335-8570-31ea484c9db3.png)
 
 
-# AWS S3 inventory and Athena query inventory information
+# AWS S3 inventory and Athena query inventory information (2023/07/25)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/a3421352-3b5c-445b-aed4-907283302272)
+
 ![image](https://user-images.githubusercontent.com/36766101/226574397-47578676-8f1d-4152-8da2-080a23fd551e.png)
 ![image](https://user-images.githubusercontent.com/36766101/226574644-5e816036-d535-4823-9253-ae85f126ef45.png)
 ![image](https://user-images.githubusercontent.com/36766101/226574746-fb66a2b5-a1b1-4221-a61c-49c8c791b09e.png)
