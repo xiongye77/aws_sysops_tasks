@@ -1023,3 +1023,6 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/setting-repl-config-perm-o
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/a56c03dc-ac44-4575-a437-00646269c742)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/ab3f2697-0615-4bd0-ad10-db16bdef4942)
 
+
+# AWS config to track changes,figure out which component changes cause application issue(2023/07/25)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/75eaa224-eb5e-4f61-a48b-252acbbff4c2)
