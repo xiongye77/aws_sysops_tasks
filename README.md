@@ -160,6 +160,8 @@ Some information from the viewer request, such as URL query strings, HTTP header
 
 ![image](https://user-images.githubusercontent.com/36766101/157431965-b7544cd5-374f-486c-a7cf-663f09d4d675.png)
 
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4342d02e-3d6b-4664-8a21-fcc1889ca57a)
+
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/5208dfd4-0c64-4d76-aca5-cd9d3d99b21d)
 
 
