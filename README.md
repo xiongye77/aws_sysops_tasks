@@ -1026,3 +1026,14 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/setting-repl-config-perm-o
 
 # AWS config to track changes,figure out which component changes cause application issue(2023/07/25)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/75eaa224-eb5e-4f61-a48b-252acbbff4c2)
+
+
+# AWS S3 access point 
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/66a05648-f966-46b1-b40c-88ea046b0a12)
+With S3 Access Points, we can create unique access control policies for each access point to easily control access to shared datasets. Need IAM Role/S3 Bucket Policy/S3 Access Point Policy
+IAM Role
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/a065f911-fade-49bd-9bc6-a136688717e8)
+S3 Bucket Policy
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/91dc76bc-49ea-4835-9993-2d632853f42f)
+S3 Access Point Policy
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/10f96583-9905-4229-88bd-babdff49e1d5)
