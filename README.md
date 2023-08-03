@@ -1043,4 +1043,5 @@ S3 Access Point Policy
 # AWS S3 inventory used as S3 batch job source (2023/08/02)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/89ebb7ad-9d27-4c86-89f7-7ab77afa0af9)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/e81d7066-7e9e-4f1a-9380-0ad406d54324)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/55149bb8-5e8d-45c6-b7be-69bfd041a5a9)
 
