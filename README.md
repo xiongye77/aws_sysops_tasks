@@ -1047,3 +1047,7 @@ S3 Access Point Policy
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/e81d7066-7e9e-4f1a-9380-0ad406d54324)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/55149bb8-5e8d-45c6-b7be-69bfd041a5a9)
 
+
+# AWS MicroService Communication
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/10c558c1-1c93-4db9-a90a-958e6c40e895)
+
