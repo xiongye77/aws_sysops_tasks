@@ -1053,3 +1053,8 @@ S3 Access Point Policy
 
 # AWS Network topology 
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/01d09a4e-ec5a-4878-8ecf-174094f4cb43)
+
+# AWS MSK
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/767fe7b1-09e9-4506-8cfc-109eea143e31)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/3f685921-9471-4a45-9969-6877991b947f)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/436b0f96-b725-4c61-a041-96ccadd523f9)
