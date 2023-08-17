@@ -1058,3 +1058,7 @@ S3 Access Point Policy
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/767fe7b1-09e9-4506-8cfc-109eea143e31)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/3f685921-9471-4a45-9969-6877991b947f)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/436b0f96-b725-4c61-a041-96ccadd523f9)
+
+
+# AWS Glue/EMR
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4c72bcb0-0747-41bd-85af-8c9058a7cf18)
