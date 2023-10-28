@@ -1049,6 +1049,13 @@ S3 Access Point Policy
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/e81d7066-7e9e-4f1a-9380-0ad406d54324)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/55149bb8-5e8d-45c6-b7be-69bfd041a5a9)
 
+# AWS S3 SSE-S3 and SSE-CMK and use bucket policy to deny non-https traffic
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/8219b716-afa8-4914-9d7d-735b6aba7a20)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/6d77c48f-1787-492e-a999-cc92c0d7c72d)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/cc430ba1-74ec-4932-81a0-e4a9bd801050)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/eb258904-acf5-46d0-9a20-c5a1f2a44dec)
+
+
 
 # AWS MicroService Communication
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/10c558c1-1c93-4db9-a90a-958e6c40e895)
