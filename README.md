@@ -753,12 +753,16 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-ec2reset
 ![image](https://user-images.githubusercontent.com/36766101/224284833-2d501ee2-19ea-4c74-b0f7-290594360d1c.png)
 
 
-# AWS Cloudfront Signed URL (2023/03/10)
+# AWS Cloudfront Signed URL and Signed Cookies (2023/10/29)
 ![image](https://user-images.githubusercontent.com/36766101/224848739-73fd58e6-9070-40d6-aaaf-8dbea351e7bc.png)
-
 ![image](https://user-images.githubusercontent.com/36766101/224286591-af58d25d-09ae-4790-a5f0-7412da619d27.png)
 ![image](https://user-images.githubusercontent.com/36766101/224287561-01b4b9f8-4e8c-4207-b387-8c01021fa078.png)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/1e903219-1524-4f03-a2ef-0891380d9d6e)
 
+
+# AWS Cloudfront OAI and OAC
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/32bd467e-4bec-494e-9e45-e42dd5315a8d)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/df691758-ab6c-45d3-b2f8-e377398eddb3)
 
 # AWS Firewall Manager and Network Firewall  (2023/03/10)
 ![image](https://user-images.githubusercontent.com/36766101/224289049-a27e5f74-29f6-49d3-9fc6-c5e64a0bfbb9.png)
