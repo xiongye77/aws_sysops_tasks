@@ -425,6 +425,9 @@ Apache Kafka, we have something called as consumer groups, where we can group ou
 
 For AWS , We will create three different SQS queues which subscribe to same SNS topic. What happens here is, whenever we write something to the SNS topic, a copy of that message or data is sent to each SQS queue that has subscribed to the SNS topic.
 ![image](https://user-images.githubusercontent.com/36766101/195725446-c630471b-7708-4574-843b-6609839a93f0.png)
+As with the Send Fanout Event Notifications tutorial, we will use a fanout messaging pattern using Amazon SNS and Amazon Simple Queue Service (Amazon SQS) to decouple the website from the backend systems. To get the event notifications to the right backend system, you could create a separate topic for each type of quote request, then add message routing logic to your publisher. 
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/3eda45b7-80d1-438a-b2e1-0188b5c7bd37)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/6642588b-afe5-4b01-a2f2-76dcb59ce42b)
 
 
 # Security hub automaticaly send findings to SNS (2022/10/24)
