@@ -1078,3 +1078,12 @@ S3 Access Point Policy
 
 # AWS Glue/EMR
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4c72bcb0-0747-41bd-85af-8c9058a7cf18)
+
+
+# Amazon Managed Service for Apache Flink Renamed from Amazon Kinesis Data Analytics
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/0c0b71d8-bb02-4732-9b3c-ade08bb59e86)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/35680d00-4ce3-4995-ab73-0aa7e950ec09)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/2668ad89-0fb3-40b3-b4b1-05934c42d985)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/0832d546-eab9-4a66-a955-cf22e7b3dfc8)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/9aea9195-0ed3-42ae-93fc-242577bd1734)
+
