@@ -1087,3 +1087,4 @@ S3 Access Point Policy
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/0832d546-eab9-4a66-a955-cf22e7b3dfc8)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/9aea9195-0ed3-42ae-93fc-242577bd1734)
 
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/68975713-9e2b-4c0d-8dd3-e2f90801e224)
