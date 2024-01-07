@@ -1091,3 +1091,11 @@ S3 Access Point Policy
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/df4af2f0-083c-40b7-8b0f-9b20e6161453)
 
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/a144227e-9750-423c-aaf6-6800e627744b)
+
+
+# AWS launch template repalce launch configuration and instance refresh 
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/c6f78a50-0d0a-431a-99c6-f2be94d6a477)
+
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/7689cf17-8fcd-4839-9343-83ff0874d77d)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/ed22bf9b-c079-4d45-a42a-eb86b6d6b67a)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4d20d9e6-c4c7-4984-80ea-664eb1d37983)
