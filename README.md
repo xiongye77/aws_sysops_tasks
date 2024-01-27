@@ -1099,3 +1099,18 @@ S3 Access Point Policy
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/7689cf17-8fcd-4839-9343-83ff0874d77d)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/ed22bf9b-c079-4d45-a42a-eb86b6d6b67a)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4d20d9e6-c4c7-4984-80ea-664eb1d37983)
+
+
+# AWS DMS/SCT 
+
+Create DMS and Create source/target endpoint
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4608731e-17f0-4a44-abd6-dd4d25b49313)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/775ecdbf-72bd-486c-a239-3bbf93798068)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/d8fb6d27-b9be-4ce8-8aff-4b603f98122d)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/ae60a93e-16f9-490c-993a-28748aa13fc1)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/62308236-4844-4337-a99a-b486d1e5d18a)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/ac68ae87-27bc-4db2-8cde-98f41368a32a)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/28fa7bbc-f10b-4d25-8920-9b623f6e9814)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/351d7c34-7156-4a42-aa4a-a7c6c6cb040d)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/0416ecdc-d121-47d9-935e-4eb5a5e36a90)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/70d91ad1-0c4b-4560-bb12-5a65ae6cdc0a)
