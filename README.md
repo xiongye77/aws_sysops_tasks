@@ -997,6 +997,21 @@ Using SageMaker Canvas, business analysts can now build ML models and generate p
 # AWS DynamoDB security (2023/06/23)
 different tables use different CMK keys so control users access
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/09e03215-add3-4b9c-839b-f1d6925c20bb)
+# AWS DynamoDB provisioned capacity with autoscale vs on-demand capacity  (2024/01/28)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/85aa9f99-60ca-445c-8c12-5edbda1a65c8)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/924ed675-54bd-4f55-a98c-b7af3e23615e)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4bfc2d24-f337-4d26-af5d-7beeefb69653)
+
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/12ef5020-c8f1-4f60-9655-aa579a132315)
+
+With provisioned capacity you can also use auto scaling to automatically adjust your table’s capacity based on the specified utilization rate to ensure application performance, and also to potentially reduce costs. To configure auto scaling in DynamoDB, set the minimum and maximum levels of read and write capacity in addition to the target utilization percentage.
+
+
+# AWS DynamoDB local secondary index /global secondary index  
+Secondary index allow efficient access to data with attributes other than the primary key.
+Local secondary index: An index that has the same partition key as the base table, but a different sort key
+Global secondary index — An index with a partition key and a sort key that can be different from those on the base table.
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/58da0454-6218-44ef-b834-627d47a20ba6)
 
 # AWS S3 object lock and MFA delete (2023/06/25)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/373341f9-071e-445c-9bea-2af6b7ab44a7)
