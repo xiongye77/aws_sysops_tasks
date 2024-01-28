@@ -1009,9 +1009,23 @@ With provisioned capacity you can also use auto scaling to automatically adjust 
 
 # AWS DynamoDB local secondary index /global secondary index  
 Secondary index allow efficient access to data with attributes other than the primary key.
-Local secondary index: An index that has the same partition key as the base table, but a different sort key
+Local secondary index: An index that has the same partition key as the base table, but a different sort key. Local secondary index can only be created when create the table.
 Global secondary index — An index with a partition key and a sort key that can be different from those on the base table.
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/58da0454-6218-44ef-b834-627d47a20ba6)
+
+# AWS DynamoDB stream to Kinesis data stream 
+# AWS DynamoDB transaction
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/b397c7c7-0ca7-4951-bd8f-837c508abc86)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/9f295555-1b0a-49e2-9e21-19cb5f6c9f1a)
+
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/beb235bf-0422-4eca-b8dd-e54fe7c06f18)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/bac71bbd-12a6-40d1-83c1-d5956598a770)
+
+# AWS DynamoDB stream
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/1a8268b5-650e-493a-b841-a04dbbd40686)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/766214fb-c1b9-4add-9919-e73f2acf80bd)
+
+
 
 # AWS S3 object lock and MFA delete (2023/06/25)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/373341f9-071e-445c-9bea-2af6b7ab44a7)
