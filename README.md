@@ -1,4 +1,4 @@
-# AWS SYS OPS 
+# AWS SYS OPS  
 
 Trust advisor suggestions check. 
 
