@@ -1143,3 +1143,15 @@ Create DMS and Create source/target endpoint
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/351d7c34-7156-4a42-aa4a-a7c6c6cb040d)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/0416ecdc-d121-47d9-935e-4eb5a5e36a90)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/70d91ad1-0c4b-4560-bb12-5a65ae6cdc0a)
+
+
+# AWS Bedrock Generative AI
+Amazon Bedrock is a serverless offering where a lot of the grunt work with setting up training and hosting LLMs (Large Language Models (LLMs)) is abstracted out. Fine-Tuning is a specific feature within Amazon Bedrock.
+
+Large Language Models (LLMs) refer to advanced artificial intelligence systems designed to understand and generate human-like text. These models are trained on vast amounts of data, enabling them to grasp complex patterns, comprehend language nuances, and generate coherent responses. LLMs have the capability to perform various language-related tasks, including language translation, text completion, summarization, and even engaging in conversational interactions. GPT is an example of LLM.
+
+
+LangChain is an open-source framework designed to facilitate the development of applications powered by large language models (LLMs). It offers a suite of tools, components, and interfaces that simplify the construction of LLM-centric applications. 
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/c8bac04c-ad48-4971-a862-1c55d6088577)
+
+https://github.com/xiongye77/serverless-bedrock-chat
