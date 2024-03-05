@@ -1155,3 +1155,9 @@ LangChain is an open-source framework designed to facilitate the development of 
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/c8bac04c-ad48-4971-a862-1c55d6088577)
 
 https://github.com/xiongye77/serverless-bedrock-chat
+
+
+
+# AWS API GW Cognito Authorizor 
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/973e6f3c-c322-449e-88fd-c1376b316471)
+
