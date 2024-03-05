@@ -1158,6 +1158,9 @@ https://github.com/xiongye77/serverless-bedrock-chat
 
 
 
-# AWS API GW Cognito Authorizor 
+# AWS API GW Cognito Authorizor (2024/03/05)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/973e6f3c-c322-449e-88fd-c1376b316471)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/98cd14eb-4576-447e-8532-fd8b39fa100c)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/fda34267-ff8a-4271-a993-a8ab4e637e0c)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4f9ce787-d280-486f-b390-19f0e8dee08f)
 
