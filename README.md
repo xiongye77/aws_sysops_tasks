@@ -847,6 +847,8 @@ https://aws.amazon.com/blogs/aws/announcing-aws-lambda-function-urls-built-in-ht
 ![image](https://user-images.githubusercontent.com/36766101/233748854-c73f77c3-31ec-4616-a911-75028fae88cf.png)
 ![image](https://user-images.githubusercontent.com/36766101/233750856-777f5461-6f1d-4e65-b9c4-10c874ac3b43.png)
 
+# AWS cloudwatch log contributor insights for AWS WAF log (2024/03/10)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/f29e5cd2-f413-48e2-a75d-62520b23f7e0)
 
 # AWS Cloudwatch log Contributor Insights for VPC flow log
 ![image](https://user-images.githubusercontent.com/36766101/233754175-c66dd621-f935-4d07-8c26-ed61f3f4dfe0.png)
