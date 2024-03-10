@@ -1166,3 +1166,9 @@ https://github.com/xiongye77/serverless-bedrock-chat
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/fda34267-ff8a-4271-a993-a8ab4e637e0c)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4f9ce787-d280-486f-b390-19f0e8dee08f)
 
+# AWS EvenrBridge monitor RDS event 
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4a26cbcf-2ad7-42a7-8272-14e9c561421c)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/19d7c134-c5bf-4192-85e8-db20f7bb7f48)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/9e8885ce-c466-428e-83e7-301ab2bc0c89)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/d1adaf72-28d6-4d79-a3d0-af59c56c52cc)
+
