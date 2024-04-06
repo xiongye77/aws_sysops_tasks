@@ -135,6 +135,9 @@ WAF protect against sql injection/cross site scripting/Block specific IPs or Cou
 ![image](https://user-images.githubusercontent.com/36766101/156465746-e23c285c-0ea5-4e2c-a884-c16e28ddeda1.png)
 ![image](https://user-images.githubusercontent.com/36766101/156465979-f9948126-98d6-461f-80bb-0b15a132e456.png)
 
+# WAF with OWASP top 10 (Open Web Application Security Project) (2024/04/07)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/0905e7da-38bd-4d2d-9261-d9ca57759b07)
+
 # Cross account cloudtrail gather to one dedicated S3 bucket under security review account 
 
 ![image](https://user-images.githubusercontent.com/36766101/159195015-f08b19f9-d6ef-472e-bc2e-a6795f1a0b3c.png)
