@@ -1082,6 +1082,16 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/setting-repl-config-perm-o
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/a56c03dc-ac44-4575-a437-00646269c742)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/ab3f2697-0615-4bd0-ad10-db16bdef4942)
 
+# AWS Config Automated Remediation with SSM (2024/04/07)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/a3ee77db-7529-484c-a80a-7343d03c46e1)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/2cdfd387-391f-4329-b7e3-52b94ad2bbe4)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/f9762b6d-35aa-4c45-b75d-ea5e7720d31e)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/07b20893-c946-4313-aadd-01113dea3a4b)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/599f96fe-89dc-4b9e-bdea-cc3b2043b0e5)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/1f78b221-87b2-4f3f-97ba-36bf3762b957)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/7605674b-948b-4632-b4ed-3b87997a2bf0)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/9c2a1428-4639-4324-a470-ee2d9d7e1215)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/3ad9eef8-9042-40a0-a1a9-6adaffe7a39a)
 
 # AWS config to track changes,figure out which component changes cause application issue(2023/07/25)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/75eaa224-eb5e-4f61-a48b-252acbbff4c2)
