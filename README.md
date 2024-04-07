@@ -1196,3 +1196,30 @@ https://github.com/xiongye77/serverless-bedrock-chat
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/906a54d9-2cbd-4617-a5ab-c3a7f9a6db57)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/3067d5b5-b67d-43a6-89af-995bf120541e)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/6e178e0e-61be-4877-b085-7563fb99fd35)
+
+# AWS Cloudtrail Security Control
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/83c136b0-cad1-4a08-a5f4-43e698a55fa0)
+
+# AWS cloudformation check statck output 
+aws cloudformation describe-stacks --stack-name YOUR_STACK_NAME  --query 'Stacks[].Outputs' --output json | jq '.[]'
+
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/01b3b735-3d08-4a40-93c5-1b1b9f533d29)
+
+aws configure --profile/aws sts get-caller-identity --profile/aws sts get-access-key-info --access-key-id AKIAW7NLVZMHQ4IO2CRG
+aws configure list/aws iam update-access-key --user-name username --access-key-id access_key_id --status Inactive/ aws iam list-access-keys --user-name  username 
+
+# AWS cloudtrail Lake query (2024/04/07)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/d200c461-65cf-4bda-84e5-1c268293a915)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/cdafe2e5-f002-45a7-80a2-68ca173c40e6)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/fcf43233-9bb3-459b-98a5-f8904d51575d)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/59f5efe8-64ed-40ba-8629-c89c79ac6fd5)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/6a09c97c-2781-44d8-b3fa-76b24cd76920)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/aad3a0a5-f049-43b1-94e3-4c705ac4e91b)
+
+# AWS IAM Identity Center
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/8a8e7aec-93a5-4dd8-9994-f000b74ea69a)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/533802b6-363a-4c81-bfe4-b150f61c0dad)
+
+
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/e261d907-98b6-45c0-91d4-e917ca213c67)
+
