@@ -1,6 +1,6 @@
 # AWS SYS OPS  
 
-Trust advisor suggestions check. 
+# Trust advisor suggestions check. 
 
 ![image](https://user-images.githubusercontent.com/36766101/165426657-889af21a-f9f4-4e29-a3cf-d773a4d58589.png)
 
@@ -1179,3 +1179,20 @@ https://github.com/xiongye77/serverless-bedrock-chat
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/9e8885ce-c466-428e-83e7-301ab2bc0c89)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/d1adaf72-28d6-4d79-a3d0-af59c56c52cc)
 
+
+# AWS Cloudtrail Insight Event and Cloudtrail Lake (2024/04/07)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/0a389f86-6905-4ba9-b1a7-f5b35f6fd4a0)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/3b3792e0-8728-43f7-aaa7-88afad3026aa)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/001fabd1-96a4-407d-8fd7-5a1fb80d1e55)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/d1121a5f-f22f-45bf-ba93-ceb98285190d)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4f3f7083-d63a-4167-add0-ba5663a5cb1b)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/cbd09818-d187-444c-92a0-1ef205c04367)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/e8bb0c25-6dd2-407a-9a10-518674797fad)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/cf8aa1e4-c7f0-4101-8416-834a0f6629f6)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/1703ea4a-5b44-47e4-b232-df5b88b8a0ab)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/cb091724-6dd5-4e59-b82e-8b2b666ff944)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/9a9c13af-588c-4605-abb2-919423dfd30b)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/ebc20dcf-b656-40f7-92e5-fe029d046464)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/906a54d9-2cbd-4617-a5ab-c3a7f9a6db57)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/3067d5b5-b67d-43a6-89af-995bf120541e)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/6e178e0e-61be-4877-b085-7563fb99fd35)
