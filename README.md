@@ -399,7 +399,19 @@ four components:Event source,Event bus,Rule,Target
 # AWS Guardguty Cross account security check and send security finding to slack through cloudwatch event.
 ![image](https://user-images.githubusercontent.com/36766101/191954018-ef6a7f45-b2d1-4891-bc92-1bf041e9eac5.png)
 ![image](https://user-images.githubusercontent.com/36766101/191954490-eb6d077e-a8b3-4ea6-8207-1bdc36237612.png)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/cdec2015-63ba-4a82-826e-f38365eaa313)
 
+we’re going to send an email notification every time GuardDuty finds a potential threat by creating an SNS topic, then creating an EventBridge rule that looks for GuardDuty findings, and pushing those events to SNS for the notification. (2024/04/07)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/8c8cbede-8759-4a63-a6de-7a4f838d16c8)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/27582f24-d36e-4b75-a5bb-d1d87f413d0f)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/a8b2ad67-79cb-4df4-98ba-3214f83e7869)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/d344051e-9591-4048-8753-f9cf93fd5142)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/c6014be1-0c63-4b47-b9b4-5cad05173de1)
+
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/de03477c-cadf-4d0e-8c83-dc15d2388fe8)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/64bdba7a-0b03-40e3-8a29-dfe1b975481a)
+
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/8e5025ba-7551-4bcc-8a78-168ee10df517)
 
 # Amazon Detective 
 Amazon Detective is a service that helps you analyze and investigate the root cause of security findings or suspicious activity. Using data from AWS Cloudtrail logs, VPC flow logs and AWS GuardDuty data, Amazon Detective will collate, filter the collected security data and using AWS Security Hub, GuardDuty, integrated partner security products, machine learning and statistical analysis investigates the security findings to get to the root cause of the problem or suspicious activity.
