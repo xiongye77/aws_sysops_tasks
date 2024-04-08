@@ -658,6 +658,10 @@ Detective is a service that helps you analyze and investigate the root cause of 
 https://aws.amazon.com/blogs/security/how-to-visualize-multi-account-amazon-inspector-findings-with-amazon-elasticsearch-service/
 https://controltower.aws-management.tools/security/guardutydetect-securityhubremediate/
 
+# AWS Inspector findings and account scan settings (2024/04/08)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/d73b2cf3-b837-4836-b813-8dd83a1de462)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/18964e98-119a-44bd-adf6-840147037eff)
+
 # Executing Automation Workflow Using AWS SSM Automation    (2023/02/20) 
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/ssm-automation.json
 ![image](https://user-images.githubusercontent.com/36766101/220005717-496826d9-5c71-4a0a-b108-692c6d07b04e.png)
