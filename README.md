@@ -759,7 +759,7 @@ https://aws.amazon.com/premiumsupport/knowledge-center/athena-tables-search-clou
 ![image](https://user-images.githubusercontent.com/36766101/222342160-4a32c894-6e19-4881-b454-d176d14d8b23.png)
 ![image](https://user-images.githubusercontent.com/36766101/222346163-9bdde78e-2ac7-4d19-a648-e23f377b7c87.png)
 
-# AWS SG/NACL/WAF/Firewall Manager  (2023/03/03)
+# AWS SG/NACL/WAF/Network Firewall  (2023/03/03)
 ![image](https://user-images.githubusercontent.com/36766101/222422994-cb623917-7c5e-499b-ad92-d13293a81e58.png)
 ![image](https://user-images.githubusercontent.com/36766101/222427971-685e311b-18e2-4b2c-a0cf-f94829f1ccaa.png)
 ![image](https://user-images.githubusercontent.com/36766101/222428291-6c77e656-2527-421e-8e7a-9cff8d5e3253.png)
@@ -790,7 +790,11 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-ec2reset
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/32bd467e-4bec-494e-9e45-e42dd5315a8d)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/df691758-ab6c-45d3-b2f8-e377398eddb3)
 
-# AWS Firewall Manager and Network Firewall  (2023/03/10)
+# AWS Firewall Manager and Network Firewall  (2024/04/09)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/c19bcec3-b701-40df-afa9-02f6c5a15247)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/6df52aa0-d6c3-4b68-b841-5f92e21f92b6)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/79bcdccf-939b-49b9-85f3-6519481d644b)
+
 ![image](https://user-images.githubusercontent.com/36766101/224289049-a27e5f74-29f6-49d3-9fc6-c5e64a0bfbb9.png)
 ![image](https://user-images.githubusercontent.com/36766101/224289117-7f23c518-8753-4456-964f-8e4e790ab716.png)
 ![image](https://user-images.githubusercontent.com/36766101/224292137-fcfa26ca-e8de-4b6d-8298-ee2a4bac1300.png)
