@@ -661,6 +661,9 @@ https://controltower.aws-management.tools/security/guardutydetect-securityhubrem
 # AWS Inspector findings and account scan settings (2024/04/08)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/d73b2cf3-b837-4836-b813-8dd83a1de462)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/18964e98-119a-44bd-adf6-840147037eff)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/002311bd-d5d4-4af1-afcb-60e2ab258b80)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/39e2e538-f762-438a-9760-7caa6f8b6e2f)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/c06f71c6-edd8-4f66-8112-e07a3fb0ae3c)
 
 # Executing Automation Workflow Using AWS SSM Automation    (2023/02/20) 
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/ssm-automation.json
