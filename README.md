@@ -1256,3 +1256,9 @@ aws configure list/aws iam update-access-key --user-name username --access-key-i
 
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/e261d907-98b6-45c0-91d4-e917ca213c67)
 
+# AWS SSM Maintenance Windows (2024/04/11)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/e522648c-175f-48ec-8def-f77b0d3329a5)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4f7f5bc1-4487-4b8d-8b77-22c7310eac9a)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/318509f7-67d4-4412-88b2-342ec333e0ae)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/ac588ad5-0f26-4698-a258-4a0eadf3666c)
+
