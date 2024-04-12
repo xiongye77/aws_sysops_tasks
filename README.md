@@ -1262,3 +1262,6 @@ aws configure list/aws iam update-access-key --user-name username --access-key-i
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/318509f7-67d4-4412-88b2-342ec333e0ae)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/ac588ad5-0f26-4698-a258-4a0eadf3666c)
 
+# AWS KMS aws managed key vs customer managed key
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/738e1a84-b550-4819-b344-bd9c17c13a30)
+
