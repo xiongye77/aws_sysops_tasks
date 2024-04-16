@@ -1206,6 +1206,11 @@ https://github.com/xiongye77/serverless-bedrock-chat
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/fda34267-ff8a-4271-a993-a8ab4e637e0c)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4f9ce787-d280-486f-b390-19f0e8dee08f)
 
+# AWS API GW Lambda Authorizor (2024/04/16)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/7870819e-e202-4c8d-87dd-b601e5d61067)
+
+https://github.com/xiongye77/api_gateway_lambda_dynamodb/blob/main/cloudformation.yaml
+
 # AWS EvenrBridge monitor RDS event 
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4a26cbcf-2ad7-42a7-8272-14e9c561421c)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/19d7c134-c5bf-4192-85e8-db20f7bb7f48)
