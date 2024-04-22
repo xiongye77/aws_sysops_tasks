@@ -764,6 +764,8 @@ https://aws.amazon.com/premiumsupport/knowledge-center/athena-tables-search-clou
 
 # AWS SG/NACL/WAF/Network Firewall  (2023/03/03)
 ![image](https://user-images.githubusercontent.com/36766101/222422994-cb623917-7c5e-499b-ad92-d13293a81e58.png)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/403dffae-c96c-444b-82f9-d60ea8f8215b)
+
 ![image](https://user-images.githubusercontent.com/36766101/222427971-685e311b-18e2-4b2c-a0cf-f94829f1ccaa.png)
 ![image](https://user-images.githubusercontent.com/36766101/222428291-6c77e656-2527-421e-8e7a-9cff8d5e3253.png)
 ![image](https://user-images.githubusercontent.com/36766101/222557503-f89e6d0f-c572-4434-b6c3-e97a6281e9b1.png)
