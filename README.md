@@ -1274,3 +1274,17 @@ aws configure list/aws iam update-access-key --user-name username --access-key-i
 # AWS KMS aws managed key vs customer managed key
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/738e1a84-b550-4819-b344-bd9c17c13a30)
 
+
+# AWS VPC Lattice architecture patterns and best practices  (2024/05/20)
+Amazon VPC Lattice is an application networking service that simplifies connecting, securing, and monitoring service-to-service communication. You can use VPC Lattice to facilitate cross-account and cross-VPC connectivity, as well as application layer load balancing for your workloads in a consistent way regardless of the underlying compute type—instances, containers, and serverless. In this session, get a general overview of VPC Lattice, learn about the latest features and functionality, discover pro tips and tricks to adopt best practices, and explore top architecture patterns organizations use to simplify application connectivity, security, and load balancing.
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/15639232-c2ed-4a0b-8d4f-955fba3af6c2)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/9f5ba77a-c4b8-46d3-8e54-d5b600d51e99)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/b617b9d7-8f7b-4172-b74a-03680d4da22d)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/bd5d8a38-b5f6-4f0f-9183-5805204dba2f)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/5b91c265-7dc0-47eb-8aa1-0db7254d7ac6)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/9dc40210-b4d0-4ef5-94af-6b1f7ea14760)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/1e00f3d5-ed9b-4bfe-94f7-35dd6d8f0fa8)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/9eaab303-259c-48ab-be49-f550ebdf5536)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/7bfe486c-5c2f-4a01-a013-7a871fd4c873)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/240ed91b-6d5e-4871-a857-1ff461c8dd63)
+
