@@ -1288,3 +1288,7 @@ Amazon VPC Lattice is an application networking service that simplifies connecti
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/7bfe486c-5c2f-4a01-a013-7a871fd4c873)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/240ed91b-6d5e-4871-a857-1ff461c8dd63)
 
+
+# AWS Glue Bookmarks 
+AWS Glue Job Bookmarks help Glue maintain state information of the ETL job and helps process new data when rerunning on a scheduled interval, preventing the reprocess of old data.In a nutshell, Job bookmarks are used by AWS Glue jobs to process incremental data since the last job run, avoiding duplicate processing.The AWS Glue ETL job is triggered using Glue ETL trigger. As AWS Glue job bookmark is enabled, it processes the incremental data since the last successful run. For S3 input sources, AWS Glue job bookmarks check the last modified time of the objects to verify which objects need to be reprocessed. If input source data has been modified since last job run, the files are reprocessed when the job is run again.
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/5e017223-a18f-4078-892d-84a2cbcbaf81)
