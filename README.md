@@ -1295,3 +1295,9 @@ AWS Glue Job Bookmarks help Glue maintain state information of the ETL job and h
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/c46fd62b-f1d6-4902-982b-876b72ff4103)
 
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/5e017223-a18f-4078-892d-84a2cbcbaf81)
+
+
+# AWS Glue crawler and job 
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/00adf49d-9fa7-40da-be10-c4467e14cabf)
+
+AWS Glue Crawlers and Jobs serve distinct but complementary roles within the AWS Glue ecosystem. Crawlers are used primarily for discovering data schemas and updating the Glue Data Catalog, while Jobs are used for executing ETL processes to transform and move data
