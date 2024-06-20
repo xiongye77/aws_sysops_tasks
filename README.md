@@ -1304,3 +1304,12 @@ AWS Glue Job Bookmarks help Glue maintain state information of the ETL job and h
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/5780048d-0be9-43cd-86ea-f6188c8ea824)
 
 AWS Glue Crawlers and Jobs serve distinct but complementary roles within the AWS Glue ecosystem. Crawlers are used primarily for discovering data schemas and updating the Glue Data Catalog, while Jobs are used for executing ETL processes to transform and move data
+
+
+# AWS Cloudtrail lake (2024/06/20) enable Lake query federation
+When you enable Lake query federation, CloudTrail creates a managed database named aws:cloudtrail (if the database doesn't already exist) and a managed federated table in the AWS Glue Data Catalog. The event data store ID is used for the table name. CloudTrail registers the federation role ARN and event data store in AWS Lake Formation, the service responsible for allowing fine-grained access control of the federated resources in the AWS Glue Data Catalog.
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/26dc6c62-80ac-428e-8018-74e78fae58d0)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/0480ecfd-dd77-4794-8e24-a1cf423b0a19)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4e0e698b-3856-4973-926d-758f199177f5)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/55436d02-d9e9-47f3-8624-4cc952817820)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/feee7e43-68d3-476a-918f-93661ad6560e)
