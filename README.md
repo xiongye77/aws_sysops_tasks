@@ -1313,3 +1313,39 @@ When you enable Lake query federation, CloudTrail creates a managed database nam
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4e0e698b-3856-4973-926d-758f199177f5)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/55436d02-d9e9-47f3-8624-4cc952817820)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/feee7e43-68d3-476a-918f-93661ad6560e)
+
+
+# AWS speak/hub network   (2024/06/23)
+We will create central ingress and egress using AWS Network Firewall and Transit Gateway. This will use a hub and spoke model where the networking account TGW and Network Firewall are set as the hub, and any other AWS account like development, production, or Staging account would be its spokes.
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/6eb84536-7f4a-48d8-b709-a60cae203d25)
+
+
+Having a central ingress and egress lets you know where your data is going and where your data is coming from.
+The networking account is a DMZ (demilitarized zone), which almost all security frameworks such as NIST, HITRUST, SOC2, and more ask for DMZ.
+No IGWs (Internet Gateways) and NATs ( Network Address Translation) in all the spoke accounts prevent data exfiltration.
+Provide good insights into how much data is going in or out of the environment, allowing us to put CloudWatch alarms for data exfiltration.
+Separation of accounts allows you to separate duties between networking people and DevOps folks.
+
+
+# AWS WAF VS Network Firewall (2024/06/23)
+AWS WAF
+AWS WAF is a web application firewall that helps protect web applications or APIs against common web exploits and bots that may affect availability, compromise security, or consume excessive resources.
+
+Key Features of AWS WAF:
+Customizable Web Security Rules: AWS WAF allows you to create custom rules to block common attack patterns, such as SQL injection or cross-site scripting, and rules that are specific to your application.
+Real-Time Visibility: Offers near real-time metrics and logs of web traffic, providing insights into traffic patterns and potential threats.
+Integration with AWS Services: Seamlessly integrates with services like Amazon CloudFront, Amazon API Gateway, AWS AppSync, and Application Load Balancer.
+Managed Rule Groups: AWS provides managed rules, maintained and updated by AWS, to protect against common threats.
+Rate-Based Rules: Capable of blocking IP addresses that exceed a certain threshold of requests in a specified time period, helping mitigate DDoS attacks.
+
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/c96c999f-c08d-4535-826f-8f2823fb20ba)
+
+AWS Network Firewall
+AWS Network Firewall is a managed service that provides network protections at the VPC level. It’s designed to protect AWS Virtual Private Cloud (VPC) resources.
+
+Key Features of AWS Network Firewall:
+Stateful Inspection: Provides stateful inspection of traffic at the VPC level, allowing it to monitor and filter outbound, inbound, and east-west (internal) traffic.
+Intrusion Prevention System (IPS): Includes an intrusion prevention system to detect and take action against attacks.
+Web Filtering: Offers domain and URL filtering to block access to malicious sites or enforce company policies.
+Customizable Rules Engine: Allows the creation of complex rule sets for network traffic filtering based on various factors like IP, port, protocol, and pattern matching.
+Integration with AWS Services: Integrates with AWS services like AWS Transit Gateway and VPC to provide a centralized firewall solution across multiple VPCs.
