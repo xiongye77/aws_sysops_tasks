@@ -1319,6 +1319,7 @@ When you enable Lake query federation, CloudTrail creates a managed database nam
 We will create central ingress and egress using AWS Network Firewall and Transit Gateway. This will use a hub and spoke model where the networking account TGW and Network Firewall are set as the hub, and any other AWS account like development, production, or Staging account would be its spokes.
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/6eb84536-7f4a-48d8-b709-a60cae203d25)
 
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/be1fee75-1c75-4751-be25-0817b4377853)
 
 Having a central ingress and egress lets you know where your data is going and where your data is coming from.
 The networking account is a DMZ (demilitarized zone), which almost all security frameworks such as NIST, HITRUST, SOC2, and more ask for DMZ.
