@@ -1320,6 +1320,8 @@ We will create central ingress and egress using AWS Network Firewall and Transit
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/6eb84536-7f4a-48d8-b709-a60cae203d25)
 
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/be1fee75-1c75-4751-be25-0817b4377853)
+Hub and spoke model
+All traffic in and out of our networks flows through the Threat Protection Zone (TPZ). There are a small handful of TPZs, but many networks that they serve. This is why we refer to this design as the hub and spoke model. The hub is the TPZ, and the spokes are all the VPCs where the applications live. The TPZ has devices in it that scan the traffic in and out of the spoke VPCs. Traffic can be split into three main types: Ingress, Egress, and Cross-Account.
 
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/2aac5971-b901-4ca8-b23b-d1383e734aea)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/672adacb-1b29-4d9c-933d-7cafe383fa77)
