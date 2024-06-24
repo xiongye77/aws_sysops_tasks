@@ -1321,6 +1321,10 @@ We will create central ingress and egress using AWS Network Firewall and Transit
 
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/be1fee75-1c75-4751-be25-0817b4377853)
 
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/2aac5971-b901-4ca8-b23b-d1383e734aea)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/672adacb-1b29-4d9c-933d-7cafe383fa77)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/446590b5-40c5-40b6-b131-b251dd27f199)
+
 Having a central ingress and egress lets you know where your data is going and where your data is coming from.
 The networking account is a DMZ (demilitarized zone), which almost all security frameworks such as NIST, HITRUST, SOC2, and more ask for DMZ.
 No IGWs (Internet Gateways) and NATs ( Network Address Translation) in all the spoke accounts prevent data exfiltration.
