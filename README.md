@@ -1361,6 +1361,8 @@ Integration with AWS Services: Integrates with AWS services like AWS Transit Gat
 
 # AWS Global Accelerator
 AWS Global Accelerator is a networking service that optimizes the delivery of internet traffic to applications hosted on AWS. It utilizes the AWS global network to direct traffic along the shortest path with minimal packet loss and latency. Global Accelerator enhances the availability and performance of applications by intelligently routing traffic to the nearest AWS Edge Location.
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/f01f0f7b-5bc4-4c06-a7f1-a14e3f3f47de)
+
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/1f68b8b6-25bf-4ec3-a277-01cb212f016c)
 
 DNS Name
