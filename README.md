@@ -1356,3 +1356,14 @@ Intrusion Prevention System (IPS): Includes an intrusion prevention system to de
 Web Filtering: Offers domain and URL filtering to block access to malicious sites or enforce company policies.
 Customizable Rules Engine: Allows the creation of complex rule sets for network traffic filtering based on various factors like IP, port, protocol, and pattern matching.
 Integration with AWS Services: Integrates with AWS services like AWS Transit Gateway and VPC to provide a centralized firewall solution across multiple VPCs.
+
+
+
+# AWS Global Accelerator
+AWS Global Accelerator is a networking service that optimizes the delivery of internet traffic to applications hosted on AWS. It utilizes the AWS global network to direct traffic along the shortest path with minimal packet loss and latency. Global Accelerator enhances the availability and performance of applications by intelligently routing traffic to the nearest AWS Edge Location.
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/1f68b8b6-25bf-4ec3-a277-01cb212f016c)
+
+DNS Name
+Global Accelerator assigns each accelerator a default DNS name such as a1234567890abcdef.awsglobalaccelerator.com that points to static IP address.These IP Addresses are anycast (Anycast IP — multiple servers holds same IP and helps to route request to nearest server.) from the AWS edge network.
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/2839dacf-ac31-492d-87fe-6acb0162b732)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/8fa58743-89f8-4363-aeaa-2291b6f30325)
