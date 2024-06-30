@@ -1369,3 +1369,13 @@ DNS Name
 Global Accelerator assigns each accelerator a default DNS name such as a1234567890abcdef.awsglobalaccelerator.com that points to static IP address.These IP Addresses are anycast (Anycast IP — multiple servers holds same IP and helps to route request to nearest server.) from the AWS edge network.
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/2839dacf-ac31-492d-87fe-6acb0162b732)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/8fa58743-89f8-4363-aeaa-2291b6f30325)
+
+# AWS Security Hub check findings of different integrations (2024/06/30)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/f80a625b-28f2-45c2-9352-a1c43fc0ad5f)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/f478ce98-a0be-4f51-9bb4-44530396d5b4)
+
+# Vulnerability scan  (2024/06/30)
+Vulnerability scanning is a key control within frameworks like SOC 2, ISO 27001, NIST 800-53.a vulnerability scanner is just an application that automatically tries to collect information about the devices it interacts with. 
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/087223b0-7c17-4e91-8922-2caead3ed406)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/dc37a567-ab6c-4f92-b825-5082c912e084)
+
