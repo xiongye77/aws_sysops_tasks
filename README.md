@@ -412,12 +412,14 @@ we’re going to send an email notification every time GuardDuty finds a potenti
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/64bdba7a-0b03-40e3-8a29-dfe1b975481a)
 
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/8e5025ba-7551-4bcc-8a78-168ee10df517)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4b8b60b0-fec2-4c43-8c4e-87d0aa7164ec)
 
 # Amazon Detective 
 Amazon Detective is a service that helps you analyze and investigate the root cause of security findings or suspicious activity. Using data from AWS Cloudtrail logs, VPC flow logs and AWS GuardDuty data, Amazon Detective will collate, filter the collected security data and using AWS Security Hub, GuardDuty, integrated partner security products, machine learning and statistical analysis investigates the security findings to get to the root cause of the problem or suspicious activity.
 ![image](https://user-images.githubusercontent.com/36766101/232459258-fd6957e6-5839-4d32-bc76-c57eeb2785f1.png)
 
 ![image](https://user-images.githubusercontent.com/36766101/192092102-217c98f8-f5fe-4356-94d2-857619c990cf.png)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/852a1781-5fc7-49f0-9c85-afa76bd4e545)
 
 
 # AWS ES for ingest log 
@@ -614,6 +616,8 @@ dig +short myip.opendns.com @resolver1.opendns.com
 
 # AWS Security Hub  and other security products such as AWS Inspector(Inspector agent installed on EC2) and and AWS Config and GuardDuty (2023/02/20) 
 Security hub can ingest findings from different AWs products include AWS Config/AWS Firewall Manager/AWS GuardDuty/AWS Macie/AWS Inspector/AWS Health/AWS IAM Analyzer/AWS SSM Patch Manager and can egress data to AWS Audit Manager/Amazon Detective/AWS SSM OpsCenter and Explorer/AWS EventBridge/AWS Trust Advisor.
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/dd1bf2c3-ca84-443a-9bff-8a0da0bdcdb0)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/49a2beda-d45f-454e-b868-62020fcfd3fb)
 
 AWS Security Hub sends its findings to Trusted Advisor.
 
@@ -664,6 +668,7 @@ https://controltower.aws-management.tools/security/guardutydetect-securityhubrem
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/002311bd-d5d4-4af1-afcb-60e2ab258b80)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/39e2e538-f762-438a-9760-7caa6f8b6e2f)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/c06f71c6-edd8-4f66-8112-e07a3fb0ae3c)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/43452657-c2ce-449a-a2e9-61c709640566)
 
 # Executing Automation Workflow Using AWS SSM Automation    (2023/02/20) 
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/ssm-automation.json
