@@ -1373,6 +1373,7 @@ Global Accelerator assigns each accelerator a default DNS name such as a12345678
 # AWS Security Hub check findings of different integrations (2024/06/30)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/f80a625b-28f2-45c2-9352-a1c43fc0ad5f)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/f478ce98-a0be-4f51-9bb4-44530396d5b4)
+![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/922e0633-706d-48b2-856d-f80bf8ce1cd5)
 
 # Vulnerability scan  (2024/06/30)
 Vulnerability scanning is a key control within frameworks like SOC 2, ISO 27001, NIST 800-53.a vulnerability scanner is just an application that automatically tries to collect information about the devices it interacts with. 
