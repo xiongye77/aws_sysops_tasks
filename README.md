@@ -1243,6 +1243,11 @@ https://github.com/xiongye77/api_gateway_lambda_dynamodb/blob/main/cloudformatio
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/906a54d9-2cbd-4617-a5ab-c3a7f9a6db57)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/3067d5b5-b67d-43a6-89af-995bf120541e)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/6e178e0e-61be-4877-b085-7563fb99fd35)
+![image](https://github.com/user-attachments/assets/e08c03f8-49d9-4abf-ae1c-e7c0a16ab5c9)
+![image](https://github.com/user-attachments/assets/bb0f99a5-ea76-4259-a04e-102b23103cb9)
+
+
+
 
 # AWS Cloudtrail Security Control
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/83c136b0-cad1-4a08-a5f4-43e698a55fa0)
