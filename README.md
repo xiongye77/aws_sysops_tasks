@@ -1,5 +1,10 @@
 # AWS SYS OPS  
 
+# AWS Cost Explorer with Amortized costs (2024/07/24)
+![image](https://github.com/user-attachments/assets/54746544-28a5-4c21-9f25-ecb179654a57)
+![image](https://github.com/user-attachments/assets/7812ee7b-f448-40ab-b3ec-1895ea24dec9)
+Amortizing is when you distribute one-time reservation costs across the billing period that is affected by that cost. Amortizing enables you to see your costs in accrual-based accounting as opposed to cash-based accounting.
+
 # Trust advisor suggestions check. 
 
 ![image](https://user-images.githubusercontent.com/36766101/165426657-889af21a-f9f4-4e29-a3cf-d773a4d58589.png)
