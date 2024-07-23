@@ -1124,6 +1124,8 @@ https://docs.aws.amazon.com/AmazonS3/latest/userguide/setting-repl-config-perm-o
 # AWS config to track changes,figure out which component changes cause application issue(2023/07/25)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/75eaa224-eb5e-4f61-a48b-252acbbff4c2)
 
+# AWS Config Aggregator for Multiple Accounts (2024/07/23)
+![image](https://github.com/user-attachments/assets/fddc038d-0634-453e-87a9-51362ff72f3b)
 
 # AWS S3 access point 
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/66a05648-f966-46b1-b40c-88ea046b0a12)
