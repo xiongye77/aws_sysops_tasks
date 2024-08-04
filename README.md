@@ -5,6 +5,14 @@
 ![image](https://github.com/user-attachments/assets/7812ee7b-f448-40ab-b3ec-1895ea24dec9)
 Amortizing is when you distribute one-time reservation costs across the billing period that is affected by that cost. Amortizing enables you to see your costs in accrual-based accounting as opposed to cash-based accounting.
 
+# AWS Security Lake  (2024/08/04)
+Security Lake automates the collection of security-related log and event data from AWS sources such as AWS CloudTrail, AWS Security Hub, AWS VPC Flow Logs, Amazon Route 53, AWS Lambda Execution and Amazon S3 data events while those from non AWS sources need their log format to be converted to a standard open-source schema called the Open Cybersecurity Schema Framework (OCSF). It is to be noted that many of the well-known security tools in the market generate their logs in OCSF schema and the number is increasing each day.
+![image](https://github.com/user-attachments/assets/32d8f1b1-fd94-44d0-b5fd-a7be79af2522)
+
+![image](https://github.com/user-attachments/assets/30bfe6e8-ad13-4cc3-a9b2-39953a9623d5)
+![image](https://github.com/user-attachments/assets/e14300c7-efa5-4834-a4c1-ea3f520f0881)
+
+
 # Trust advisor suggestions check. 
 
 ![image](https://user-images.githubusercontent.com/36766101/165426657-889af21a-f9f4-4e29-a3cf-d773a4d58589.png)
