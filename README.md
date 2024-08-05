@@ -1415,3 +1415,8 @@ Vulnerability scanning is a key control within frameworks like SOC 2, ISO 27001,
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/087223b0-7c17-4e91-8922-2caead3ed406)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/dc37a567-ab6c-4f92-b825-5082c912e084)
 
+
+
+# AWS Direct Connect Gateway (2024/08/05)
+![image](https://github.com/user-attachments/assets/3febe474-bd92-44bc-8e5d-fd2abbf851ed)
+
