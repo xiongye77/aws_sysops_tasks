@@ -1429,4 +1429,8 @@ Vulnerability scanning is a key control within frameworks like SOC 2, ISO 27001,
 An event-driven architecture uses events to trigger and communicate between decoupled services and is common in modern applications built with microservices. An event is a change in state, or an update, like an item being placed in a shopping cart on an e-commerce website.
 ![image](https://github.com/user-attachments/assets/e1c30729-787f-4ea7-87ef-0bb29038ce40)
 ![image](https://github.com/user-attachments/assets/95084cd5-d5bb-484e-a869-613ed5c0ad4e)
+![image](https://github.com/user-attachments/assets/50b9aef2-5699-422a-8e2d-c1fde1705486)
+![image](https://github.com/user-attachments/assets/cabaf897-4bfc-4600-ba3d-85d37c61f842)
+![image](https://github.com/user-attachments/assets/97144518-53e0-4f7e-ab9d-d4620f220f01)
+![image](https://github.com/user-attachments/assets/aae0bf80-c3fc-4b4c-a56e-54c5028f8e5a)
 
