@@ -1423,3 +1423,10 @@ Vulnerability scanning is a key control within frameworks like SOC 2, ISO 27001,
 
 # AWS Todo list app  (2024/08/11)
 ![image](https://github.com/user-attachments/assets/3ac25af3-fa13-400f-823e-2e5b6cc295d2)
+
+
+# AWS Event Driven Architecture (2024/08/14)
+An event-driven architecture uses events to trigger and communicate between decoupled services and is common in modern applications built with microservices. An event is a change in state, or an update, like an item being placed in a shopping cart on an e-commerce website.
+![image](https://github.com/user-attachments/assets/e1c30729-787f-4ea7-87ef-0bb29038ce40)
+![image](https://github.com/user-attachments/assets/95084cd5-d5bb-484e-a869-613ed5c0ad4e)
+
