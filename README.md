@@ -1434,3 +1434,8 @@ An event-driven architecture uses events to trigger and communicate between deco
 ![image](https://github.com/user-attachments/assets/97144518-53e0-4f7e-ab9d-d4620f220f01)
 ![image](https://github.com/user-attachments/assets/aae0bf80-c3fc-4b4c-a56e-54c5028f8e5a)
 
+# AWS Event Bridge Pipes
+![image](https://github.com/user-attachments/assets/6d08140b-79b4-4cb0-9be8-33863574defe)
+
+![image](https://github.com/user-attachments/assets/329f0051-ab35-439f-a921-222e18d9f2d4)
+
