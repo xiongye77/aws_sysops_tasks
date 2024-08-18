@@ -1439,3 +1439,9 @@ An event-driven architecture uses events to trigger and communicate between deco
 
 ![image](https://github.com/user-attachments/assets/329f0051-ab35-439f-a921-222e18d9f2d4)
 
+# AWS Dynamodb could not use sql join and aggregate between tables 
+![image](https://github.com/user-attachments/assets/9233cbb3-fa63-470d-9638-321ac14bb563)
+![image](https://github.com/user-attachments/assets/2afb0aa5-e424-4e08-bf82-2620e3c96b9c)
+
+# AWS Application Composer and CodeWhisperer 
+![image](https://github.com/user-attachments/assets/ec09f3d7-d114-4192-9b7c-7dc05379c28b)
