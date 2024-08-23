@@ -809,6 +809,8 @@ https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-ec2reset
 
 # AWS VPC private link (VPC endpoint service) (2023/03/10)
 ![image](https://user-images.githubusercontent.com/36766101/224284676-742f2ed9-3ced-45de-af30-f20f891f3f52.png)
+![image](https://github.com/user-attachments/assets/3afeadfa-b54b-4ec8-87f6-c312c7afaac7)
+
 ![image](https://user-images.githubusercontent.com/36766101/224284833-2d501ee2-19ea-4c74-b0f7-290594360d1c.png)
 
 
