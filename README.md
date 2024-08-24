@@ -1455,3 +1455,14 @@ An event-driven architecture uses events to trigger and communicate between deco
 # Amazon Kinesis Data Firehose (2024/08/24)
 The main purpose of Amazon Kinesis Data Firehose is similar to KDS – that is, to provide a platform for streaming data. However, the key differentiation is that Firehose provides a white-glove service when it comes to specific destinations. What this means is that for certain destinations such as Amazon S3, Amazon Redshift, Amazon OpenSearch Service, Splunk, and some other HTTP endpoints, Firehose will do all the heavy lifting to ensure that the data, when delivered to these target destinations, is directly ready for consumption by the users.
 ![image](https://github.com/user-attachments/assets/899f7c28-0ebe-4bf9-8882-0e417c0581f6)
+
+
+
+# AWS DMS 
+instead of S3 as the target for DMS, we make KDS the target, which can then be chained with Kinesis Data Firehose. Finally, Firehose will put the final data files in S3. This way, you can leverage all the great features of Firehose to get an optimized data structure in the data lake
+![image](https://github.com/user-attachments/assets/151b4c94-9ab7-44c7-941e-1fd59daefdc2)
+![image](https://github.com/user-attachments/assets/cc941efe-37d2-40bd-9d2e-805e86a297a4)
+
+![image](https://github.com/user-attachments/assets/41d5bb6c-dfe4-4ce5-8e84-80b847ad361c)
+![image](https://github.com/user-attachments/assets/5f621e0b-2d30-4fbd-aa13-7d5d57f6a9ad)
+![image](https://github.com/user-attachments/assets/5f7b128c-9bdf-4571-9964-f09aca8f8a93)
