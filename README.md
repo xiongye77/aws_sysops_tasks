@@ -1198,6 +1198,7 @@ S3 Access Point Policy
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/df4af2f0-083c-40b7-8b0f-9b20e6161453)
 
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/a144227e-9750-423c-aaf6-6800e627744b)
+![image](https://github.com/user-attachments/assets/00b765af-8d4a-4bca-aae7-6572eb52b481)
 
 
 # AWS launch template repalce launch configuration and instance refresh 
@@ -1449,3 +1450,8 @@ An event-driven architecture uses events to trigger and communicate between deco
 
 # AWS Application Composer and CodeWhisperer 
 ![image](https://github.com/user-attachments/assets/ec09f3d7-d114-4192-9b7c-7dc05379c28b)
+
+
+# Amazon Kinesis Data Firehose (2024/08/24)
+The main purpose of Amazon Kinesis Data Firehose is similar to KDS – that is, to provide a platform for streaming data. However, the key differentiation is that Firehose provides a white-glove service when it comes to specific destinations. What this means is that for certain destinations such as Amazon S3, Amazon Redshift, Amazon OpenSearch Service, Splunk, and some other HTTP endpoints, Firehose will do all the heavy lifting to ensure that the data, when delivered to these target destinations, is directly ready for consumption by the users.
+![image](https://github.com/user-attachments/assets/899f7c28-0ebe-4bf9-8882-0e417c0581f6)
