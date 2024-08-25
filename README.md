@@ -1464,5 +1464,7 @@ instead of S3 as the target for DMS, we make KDS the target, which can then be c
 ![image](https://github.com/user-attachments/assets/cc941efe-37d2-40bd-9d2e-805e86a297a4)
 
 ![image](https://github.com/user-attachments/assets/41d5bb6c-dfe4-4ce5-8e84-80b847ad361c)
+![image](https://github.com/user-attachments/assets/c9f8f3ba-fd04-4fd0-a653-a4c4bcd75fed)
+
 ![image](https://github.com/user-attachments/assets/5f621e0b-2d30-4fbd-aa13-7d5d57f6a9ad)
 ![image](https://github.com/user-attachments/assets/5f7b128c-9bdf-4571-9964-f09aca8f8a93)
