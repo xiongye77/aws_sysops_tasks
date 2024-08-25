@@ -1468,3 +1468,12 @@ instead of S3 as the target for DMS, we make KDS the target, which can then be c
 
 ![image](https://github.com/user-attachments/assets/5f621e0b-2d30-4fbd-aa13-7d5d57f6a9ad)
 ![image](https://github.com/user-attachments/assets/5f7b128c-9bdf-4571-9964-f09aca8f8a93)
+
+
+
+# AWS API Gateway rest api vs http api 
+Key Differences:
+REST API supports a broader range of direct integrations with AWS services using AWS service integrations.
+HTTP API focuses on HTTP-based integrations, including support for AWS services via HTTP endpoints, and is optimized for simpler use cases with features like native JWT authorizers.
+![image](https://github.com/user-attachments/assets/9277a65a-c227-4c86-9b57-c3d382fb885d)
+![image](https://github.com/user-attachments/assets/9529f66e-1a3d-4230-88b7-6cca8b06508d)
