@@ -1471,9 +1471,23 @@ instead of S3 as the target for DMS, we make KDS the target, which can then be c
 
 
 
-# AWS API Gateway rest api vs http api 
+# AWS API Gateway rest api vs http api (2024/08/26)
 Key Differences:
 REST API supports a broader range of direct integrations with AWS services using AWS service integrations.
 HTTP API focuses on HTTP-based integrations, including support for AWS services via HTTP endpoints, and is optimized for simpler use cases with features like native JWT authorizers.
 ![image](https://github.com/user-attachments/assets/9277a65a-c227-4c86-9b57-c3d382fb885d)
 ![image](https://github.com/user-attachments/assets/9529f66e-1a3d-4230-88b7-6cca8b06508d)
+
+
+
+
+# How Does Prometheus Work? 
+https://github.com/xiongye77/aws_sysops_tasks/blob/main/Prometheus.txt
+The Prometheus Server
+Prometheus has a core component called the Prometheus server, which does the main monitoring work. This server is composed of three parts:
+
+Time Series Database: This stores the collected metrics data (e.g., CPU usage, request latency) in a highly efficient format optimized for time-based queries.
+Data Retriever (Scraper): This worker actively pulls metrics from various sources, including applications, databases, servers, and containers. It then sends the collected data to the time series database for storage.
+HTTP Server API: This provides a way to query the stored metrics data. This API allows users to retrieve and visualize metrics through tools like the Prometheus dashboard, SigNoz, or Grafana.
+![image](https://github.com/user-attachments/assets/8ed4ce50-e976-41a0-98a3-40db1cd11073)
+![image](https://github.com/user-attachments/assets/8bf482c1-785f-4904-967b-286950dbedeb)
