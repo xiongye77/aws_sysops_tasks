@@ -1482,6 +1482,8 @@ HTTP API focuses on HTTP-based integrations, including support for AWS services 
 
 
 # How Does Prometheus Work? 
+![image](https://github.com/user-attachments/assets/d81c72d7-261a-4958-8027-060be6c2a00d)
+
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/Prometheus.txt
 The Prometheus Server
 Prometheus has a core component called the Prometheus server, which does the main monitoring work. This server is composed of three parts:
