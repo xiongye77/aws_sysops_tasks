@@ -1,0 +1,257 @@
+.github/workflows/deploy.yml
+
+
+---
+
+
+Thought for 5 seconds
+
+Advanced GitHub Actions Workflow Example
+
+In this advanced example, we'll create a GitHub Actions workflow that performs the following tasks:
+
+Builds and tests the application using a matrix strategy to run tests across multiple environments.
+Builds a Docker image and scans it for vulnerabilities using Trivy.
+Pushes the Docker image to Amazon Elastic Container Registry (ECR).
+Deploys to Amazon Elastic Kubernetes Service (EKS) using a Blue-Green deployment strategy.
+Notifies a Slack channel about the deployment status.
+Uses reusable workflows and environment protection rules for better organization and security.
+Prerequisites
+AWS Setup:
+
+An AWS account with an EKS cluster set up.
+AWS IAM roles and permissions configured for ECR and EKS access.
+Kubernetes manifests for Blue-Green deployment.
+An S3 bucket to store Terraform state (if using Infrastructure as Code).
+GitHub Setup:
+
+Secrets stored in your GitHub repository:
+AWS_ACCESS_KEY_ID
+AWS_SECRET_ACCESS_KEY
+AWS_REGION
+EKS_CLUSTER_NAME
+ECR_REGISTRY
+SLACK_WEBHOOK_URL
+DOCKERHUB_USERNAME
+DOCKERHUB_TOKEN
+Environments configured with protection rules (e.g., staging, production).
+Reusable Workflows stored in a separate repository or within the same repository.
+Application Code:
+
+Includes unit and integration tests.
+Dockerfile and Kubernetes manifests (deployment.yaml, service.yaml).
+Scripts for database migrations or other setup tasks.
+---
+
+
+
+
+name: Github action workflow file deploy container to EKS cluster 
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  # 1. Build and Test Job
+  build-and-test:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14, 16]
+        os: [ubuntu-latest, windows-latest]
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Run Unit Tests
+        run: npm test
+
+      - name: Archive Test Results
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: test-results-${{ matrix.os }}-node-${{ matrix.node-version }}
+          path: test-results/
+
+  # 2. Build and Scan Docker Image Job
+  build-and-scan-image:
+    name: Build and Scan Docker Image
+    needs: build-and-test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Log in to DockerHub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build Docker Image
+        run: |
+          docker build -t my-app:${{ github.sha }} .
+          docker tag my-app:${{ github.sha }} my-app:latest
+
+      - name: Scan Docker Image with Trivy
+        uses: aquasecurity/trivy-action@v0.2.0
+        with:
+          image-ref: my-app:${{ github.sha }}
+          format: 'table'
+          exit-code: '1'
+          severity: 'CRITICAL,HIGH'
+
+      - name: Push Docker Image to DockerHub
+        run: |
+          docker push my-app:${{ github.sha }}
+          docker push my-app:latest
+
+      - name: Log in to Amazon ECR
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Tag and Push Image to ECR
+        env:
+          ECR_REGISTRY: ${{ secrets.ECR_REGISTRY }}
+        run: |
+          IMAGE_URI=${{ secrets.ECR_REGISTRY }}/my-app:${{ github.sha }}
+          docker tag my-app:${{ github.sha }} $IMAGE_URI
+          docker push $IMAGE_URI
+
+      - name: Export Image URI
+        id: ecr
+        run: echo "::set-output name=image_uri::${{ secrets.ECR_REGISTRY }}/my-app:${{ github.sha }}"
+
+  # 3. Deploy to EKS Job (Reusable Workflow)
+  deploy:
+    name: Deploy to EKS
+    needs: build-and-scan-image
+    uses: ./.github/workflows/deploy-to-eks.yml
+    with:
+      image_uri: ${{ needs.build-and-scan-image.outputs.image_uri }}
+      environment: production
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      EKS_CLUSTER_NAME: ${{ secrets.EKS_CLUSTER_NAME }}
+
+  # 4. Notify Slack Job
+  notify:
+    name: Notify Slack
+    needs: deploy
+    runs-on: ubuntu-latest
+    if: always()
+    steps:
+      - name: Send Notification to Slack
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_COLOR: ${{ job.status == 'success' && '#36a64f' || '#FF0000' }}
+          SLACK_MESSAGE: 'Deployment to production ${{ job.status }}'
+
+
+
+
+
+
+---
+reusable workflow 
+
+.github/workflows/deploy-to-eks.yml
+
+
+name: Deploy to EKS
+
+on:
+  workflow_call:
+    inputs:
+      image_uri:
+        required: true
+        type: string
+      environment:
+        required: true
+        type: string
+    secrets:
+      AWS_ACCESS_KEY_ID:
+        required: true
+      AWS_SECRET_ACCESS_KEY:
+        required: true
+      AWS_REGION:
+        required: true
+      EKS_CLUSTER_NAME:
+        required: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Configure kubectl
+        uses: aws-actions/amazon-eks-update-kubeconfig@v1
+        with:
+          cluster-name: ${{ secrets.EKS_CLUSTER_NAME }}
+          region: ${{ secrets.AWS_REGION }}
+
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set Image in Deployment Manifest
+        run: |
+          sed -i 's|image: .*|image: '"${{ inputs.image_uri }}"'|g' k8s/${{ inputs.environment }}/deployment.yaml
+
+      - name: Apply Kubernetes Manifests
+        run: |
+          kubectl apply -f k8s/${{ inputs.environment }}/
+
+      - name: Wait for Deployment to Complete
+        run: |
+          kubectl rollout status deployment/my-app -n ${{ inputs.environment }} --timeout=5m
+
+
+
+
+---
+deployment.yaml
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-app
+  template:
+    metadata:
+      labels:
+        app: my-app
+    spec:
+      containers:
+        - name: my-app-container
+          image: image:tag  # This line will be updated by the workflow
+          ports:
+            - containerPort: 80
+
+
