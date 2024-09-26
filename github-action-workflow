@@ -255,3 +255,158 @@ spec:
             - containerPort: 80
 
 
+
+
+
+├── .github
+│   └── workflows
+│       └── deploy.yml
+├── k8s
+│   ├── deployment.yaml
+│   └── service.yaml
+├── app
+│   └── main.py
+└── Dockerfile
+
+
+
+
+
+
+---
+github action workflow for ECS
+
+
+Prerequisites
+AWS Account with ECS Cluster and ECR Repository:
+
+An existing ECS cluster with a service configured to use an ECS task definition.
+An ECR repository to store your Docker images.
+AWS IAM User with Proper Permissions:
+
+Permissions to interact with ECR (ecr:*) and ECS (ecs:*).
+Access to update task definitions and services.
+Application Code:
+
+Contains a Dockerfile for building your application image.
+Optional: ECS task definition JSON file (can be generated dynamically).
+GitHub Secrets:
+
+AWS_ACCESS_KEY_ID: Your AWS access key ID.
+AWS_SECRET_ACCESS_KEY: Your AWS secret access key.
+AWS_REGION: AWS region (e.g., us-east-1).
+ECR_REPOSITORY: Name of your ECR repository.
+ECS_CLUSTER: Name of your ECS cluster.
+ECS_SERVICE: Name of your ECS service.
+
+---
+
+
+
+name: Build and Deploy to ECS
+
+on:
+  push:
+    branches: [ "main" ]  # Trigger on push to the main branch
+
+env:
+  AWS_REGION: ${{ secrets.AWS_REGION }}
+  ECR_REPOSITORY: ${{ secrets.ECR_REPOSITORY }}
+  ECS_CLUSTER: ${{ secrets.ECS_CLUSTER }}
+  ECS_SERVICE: ${{ secrets.ECS_SERVICE }}
+  CONTAINER_NAME: my-app  # Name of the container in the task definition
+
+jobs:
+  build-deploy:
+    name: Build, Push, and Deploy to ECS
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ env.AWS_REGION }}
+
+      - name: Log in to Amazon ECR
+        id: login-ecr
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Build Docker Image
+        run: |
+          # Build the Docker image
+          docker build -t $ECR_REPOSITORY:$GITHUB_SHA .
+          # Tag the image with the ECR registry URI
+          docker tag $ECR_REPOSITORY:$GITHUB_SHA ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}:$GITHUB_SHA
+
+      - name: Push Docker Image to ECR
+        run: |
+          # Push the image to ECR
+          docker push ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}:$GITHUB_SHA
+
+      - name: Update ECS Task Definition
+        id: task-def
+        uses: aws-actions/amazon-ecs-render-task-definition@v1
+        with:
+          task-definition: ecs-task-def.json  # Path to your ECS task definition file
+          container-name: ${{ env.CONTAINER_NAME }}
+          image: ${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}:$GITHUB_SHA
+
+      - name: Deploy to ECS
+        uses: aws-actions/amazon-ecs-deploy-task-definition@v1
+        with:
+          task-definition: ${{ steps.task-def.outputs.task-definition }}
+          service: ${{ env.ECS_SERVICE }}
+          cluster: ${{ env.ECS_CLUSTER }}
+          wait-for-service-stability: true
+
+
+
+
+
+---
+ecs-task-def.json
+
+{
+  "family": "my-app-task",
+  "networkMode": "awsvpc",
+  "containerDefinitions": [
+    {
+      "name": "my-app",
+      "image": "IMAGE_NAME",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 80,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        {
+          "name": "ENV_VAR",
+          "value": "value"
+        }
+      ]
+    }
+  ],
+  "requiresCompatibilities": [ "FARGATE" ],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::123456789012:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::123456789012:role/ecsTaskRole"
+}
+---
+
+├── .github
+│   └── workflows
+│       └── deploy-to-ecs.yml
+├── ecs-task-def.json
+├── app
+│   └── main.py
+├── Dockerfile
+└── README.md
+
