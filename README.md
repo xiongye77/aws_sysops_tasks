@@ -3,8 +3,14 @@
 # AWS Glue ETL job to change json to csv (2024/10/07)
 <img width="839" alt="image" src="https://github.com/user-attachments/assets/ac1e75cd-60bc-41f5-9204-9d6d04b67a09">
 Requested number of workers to 2 (minimum value) to save cost and Enable Job Marker to avoid unhandle duplicate files.
+
+<img width="1383" alt="image" src="https://github.com/user-attachments/assets/5761cd01-47e1-4569-830e-961d12de9e09">
+<img width="1727" alt="image" src="https://github.com/user-attachments/assets/291ac25b-6139-4872-9537-2e77b7519625">
+
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/flatten-json-csv.py
 refer it 
+
+<img width="1472" alt="image" src="https://github.com/user-attachments/assets/9f2d7f4c-51e1-4703-87aa-ecd38a44139a">
 
 # AWS Cost Explorer with Amortized costs (2024/07/24)
 ![image](https://github.com/user-attachments/assets/54746544-28a5-4c21-9f25-ecb179654a57)
