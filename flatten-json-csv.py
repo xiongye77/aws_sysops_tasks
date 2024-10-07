@@ -22,7 +22,8 @@ datasource = glueContext.create_dynamic_frame.from_options(
     connection_options={
         "paths": [args['S3_INPUT_PATH']],
         "recurse": True
-    }
+    },
+    additional_options = {"jobBookmarkKeys":["id"],"jobBookmarkKeysSortOrder":"asc"}
 )
 
 # Convert DynamicFrame to DataFrame for Spark SQL transformations
