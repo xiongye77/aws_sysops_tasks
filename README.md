@@ -12,6 +12,9 @@ refer it
 
 <img width="1472" alt="image" src="https://github.com/user-attachments/assets/9f2d7f4c-51e1-4703-87aa-ecd38a44139a">
 
+How Glue connect to private resource (RDS/Redshift) 
+<img width="796" alt="image" src="https://github.com/user-attachments/assets/0d4a16c9-6945-43ec-9fb9-3a339a50dbff">
+
 # AWS Cost Explorer with Amortized costs (2024/07/24)
 ![image](https://github.com/user-attachments/assets/54746544-28a5-4c21-9f25-ecb179654a57)
 ![image](https://github.com/user-attachments/assets/7812ee7b-f448-40ab-b3ec-1895ea24dec9)
