@@ -1,0 +1,128 @@
+{
+  "Comment": "Process JSON files and load into Redshift",
+  "StartAt": "Parse JSON to CSV",
+  "States": {
+    "Parse JSON to CSV": {
+      "Type": "Task",
+      "Resource": "arn:aws:lambda:us-east-1:582140066777:function:ConvertJsonToCsvFunction",
+      "Parameters": {
+        "bucket.$": "$.bucket",
+        "key.$": "$.key"
+      },
+      "ResultPath": "$.ParseResult",
+      "Next": "Generate Parquet Output Path",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Next": "Failure"
+        }
+      ]
+    },
+    "Generate Parquet Output Path": {
+      "Type": "Pass",
+      "Parameters": {
+        "parquetOutputPath.$": "States.Format('s3://aws-sam-cli-managed-default-582140066777/parquet/{}',  States.UUID())"
+      },
+      "ResultPath": "$.ParquetOutput",
+      "Next": "Convert CSV to Parquet"
+    },
+    "Convert CSV to Parquet": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::glue:startJobRun.sync",
+      "Parameters": {
+        "JobName": "ConvertCsvToParquetJob",
+        "Arguments": {
+          "--INPUT_PATH.$": "$.ParseResult.csvS3Uri",
+          "--OUTPUT_PATH.$": "$.ParquetOutput.parquetOutputPath"
+        }
+      },
+      "ResultPath": "$.ConvertResult",
+      "Next": "Start Glue Crawler",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Next": "Failure"
+        }
+      ]
+    },
+    "Start Glue Crawler": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::aws-sdk:glue:startCrawler",
+      "Parameters": {
+        "Name": "csv-file-crawler"
+      },
+      "ResultPath": null,
+      "Next": "Wait for Crawler",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Next": "Failure"
+        }
+      ]
+    },
+    "Wait for Crawler": {
+      "Type": "Wait",
+      "Seconds": 30,
+      "Next": "Check Crawler Status"
+    },
+    "Check Crawler Status": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::aws-sdk:glue:getCrawler",
+      "Parameters": {
+        "Name": "csv-file-crawler"
+      },
+      "Next": "Crawler Completed?",
+      "ResultPath": "$.CrawlerInfo",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Next": "Failure"
+        }
+      ]
+    },
+    "Crawler Completed?": {
+      "Type": "Choice",
+      "Choices": [
+        {
+          "Variable": "$.CrawlerInfo.Crawler.State",
+          "StringEquals": "READY",
+          "Next": "Load Parquet into Redshift"
+        }
+      ],
+      "Default": "Wait for Crawler"
+    },
+    "Load Parquet into Redshift": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::glue:startJobRun.sync",
+      "Parameters": {
+        "JobName": "LoadParquetToRedshiftJob",
+        "Arguments": {
+          "--S3_INPUT_PATH.$": "$.ParquetOutput.parquetOutputPath"
+        }
+      },
+      "ResultPath": "$.LoadResult",
+      "Catch": [
+        {
+          "ErrorEquals": [
+            "States.ALL"
+          ],
+          "Next": "Failure"
+        }
+      ],
+      "End": true
+    },
+    "Failure": {
+      "Type": "Fail",
+      "Error": "WorkflowFailed",
+      "Cause": "An error occurred during processing."
+    }
+  }
+}
