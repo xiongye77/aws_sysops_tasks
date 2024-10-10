@@ -1,6 +1,8 @@
 # AWS SYS OPS  
 
 # AWS Step Function to pipeline file transformation and load to Redhshift  (2024/10/10)
+https://github.com/xiongye77/aws_sysops_tasks/tree/main/statemachine
+
 <img width="1687" alt="image" src="https://github.com/user-attachments/assets/67ec899b-1b0c-45e6-8bfa-79c709e3faf5">
 <img width="1087" alt="image" src="https://github.com/user-attachments/assets/08ae8a58-4b46-4c31-8b48-64a6a28e64cc">
 
