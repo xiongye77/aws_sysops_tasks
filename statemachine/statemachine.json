@@ -7,7 +7,8 @@
       "Resource": "arn:aws:lambda:us-east-1:582140066777:function:ConvertJsonToCsvFunction",
       "Parameters": {
         "bucket.$": "$.bucket",
-        "key.$": "$.key"
+        "key.$": "$.key",
+        "partition.$": "$.partition"
       },
       "ResultPath": "$.ParseResult",
       "Next": "Generate Parquet Output Path",
@@ -23,7 +24,7 @@
     "Generate Parquet Output Path": {
       "Type": "Pass",
       "Parameters": {
-        "parquetOutputPath.$": "States.Format('s3://aws-sam-cli-managed-default-582140066777/parquet/{}',  States.UUID())"
+        "parquetOutputPath.$": "States.Format('s3://aws-sam-cli-managed-default-582140066777/parquet/{}',  $.partition)"
       },
       "ResultPath": "$.ParquetOutput",
       "Next": "Convert CSV to Parquet"
@@ -53,7 +54,7 @@
       "Type": "Task",
       "Resource": "arn:aws:states:::aws-sdk:glue:startCrawler",
       "Parameters": {
-        "Name": "csv-file-crawler"
+        "Name": "parquet-file-crawler"
       },
       "ResultPath": null,
       "Next": "Wait for Crawler",
