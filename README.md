@@ -1,5 +1,10 @@
 # AWS SYS OPS  
 
+# AWS Step Function to pipeline file transformation and load to Redhshift  (2024/10/10)
+<img width="1687" alt="image" src="https://github.com/user-attachments/assets/67ec899b-1b0c-45e6-8bfa-79c709e3faf5">
+<img width="1087" alt="image" src="https://github.com/user-attachments/assets/08ae8a58-4b46-4c31-8b48-64a6a28e64cc">
+
+
 # AWS Glue ETL job to change json to csv (2024/10/07)
 <img width="839" alt="image" src="https://github.com/user-attachments/assets/ac1e75cd-60bc-41f5-9204-9d6d04b67a09">
 Requested number of workers to 2 (minimum value) to save cost and Enable Job Marker to avoid unhandle duplicate files.
