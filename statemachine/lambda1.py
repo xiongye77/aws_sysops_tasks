@@ -1,6 +1,7 @@
-# the lambda which be triggered by S3 file upload and start statemachine
 import json
 import boto3
+import datetime
+
 
 sfn_client = boto3.client('stepfunctions')
 
@@ -8,11 +9,23 @@ def lambda_handler(event, context):
     # Extract bucket and key from the event
     bucket = event['Records'][0]['s3']['bucket']['name']
     key = event['Records'][0]['s3']['object']['key']
+    
+    utc_now = datetime.datetime.now(datetime.timezone.utc)
+    
+    # Format the date in 'yyyy-mm-dd-hh24' format
+    
+    melbourne_offset = datetime.timedelta(hours=11)  # AEDT (Australian Eastern Daylight Time)
 
+    # Convert UTC time to Melbourne local time
+    melbourne_time = utc_now + melbourne_offset
+
+    # Format the date and time in 'yyyy-mm-dd-hh24' format
+    formatted_time = melbourne_time.strftime("%Y-%m-%d-%H")
     # Construct input for the state machine
     state_machine_input = {
         'bucket': bucket,
-        'key': key
+        'key': key,
+        'partition': formatted_time
     }
 
     # Start the Step Functions state machine
