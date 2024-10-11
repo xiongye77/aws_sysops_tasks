@@ -1,5 +1,7 @@
 # AWS SYS OPS  
 
+
+
 # AWS Step Function to pipeline file transformation and load to Redhshift  (2024/10/10)
 https://github.com/xiongye77/aws_sysops_tasks/tree/main/statemachine
 
@@ -26,11 +28,15 @@ refer it
 How Glue connect to private resource (RDS/Redshift) 
 <img width="796" alt="image" src="https://github.com/user-attachments/assets/0d4a16c9-6945-43ec-9fb9-3a339a50dbff">
 
-# AWS Cost Explorer with Amortized costs (2024/07/24)
+# AWS Cost Explorer with Amortized costs (2024/07/24) and AWS Compute Optimizer 
 ![image](https://github.com/user-attachments/assets/54746544-28a5-4c21-9f25-ecb179654a57)
 ![image](https://github.com/user-attachments/assets/7812ee7b-f448-40ab-b3ec-1895ea24dec9)
 Amortizing is when you distribute one-time reservation costs across the billing period that is affected by that cost. Amortizing enables you to see your costs in accrual-based accounting as opposed to cash-based accounting.
+<img width="1248" alt="image" src="https://github.com/user-attachments/assets/65683bd5-c835-42f3-aeec-fa163a376601">
 
+AWS offers a range of compute services — EC2, ECS, Lambda, and more — with flexible configurations. However, determining the right amount of compute resources for your workloads can be challenging. Over-provisioning can be costly, while under-provisioning may lead to performance issues.
+<img width="1659" alt="image" src="https://github.com/user-attachments/assets/1d9f1778-ddc0-4920-9188-65796f5aa557">
+Compute Optimizer continuously analyses your resource usage and provides recommendations to optimise your compute allocations, including EC2 instance types and Lambda memory settings. By following these recommendations, you can significantly improve cost efficiency and performance.
 # AWS Security Lake  (2024/08/04)
 Security Lake automates the collection of security-related log and event data from AWS sources such as AWS CloudTrail, AWS Security Hub, AWS VPC Flow Logs, Amazon Route 53, AWS Lambda Execution and Amazon S3 data events while those from non AWS sources need their log format to be converted to a standard open-source schema called the Open Cybersecurity Schema Framework (OCSF). It is to be noted that many of the well-known security tools in the market generate their logs in OCSF schema and the number is increasing each day.
 ![image](https://github.com/user-attachments/assets/32d8f1b1-fd94-44d0-b5fd-a7be79af2522)
