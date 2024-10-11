@@ -8,6 +8,7 @@ https://github.com/xiongye77/aws_sysops_tasks/tree/main/statemachine
 <img width="1460" alt="image" src="https://github.com/user-attachments/assets/d28acdee-09d6-4c81-9c6e-bdd6bed96c1d">
 
 <img width="1372" alt="image" src="https://github.com/user-attachments/assets/03168c90-9946-4800-94d3-6ad288373ec5">
+<img width="1448" alt="image" src="https://github.com/user-attachments/assets/df896308-a16c-4542-bf00-a43c800b929a">
 
 
 # AWS Glue ETL job to change json to csv (2024/10/07)
