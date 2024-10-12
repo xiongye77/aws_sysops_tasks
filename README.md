@@ -12,6 +12,9 @@ https://github.com/xiongye77/aws_sysops_tasks/tree/main/statemachine
 <img width="1372" alt="image" src="https://github.com/user-attachments/assets/03168c90-9946-4800-94d3-6ad288373ec5">
 <img width="1448" alt="image" src="https://github.com/user-attachments/assets/df896308-a16c-4542-bf00-a43c800b929a">
 
+verify converted parquet file schema using simple python code 
+<img width="1718" alt="image" src="https://github.com/user-attachments/assets/bf095ea1-79f7-4321-bdb0-a8e45769b4e9">
+
 
 # AWS Glue ETL job to change json to csv (2024/10/07)
 <img width="839" alt="image" src="https://github.com/user-attachments/assets/ac1e75cd-60bc-41f5-9204-9d6d04b67a09">
