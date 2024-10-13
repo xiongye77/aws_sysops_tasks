@@ -1,5 +1,15 @@
 # AWS SYS OPS  
 
+# Redshift Serverless monitor (2024/10/14)
+
+Performance Monitoring
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/e9080826-be9f-45ec-987b-74b9d943694e">
+<img width="1726" alt="image" src="https://github.com/user-attachments/assets/742ddc1e-64f7-4897-9814-16e131cd8684">
+Snapshot (manually and customer retention period) and Recovery Point (automatically and 24 hours retention period) 
+<img width="1710" alt="image" src="https://github.com/user-attachments/assets/39653ba1-5f5c-4fbf-9a5f-154159406748">
+<img width="592" alt="image" src="https://github.com/user-attachments/assets/03dbe8dd-ab0c-43a4-8865-7397e17ee6da">
+Restore table from Snapshot
+<img width="1446" alt="image" src="https://github.com/user-attachments/assets/bef4d446-22cf-46e6-95cd-9fa22472917d">
 
 
 # AWS Step Function to pipeline file transformation and load to Redhshift  (2024/10/10)
