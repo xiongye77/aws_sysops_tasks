@@ -8,8 +8,12 @@ Performance Monitoring
 Snapshot (manually and customer retention period) and Recovery Point (automatically and 24 hours retention period) 
 <img width="1710" alt="image" src="https://github.com/user-attachments/assets/39653ba1-5f5c-4fbf-9a5f-154159406748">
 <img width="592" alt="image" src="https://github.com/user-attachments/assets/03dbe8dd-ab0c-43a4-8865-7397e17ee6da">
+
 Restore table from Snapshot
 <img width="1446" alt="image" src="https://github.com/user-attachments/assets/bef4d446-22cf-46e6-95cd-9fa22472917d">
+
+Restore to previous recovery point
+<img width="503" alt="image" src="https://github.com/user-attachments/assets/c1a80d8d-9cb7-469a-9a21-dee3d39782d8">
 
 
 # AWS Step Function to pipeline file transformation and load to Redhshift  (2024/10/10)
