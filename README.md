@@ -15,6 +15,15 @@ Restore table from Snapshot
 Restore to previous recovery point
 <img width="503" alt="image" src="https://github.com/user-attachments/assets/c1a80d8d-9cb7-469a-9a21-dee3d39782d8">
 
+Use GUI to load data from S3 bucket 
+<img width="1721" alt="image" src="https://github.com/user-attachments/assets/c04eb215-3526-4cf2-92f1-f26b14e4170b">
+
+Redshift Spectrum to scan S3 directly 
+<img width="998" alt="image" src="https://github.com/user-attachments/assets/77e5a9fc-5074-437c-8003-47814b9457a4">
+
+<img width="1013" alt="image" src="https://github.com/user-attachments/assets/db26292a-143b-4497-be7e-da8ee5ae18f7">
+
+
 
 # AWS Step Function to pipeline file transformation and load to Redhshift  (2024/10/10)
 https://github.com/xiongye77/aws_sysops_tasks/tree/main/statemachine
