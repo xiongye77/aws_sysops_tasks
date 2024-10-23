@@ -1,5 +1,10 @@
 # AWS SYS OPS  
 
+# Amazon EventBridge Pipes (2024/10/24)
+
+<img width="1150" alt="image" src="https://github.com/user-attachments/assets/0dbd1e57-1242-4d35-8497-4cbf577306ac">
+
+
 # Redshift Serverless monitor (2024/10/14)
 
 Performance Monitoring
