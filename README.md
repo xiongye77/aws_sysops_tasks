@@ -8,12 +8,21 @@ The AWS::Pipes::Pipe resource enables you to connect a source to a target, with 
 <img width="1150" alt="image" src="https://github.com/user-attachments/assets/0dbd1e57-1242-4d35-8497-4cbf577306ac">
 How It Works:
 Event Source: The source of the events. This could be an AWS service like Amazon SQS, Amazon Kinesis, DynamoDB streams, or even an API Gateway.
+
+
 Target: The service that receives the event, such as AWS Lambda, EventBridge, Step Functions, or other AWS services.
+
+
 Filter: You can apply filters to the events, so only the events that meet certain criteria are passed on to the target.
+
+
 Enrichment: You can enrich the event before sending it to the target, for example, by calling a Lambda function to add extra data.
+
+
 <img width="733" alt="image" src="https://github.com/user-attachments/assets/4961e2c0-04a8-41b2-b416-d4d88ebb1b4c">
 
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/eventbridge-pipe.yaml
+<img width="1126" alt="image" src="https://github.com/user-attachments/assets/149d3f05-cfa7-413d-a267-d0a2929085b6">
 
 # Redshift Serverless monitor (2024/10/14)
 
