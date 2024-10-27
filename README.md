@@ -1,5 +1,14 @@
 # AWS SYS OPS  
 
+# Ingest Stream data into Snowflake/Redshift 
+
+with Amazon Data Firehose
+
+<img width="667" alt="image" src="https://github.com/user-attachments/assets/85da0166-8a46-4209-93f4-d55f925acc32">
+<img width="665" alt="image" src="https://github.com/user-attachments/assets/86455835-0cf8-4635-bf52-bd25522867df">
+<img width="820" alt="image" src="https://github.com/user-attachments/assets/3bf40ab8-fc43-4ae4-a21f-97cf4ad3cad7">
+
+
 # Amazon EventBridge Pipes (2024/10/24)
 The AWS::Pipes::Pipe resource enables you to connect a source to a target, with optional filtering and enrichment steps in between. This helps automate the flow of events from event producers to event consumers, facilitating event-driven application design.
 
