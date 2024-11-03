@@ -1,9 +1,15 @@
 # AWS SYS OPS  
 
 
-# AWS EBS share snapshot cross account 
+# AWS EBS snapshot share cross account 
 if snapshot is not encrypted using CMK, it could not be shared account account 
 <img width="1446" alt="image" src="https://github.com/user-attachments/assets/fabe9dbf-9dce-483b-9151-94b6826cc529">
+<img width="1487" alt="image" src="https://github.com/user-attachments/assets/03d41051-d07e-472f-b5b0-bad66b3787ab">
+<img width="1506" alt="image" src="https://github.com/user-attachments/assets/f37e4805-14e7-4ac5-b34a-75b13f131f91">
+<img width="1639" alt="image" src="https://github.com/user-attachments/assets/7322931a-913e-43f4-8ce7-0496ad0fcf58">
+
+Also need change CMK policy to allow target account to use it 
+<img width="1424" alt="image" src="https://github.com/user-attachments/assets/6c2e3ae5-a20d-406c-8f41-3c550c234654">
 
 # Ingest Stream data into Snowflake/Redshift 
 
