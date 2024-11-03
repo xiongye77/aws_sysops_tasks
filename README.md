@@ -1,7 +1,7 @@
 # AWS SYS OPS  
 
 
-# AWS EBS snapshot share cross account 
+# AWS EBS snapshot share cross account (2024/11/03)
 if snapshot is not encrypted using CMK, it could not be shared account account 
 <img width="1446" alt="image" src="https://github.com/user-attachments/assets/fabe9dbf-9dce-483b-9151-94b6826cc529">
 <img width="1487" alt="image" src="https://github.com/user-attachments/assets/03d41051-d07e-472f-b5b0-bad66b3787ab">
@@ -10,6 +10,16 @@ if snapshot is not encrypted using CMK, it could not be shared account account
 
 Also need change CMK policy to allow target account to use it 
 <img width="1424" alt="image" src="https://github.com/user-attachments/assets/6c2e3ae5-a20d-406c-8f41-3c550c234654">
+
+
+# AWS EFS Security (encrytion in transit and encrypt in rest)
+At Rest: Activate encryption during the creation of your EFS file system to protect data stored on disk. This utilizes AWS Key Management Service (KMS) for key management.
+<img width="616" alt="image" src="https://github.com/user-attachments/assets/18f10dfa-24bc-4d71-b544-6d612e747fcf">
+
+In Transit: Use Transport Layer Security (TLS) to encrypt data as it moves between clients and the EFS file system. This can be configured by mounting the file system with the appropriate options (-o tls)
+To enforce security for data in transit on an Amazon EFS file system, you can use an EFS file system policy that requires all client connections to use encryption in transit. 
+<img width="920" alt="image" src="https://github.com/user-attachments/assets/dbcfabb9-85da-45b1-8a74-c1395b1148d7">
+<img width="1044" alt="image" src="https://github.com/user-attachments/assets/45743526-85e3-4239-9fee-eeae6c9d2ee1">
 
 # Ingest Stream data into Snowflake/Redshift 
 
