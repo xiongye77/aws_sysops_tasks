@@ -1,5 +1,10 @@
 # AWS SYS OPS  
 
+
+# AWS EBS share snapshot cross account 
+if snapshot is not encrypted using CMK, it could not be shared account account 
+<img width="1446" alt="image" src="https://github.com/user-attachments/assets/fabe9dbf-9dce-483b-9151-94b6826cc529">
+
 # Ingest Stream data into Snowflake/Redshift 
 
 with Amazon Data Firehose
