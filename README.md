@@ -1,6 +1,18 @@
 # AWS SYS OPS  
 
 
+# Amazon OpenSearch 
+<img width="911" alt="image" src="https://github.com/user-attachments/assets/5b6f2a96-7b8a-4702-b853-5402b8aa36bd">
+
+<img width="916" alt="image" src="https://github.com/user-attachments/assets/cab73405-4df2-43bb-8159-adf7bca9bf1e">
+<img width="907" alt="image" src="https://github.com/user-attachments/assets/d6774fe1-f3fc-4a1c-afed-a66a5fa71cee">
+<img width="912" alt="image" src="https://github.com/user-attachments/assets/35ca4ccb-da89-4618-93c5-e3df3b31f778">
+<img width="906" alt="image" src="https://github.com/user-attachments/assets/1df30634-defe-46a3-8658-c300bd8f77de">
+<img width="904" alt="image" src="https://github.com/user-attachments/assets/8f535bb5-1e96-4ba0-96bd-835797260723">
+<img width="912" alt="image" src="https://github.com/user-attachments/assets/1f5213ba-8523-445b-b6da-014f6058c63f">
+<img width="905" alt="image" src="https://github.com/user-attachments/assets/76d22275-a847-4e05-9eb1-6c614f09c372">
+<img width="906" alt="image" src="https://github.com/user-attachments/assets/0e3eff0a-e5df-47d7-b817-0b71893c074d">
+
 # AWS EBS snapshot share cross account (2024/11/03)
 if snapshot is not encrypted using CMK, it could not be shared account account 
 <img width="1446" alt="image" src="https://github.com/user-attachments/assets/fabe9dbf-9dce-483b-9151-94b6826cc529">
