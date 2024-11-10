@@ -1,5 +1,14 @@
 # AWS SYS OPS  
 
+# ECS and EKS service disconvery
+<img width="828" alt="image" src="https://github.com/user-attachments/assets/b0a39cb8-a690-44e4-9bc0-db0e0b95a238">
+<img width="907" alt="image" src="https://github.com/user-attachments/assets/6f68b011-10b1-415f-9309-dfc93f69ef2e">
+<img width="904" alt="image" src="https://github.com/user-attachments/assets/3b504e97-abdb-4052-8e49-4546c0ad1ac8">
+
+# ECS task definition access private repo 
+<img width="1058" alt="image" src="https://github.com/user-attachments/assets/86d23519-bb11-462d-8e46-ac3ab87c52fb">
+<img width="691" alt="image" src="https://github.com/user-attachments/assets/239aa590-2fdc-4c41-89a2-b59dcf249a73">
+
 
 # Amazon OpenSearch 
 <img width="911" alt="image" src="https://github.com/user-attachments/assets/5b6f2a96-7b8a-4702-b853-5402b8aa36bd">
