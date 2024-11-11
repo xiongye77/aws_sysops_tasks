@@ -10,6 +10,23 @@
 <img width="691" alt="image" src="https://github.com/user-attachments/assets/239aa590-2fdc-4c41-89a2-b59dcf249a73">
 
 
+# AWS App Auto Scale
+<img width="676" alt="image" src="https://github.com/user-attachments/assets/a5d97085-9d93-4f91-948d-b5e9f77fc733">
+<img width="766" alt="image" src="https://github.com/user-attachments/assets/810ec649-39a3-4de9-b350-50291fd83985">
+<img width="988" alt="image" src="https://github.com/user-attachments/assets/4e822d96-47f7-46d5-8edd-c58d77e02fd9">
+https://github.com/xiongye77/terraform-carsales-test/blob/b3ce04fa0f57dfcdeedbf293818716de2658dca6/ecs-ec2-service.tf#L362
+
+
+
+# AWS RDS Backup/Automatically Snapshot/PITR 
+<img width="734" alt="image" src="https://github.com/user-attachments/assets/6da031e8-2514-49fa-b747-b777c7674283">
+<img width="722" alt="image" src="https://github.com/user-attachments/assets/5948affa-6222-4a98-bf53-347c6fc29085">
+<img width="1164" alt="image" src="https://github.com/user-attachments/assets/37595286-afd2-48cd-a4a3-350b28554b0c">
+<img width="1088" alt="image" src="https://github.com/user-attachments/assets/b42fbfb0-8a54-4491-a702-33e73fc9ff2f">
+<img width="1120" alt="image" src="https://github.com/user-attachments/assets/aa59741f-993f-4299-b50e-3bdf0513cdd3">
+
+
+
 # Amazon OpenSearch 
 <img width="911" alt="image" src="https://github.com/user-attachments/assets/5b6f2a96-7b8a-4702-b853-5402b8aa36bd">
 
