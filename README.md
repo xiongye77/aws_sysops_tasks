@@ -1,6 +1,17 @@
 # AWS SYS OPS  
 
 
+# AWS Lambda best practice (2024/11/15)
+
+Monitor concurrency and execution usage metrics in AWS CloudWatch. Track results with Focus on on Throttles and ConcurrentExecutions metrics in Cloudwatch.
+<img width="1436" alt="image" src="https://github.com/user-attachments/assets/e22504f3-0b48-47d1-ae0e-9760e4618868">
+
+Monitor memory usage from Lambda Insights enhanced monitoring,Tweak memory and timeout settings as needed
+<img width="1459" alt="image" src="https://github.com/user-attachments/assets/dfb6e45a-bac5-4ed1-be79-2ce601ffdd7e">
+<img width="1701" alt="image" src="https://github.com/user-attachments/assets/be35638b-2c87-4af4-bd74-f2bc160438ab">
+<img width="1484" alt="image" src="https://github.com/user-attachments/assets/17201348-43aa-42f3-b05f-294ae0bdb8a1">
+
+
 # AWS ALB security (2024/11/15)
 Add cloudfront prefix list as source security group for ALB so ALB can only be accessed by Cloudfront.
 <img width="1659" alt="image" src="https://github.com/user-attachments/assets/b9204e49-9e8b-450b-8fc9-7ec882661504">
