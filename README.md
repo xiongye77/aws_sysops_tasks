@@ -1,5 +1,14 @@
 # AWS SYS OPS  
 
+
+# AWS ALB security (2024/11/15)
+Add cloudfront prefix list as source security group for ALB so ALB can only be accessed by Cloudfront.
+<img width="1659" alt="image" src="https://github.com/user-attachments/assets/b9204e49-9e8b-450b-8fc9-7ec882661504">
+Add customer header and ALB only forward request to target group with proper header
+<img width="763" alt="image" src="https://github.com/user-attachments/assets/ac6c2d0c-5bb8-4a7c-9d00-9e68409d4215">
+<img width="718" alt="image" src="https://github.com/user-attachments/assets/1483f169-8788-4006-92f8-7d829eee8248">
+
+
 # ECS and EKS service disconvery
 <img width="828" alt="image" src="https://github.com/user-attachments/assets/b0a39cb8-a690-44e4-9bc0-db0e0b95a238">
 <img width="907" alt="image" src="https://github.com/user-attachments/assets/6f68b011-10b1-415f-9309-dfc93f69ef2e">
