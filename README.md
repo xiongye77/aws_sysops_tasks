@@ -42,7 +42,8 @@ fields @timestamp, @message
 <img width="838" alt="image" src="https://github.com/user-attachments/assets/bb48693e-b871-464f-8598-0ef740f70bd8">
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/lambda-call-ecs-task.py
 
-![Uploading image.png…]()
+<img width="908" alt="image" src="https://github.com/user-attachments/assets/6a8c01ac-00cd-4154-ba8b-b035d4756815">
+
 
 
 
