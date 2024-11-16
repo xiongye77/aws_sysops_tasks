@@ -12,6 +12,18 @@ Monitor memory usage from Lambda Insights enhanced monitoring,Tweak memory and t
 <img width="1484" alt="image" src="https://github.com/user-attachments/assets/17201348-43aa-42f3-b05f-294ae0bdb8a1">
 
 
+Practical Steps to Reduce Lambda Cold Start Latency: 1  Choose a Lightweight Runtime
+Use Interpreted Languages: Runtimes like Node.js, Python, or Go generally have shorter cold start times compared to compiled languages like Java or .NET Core.
+2 Reduce Deployment Package Size,Eliminate Unused Dependencies and  Package Only What's Necessary. 3 Use Provisioned Concurrency,Enable Provisioned Concurrency: Specify the number of execution environments to be kept warm. Keeps a specific number of execution environments initialized and ready to handle requests, eliminating cold starts for those invocations.
+<img width="1307" alt="image" src="https://github.com/user-attachments/assets/6c5fe13e-6f13-49b7-8aeb-1e449192ad77">
+
+4 Increase Memory Allocation,More Memory Equals More CPU:Performance Boost: Allocating more memory also increases the CPU power available, potentially reducing cold start times.
+5 Keep Functions Warm (Ping Functions) Scheduled Invocations: EventBridge Rules: Set up a rule to invoke the function periodically (e.g., every 5 minutes).
+6 Avoid VPC Configuration When Possible,VPC Overhead: ENI Attachment: Lambda functions in a VPC require Elastic Network Interfaces, adding to cold start latency.
+Alternatives: VPC Endpoints: If accessing AWS services, use VPC endpoints or keep the function outside the VPC if possible.
+
+
+
 # AWS ALB security (2024/11/15)
 Add cloudfront prefix list as source security group for ALB so ALB can only be accessed by Cloudfront.
 <img width="1659" alt="image" src="https://github.com/user-attachments/assets/b9204e49-9e8b-450b-8fc9-7ec882661504">
