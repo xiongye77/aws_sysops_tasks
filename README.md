@@ -22,6 +22,40 @@ Use Interpreted Languages: Runtimes like Node.js, Python, or Go generally have s
 6 Avoid VPC Configuration When Possible,VPC Overhead: ENI Attachment: Lambda functions in a VPC require Elastic Network Interfaces, adding to cold start latency.
 Alternatives: VPC Endpoints: If accessing AWS services, use VPC endpoints or keep the function outside the VPC if possible.
 
+7 Setting Reserved concurrency based on requirement,  however If a Lambda function's reserved concurrency is reached, it cannot execute additional invocations until some of the currently running invocations complete and free up concurrency slots. 
+<img width="1108" alt="image" src="https://github.com/user-attachments/assets/168f5652-a056-4257-8164-f42c8c0ff61f">
+8 Allocate memory based on Cloudwatch log insight aviod resource allocation waste.
+<img width="1487" alt="image" src="https://github.com/user-attachments/assets/8c956ca2-73d9-4ff6-8cc1-6ecd704f7516">
+
+fields @timestamp, @message
+| filter @message like /REPORT/
+| parse @message "Duration: * ms\tBilled Duration: * ms\tMemory Size: * MB\tMax Memory Used: * MB" as duration, billedDuration, MemoryAllocated, MaxMemoryUsed
+| display @timestamp, duration, billedDuration, MemoryAllocated, MaxMemoryUsed
+| sort @MaxMemoryUsed desc
+| limit 100
+
+9 Setting SQS DLQ for lambda and cloudwatch alarm on the queue. It helps you monitor and get notified when events are sent to the DLQ, indicating that your Lambda function has encountered issues during processing.
+<img width="768" alt="image" src="https://github.com/user-attachments/assets/7bbe83f0-5f1e-418c-b798-9cf557d26c60">
+
+
+resource "aws_cloudwatch_metric_alarm" "dlq_message_count_alarm" {
+  alarm_name          = "DLQMessageCountAlarm"
+  comparison_operator = "GreaterThanOrEqualToThreshold"
+  evaluation_periods  = 1
+  metric_name         = "ApproximateNumberOfMessagesVisible"
+  namespace           = "AWS/SQS"
+  period              = 60
+  statistic           = "Average"
+  threshold           = 5  # Trigger if 5 or more messages are in the DLQ
+  alarm_description   = "Triggered when there are 5 or more messages in the DLQ."
+
+  dimensions = {
+    QueueName = aws_sqs_queue.lambda_dlq.name
+  }
+
+  actions_enabled = true
+  alarm_actions   = [aws_sns_topic.alerts.arn]  # Replace with your SNS topic ARN for notifications
+}
 
 
 # AWS ALB security (2024/11/15)
