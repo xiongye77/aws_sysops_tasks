@@ -40,6 +40,9 @@ fields @timestamp, @message
 
 10 Use lambda call ECS task. so it can surpass lambda task 15 minutes limitation. All related parameter such S3 bucket file can be pass to ECS task using containerOverrides overwrite parameter
 <img width="838" alt="image" src="https://github.com/user-attachments/assets/bb48693e-b871-464f-8598-0ef740f70bd8">
+https://github.com/xiongye77/aws_sysops_tasks/blob/main/lambda-call-ecs-task.py
+
+![Uploading image.png…]()
 
 
 
