@@ -36,26 +36,12 @@ fields @timestamp, @message
 
 9 Setting SQS DLQ for lambda and cloudwatch alarm on the queue. It helps you monitor and get notified when events are sent to the DLQ, indicating that your Lambda function has encountered issues during processing.
 <img width="768" alt="image" src="https://github.com/user-attachments/assets/7bbe83f0-5f1e-418c-b798-9cf557d26c60">
+<img width="531" alt="image" src="https://github.com/user-attachments/assets/d1fd1cd8-bc67-426d-b028-8503dfbe7701">
+
+10 Use lambda call ECS task. so it can surpass lambda task 15 minutes limitation. All related parameter such S3 bucket file can be pass to ECS task using containerOverrides overwrite parameter
+<img width="838" alt="image" src="https://github.com/user-attachments/assets/bb48693e-b871-464f-8598-0ef740f70bd8">
 
 
-resource "aws_cloudwatch_metric_alarm" "dlq_message_count_alarm" {
-  alarm_name          = "DLQMessageCountAlarm"
-  comparison_operator = "GreaterThanOrEqualToThreshold"
-  evaluation_periods  = 1
-  metric_name         = "ApproximateNumberOfMessagesVisible"
-  namespace           = "AWS/SQS"
-  period              = 60
-  statistic           = "Average"
-  threshold           = 5  # Trigger if 5 or more messages are in the DLQ
-  alarm_description   = "Triggered when there are 5 or more messages in the DLQ."
-
-  dimensions = {
-    QueueName = aws_sqs_queue.lambda_dlq.name
-  }
-
-  actions_enabled = true
-  alarm_actions   = [aws_sns_topic.alerts.arn]  # Replace with your SNS topic ARN for notifications
-}
 
 
 # AWS ALB security (2024/11/15)
