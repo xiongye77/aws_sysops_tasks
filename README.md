@@ -1,5 +1,17 @@
 # AWS SYS OPS  
 
+# AWS S3 encryption
+SSE-S3  (Server-Side Encryption with Amazon S3 Managed Keys),CloudTrail Visibility: Invisible in CloudTrail. Since SSE-S3 uses AWS-owned keys that are managed entirely by S3, there are no events recorded in AWS CloudTrail related to key usage or encryption/decryption.
+
+Server-side encryption with AWS Key Management Service (AWS KMS) keys (SSE-KMS)
+<img width="661" alt="image" src="https://github.com/user-attachments/assets/c2dff21d-e9b3-492e-bbc7-22c1490aac3c">
+AWS-Managed Keys: Uses KMS keys managed by AWS (aws/s3 key) 
+<img width="723" alt="image" src="https://github.com/user-attachments/assets/25389de1-71f8-4994-bea5-7472f5f79208">
+Customer-Managed Keys (CMKs): Allows users to bring their own KMS keys for more control.Visible in CloudTrail. When S3 uses AWS KMS for key management (via aws/s3 managed key or a customer-managed key), CloudTrail logs the following key-related events:
+GenerateDataKey: A new data key is generated for encrypting the object.
+Decrypt: The key is used to decrypt the data when accessing the object.
+Encrypt (Optional): If explicitly triggered by API calls.
+
 
 # AWS Lambda best practice (2024/11/15)
 
