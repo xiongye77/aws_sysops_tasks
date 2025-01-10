@@ -1,5 +1,17 @@
 # AWS SYS OPS  
 
+
+# AWS VPC private link to SAAS application 
+<img width="1175" alt="image" src="https://github.com/user-attachments/assets/4bc8b86f-3b2a-4316-9f11-029ff85840e4" />
+<img width="1160" alt="image" src="https://github.com/user-attachments/assets/989a245d-6685-4d72-9e7f-7d80799c90d8" />
+<img width="1168" alt="image" src="https://github.com/user-attachments/assets/e4d10da6-dd4b-4292-8ff2-494945115721" />
+<img width="1161" alt="image" src="https://github.com/user-attachments/assets/cf53ec8d-852d-406e-8cf3-4609d40fbd3b" />
+<img width="1672" alt="image" src="https://github.com/user-attachments/assets/480e2fcf-6676-4e3d-aadb-e2e337132e23" />
+<img width="1609" alt="image" src="https://github.com/user-attachments/assets/b6e4a529-7b53-4354-b9bf-ac6889b15bac" />
+<img width="1644" alt="image" src="https://github.com/user-attachments/assets/a57bcf47-c9d1-4a36-a5d5-17337a116c6f" />
+<img width="1631" alt="image" src="https://github.com/user-attachments/assets/4dc0ac81-1cf3-49ec-b128-f45f597d1064" />
+
+
 # AWS S3 encryption and object lock
 SSE-S3  (Server-Side Encryption with Amazon S3 Managed Keys),CloudTrail Visibility: Invisible in CloudTrail. Since SSE-S3 uses AWS-owned keys that are managed entirely by S3, there are no events recorded in AWS CloudTrail related to key usage or encryption/decryption.
 
