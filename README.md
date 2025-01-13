@@ -2,6 +2,8 @@
 
 
 # AWS VPC private link to SAAS application 
+
+
 <img width="1175" alt="image" src="https://github.com/user-attachments/assets/4bc8b86f-3b2a-4316-9f11-029ff85840e4" />
 <img width="1160" alt="image" src="https://github.com/user-attachments/assets/989a245d-6685-4d72-9e7f-7d80799c90d8" />
 <img width="1168" alt="image" src="https://github.com/user-attachments/assets/e4d10da6-dd4b-4292-8ff2-494945115721" />
@@ -30,6 +32,9 @@
 
 
 
+
+
+
 <img width="807" alt="image" src="https://github.com/user-attachments/assets/805b2188-b13c-4194-b67d-ea87bc1aae0b" />
 <img width="814" alt="image" src="https://github.com/user-attachments/assets/f00b80dc-0b04-4e01-a83e-e0eb12e87e76" />
 
@@ -52,6 +57,15 @@
 
 <img width="1158" alt="image" src="https://github.com/user-attachments/assets/a642817f-fb39-46ed-b7cc-49491c18afea" />
 <img width="693" alt="image" src="https://github.com/user-attachments/assets/adebf9f4-9438-42d0-99b1-ce1072063d0e" />
+<img width="1343" alt="image" src="https://github.com/user-attachments/assets/9dac2c99-9455-4327-86cb-30ebf52fc951" />
+<img width="1332" alt="image" src="https://github.com/user-attachments/assets/646d2e63-c9bc-4703-bcff-b51bbf4215ab" />
+<img width="1156" alt="image" src="https://github.com/user-attachments/assets/331729a7-e800-49d4-bc47-62f0c7d7f208" />
+<img width="1153" alt="image" src="https://github.com/user-attachments/assets/87d69b39-9c41-4eac-b48c-423a8b1869c6" />
+
+<img width="1122" alt="image" src="https://github.com/user-attachments/assets/78b956d1-9c4d-4d48-8f0f-31478dd67978" />
+
+<img width="882" alt="image" src="https://github.com/user-attachments/assets/3ba8ea40-7477-4b69-8202-17cde816e24a" />
+<img width="1137" alt="image" src="https://github.com/user-attachments/assets/5c79400b-1c7c-4dfd-ac26-7148de5c5b25" />
 
 
 
