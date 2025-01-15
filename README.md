@@ -85,7 +85,18 @@ Encrypt (Optional): If explicitly triggered by API calls.
 
 <img width="743" alt="image" src="https://github.com/user-attachments/assets/7f108ebc-4ac3-4762-ae34-4307b8c7e217">
 <img width="1104" alt="image" src="https://github.com/user-attachments/assets/2e2ccdf5-0061-4ab8-ab61-8311677867f3">
+<img width="681" alt="image" src="https://github.com/user-attachments/assets/8105bfff-3cee-4472-a2e3-a0ca4baf183e" />
+
+
+Zero Trust Network (ZTN) is a cybersecurity framework that challenges the traditional security model of relying on a secure perimeter to protect internal networks. Instead of assuming that everything within the network is trustworthy, Zero Trust adopts a “never trust, always verify” approach. This model emphasizes continuous verification of all users, devices, and applications, regardless of their location within or outside the network
+
+
+Route 53, AWS’s DNS service, also provides extra security measures to protect against attacks on the DNS protocol. First, you can leverage Route 53 Resolver DNS Firewall to filter outbound DNS requests from your own VPCs. Such requests go through Resolver to resolve domain names. If one of your workloads has been compromised by an attacker, they may want to exfiltrate data from your AWS environment by conducting a DNS lookup to a domain they control. DNS Firewall lets you monitor and control the domains that can be queried from your VPCs, so you can, for instance, allow access to only the domains you explicitly trust (allow-listing) or block queries to well-known untrustworthy domains and let all other queries through. DNS Firewall manages the lists of known bad domains, keeping them up to date, to make your life easier.
+
+Second, you can enable DNSSEC validation on Route 53 Resolver in your VPCs. This will instruct Resolver to validate the cryptographic signature of the response you get upon a DNS lookup, thereby ensuring that the response was not tampered with. 
+
 ![Uploading image.png…]()
+
 
 
 # AWS Lambda best practice (2024/11/15)
