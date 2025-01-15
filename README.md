@@ -1,5 +1,13 @@
 # AWS SYS OPS  
 
+# Route53 DNSSEC 
+<img width="1310" alt="image" src="https://github.com/user-attachments/assets/a913f42a-ee8a-407b-9730-69bead63d24b" />
+
+# Route53 resolver firewall
+<img width="832" alt="image" src="https://github.com/user-attachments/assets/c9433ef3-1681-4d9d-a807-dc828ab642ea" />
+<img width="876" alt="image" src="https://github.com/user-attachments/assets/a023de4b-baf9-4f95-a037-fa1349b6733f" />
+<img width="1071" alt="image" src="https://github.com/user-attachments/assets/f3a2bd27-aa4e-4821-a42f-c5d0fd87722f" />
+
 
 # AWS VPC private link to SAAS application 
 
