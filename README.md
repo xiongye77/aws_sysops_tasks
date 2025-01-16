@@ -1,12 +1,38 @@
 # AWS SYS OPS  
 
+
+# Centralized inspection with AWS GWLB – Inter VPC traffic
+east-west traffic within AWS network 
+<img width="1298" alt="image" src="https://github.com/user-attachments/assets/07f10629-734c-4e31-909c-0c9f47ad7a08" />
+
+
+# Centralized inspection with AWS GWLB – internet traffic
+north-south traffic into internet 
+<img width="1291" alt="image" src="https://github.com/user-attachments/assets/2b3a367f-30ff-421b-bc80-51752b4ec858" />
+
 # Route53 DNSSEC 
 <img width="1310" alt="image" src="https://github.com/user-attachments/assets/a913f42a-ee8a-407b-9730-69bead63d24b" />
+
+
+# Route53 DNS resolver
+<img width="1291" alt="image" src="https://github.com/user-attachments/assets/abef5d7b-a86a-4823-ba79-087164bbb934" />
+<img width="1288" alt="image" src="https://github.com/user-attachments/assets/81740c9e-0224-483a-be53-fa37c2c53d5b" />
+<img width="1287" alt="image" src="https://github.com/user-attachments/assets/1f5d07a0-401d-48ae-a074-0049c116d9d8" />
+<img width="1274" alt="image" src="https://github.com/user-attachments/assets/c02d5a41-4df2-41c5-861b-431f9d77f67d" />
+<img width="1255" alt="image" src="https://github.com/user-attachments/assets/1d687158-92e9-4b19-9f4d-82e8d2369250" />
+<img width="1685" alt="image" src="https://github.com/user-attachments/assets/1b4b74c7-6c4c-4e90-be69-eef036a36b09" />
+
 
 # Route53 resolver firewall
 <img width="832" alt="image" src="https://github.com/user-attachments/assets/c9433ef3-1681-4d9d-a807-dc828ab642ea" />
 <img width="876" alt="image" src="https://github.com/user-attachments/assets/a023de4b-baf9-4f95-a037-fa1349b6733f" />
 <img width="1071" alt="image" src="https://github.com/user-attachments/assets/f3a2bd27-aa4e-4821-a42f-c5d0fd87722f" />
+
+# Transit gw attach to DX/VPN/VPC/peering with other TGW
+<img width="1271" alt="image" src="https://github.com/user-attachments/assets/94211400-65f9-42ac-a33f-f0a486b64f3a" />
+<img width="1251" alt="image" src="https://github.com/user-attachments/assets/3c323cf3-4716-4af8-818a-c15a0a4d9fc3" />
+<img width="1235" alt="image" src="https://github.com/user-attachments/assets/f06bb225-db65-46f5-a34a-bd72b2aa32fd" />
+
 
 
 # AWS VPC private link to SAAS application 
