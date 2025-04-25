@@ -1,5 +1,10 @@
 # AWS SYS OPS  
 
+# AWS Security Lake gather logs with Cloudtrail/VPC Flow log/Security Hub/EKS/WAF
+<img width="1698" alt="image" src="https://github.com/user-attachments/assets/dc06b38e-f252-4c19-be04-c1ac7810418e" />
+
+<img width="1691" alt="image" src="https://github.com/user-attachments/assets/2cfa54f1-91c1-42af-b0bf-d781a739bd78" />
+Amazon Security Lake automatically converts the data format of native AWS services to OCSF.OCSF (Open Cybersecurity Standards Framework) schema provides a structured and standardized way to represent cybersecurity data. This universal language allows various cybersecurity tools to interact seamlessly, making it easier for organizations to integrate solutions from different vendors.
 
 # Centralized inspection with AWS GWLB – Inter VPC traffic
 east-west traffic within AWS network 
