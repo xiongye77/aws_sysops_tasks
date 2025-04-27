@@ -27,6 +27,7 @@ After upgrade and uninstall old packages, perform a manually refresh software in
 # AWS Config Conformance Packs
 <img width="1202" alt="image" src="https://github.com/user-attachments/assets/da275114-24d7-4737-b025-c1e96f63827a" />
 <img width="1142" alt="image" src="https://github.com/user-attachments/assets/b3611720-8a02-4443-ba5a-8956cdb69c8a" />
+https://github.com/xiongye77/aws_sysops_tasks/blob/main/RDSCompliancePack.yaml
 
 
 # Amazon GuardDuty S3 Malware Protection
