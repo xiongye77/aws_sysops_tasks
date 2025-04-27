@@ -1,0 +1,56 @@
+Resources:
+  RDSStorageEncrypted:
+    Type: AWS::Config::ConfigRule
+    Properties:
+      ConfigRuleName: rds-storage-encrypted
+      Description: "Ensure RDS instances have storage encryption enabled (detect only)."
+      Source:
+        Owner: AWS
+        SourceIdentifier: RDS_STORAGE_ENCRYPTED
+      Scope:
+        ComplianceResourceTypes:
+          - AWS::RDS::DBInstance
+
+  RDSInstanceEnhancedMonitoringEnabled:
+    Type: AWS::Config::ConfigRule
+    Properties:
+      ConfigRuleName: rds-enhanced-monitoring-enabled
+      Description: "Ensure Enhanced Monitoring is enabled on RDS instances."
+      Source:
+        Owner: AWS
+        SourceIdentifier: RDS_ENHANCED_MONITORING_ENABLED
+      Scope:
+        ComplianceResourceTypes:
+          - AWS::RDS::DBInstance
+      RemediationConfigurations:
+        - Automatic: true
+          ConfigRuleName: rds-enhanced-monitoring-enabled
+          TargetType: SSM_DOCUMENT
+          TargetId: AWS-EnableEnhancedMonitoringOnRDSInstance
+          Parameters:
+            DBInstanceIdentifier:
+              ResourceValue:
+                Value: RESOURCE_ID
+
+  RDSInstanceDeleteProtectionEnabled:
+    Type: AWS::Config::ConfigRule
+    Properties:
+      ConfigRuleName: rds-delete-protection-enabled
+      Description: "Ensure RDS instances have Delete Protection enabled."
+      Source:
+        Owner: AWS
+        SourceIdentifier: RDS_DELETE_PROTECTION_ENABLED
+      Scope:
+        ComplianceResourceTypes:
+          - AWS::RDS::DBInstance
+      RemediationConfigurations:
+        - Automatic: true
+          ConfigRuleName: rds-delete-protection-enabled
+          TargetType: SSM_DOCUMENT
+          TargetId: AWS-EnableRDSDeleteProtection
+          Parameters:
+            DBInstanceIdentifier:
+              ResourceValue:
+                Value: RESOURCE_ID
+
+# aws configservice put-conformance-pack  --conformance-pack-name RDS-Compliance-Pack   --template-body file://RDSCompliancePack.yaml
