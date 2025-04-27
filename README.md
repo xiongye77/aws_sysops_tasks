@@ -1,5 +1,13 @@
 # AWS SYS OPS  
 
+# Amazon GuardDuty S3 Malware Protection
+When we enable the Amazon GuardDuty S3 Malware Protection, there is an Amazon EventBridge rule is created that watches put object events. When we upload an object, this rule catches the event and sends details to the malware scan service on the AWS side.
+<img width="1657" alt="image" src="https://github.com/user-attachments/assets/bff7edb7-a081-48e9-8c81-af434638bedd" />
+<img width="1006" alt="image" src="https://github.com/user-attachments/assets/cc7a401e-937a-4b63-b227-3d03edc44ff7" />
+<img width="1005" alt="image" src="https://github.com/user-attachments/assets/a0a1edf1-3dd6-469b-a40c-642b1bd18e67" />
+
+
+
 # AWS Security Lake gather logs with Cloudtrail/VPC Flow log/Security Hub/EKS/WAF
 <img width="1698" alt="image" src="https://github.com/user-attachments/assets/dc06b38e-f252-4c19-be04-c1ac7810418e" />
 
