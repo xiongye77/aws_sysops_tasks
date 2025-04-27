@@ -11,6 +11,22 @@ Instead of one by one run the upgrade command We can run upgrade command using S
 <img width="828" alt="image" src="https://github.com/user-attachments/assets/ee7f0cbe-69f2-4a84-94c0-b7cadd5a485d" />
 
 After upgrade and uninstall old packages, perform a manually refresh software inventory 
+<img width="787" alt="image" src="https://github.com/user-attachments/assets/7b760d0d-3c0b-4e51-a6e5-2d77d8c84686" />
+
+# AWS SSM maintenance Window to run AWS-RunPatchBaseline to install patches for EC2 
+
+<img width="1424" alt="image" src="https://github.com/user-attachments/assets/0c8f2329-0d3b-47de-ae6b-a4c8957c3b30" />
+
+
+
+# AWS SSM patch manager to create patch policy (formal name: Patch Baseline + Patch Group + Maintenance Window)
+<img width="1461" alt="image" src="https://github.com/user-attachments/assets/90ee3999-0025-4388-bc4f-46bebd96d229" />
+<img width="1236" alt="image" src="https://github.com/user-attachments/assets/69c6f137-f209-4ac4-b820-c635f249ac66" />
+<img width="1392" alt="image" src="https://github.com/user-attachments/assets/cd46ad2e-9bbe-4adf-a62e-313d6cf847fb" />
+
+# AWS Config Conformance Packs
+<img width="1202" alt="image" src="https://github.com/user-attachments/assets/da275114-24d7-4737-b025-c1e96f63827a" />
+<img width="1142" alt="image" src="https://github.com/user-attachments/assets/b3611720-8a02-4443-ba5a-8956cdb69c8a" />
 
 
 # Amazon GuardDuty S3 Malware Protection
