@@ -1,5 +1,18 @@
 # AWS SYS OPS  
 
+# AWS Inspector scan for EC2/ECR/Lambda 
+![image](https://github.com/user-attachments/assets/3c4e9c26-9d8d-4111-9e81-e01f6f140ecd)
+<img width="1336" alt="image" src="https://github.com/user-attachments/assets/fbf49525-7565-4f20-ac23-9fadf1d8ea97" />
+<img width="1377" alt="image" src="https://github.com/user-attachments/assets/19b05862-dbee-4e90-903d-389c3c414df7" />
+<img width="826" alt="image" src="https://github.com/user-attachments/assets/5b81813e-0b22-4fb6-98bf-7e1021ea64cb" />
+Instead of one by one run the upgrade command We can run upgrade command using SSM  AWS-RunShellScript Run command to upgrade a bunch of EC2 instances
+
+<img width="611" alt="image" src="https://github.com/user-attachments/assets/9335b748-d843-401b-9715-93ca5a8ab434" />
+<img width="828" alt="image" src="https://github.com/user-attachments/assets/ee7f0cbe-69f2-4a84-94c0-b7cadd5a485d" />
+
+After upgrade and uninstall old packages, perform a manually refresh software inventory 
+
+
 # Amazon GuardDuty S3 Malware Protection
 When we enable the Amazon GuardDuty S3 Malware Protection, there is an Amazon EventBridge rule is created that watches put object events. When we upload an object, this rule catches the event and sends details to the malware scan service on the AWS side.
 <img width="1657" alt="image" src="https://github.com/user-attachments/assets/bff7edb7-a081-48e9-8c81-af434638bedd" />
