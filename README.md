@@ -1,4 +1,11 @@
 # AWS SYS OPS  
+# Kafka TOPIC/PARTITION/HOST 
+host : The IP address or hostname of the client machine (consumer) that is actively consuming data from that partition.
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/3debdb7e-a189-48e9-9ac4-1248b4d26e36" />
+Lag = log-end-offset − current-offset
+It represents the number of messages a consumer has not yet processed in a given partition.Monitoring Kafka consumer lag is absolutely essential for maintaining a healthy stream data pipeline
+
+
 
 # AWS Inspector scan for EC2/ECR/Lambda 
 ![image](https://github.com/user-attachments/assets/3c4e9c26-9d8d-4111-9e81-e01f6f140ecd)
