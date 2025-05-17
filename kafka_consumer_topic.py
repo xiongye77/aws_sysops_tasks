@@ -38,7 +38,48 @@ Use a schema registry (like Confluent or AWS Glue). It enforces schema compatibi
 allowing you to scale consumption horizontally and process Kafka messages in parallel.   
 Kafka assigns topic partitions across those pods automatically.Each pod gets a subset of partitions, so messages are processed in parallel.
 
-    
+
+sh-5.2$ bin/kafka-consumer-groups.sh   --bootstrap-server pkc-prqoy.us-east-1.aws.confluent.cloud:9092   --command-config client.properties   --describe   --group prod.sPMDcdp3hC7TnaDmPiBtjf-cdp-subscriber-group  | column -t |grep prod.xero.behavioural-event.xero-appplat-usageanalytics.all-behavioural.v1
+prod.sPMDcdp3hC7TnaDmPiBtjf-cdp-subscriber-group  prod.xero.behavioural-event.xero-appplat-usageanalytics.all-behavioural.v1  1          10119614307     10119614440     133  rdkafka-2b28adc4-23bf-4924-85e1-9532b792e8d4  /10.144.191.40   rdkafka
+prod.sPMDcdp3hC7TnaDmPiBtjf-cdp-subscriber-group  prod.xero.behavioural-event.xero-appplat-usageanalytics.all-behavioural.v1  0          10128817328     10128817479     151  rdkafka-1bfe83cb-9da8-44d7-b79d-a4184ea3584b  /10.144.203.150  rdkafka
+prod.sPMDcdp3hC7TnaDmPiBtjf-cdp-subscriber-group  prod.xero.behavioural-event.xero-appplat-usageanalytics.all-behavioural.v1  2          10071501026     10071501124     98   rdkafka-34180d38-e97d-43ad-9e52-94a5855b26a0  /10.144.184.61   rdkafka
+prod.sPMDcdp3hC7TnaDmPiBtjf-cdp-subscriber-group  prod.xero.behavioural-event.xero-appplat-usageanalytics.all-behavioural.v1  5          10221665817     10221665999     182  rdkafka-6bfe0fe0-e99d-4102-b2e5-bd7b03ae9ffa  /10.144.160.75   rdkafka
+prod.sPMDcdp3hC7TnaDmPiBtjf-cdp-subscriber-group  prod.xero.behavioural-event.xero-appplat-usageanalytics.all-behavioural.v1  3          9991587183      9991587422      239  rdkafka-50f99b5d-1f05-43a9-bde8-b6017e75a909  /10.144.207.1    rdkafka
+prod.sPMDcdp3hC7TnaDmPiBtjf-cdp-subscriber-group  prod.xero.behavioural-event.xero-appplat-usageanalytics.all-behavioural.v1  4          11461833035     11461833278     243  rdkafka-5c16049f-494b-4cf6-b83f-5c47e4ed2b02  /10.144.182.228  rdkafka
+sh-5.2$ bin/kafka-topics.sh   --bootstrap-server pkc-prqoy.us-east-1.aws.confluent.cloud:9092   --command-config client.properties   --list
+prod.xero.behavioural-event.xero-appplat-usageanalytics.all-behavioural.v1
+prod.xero.domain-event.xero-customer-platform.sfmc-crm-id.v1
+prod.xero.domain-event.xero-infra-eventing.samples.v1
+prod.xero.domain-event.xero-productidentity-useraccount.login.v1
+prod.xero.private-event.digital-data.xero.user-event.marketing.cdp-subscriber.dlq.v1
+prod.xero.private-event.digital-data.xero.user-event.marketing.cdp.alternate.v1
+prod.xero.private-event.digital-data.xero.user-event.marketing.cdp.dlq.v1
+prod.xero.private-event.digital-data.xero.user-event.marketing.cdp.v1
+
+sh-5.2$ bin/kafka-consumer-groups.sh   --bootstrap-server pkc-prqoy.us-east-1.aws.confluent.cloud:9092   --command-config client.properties   --list
+prod.wwoTKT8HpKS2XMufkyBgup-payroll-push-worker
+prod.r58Cxof5F1HHzd721QsqPE-prod-r58Cxof5F1HHzd721QsqPE
+prod.uQf5SVREVL8cW8UtZAfY3N-prod-uQf5SVREVL8cW8UtZAfY3N
+prod.3eMmhwoDtvCSMtUYoTQUS7-payroll-art-worker-group
+prod.jY3vfeC5fbZ5mMkovKgueK-tax-return-event-consumer
+prod.1F3hK9WDVoNYespZmRZWjm-prod-1F3hK9WDVoNYespZmRZWjm
+prod.sLZq7PNKJqjEHkvD1X5Egh-PayrollParallelRunComparison
+prod.9nBr2FcPFcytzJ5pGGN6CQ-prod-9nBr2FcPFcytzJ5pGGN6CQ
+
+
+sh-5.2$ more client.properties 
+bootstrap.servers=pkc-prqoy.us-east-1.aws.confluent.cloud:9092
+security.protocol=SASL_SSL
+sasl.mechanism=PLAIN
+sasl.jaas.config=org.apache.kafka.common.security.plain.PlainLoginModule required \
+username="xxxxxx" \
+password="yyyyyy";
+request.timeout.ms=30000
+default.api.timeout.ms=30000
+
+
+
+
 from confluent_kafka import Consumer
 import json, re, uuid, sys
 import traceback
