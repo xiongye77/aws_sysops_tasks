@@ -1,3 +1,44 @@
+# The error KafkaError._PARTITION_EOF in Kafka (typically encountered when using the confluent-kafka-python client) is not an actual error, 
+# but rather a signal that the consumer has reached the end of a partition — meaning there is currently no more data to consume from that partition.
+# You can safely ignore or log this and continue polling.
+# Wait up to 1.0 seconds for a new message from the Kafka topic. If no message arrives within that time, return None.
+# Kafka consumers pull messages, not push. So: You continuously call poll() to retrieve new messages.
+# The timeout prevents the loop from blocking forever.
+
+# if your Kafka producers serialize messages using Protobuf, then you must deserialize them using the same Protobuf schema on the consumer side.
+# Kafka itself is just a transport. It stores and delivers bytes. If your messages are serialized using Protobuf (rather than plain JSON or string), then on the consumer side:
+# The message will arrive as a binary blob (msg.value() in Python)
+# You need to decode it using the matching .proto schema
+# Use the Protobuf class generated from the .proto file to deserialize
+
+
+
+# Apache Kafka is a distributed event streaming platform designed for high-throughput, fault-tolerant, and real-time data ingestion and processing. 
+It solves problems related to:
+Decoupling data producers and consumers
+Persisting real-time streams durably
+Handling high-scale message processing with replay support
+
+
+#What are the main components of Kafka?
+
+Producer: Sends messages to Kafka topics.
+Consumer: Subscribes to topics and reads messages.
+Topic: Logical channel to organize messages.
+Partition: Subdivision of a topic; enables parallelism.
+Broker: Kafka server that stores data and serves clients.
+Zookeeper (pre-Kafka 3.x): Coordinates cluster metadata (now replaced by KRaft).
+
+#How do you handle schema evolution in Kafka?
+
+Use a schema registry (like Confluent or AWS Glue). It enforces schema compatibility (backward, forward, full). Producers/consumers validate messages based on schema versions.
+
+
+# If your multiple Kubernetes pods are running Kafka consumers and are all configured with the same group.id, then they collectively form a Kafka consumer group, 
+allowing you to scale consumption horizontally and process Kafka messages in parallel.   
+Kafka assigns topic partitions across those pods automatically.Each pod gets a subset of partitions, so messages are processed in parallel.
+
+    
 from confluent_kafka import Consumer
 import json, re, uuid, sys
 import traceback
