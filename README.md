@@ -1,5 +1,6 @@
 # AWS SYS OPS  
 # Kafka TOPIC/PARTITION/HOST 
+https://github.com/xiongye77/aws_sysops_tasks/edit/main/kafka_consumer_topic.py
 host : The IP address or hostname of the client machine (consumer) that is actively consuming data from that partition.
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/3debdb7e-a189-48e9-9ac4-1248b4d26e36" />
 Lag = log-end-offset − current-offset
