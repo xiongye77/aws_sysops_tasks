@@ -6,6 +6,16 @@ host : The IP address or hostname of the client machine (consumer) that is activ
 Lag = log-end-offset − current-offset
 It represents the number of messages a consumer has not yet processed in a given partition.Monitoring Kafka consumer lag is absolutely essential for maintaining a healthy stream data pipeline
 
+
+Kafka brokers always retain messages according to the topic’s retention settings, regardless of whether any consumer has read them. Consumers simply track their own offsets; they do not tell the broker to delete messages when they consume them.
+
+When messages actually get removed
+
+1. log.retention.ms passes → broker deletes the segments.
+
+2. log.retention.bytes exceeded → broker deletes oldest segments to free space.
+
+
 # MSK broker scale out and scale up 
 <img width="822" alt="image" src="https://github.com/user-attachments/assets/af93349c-7a9c-45ae-8f70-2f7c905fb856" />
 
