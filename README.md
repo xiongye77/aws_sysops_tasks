@@ -1,10 +1,40 @@
 # AWS SYS OPS  
-# Kafka TOPIC/PARTITION/HOST 
+# Kafka TOPIC/PARTITION/HOST （2025/05/18）
 https://github.com/xiongye77/aws_sysops_tasks/edit/main/kafka_consumer_topic.py
 host : The IP address or hostname of the client machine (consumer) that is actively consuming data from that partition.
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/3debdb7e-a189-48e9-9ac4-1248b4d26e36" />
 Lag = log-end-offset − current-offset
 It represents the number of messages a consumer has not yet processed in a given partition.Monitoring Kafka consumer lag is absolutely essential for maintaining a healthy stream data pipeline
+
+# MSK tiered storeage node
+<img width="752" alt="image" src="https://github.com/user-attachments/assets/4992b650-60b0-4fae-98c1-1d8914033d3a" />
+# MSK connector 
+Streaming RDS changes into Kafka—often via a CDC (Change Data Capture) pipeline—is extremely common because it unlocks many architectural and operational benefits:
+
+1. Decoupling of Systems & Asynchronous Processing
+By capturing inserts/updates/deletes from your RDS and publishing them as Kafka events, you decouple your transactional database from downstream consumers. Instead of having every service hit the RDS for real‑time data, they subscribe to the Kafka topic and process events at their own pace. This reduces load on your database and avoids tight coupling.
+
+
+2. Real‑Time Data Propagation
+Traditional ETL jobs run on schedules (hourly, nightly). CDC into Kafka delivers changes within seconds of commit in RDS, so analytics dashboards, caches, search indexes, or other microservices always see the freshest data.
+
+3. Scalability & Fan‑Out
+Kafka topics can have many independent consumers—analytics pipelines, audit logs, search indexing, materialized views, notification systems, etc.—all consuming the same change stream without impacting the RDS. You simply add new consumers rather than overloading your database
+
+
+4. Event‑Driven Architectures
+Publishing RDS changes to Kafka lets you treat each data change as an event. Services can react (e.g., update a user’s recommendation, recalculate aggregates, trigger alerts) in a natural, event‑driven way, improving responsiveness and modularity.
+
+5. Auditability & Replay
+Kafka retains your change events for a configurable window. If you need to rebuild a cache or replay historical changes for a new service, you simply rewind the consumer offset. You wouldn’t get that easily from querying RDS
+
+Typical CDC flow for RDS → Kafka
+Enable logical or binlog replication on the RDS instance.
+
+Run a CDC connector (e.g., Debezium) that tails those logs and publishes events into Kafka topics.
+
+Consumers subscribe to those topics (real‑time consumers like Kafka Streams, KSQL, or applications) to process the changes.
+
 
 
 
