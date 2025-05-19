@@ -48,7 +48,15 @@ Run a CDC connector (e.g., Debezium) that tails those logs and publishes events 
 
 Consumers subscribe to those topics (real‑time consumers like Kafka Streams, KSQL, or applications) to process the changes.
 
+# MSK broker metric
+<img width="811" alt="image" src="https://github.com/user-attachments/assets/811dfd07-ca68-4a4e-9797-98710b63104c" />
 
+# Scale MSK brokers and rebalancing paritions across new broker nodes
+<img width="1267" alt="image" src="https://github.com/user-attachments/assets/be8efd61-740c-46f4-b2b8-84808b045727" />
+1. Get the current assignment  bin/kafka-topics.sh --bootstrap-server <broker-list>  --describe --topic your-topic > current_assignment.txt
+2. Use a helper script to generate the JSON bin/kafka-reassign-partitions.sh  --bootstrap-server <broker-list>  --generate --topics-to-move-json-file topics-to-move.json --broker-list "1,2,3,4"
+3. Execute the reassignment bin/kafka-reassign-partitions.sh  --bootstrap-server <broker-list>  --execute  --reassignment-json-file reassign.json
+4. Validate progress  bin/kafka-reassign-partitions.sh --bootstrap-server <broker-list>  --verify  --reassignment-json-file reassign.json
 
 
 # AWS Inspector scan for EC2/ECR/Lambda 
