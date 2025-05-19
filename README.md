@@ -6,7 +6,10 @@ host : The IP address or hostname of the client machine (consumer) that is activ
 Lag = log-end-offset − current-offset
 It represents the number of messages a consumer has not yet processed in a given partition.Monitoring Kafka consumer lag is absolutely essential for maintaining a healthy stream data pipeline
 
-# MSK tiered storeage node
+# MSK broker scale out and scale up 
+<img width="822" alt="image" src="https://github.com/user-attachments/assets/af93349c-7a9c-45ae-8f70-2f7c905fb856" />
+
+# MSK tiered storage node
 <img width="752" alt="image" src="https://github.com/user-attachments/assets/4992b650-60b0-4fae-98c1-1d8914033d3a" />
 # MSK connector 
 Streaming RDS changes into Kafka—often via a CDC (Change Data Capture) pipeline—is extremely common because it unlocks many architectural and operational benefits:
