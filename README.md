@@ -1,4 +1,11 @@
 # AWS SYS OPS  
+
+# MSK(producer/consumer) Glue schema registry (2025/05/20)
+
+![image](https://github.com/user-attachments/assets/c22e8493-2ec1-4720-b4ee-c29e595c1ed8)
+<img width="990" alt="image" src="https://github.com/user-attachments/assets/7a840dfd-6043-4832-b863-9eefe77faff0" />
+<img width="1622" alt="image" src="https://github.com/user-attachments/assets/09382330-f6e1-40d3-8196-cb7838db471d" />
+
 # Kafka TOPIC/PARTITION/HOST （2025/05/18）
 https://github.com/xiongye77/aws_sysops_tasks/edit/main/kafka_consumer_topic.py
 host : The IP address or hostname of the client machine (consumer) that is actively consuming data from that partition.
