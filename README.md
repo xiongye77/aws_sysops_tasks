@@ -6,6 +6,7 @@
 
 ![image](https://github.com/user-attachments/assets/1b27f4cf-7c65-42d2-a0a1-8b6a9fa613ed)
 <img width="1372" alt="image" src="https://github.com/user-attachments/assets/cbbe69e2-cc57-41ec-af79-a89e5200d2c7" />
+<img width="1407" alt="image" src="https://github.com/user-attachments/assets/f4d8a0aa-dabe-4e32-937c-853136d20a7a" />
 
 # MSK(producer/consumer) Glue schema registry (2025/05/20)
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/glue_schema_registry_producer_consumer.py
