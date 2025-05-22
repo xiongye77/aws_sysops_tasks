@@ -24,3 +24,20 @@ FROM pg_replication_slots;
  rdsadmin            | Superuser, Create role, Create DB, Replication, Bypass RLS+|
                      | Password valid until infinity                              |
  rdswriteforwarduser | No inheritance                                             |
+
+
+
+
+mskpostgresconnector=> \d+
+                                      List of relations
+ Schema | Name | Type  |     Owner     | Persistence | Access method |  Size   | Description
+--------+------+-------+---------------+-------------+---------------+---------+-------------
+ public | test | table | debezium_user | permanent   | heap          | 0 bytes |
+(1 row)
+
+mskpostgresconnector=> \dt application.*
+              List of relations
+   Schema    |  Name  | Type  |     Owner
+-------------+--------+-------+---------------
+ application | outbox | table | debezium_user
+(1 row)
