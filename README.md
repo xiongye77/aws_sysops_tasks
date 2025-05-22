@@ -1,4 +1,14 @@
 # AWS SYS OPS  
+# MSK Connect connector
+<img width="1577" alt="image" src="https://github.com/user-attachments/assets/20c47015-4978-4f43-84e0-0f27cd570d6f" />
+<img width="795" alt="image" src="https://github.com/user-attachments/assets/8becef97-c01d-4e40-8aaa-1165c6666ef4" />
+
+
+# Ausora Postgres Replication monitor replication lag 
+![image](https://github.com/user-attachments/assets/61a4f0ec-dbde-4a2a-8a9a-e1fa6f2af272)
+<img width="1347" alt="image" src="https://github.com/user-attachments/assets/1579dc0a-011c-4e37-87a4-db0b3ffea720" />
+<img width="949" alt="image" src="https://github.com/user-attachments/assets/c0f73880-ddd5-4fc2-8344-9eeb69cb6814" />
+
 # Aurora Postgres Audit (2025/05/21)
 <img width="1202" alt="image" src="https://github.com/user-attachments/assets/23b28237-71c9-4c11-b8e5-65c823641654" />
 
