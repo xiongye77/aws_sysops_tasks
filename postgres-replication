@@ -41,3 +41,33 @@ mskpostgresconnector=> \dt application.*
 -------------+--------+-------+---------------
  application | outbox | table | debezium_user
 (1 row)
+
+
+
+mskpostgresconnector=> SELECT
+  client_addr,
+  state,
+  sent_lsn,
+  write_lsn,
+  flush_lsn,
+  replay_lsn,
+  pg_size_pretty(pg_wal_lsn_diff(pg_current_wal_lsn(), replay_lsn)) AS replication_lag
+FROM pg_stat_replication;
+ client_addr | state | sent_lsn | write_lsn | flush_lsn | replay_lsn | replication_lag
+-------------+-------+----------+-----------+-----------+------------+-----------------
+ 10.0.128.91 |       |          |           |           |            |
+(1 row)
+
+mskpostgresconnector=> SELECT * FROM pg_publication;
+  oid  |     pubname     | pubowner | puballtables | pubinsert | pubupdate | pubdelete | pubtruncate | pubviaroot
+-------+-----------------+----------+--------------+-----------+-----------+-----------+-------------+------------
+ 20564 | dbz_publication |    16459 | f            | t         | t         | t         | f           | f
+(1 row)
+
+mskpostgresconnector=> SELECT *
+FROM pg_publication_tables;
+     pubname     | schemaname  | tablename |                              attnames                              | rowfilter
+-----------------+-------------+-----------+--------------------------------------------------------------------+-----------
+ dbz_publication | application | outbox    | {id,aggregate_id,aggregate_type,idempotency_key,payload,timestamp} |
+(1 row)
+
