@@ -1,0 +1,26 @@
+select * FROM   pg_stat_replication;
+select * FROM   pg_publication_tables;
+SELECT
+  slot_name,
+  active,
+  restart_lsn,
+  pg_current_wal_lsn() AS current_lsn,
+  pg_size_pretty(pg_wal_lsn_diff(pg_current_wal_lsn(), restart_lsn)) AS replication_lag
+FROM pg_replication_slots;
+\l+
+\du+
+                                         List of roles
+      Role name      |                         Attributes                         | Description
+---------------------+------------------------------------------------------------+-------------
+ debezium_user       |                                                            |
+ postgres            | Create role, Create DB                                    +|
+                     | Password valid until infinity                              |
+ rds_ad              | Cannot login                                               |
+ rds_extension       | No inheritance, Cannot login                               |
+ rds_iam             | Cannot login                                               |
+ rds_password        | Cannot login                                               |
+ rds_replication     | Cannot login                                               |
+ rds_superuser       | Cannot login                                               |
+ rdsadmin            | Superuser, Create role, Create DB, Replication, Bypass RLS+|
+                     | Password valid until infinity                              |
+ rdswriteforwarduser | No inheritance                                             |
