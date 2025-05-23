@@ -43,7 +43,13 @@ When messages actually get removed
 
 # MSK broker scale out and scale up 
 <img width="822" alt="image" src="https://github.com/user-attachments/assets/af93349c-7a9c-45ae-8f70-2f7c905fb856" />
-
+# MSK cross account access 
+<img width="1093" alt="image" src="https://github.com/user-attachments/assets/6d7c0cee-228e-46c0-8966-c764086e94c6" />
+1. MSK cluster owner to enable PrivateLink connectivity on the MSK cluster and select authentication schemes to control access to the cluster.
+2. The cross-account user will connect privately to the MSK cluster using IAM auth scheme.
+3.The cluster owner turns on multi-VPC private connectivity on the ACTIVE cluster for any auth schemes that will be active on the cluster. 
+4. Attach a cluster policy to the MSK cluster
+5. In the MSK console for the client Account B, choose Managed VPC connections, and then choose Create connection.
 # MSK tiered storage node
 <img width="752" alt="image" src="https://github.com/user-attachments/assets/4992b650-60b0-4fae-98c1-1d8914033d3a" />
 # MSK connector 
