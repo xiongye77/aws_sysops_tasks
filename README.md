@@ -4,7 +4,8 @@ Amazon MSK Connect is a fully managed service that allows you to stream data bet
 
 
 <img width="1577" alt="image" src="https://github.com/user-attachments/assets/20c47015-4978-4f43-84e0-0f27cd570d6f" />
-![image](https://github.com/user-attachments/assets/d873d8e3-831c-4430-b073-c2d8427254b3)
+<img width="1400" alt="image" src="https://github.com/user-attachments/assets/c80b0b8b-d463-439f-a634-c7438ac1b41b" />
+
 
 1. Source Connectors
 We will use Kafka Connect along with three Debezium connectors, MySQL, PostgreSQL, and SQL Server, to connect to three corresponding Amazon Relational Database Service (RDS) databases and perform CDC. Changes from the three databases will be represented as messages in separate Kafka topics. In Kafka Connect terminology, these are referred to as Source Connectors. According to Confluent.io, a leader in the Kafka community, “source connectors ingest entire databases and stream table updates to Kafka topics.”
