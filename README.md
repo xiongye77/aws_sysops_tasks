@@ -1,7 +1,7 @@
 # AWS SYS OPS  
 # MSK Connect connector
 Amazon MSK Connect is a fully managed service that allows you to stream data between Apache Kafka and other data sources or sinks. It simplifies the process of integrating data streams with various AWS services and external systems by providing a scalable, reliable, and easy-to-use platform.
-<img width="825" alt="image" src="https://github.com/user-attachments/assets/29082160-6a68-42e4-a68c-78f6e2adac96" />
+
 
 <img width="1577" alt="image" src="https://github.com/user-attachments/assets/20c47015-4978-4f43-84e0-0f27cd570d6f" />
 <img width="795" alt="image" src="https://github.com/user-attachments/assets/8becef97-c01d-4e40-8aaa-1165c6666ef4" />
