@@ -4,7 +4,23 @@ Amazon MSK Connect is a fully managed service that allows you to stream data bet
 
 
 <img width="1577" alt="image" src="https://github.com/user-attachments/assets/20c47015-4978-4f43-84e0-0f27cd570d6f" />
-<img width="795" alt="image" src="https://github.com/user-attachments/assets/8becef97-c01d-4e40-8aaa-1165c6666ef4" />
+![image](https://github.com/user-attachments/assets/d873d8e3-831c-4430-b073-c2d8427254b3)
+
+1. Source Connectors
+We will use Kafka Connect along with three Debezium connectors, MySQL, PostgreSQL, and SQL Server, to connect to three corresponding Amazon Relational Database Service (RDS) databases and perform CDC. Changes from the three databases will be represented as messages in separate Kafka topics. In Kafka Connect terminology, these are referred to as Source Connectors. According to Confluent.io, a leader in the Kafka community, “source connectors ingest entire databases and stream table updates to Kafka topics.”
+
+Enabling CDC for Amazon RDS
+To use Debezium for CDC with Amazon RDS databases, minor changes to the default database configuration for each database engine are required.
+
+CDC for PostgreSQL
+Debezium has detailed instructions regarding configuring CDC for Amazon RDS for PostgreSQL. Database parameters specify how the database is configured. According to the Debezium documentation, for PostgreSQL, set the instance parameter rds.logical_replication to 1 and verify that the wal_level parameter is set to logical. It is automatically changed when the rds.logical_replication parameter is set to 1. This parameter is adjusted using an Amazon RDS custom parameter group.
+
+2. Sink Connector
+We will stream the data from the Kafka topics into Amazon S3 using a sink connector. Again, according to Confluent.io, “sink connectors deliver data from Kafka topics to secondary indexes, such as Elasticsearch, or batch systems such as Hadoop for offline analysis.” We will use Confluent’s Amazon S3 Sink Connector for Confluent Platform. We can use Confluent’s sink connector without depending on the entire Confluent platform.
+
+
+
+
 
 
 # Ausora Postgres Replication monitor replication lag 
