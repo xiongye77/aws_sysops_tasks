@@ -1,4 +1,16 @@
 # AWS SYS OPS  
+# How Azure function/VM access AWS S3 without using long-term credentials (2025/06/06)
+
+![image](https://github.com/user-attachments/assets/336f56e2-e087-4d4b-8f29-97600f59b958)
+![image](https://github.com/user-attachments/assets/fe443d98-cdf5-4b52-b372-cb190256b92d)
+
+<img width="810" alt="image" src="https://github.com/user-attachments/assets/bc887f49-8c18-4bdc-a208-e6d5b185eeb3" />
+<img width="1181" alt="image" src="https://github.com/user-attachments/assets/72c51faf-c928-49b1-87f4-248d448d2bd0" />
+
+# How to use Web identity Federation authenticated by Google to access AWS S3
+<img width="1133" alt="image" src="https://github.com/user-attachments/assets/7b6a41e0-bc07-4727-94ef-d00ffdc9a528" />
+
+
 # MSK Connect connector
 Amazon MSK Connect is a fully managed service that allows you to stream data between Apache Kafka and other data sources or sinks. It simplifies the process of integrating data streams with various AWS services and external systems by providing a scalable, reliable, and easy-to-use platform.
 
