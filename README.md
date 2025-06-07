@@ -1,7 +1,9 @@
 # AWS SYS OPS  
 # Web Identity Federation with Cognito Identity Pool and API Gateway (IAM Auth) (2025/06/07)
 <img width="946" alt="image" src="https://github.com/user-attachments/assets/65b101d7-dbf2-4856-9b9e-0e87dfcfc10f" />
-x``
+
+
+
 1.  User (Browser/App) Sign in with Google
    
 2.  Google Identity Provider Returns Google ID token (JWT)
