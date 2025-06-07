@@ -1,4 +1,19 @@
 # AWS SYS OPS  
+
+# AWS Config records all assets with related tag(s) have any changes (2025/06/07)
+0. Enable AWS config and add tag for your assets, in this example , add key value pair as System ProdCore
+1. Create Event Bridge Rule to record aws config changes
+   <img width="1536" alt="image" src="https://github.com/user-attachments/assets/8b5ea749-8337-4ba4-8800-8d9e3ba03855" />
+
+2. Set destination for the event, using lambda function
+   <img width="1512" alt="image" src="https://github.com/user-attachments/assets/5645efd4-21cc-4610-a0cc-b4c8f63e9499" />
+
+3. Create lambda function to parse the aws config event comes in   send to SNS topic and store in DynamoDB
+https://github.com/xiongye77/aws_sysops_tasks/blob/main/post-aws-config-change-sns.py
+<img width="1458" alt="image" src="https://github.com/user-attachments/assets/e3e3600a-ac6a-44fe-b823-0746f177f2bc" />
+<img width="1681" alt="image" src="https://github.com/user-attachments/assets/7f0b604c-42b1-42b0-b1fc-164fe7fc943b" />
+<img width="1278" alt="image" src="https://github.com/user-attachments/assets/3d279eda-f400-4463-8922-83c660f87c5d" />
+
 # How Azure function/VM access AWS S3 without using long-term credentials (2025/06/06)
 
 ![image](https://github.com/user-attachments/assets/336f56e2-e087-4d4b-8f29-97600f59b958)
