@@ -2,9 +2,13 @@
 # Web Identity Federation with Cognito Identity Pool and API Gateway (IAM Auth) (2025/06/07)
 <img width="946" alt="image" src="https://github.com/user-attachments/assets/65b101d7-dbf2-4856-9b9e-0e87dfcfc10f" />
 1.  User (Browser/App) Sign in with Google
+   
 2.  Google Identity Provider Returns Google ID token (JWT)
+    
 3.  Cognito Identity Pool,Trusts Google IdP and  Maps to IAM Role
+
 4.  Get AWS credentials from STS,Returns temporary creds ( accessKeyId/secretAccessKey/sessionToken )
+   
 5.  Call API Gateway Using Temporary Credentials (API Gateway is configured to use AWS_IAM authorization)
    
 # AWS Config and Cloudtrail records all assets with related tag(s) have any changes (2025/06/07)
