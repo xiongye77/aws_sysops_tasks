@@ -1,5 +1,12 @@
 # AWS SYS OPS  
-
+# Web Identity Federation with Cognito Identity Pool and API Gateway (IAM Auth) (2025/06/07)
+<img width="946" alt="image" src="https://github.com/user-attachments/assets/65b101d7-dbf2-4856-9b9e-0e87dfcfc10f" />
+1.  User (Browser/App) Sign in with Google
+2.  Google Identity Provider Returns Google ID token (JWT)
+3.  Cognito Identity Pool,Trusts Google IdP and  Maps to IAM Role
+4.  Get AWS credentials from STS,Returns temporary creds ( accessKeyId/secretAccessKey/sessionToken )
+5.  Call API Gateway Using Temporary Credentials (API Gateway is configured to use AWS_IAM authorization)
+   
 # AWS Config and Cloudtrail records all assets with related tag(s) have any changes (2025/06/07)
 0. Enable AWS config and Cloudtrail , add tag for your assets, in this example , add key value pair as System ProdCore
 1. Create Event Bridge Rule to record aws config changes
@@ -1814,7 +1821,7 @@ aws cloudformation describe-stacks --stack-name YOUR_STACK_NAME  --query 'Stacks
 
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/01b3b735-3d08-4a40-93c5-1b1b9f533d29)
 
-aws configure --profile/aws sts get-caller-identity --profile/aws sts get-access-key-info --access-key-id AKIAW7NLVZMHQ4IO2CRG
+aws configure --profile/aws sts get-caller-identity --profile/aws sts get-access-key-info --access-key-id 'xxxxxxx'
 aws configure list/aws iam update-access-key --user-name username --access-key-id access_key_id --status Inactive/ aws iam list-access-keys --user-name  username 
 
 # AWS cloudtrail Lake query (2024/04/07)
