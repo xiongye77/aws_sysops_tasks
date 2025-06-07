@@ -10,8 +10,7 @@
 
 3. Create lambda function to parse the aws config event comes in, also search in cloudtrail ,send all results to SNS topic and store in DynamoDB
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/post-aws-config-change-sns.py
-<img width="1458" alt="image" src="https://github.com/user-attachments/assets/e3e3600a-ac6a-44fe-b823-0746f177f2bc" />
-<img width="1681" alt="image" src="https://github.com/user-attachments/assets/7f0b604c-42b1-42b0-b1fc-164fe7fc943b" />
+
 <img width="1278" alt="image" src="https://github.com/user-attachments/assets/3d279eda-f400-4463-8922-83c660f87c5d" />
 <img width="1441" alt="image" src="https://github.com/user-attachments/assets/f8510e78-6a70-493f-a74b-12f4f530603d" />
 <img width="1660" alt="image" src="https://github.com/user-attachments/assets/b387eb62-934f-485c-8226-683d9a3341d3" />
