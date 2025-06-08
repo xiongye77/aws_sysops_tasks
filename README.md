@@ -2,8 +2,8 @@
 # Web Identity Federation with Cognito Identity Pool and API Gateway (IAM Auth) (2025/06/07)
 <img width="946" alt="image" src="https://github.com/user-attachments/assets/65b101d7-dbf2-4856-9b9e-0e87dfcfc10f" />
 
-
-
+https://github.com/xiongye77/aws_sysops_tasks/blob/main/index.html
+<img width="1718" alt="image" src="https://github.com/user-attachments/assets/67ab9741-c525-4620-a146-3ad9d5eb627b" />
 1.  User (Browser/App) Sign in with Google
    
 2.  Google Identity Provider Returns Google ID token (JWT)
@@ -13,6 +13,16 @@
 4.  Get AWS credentials from STS,Returns temporary creds ( accessKeyId/secretAccessKey/sessionToken )
    
 5.  Call API Gateway Using Temporary Credentials (API Gateway is configured to use AWS_IAM authorization)
+
+   
+6.  Since we call from Cloudfront (S3) to Api GW, the cors must set properly 
+<img width="1504" alt="image" src="https://github.com/user-attachments/assets/40357a05-14fc-4395-bb3c-68c604079f7f" />
+
+
+
+
+<img width="1651" alt="image" src="https://github.com/user-attachments/assets/df8043c8-2ff3-4920-be7d-30ed6171a3a8" />
+
    
 # AWS Config and Cloudtrail records all assets with related tag(s) have any changes (2025/06/07)
 0. Enable AWS config and Cloudtrail , add tag for your assets, in this example , add key value pair as System ProdCore
