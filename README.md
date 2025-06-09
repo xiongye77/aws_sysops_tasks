@@ -1,5 +1,5 @@
 # AWS SYS OPS  
-# Web Identity Federation with Cognito Identity Pool and S3 bucket access (IAM Auth,also check Dynamodb for subscription) (2025/06/09)
+# Web Identity Federation with Cognito Identity Pool and private S3 bucket access through presigned url (IAM Auth,also check Dynamodb for subscription) (2025/06/09)
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/index_sub_s3.html
 <img width="1465" alt="image" src="https://github.com/user-attachments/assets/006ccac3-58d2-4330-bcf7-03ffd0d77899" />
 <img width="1706" alt="image" src="https://github.com/user-attachments/assets/bd34cd58-c75f-4abe-83db-a16c4c7ea9d4" />
