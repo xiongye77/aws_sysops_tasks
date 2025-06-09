@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Google → Cognito → Subscription SPA Demo</title>
+    <meta name="author" content="Your Name" />
+    <!--
+      Load the AWS SDK synchronously so that the global `AWS` object is available
+      for our inline code.
+    -->
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1372.0.min.js"></script>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 20px; }
+      h1 { font-size: 1.5em; margin-bottom: 1em; }
+      #status { margin-bottom: 1em; }
+      #status.success { color: green; }
+      #status.error { color: red; }
+      button { padding: 10px 20px; font-size: 1em; }
+      a { color: blue; }
+    </style>
+  </head>
+  <body>
+    <h1>Subscription Check Demo</h1>
+    
+    <!-- Status & output messages -->
+    <div id="status">Please sign in with Google.</div>
+    <div id="output">(no output yet)</div>
+    
+    <!-- The Google Identity configuration: -->
+    <!-- Make sure to replace the client_id below with your own -->
+    <div id="g_id_onload"
+         data-client_id="35923994342-6vq17t60etqbffrr2rbp63f8ompb1bn6.apps.googleusercontent.com"
+         data-callback="onSignIn"
+         data-auto_prompt="false">
+    </div>
+    <div class="g_id_signin" data-type="standard"></div>
+    
+    <!-- Button to trigger the pre-signed URL generation (initially hidden) -->
+    <button id="callApiBtn" style="display: none;">Get File</button>
+    
+    <!-- Inline Application Logic -->
+    <script>
+      /*********************** CONFIGURATION ***********************/
+      const IDENTITY_POOL_ID = "us-east-1:8912441b-7543-4bfc-8bb7-7d6070835e2c"; // Cognito Identity Pool Id
+      const REGION = "us-east-1";
+      const DDB_TABLE = "Subscriptions"; // Your DynamoDB table where each item is keyed by email and contains a flag (e.g. subscribed:true)
+      const S3_BUCKET = "web-images-s3-cognito-idp"; // S3 bucket holding your files
+      const S3_FILE_KEY = "screenshot.jpg"; // The key (path) of the file to generate a pre-signed URL for
+      
+      /*********************** UI REFERENCES ***********************/
+      const statusEl = document.getElementById("status");
+      const outputEl = document.getElementById("output");
+      const callApiBtn = document.getElementById("callApiBtn");
+      
+      // Utility function to update the status message.
+      function showStatus(message, type = "") {
+        statusEl.textContent = message;
+        statusEl.className = type;
+      }
+      
+      /*********************** GOOGLE SIGN-IN CALLBACK ***********************/
+      // This function is invoked by Google upon a successful sign in.
+      async function onSignIn(response) {
+        if (!response.credential) {
+          showStatus("Google sign-in failed.", "error");
+          return;
+        }
+        showStatus("Google sign-in succeeded. Exchanging token with Cognito...", "");
+        console.log("Google credential received:", response.credential);
+        
+        // Configure AWS: exchange the Google JWT for temporary STS credentials via Cognito.
+        AWS.config.update({ region: REGION });
+        AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+          IdentityPoolId: IDENTITY_POOL_ID,
+          Logins: { "accounts.google.com": response.credential }
+        });
+        
+        try {
+          await AWS.config.credentials.getPromise();
+          showStatus("Authenticated! Checking subscription...", "success");
+          
+          // Decode the JWT to extract the user's email
+          const parsedToken = parseJwt(response.credential);
+          const userEmail = parsedToken.email;
+          console.log("User email:", userEmail);
+          
+          // Check subscription from DynamoDB
+          checkSubscription(userEmail);
+        } catch (error) {
+          showStatus("Cognito error: " + error.message, "error");
+          console.error("Cognito token exchange error:", error);
+        }
+      }
+      
+      // Attach the onSignIn function to the global window so that Google can invoke it.
+      window.onSignIn = onSignIn;
+      
+      /*********************** JWT PARSER *****************************/
+      // Decodes the JWT (without verifying) to extract its payload.
+      function parseJwt(token) {
+        const base64Url = token.split('.')[1];
+        const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+        const jsonPayload = decodeURIComponent(
+          atob(base64)
+            .split("")
+            .map(function(c) {
+              return "%" + ("00" + c.charCodeAt(0).toString(16)).slice(-2);
+            })
+            .join("")
+        );
+        return JSON.parse(jsonPayload);
+      }
+      
+      /*********************** SUBSCRIPTION CHECK *****************************/
+      // This function uses AWS SDK's DynamoDB DocumentClient to check if the user (by email)
+      // has an active subscription in your DynamoDB table.
+      function checkSubscription(email) {
+        showStatus("Checking subscription for " + email + "...");
+        const ddb = new AWS.DynamoDB.DocumentClient();
+        const params = {
+          TableName: DDB_TABLE,
+          Key: { email: email }
+        };
+        
+        ddb.get(params, function(err, data) {
+          if (err) {
+            console.error("Error querying DynamoDB:", err);
+            showStatus("Failed to check subscription.", "error");
+          } else {
+            // Expecting the item to contain an attribute "subscribed" set to true.
+            if (data && data.Item && data.Item.subscribed === true) {
+              showStatus("Subscription active. You can access files.", "success");
+              outputEl.textContent = "Subscription confirmed for " + email;
+              // Make the button to get the file visible.
+              callApiBtn.style.display = "inline-block";
+            } else {
+              showStatus("No active subscription found for " + email, "error");
+              outputEl.textContent = "Please subscribe first.";
+            }
+          }
+        });
+      }
+      
+      /*********************** S3 PRESIGNED URL GENERATION *****************************/
+      // When the "Get File" button is clicked, this function generates a pre-signed URL for the S3 object.
+      function getPresignedUrl() {
+        const s3 = new AWS.S3();
+        const params = {
+          Bucket: S3_BUCKET,
+          Key: S3_FILE_KEY,
+          Expires: 3600 // URL expires in 1 hour
+        };
+        const url = s3.getSignedUrl('getObject', params);
+        outputEl.innerHTML = "Your file URL: <a href='" + url + "' target='_blank'>" + url + "</a>";
+        showStatus("Pre-signed URL generated.", "success");
+      }
+      
+      // Event listener for the button to get the pre-signed URL.
+      callApiBtn.addEventListener("click", getPresignedUrl);
+    </script>
+    
+    <!--
+      IMPORTANT: Load Google Identity Services now,
+      after our inline code so that `window.onSignIn` is defined.
+    -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </body>
+</html>
