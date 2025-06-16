@@ -1,6 +1,6 @@
 # AWS SYS OPS 
 
-# API GW Authorizer (JWT(json web token)/IAM)
+# API GW Authorizer (JWT(json web token)/IAM) (2025/06/16)
 <img width="1683" alt="image" src="https://github.com/user-attachments/assets/ef758707-aa3d-4a3c-be98-6a4c94e1b861" />
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/22fed279-803a-4784-96a1-fafeff4877b2" />
 https://github.com/xiongye77/aws_sysops_tasks/blob/main/index_jwt.html
