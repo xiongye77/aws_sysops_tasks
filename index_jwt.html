@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AWS API Gateway JWT Auth SPA</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+        #g_id_onload { margin-bottom: 20px; }
+        .info-box, .api-response {
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 20px;
+            white-space: pre-wrap; /* Preserve whitespace and line breaks */
+            word-wrap: break-word; /* Break long words */
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        .controls button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        .controls button:hover {
+            background-color: #0056b3;
+        }
+        .controls button.sign-out {
+            background-color: #dc3545;
+        }
+        .controls button.sign-out:hover {
+            background-color: #c82333;
+        }
+    </style>
+</head>
+<body>
+    <h1>AWS API Gateway JWT Authentication Example</h1>
+    <p>This SPA authenticates with Google, obtains an ID Token (JWT), and then uses it to call a protected AWS API Gateway endpoint.</p>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <div id="g_id_onload"
+         data-client_id="35923994342-6vq17t60etqbffrr2rbp63f8ompb1bn6.apps.googleusercontent.com" 
+         data-callback="handleCredentialResponse"
+         data-auto_prompt="false">
+    </div>
+    <div class="g_id_signin"
+         data-type="standard"
+         data-size="large"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-shape="rectangular"
+         data-logo_alignment="left">
+    </div>
+
+    <div class="controls">
+        <button id="callApiBtn" onclick="callApi()" disabled>Call Protected API</button>
+        <button class="sign-out" onclick="signOut()">Sign Out</button>
+    </div>
+
+    <h2>User Information (from Google ID Token)</h2>
+    <div class="info-box" id="user-info">
+        No user signed in.
+    </div>
+
+    <h2>Raw ID Token (JWT)</h2>
+    <div class="info-box" id="id-token-display">
+        No ID Token.
+    </div>
+
+    <h2>API Gateway Response</h2>
+    <div class="api-response" id="api-response">
+        No API call made yet.
+    </div>
+
+    <script>
+        // --- CONFIGURATION ---
+        // 1. Replace with YOUR Google OAuth 2.0 Client ID (from Google Cloud Console)
+        const GOOGLE_CLIENT_ID = "35923994342-6vq17t60etqbffrr2rbp63f8ompb1bn6.apps.googleusercontent.com"; 
+        // 2. Replace with YOUR AWS API Gateway Invoke URL (e.g., https://xxxxxx.execute-api.us-east-1.amazonaws.com/your-stage/your-resource)
+        const AWS_API_GATEWAY_URL = "https://er7e3a77zg.execute-api.us-east-1.amazonaws.com/prod/verify";
+
+        let currentIdToken = null; // Store the ID Token globally
+
+        // --- Google Sign-In Callback ---
+        function handleCredentialResponse(response) {
+            console.log("Encoded ID Token (JWT): " + response.credential);
+            currentIdToken = response.credential; // Store the token
+
+            const decodedToken = parseJwt(currentIdToken);
+
+            document.getElementById('id-token-display').innerText = currentIdToken;
+            document.getElementById('user-info').innerHTML = `
+                <p><strong>Name:</strong> ${decodedToken.name}</p>
+                <p><strong>Email:</strong> ${decodedToken.email}</p>
+                <p><strong>Google ID (sub):</strong> ${decodedToken.sub}</p>
+                <p><strong>Picture:</strong> <img src="${decodedToken.picture}" alt="Profile Picture" width="50"></p>
+                <p><em>(Client-side decoded. Always verify on your backend!)</em></p>
+            `;
+            document.getElementById('callApiBtn').disabled = false; // Enable API call button
+
+            // --- IMPORTANT ---
+            // In a real app, you might send this `currentIdToken` to your backend
+            // for server-side verification and session management (e.g., set a secure HTTP-only cookie).
+        }
+
+        // --- API Call Function ---
+        async function callApi() {
+            if (!currentIdToken) {
+                alert("Please sign in with Google first!");
+                return;
+            }
+
+            document.getElementById('api-response').innerText = "Calling API...";
+
+            try {
+                const response = await fetch(AWS_API_GATEWAY_URL, {
+                    method: 'GET', // Or POST, PUT, DELETE as per your API
+                    headers: {
+                        'Authorization': `Bearer ${currentIdToken}`, // Include the JWT here
+                        'Content-Type': 'application/json'
+                        // Add any other headers your API expects
+                    }
+                    // body: JSON.stringify({ /* your data for POST/PUT */ }) 
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    document.getElementById('api-response').innerText = "API Call Successful!\n" + JSON.stringify(data, null, 2);
+                } else {
+                    const errorText = await response.text();
+                    document.getElementById('api-response').innerText = `API Call Failed! Status: ${response.status}\nError: ${errorText}`;
+                    console.error("API Error:", errorText);
+                }
+            } catch (error) {
+                document.getElementById('api-response').innerText = `An error occurred: ${error.message}`;
+                console.error("Fetch Error:", error);
+            }
+        }
+
+        // --- Helper: JWT Decoder (for client-side display only, NOT for security) ---
+        function parseJwt (token) {
+            try {
+                const base64Url = token.split('.')[1];
+                const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+                const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+                    return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+                }).join(''));
+                return JSON.parse(jsonPayload);
+            } catch (e) {
+                console.error("Error parsing JWT:", e);
+                return null;
+            }
+        }
+
+        // --- Sign Out Function ---
+        function signOut() {
+            // Clears Google's session in the browser.
+            google.accounts.id.disableAutoSelect(); // Prevent auto re-login
+            google.accounts.id.prompt(); // Can optionally show prompt again
+            
+            currentIdToken = null; // Clear our stored token
+            document.getElementById('id-token-display').innerText = "No ID Token.";
+            document.getElementById('user-info').innerText = "No user signed in.";
+            document.getElementById('api-response').innerText = "No API call made yet.";
+            document.getElementById('callApiBtn').disabled = true; // Disable API call button
+            console.log("User signed out.");
+        }
+    </script>
+</body>
+</html>
