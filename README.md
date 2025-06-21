@@ -1,4 +1,9 @@
 # AWS SYS OPS 
+# AWS Config advanced query to check EBS volumes without costcenter in their tags (2025/06/21)
+<img width="1632" alt="image" src="https://github.com/user-attachments/assets/2a1a4ef5-0ea8-479e-aa5d-500b59e79b0e" />
+# Running EC2 instances
+<img width="1602" alt="image" src="https://github.com/user-attachments/assets/0a6d8c7a-8699-4c4f-969b-dd81418ff456" />
+
 
 # API GW Authorizer (JWT(json web token)/IAM) (2025/06/16)
 <img width="1683" alt="image" src="https://github.com/user-attachments/assets/ef758707-aa3d-4a3c-be98-6a4c94e1b861" />
