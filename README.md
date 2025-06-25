@@ -1,4 +1,11 @@
 # AWS SYS OPS 
+# AWS IAM access analyzer for cross account (2025/06/25)
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/3e26e399-2d93-46ae-8cc1-bf8aecb73862" />
+
+# AWS inspector support github action to scan container image (2025/06/25)
+<img width="1060" alt="image" src="https://github.com/user-attachments/assets/d490f662-a7db-4b02-b1e4-cbaea023b306" />
+
+
 # AWS Config advanced query to check EBS volumes without costcenter in their tags (2025/06/21)
 <img width="1632" alt="image" src="https://github.com/user-attachments/assets/2a1a4ef5-0ea8-479e-aa5d-500b59e79b0e" />
 # Running EC2 instances
