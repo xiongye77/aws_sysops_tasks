@@ -1,4 +1,20 @@
 # AWS SYS OPS 
+
+# AWS S3 Ransomware scenario (2025/09/17)
+1) Stop the bleeding (containment) Quarantine the bucket: add a temporary deny-all except a break-glass role.
+2) Scope & verify impact (investigation) If you have CloudTrail data events for S3, query for spikes in PutObject/DeleteObject(s)
+3) Recover data
+   if bucket version is on and versions were not purged: remove the delete markers.
+   if bucket version is off or versions had been purged: Use AWS Backup.
+4) Hardening (prevent next time)
+   Always ON: S3 Versioning for important buckets.
+   Immutability: Object Lock (governance or compliance) + default retention on critical prefixes; AWS Backup Vault Lock for backups.
+   Bucket policies: Require SSE-KMS on PutObject; deny unencrypted puts. Deny s3:DeleteObject* except from tightly-controlled roles. (Org-level) SCPs to block destructive actions broadly.
+   Detection: GuardDuty S3 Protection; CloudTrail data events for forensic detail; EventBridge alerts for spikes in DeleteObject/PutObject.
+   IAM hygiene: least privilege, short-lived sessions, session policies 
+
+# Check AWS GuardDuty must enable S3 Protection (GuardDuty can still detect S3 ransomware-like behavior even if you haven’t enabled CloudTrail data events yourself, as long as you have GuardDuty S3 Protection turned on. GuardDuty ingests the required S3 data events via an internal integration)
+
 # AWS IAM access analyzer for cross account (2025/06/25)
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/3e26e399-2d93-46ae-8cc1-bf8aecb73862" />
 
