@@ -13,7 +13,8 @@
    Detection: GuardDuty S3 Protection; CloudTrail data events for forensic detail; EventBridge alerts for spikes in DeleteObject/PutObject.
    IAM hygiene: least privilege, short-lived sessions, session policies 
 
-# Check AWS GuardDuty must enable S3 Protection (GuardDuty can still detect S3 ransomware-like behavior even if you haven’t enabled CloudTrail data events yourself, as long as you have GuardDuty S3 Protection turned on. GuardDuty ingests the required S3 data events via an internal integration)
+# Check AWS GuardDuty must enable S3 Protection 
+(GuardDuty can still detect S3 ransomware-like behavior even if you haven’t enabled CloudTrail data events yourself, as long as you have GuardDuty S3 Protection turned on. GuardDuty ingests the required S3 data events via an internal integration)
 
 # AWS IAM access analyzer for cross account (2025/06/25)
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/3e26e399-2d93-46ae-8cc1-bf8aecb73862" />
