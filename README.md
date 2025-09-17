@@ -16,6 +16,13 @@
 # Check AWS GuardDuty must enable S3 Protection 
 (GuardDuty can still detect S3 ransomware-like behavior even if you haven’t enabled CloudTrail data events yourself, as long as you have GuardDuty S3 Protection turned on. GuardDuty ingests the required S3 data events via an internal integration)
 
+<img width="1052" height="524" alt="image" src="https://github.com/user-attachments/assets/48a6fabd-3800-4ec7-87c3-c79d954fe932" />
+
+# Prowler is the popular open-source cloud security scanner (AWS-first, now multi-cloud). 
+It can audit S3 against AWS best practices/CIS and flag risky buckets (public access, missing encryption, no versioning, etc.)
+<img width="1013" height="909" alt="image" src="https://github.com/user-attachments/assets/9f1c574a-3980-4622-bba4-35fba249333b" />
+
+
 # AWS IAM access analyzer for cross account (2025/06/25)
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/3e26e399-2d93-46ae-8cc1-bf8aecb73862" />
 
