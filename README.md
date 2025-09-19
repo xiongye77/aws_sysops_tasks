@@ -1,4 +1,11 @@
 # AWS SYS OPS 
+# AWS Cloudwatch Dashboard with log table as source (2025/09/20)
+source log group is cloudtrail event and filter event like "CreateUser","CreateAccessKey" 
+
+<img width="1727" height="872" alt="image" src="https://github.com/user-attachments/assets/5d38163d-f560-4320-b960-ff73995b9409" />
+<img width="1718" height="707" alt="image" src="https://github.com/user-attachments/assets/318b3f9b-7c8f-4272-981e-903546c2a209" />
+<img width="1049" height="686" alt="image" src="https://github.com/user-attachments/assets/8caf5487-c964-472f-a304-c9f7ad05d2a8" />
+
 
 # AWS S3 Ransomware scenario (2025/09/17)
 1) Stop the bleeding (containment) Quarantine the bucket: add a temporary deny-all except a break-glass role.
