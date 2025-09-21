@@ -1,4 +1,29 @@
 # AWS SYS OPS 
+# Security Hub CSPM 
+Security Hub CSPM is a Cloud Security Posture Management (CSPM) service that you can use to perform security best practice checks, aggregate alerts, and enable automated remediation.
+
+<img width="1168" height="548" alt="image" src="https://github.com/user-attachments/assets/633a408e-abc9-4e14-ab15-8f1264c42853" />
+
+Security Hub CSPM currently works with:
+
+GuardDuty
+Config
+Systems Manager
+Inspector
+Firewall Manager
+AWS IAM Access Analyzer
+AWS Health
+Amazon Macie
+Integrated partner solutions
+It can take findings from all of those sources to aggregate them and prioritize them.
+
+<img width="3404" height="1656" alt="image" src="https://github.com/user-attachments/assets/7f187b7a-9167-4b9d-a3d5-109c1daf09c5" />
+<img width="1721" height="861" alt="image" src="https://github.com/user-attachments/assets/73072ab7-3eaa-4187-ae4a-6fd5f5f103e4" />
+<img width="1234" height="598" alt="image" src="https://github.com/user-attachments/assets/9500e37f-30f8-401b-a02c-c9fcec900977" />
+
+# GuardDuty/Inspector/Macie → Security Hub (aggregate) → Detective (investigate)
+
+
 # AWS Cloudwatch Dashboard with log table as source (2025/09/20)
 source log group is cloudtrail event and filter event like "CreateUser","CreateAccessKey" 
 
