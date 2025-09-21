@@ -17,11 +17,24 @@ Amazon Macie
 Integrated partner solutions
 It can take findings from all of those sources to aggregate them and prioritize them.
 
-<img width="3404" height="1656" alt="image" src="https://github.com/user-attachments/assets/7f187b7a-9167-4b9d-a3d5-109c1daf09c5" />
+<img width="1714" height="853" alt="image" src="https://github.com/user-attachments/assets/4f877356-c2b9-477e-9883-bf8651657751" />
+
 <img width="1721" height="861" alt="image" src="https://github.com/user-attachments/assets/73072ab7-3eaa-4187-ae4a-6fd5f5f103e4" />
 <img width="1234" height="598" alt="image" src="https://github.com/user-attachments/assets/9500e37f-30f8-401b-a02c-c9fcec900977" />
 
 # GuardDuty/Inspector/Macie → Security Hub (aggregate) → Detective (investigate)
+
+# GuardDuty Extended Threat Detection  (2025/09/21)
+GuardDuty Extended Threat Detection (ETD) is a newer GuardDuty capability that uses AI/ML to correlate multiple security signals over time (up to a rolling 24-hour window) and raise a single “attack sequence” finding when it sees the pattern of a real multi-stage attack—e.g., credential compromise → persistence → data access/exfil. It goes beyond single-event anomalies.
+<img width="1223" height="665" alt="image" src="https://github.com/user-attachments/assets/fd4cdd6f-e1ad-4886-9eb4-ed66ef9e0369" />
+
+<img width="1545" height="666" alt="image" src="https://github.com/user-attachments/assets/f6a3660d-09e8-4b29-871f-72446091c523" />
+<img width="1144" height="520" alt="image" src="https://github.com/user-attachments/assets/2d368498-6e55-42f1-96aa-2e66d86d6890" />
+<img width="1569" height="842" alt="image" src="https://github.com/user-attachments/assets/02128cf3-d380-4be8-ac1c-f798979f549c" />
+
+
+# GuardDuty Protection Plan 
+<img width="1154" height="569" alt="image" src="https://github.com/user-attachments/assets/1091b2ca-9e36-4365-8c07-994e1fb1222b" />
 
 
 # AWS Cloudwatch Dashboard with log table as source (2025/09/20)
