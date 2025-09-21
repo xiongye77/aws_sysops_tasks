@@ -416,7 +416,7 @@ Route 53, AWS’s DNS service, also provides extra security measures to protect 
 
 Second, you can enable DNSSEC validation on Route 53 Resolver in your VPCs. This will instruct Resolver to validate the cryptographic signature of the response you get upon a DNS lookup, thereby ensuring that the response was not tampered with. 
 
-![Uploading image.png…]()
+<img width="1011" height="497" alt="image" src="https://github.com/user-attachments/assets/7ec0a454-fbd5-4d8b-91cb-d92b5389b60a" />
 
 
 
@@ -1066,8 +1066,23 @@ we’re going to send an email notification every time GuardDuty finds a potenti
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/8e5025ba-7551-4bcc-8a78-168ee10df517)
 ![image](https://github.com/xiongye77/aws_sysops_tasks/assets/36766101/4b8b60b0-fec2-4c43-8c4e-87d0aa7164ec)
 
+
+# GuardDuty Runtime monitor
+<img width="1488" height="827" alt="image" src="https://github.com/user-attachments/assets/602d3989-df32-400b-b797-5d835e3d660c" />
+GuardDuty Runtime Monitoring can cover EC2, ECS, and EKS, with a couple of caveats.
+
+Runtime Monitoring (opt-in): To get process/file/command-line/container runtime signals on EC2/ECS/EKS on EC2, you must enable Runtime Monitoring and deploy the GuardDuty security agent (automated via SSM or manual). This is a separate agent, not the CloudWatch or Inspector one (SSM agent)
+
+1 EC2 instances: Supported. You enable Runtime Monitoring and the GuardDuty security agent runs on the instance to send OS-level runtime events (process, file, network) to GuardDuty. 
+
+2 ECS: Supported on ECS on EC2 and ECS on Fargate via the GuardDuty runtime agent (managed differently per launch type). 
+
+3 EKS: Supported for EKS on EC2 (and EKS Auto Mode) via the aws-guardduty-agent add-on. Not supported for EKS on Fargate (and not for EKS Hybrid Nodes)
+
 # Amazon Detective 
 Amazon Detective is a service that helps you analyze and investigate the root cause of security findings or suspicious activity. Using data from AWS Cloudtrail logs, VPC flow logs and AWS GuardDuty data, Amazon Detective will collate, filter the collected security data and using AWS Security Hub, GuardDuty, integrated partner security products, machine learning and statistical analysis investigates the security findings to get to the root cause of the problem or suspicious activity.
+![Uploading image.png…]()
+
 ![image](https://user-images.githubusercontent.com/36766101/232459258-fd6957e6-5839-4d32-bc76-c57eeb2785f1.png)
 
 ![image](https://user-images.githubusercontent.com/36766101/192092102-217c98f8-f5fe-4356-94d2-857619c990cf.png)
