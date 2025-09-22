@@ -24,6 +24,17 @@ It can take findings from all of those sources to aggregate them and prioritize 
 
 # GuardDuty/Inspector/Macie → Security Hub (aggregate) → Detective (investigate)
 
+# CloudTrail can run as an organization-wide trail so that all logs get sent to one centralized account. 
+Referring to the SRA (AWS Security Reference Architecture),It’s Amazon’s prescriptive, multi-account security blueprint for AWS. The SRA explains how to centrally design and operate services like Organizations, CloudTrail (org trail), Config aggregation, GuardDuty/Security Hub/Detective, IAM Identity Center, KMS, logging, and incident response
+
+# Setting up CloudTrail Lake in a multi-account architecture
+ we have centralized logging, we can use CloudTrail Lake and Athena to query our logs for incident response 
+ <img width="1532" height="866" alt="image" src="https://github.com/user-attachments/assets/4e0626ad-e08a-4d09-9141-614f71088ca3" />
+<img width="1446" height="553" alt="image" src="https://github.com/user-attachments/assets/457df513-8e5a-442c-9042-fa0b732b62ee" />
+
+<img width="1071" height="740" alt="image" src="https://github.com/user-attachments/assets/fd796706-d0c0-4a28-8fb5-ad3230c45c4f" />
+
+
 # GuardDuty Extended Threat Detection  (2025/09/21)
 GuardDuty Extended Threat Detection (ETD) is a newer GuardDuty capability that uses AI/ML to correlate multiple security signals over time (up to a rolling 24-hour window) and raise a single “attack sequence” finding when it sees the pattern of a real multi-stage attack—e.g., credential compromise → persistence → data access/exfil. It goes beyond single-event anomalies.
 <img width="1223" height="665" alt="image" src="https://github.com/user-attachments/assets/fd4cdd6f-e1ad-4886-9eb4-ed66ef9e0369" />
