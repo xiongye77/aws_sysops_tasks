@@ -1,5 +1,38 @@
 # AWS SYS OPS 
 
+
+# AWS Shield DDOS Protection (2025/10/12)
+DDoS protection is not just about deploying a product or service. There are several steps that you need to take to improve resiliency against DDoS attacks. 
+<img width="763" height="369" alt="image" src="https://github.com/user-attachments/assets/eca800ae-ecc8-47bb-9154-d050d8e42031" />
+
+<img width="1209" height="489" alt="image" src="https://github.com/user-attachments/assets/461213bb-fc95-4841-99a7-f6ebb638e57a" />
+
+
+1 First of all, you need to minimize your attack surface. This way you provide fewer attack points for attackers to exploit.
+
+2 Keep your critical infrastructure in private, isolated subnets, so that it remains as protected as possible against external threats.
+
+3 Use elastic load balancers. As we mentioned, ELBs will block malformed packets, acting as another layer of defense against DDoS attacks, even if the CDN fails to block the attack.
+
+4 Of course, don’t forget to configure your security groups and NACLs to block unwanted traffic from reaching your instances.
+
+5 Finally, you can use AWS Shield to protect your AWS environment against DDoS attacks.
+
+
+# Resource Control Policy (2025/10/12)
+<img width="1650" height="774" alt="image" src="https://github.com/user-attachments/assets/b29a530a-3117-4081-8dfb-1b832e50e85a" />
+A great example of when this is useful is for securing secrets stored in Secrets Manager. If you have secrets in accounts that you know should never, ever be accessible by external AWS accounts, then you can enforce this with RCPs.
+
+RCPs are very similar to SCPs in that you can’t use them to actually grant permissions. They don’t give permissions, they just set the maximum permissions that can be granted for a resource. In other words, they set limits.
+
+
+<img width="740" height="515" alt="image" src="https://github.com/user-attachments/assets/944c6b7a-7f54-412b-ae7e-a98a558be1ac" />
+
+A single RCP can enforce an org-wide “no access from outside my Org” rule for all supported services/resources (e.g., S3, KMS, etc.), so you don’t have to touch every bucket policy. By contrast, an S3 bucket policy can do the same restriction, but you must apply and maintain it per bucket.
+
+<img width="717" height="299" alt="image" src="https://github.com/user-attachments/assets/6dd27021-d47d-4ee3-bfdc-c1e6065bf9fc" />
+
+
 # AWS Audit Manager for Compliance Evdience (2025/10/12)
 Quick start (typical for PCI DSS / ISO 27001)
 
