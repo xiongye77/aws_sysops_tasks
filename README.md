@@ -21,12 +21,12 @@ Since we are using Amazon Inspector:
 
 4 Centralize (Dependency-Track or Athena over S3) for reporting and audit.
 
-<img width="1620" height="373" alt="image" src="https://github.com/user-attachments/assets/5f0a26c1-8f87-4496-9ada-a61c3f9a2fd5" />
 
+<img width="974" height="459" alt="image" src="https://github.com/user-attachments/assets/a5fc9374-ee9b-4b55-93d0-42a939008beb" />
 <img width="1689" height="887" alt="image" src="https://github.com/user-attachments/assets/79eb2445-f012-43d0-ac5c-d050f6fc4eba" />
 <img width="1676" height="699" alt="image" src="https://github.com/user-attachments/assets/6206b80a-0237-4083-a19b-adeb673cf5f8" />
 <img width="1581" height="686" alt="image" src="https://github.com/user-attachments/assets/ad8a2cee-20a6-4b65-b247-a4d42a9381da" />
-<img width="974" height="459" alt="image" src="https://github.com/user-attachments/assets/a5fc9374-ee9b-4b55-93d0-42a939008beb" />
+
 
 # AWS Config Conformance Pack  (2025/10/10)
 <img width="1311" height="592" alt="image" src="https://github.com/user-attachments/assets/83165eb0-248b-4ce3-9f7a-4684f84b9c5d" />
