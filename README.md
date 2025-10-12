@@ -1,5 +1,29 @@
 # AWS SYS OPS 
 
+# AWS Audit Manager for Compliance Evdience (2025/10/12)
+Quick start (typical for PCI DSS / ISO 27001)
+
+1 Enable Audit Manager in the management account; connect AWS Organizations if you want multi-account coverage. 
+2 Turn on data sources Audit Manager relies on—AWS Config and AWS Security Hub (critical for evidence completeness). 
+3 In Audit Manager, choose a prebuilt framework (e.g., PCI DSS v4, ISO 27001) and create an assessment scoped to the accounts/regions/resources you want. 
+4 Let evidence accumulate (it’s ongoing; frequency varies by data source), then use Evidence Finder to pull what auditors request and export reports.
+<img width="1652" height="920" alt="image" src="https://github.com/user-attachments/assets/5022f7fb-f930-4a2e-ad0c-8f167bacca06" />
+
+# AWS Inspector export SBOM Software Bill of Materials (2025/10/12)
+An SBOM (Software Bill of Materials) is a structured list of everything inside a software artifact—libraries, OS packages, versions, licenses, and how they relate. Think of it like a food ingredients label, but for an app or container. Common formats: CycloneDX and SPDX.
+Since we are using Amazon Inspector:
+
+1 Export SBOM (CycloneDX) for your ECR image to S3 with a KMS key.
+
+2 Scan it (trivy sbom --severity CRITICAL,HIGH sbom.cdx.json) and fail CI on new high/critical issues.
+
+3 Sign/attach it to the image with Cosign; optionally gate deploys on a valid SBOM attestation.
+
+4 Centralize (Dependency-Track or Athena over S3) for reporting and audit.
+<img width="1689" height="887" alt="image" src="https://github.com/user-attachments/assets/79eb2445-f012-43d0-ac5c-d050f6fc4eba" />
+<img width="1676" height="699" alt="image" src="https://github.com/user-attachments/assets/6206b80a-0237-4083-a19b-adeb673cf5f8" />
+<img width="1581" height="686" alt="image" src="https://github.com/user-attachments/assets/ad8a2cee-20a6-4b65-b247-a4d42a9381da" />
+
 # AWS Config Conformance Pack  (2025/10/10)
 <img width="1311" height="592" alt="image" src="https://github.com/user-attachments/assets/83165eb0-248b-4ce3-9f7a-4684f84b9c5d" />
 <img width="1701" height="886" alt="image" src="https://github.com/user-attachments/assets/75d761ed-b777-4861-933d-40ee4dec07b1" />
