@@ -1,5 +1,15 @@
 # AWS SYS OPS 
 
+# AWS IAM Use VS  Identity Center User (2025/10/27)
+# Okta is the Identity Provider (IdP) and AWS IAM Identity Center is the Service Provider (SP).
+
+<img width="1705" height="777" alt="image" src="https://github.com/user-attachments/assets/4cd5172f-6691-4469-80b6-53847de9f064" />
+<img width="1552" height="894" alt="image" src="https://github.com/user-attachments/assets/74972a9d-1fd2-49c2-b549-4a7e54d544bc" />
+<img width="958" height="709" alt="image" src="https://github.com/user-attachments/assets/ab120b74-ac6f-48ad-b14c-bf17d9531c00" />
+
+# SCIM provision setting 
+<img width="1704" height="863" alt="image" src="https://github.com/user-attachments/assets/636dfdd2-ad8a-4add-88f0-7f0bdd986b20" />
+<img width="977" height="340" alt="image" src="https://github.com/user-attachments/assets/39828e14-0ae2-47e1-ad68-365280418986" />
 
 # AWS Shield DDOS Protection (2025/10/12)
 DDoS protection is not just about deploying a product or service. There are several steps that you need to take to improve resiliency against DDoS attacks. 
