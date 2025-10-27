@@ -153,6 +153,36 @@ It can audit S3 against AWS best practices/CIS and flag risky buckets (public ac
 
 # AWS IAM access analyzer for cross account (2025/06/25)
 <img width="1728" alt="image" src="https://github.com/user-attachments/assets/3e26e399-2d93-46ae-8cc1-bf8aecb73862" />
+# AWS IAM access analyzer (least-privilege and secure access across your environment)  (2025/10/27)
+<img width="1330" height="703" alt="image" src="https://github.com/user-attachments/assets/5a797946-d617-4049-8f94-7226f572ae76" />
+
+<img width="1323" height="696" alt="image" src="https://github.com/user-attachments/assets/8d6bc085-cd43-4943-a94b-294b2b5bfce8" />
+
+
+# AWS Resource Control Policy (RCP) and RAM (Resource Access Manager) (2025/10/27)
+
+# AWS Resource Access Manager (RAM)
+
+Purpose:
+A sharing service that lets you share AWS resources across accounts or with an entire AWS Organization.
+
+Key points:
+
+Shares existing resources (like VPC subnets, Route 53 zones, Transit Gateways, License Manager configurations, etc.).
+
+Enables cross-account collaboration without duplicating resources.
+
+Can share resources with specific accounts, OUs, or entire AWS Organizations.
+
+# Resource control policy (RCP)
+A resource control policy is a type of policy that offers central control over the maximum available permissions for resources in an organization.
+
+A great example of when this is useful is for securing secrets stored in Secrets Manager. If you have secrets in accounts that you know should never, ever be accessible by external AWS accounts, then you can enforce this with RCPs.
+
+RCPs are very similar to SCPs in that you can’t use them to actually grant permissions. They don’t give permissions, they just set the maximum permissions that can be granted for a resource. In other words, they set limits.
+
+<img width="908" height="848" alt="image" src="https://github.com/user-attachments/assets/5a7f2441-b528-4105-88ef-0c3230a2eee9" />
+
 
 # AWS inspector support github action to scan container image (2025/06/25)
 <img width="1060" alt="image" src="https://github.com/user-attachments/assets/d490f662-a7db-4b02-b1e4-cbaea023b306" />
