@@ -11,6 +11,11 @@
 <img width="1380" height="1000" alt="image" src="https://github.com/user-attachments/assets/ebc1c831-5e9d-40d0-a991-2ed39560b055" />
 
 
+
+
+<img width="1356" height="1018" alt="image" src="https://github.com/user-attachments/assets/3ff567d2-8250-4f24-afe3-b24c8f957343" />
+
+
 # AWS IAM Use VS  Identity Center User (2025/10/27)
 # Okta is the Identity Provider (IdP) and AWS IAM Identity Center is the Service Provider (SP).
 
