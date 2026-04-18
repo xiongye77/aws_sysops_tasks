@@ -1,5 +1,16 @@
 # AWS SYS OPS 
 
+# The Bedrock Agent orchestration loop: every request passes through pre-processing guardrails, model reasoning, Lambda tool execution, and observation — repeating until the task is complete (2026/04/18)
+<img width="1422" height="824" alt="image" src="https://github.com/user-attachments/assets/54975c33-b932-4d3a-8687-8483fb5dfd36" />
+
+# Bedrock Agent Core (2026/04/18)
+<img width="1418" height="682" alt="image" src="https://github.com/user-attachments/assets/28795a68-84fb-45bf-870d-b05c4cb93a52" />
+
+
+# Bedrock Agents vs AgentCore: Which One Do You Use? (2026/04/18)
+<img width="1380" height="1000" alt="image" src="https://github.com/user-attachments/assets/ebc1c831-5e9d-40d0-a991-2ed39560b055" />
+
+
 # AWS IAM Use VS  Identity Center User (2025/10/27)
 # Okta is the Identity Provider (IdP) and AWS IAM Identity Center is the Service Provider (SP).
 
