@@ -98,6 +98,64 @@ document-level permission isolation
 <img width="1576" height="518" alt="image" src="https://github.com/user-attachments/assets/e81eaa08-4290-4c84-9e92-a33346e425f0" />
 
 
+
+
+┌──────────────────────────────┐
+│           User / App         │
+│  Web / Mobile / API Gateway  │
+└──────────────┬───────────────┘
+               │ Prompt / Request
+               ▼
+┌──────────────────────────────┐
+│        Strands Agent         │
+│  - system prompt             │
+│  - session / memory          │
+│  - planning / tool choice    │
+│  - orchestration loop        │
+└───────┬───────────┬──────────┘
+        │           │
+        │           │ Tool calls
+        │           ▼
+        │    ┌───────────────────────┐
+        │    │         Tools         │
+        │    │ - Lambda / APIs       │
+        │    │ - RAG / KB retrieval  │
+        │    │ - Database / S3       │
+        │    │ - Search / MCP tools  │
+        │    └───────────────────────┘
+        │
+        │ Model invocation
+        ▼
+┌──────────────────────────────┐
+│      Bedrock Guardrails      │
+│  - denied topics             │
+│  - content filters           │
+│  - PII filters               │
+│  - grounding checks          │
+└──────────────┬───────────────┘
+               │ safe prompt / response
+               ▼
+┌──────────────────────────────┐
+│        Amazon Bedrock        │
+│  Claude / Nova / Llama etc.  │
+└──────────────┬───────────────┘
+               │
+               ▼
+┌──────────────────────────────┐
+│        Final Response        │
+│      back to User / App      │
+└──────────────────────────────┘
+
+
+
+# Built-in session management in Amazon Bedrock AgentCore Runtime
+<img width="1200" height="630" alt="image" src="https://github.com/user-attachments/assets/37f3a0a2-5da1-49ac-8bab-931409dee0f9" />
+
+Production AI agents serve multiple users simultaneously. Each user expects a coherent conversation — the agent remembers what was said earlier in the session and responds accordingly. At the same time, one user’s data never leaks into another user’s session.Each session gets dedicated resources with microVM-based security boundaries. The agent accesses session information through a context object, and conversation state persists across multiple invocations within the same session.
+
+
+
+
 # The Bedrock Agent orchestration loop: every request passes through pre-processing guardrails, model reasoning, Lambda tool execution, and observation — repeating until the task is complete (2026/04/18)
 <img width="1422" height="824" alt="image" src="https://github.com/user-attachments/assets/54975c33-b932-4d3a-8687-8483fb5dfd36" />
 
