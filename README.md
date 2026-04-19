@@ -1,5 +1,103 @@
 # AWS SYS OPS 
 
+
+# S3 files ingestion into RAG knowledge base  (2026/04/19)
+S3 / external data source → ingestion job → parsing → chunking → embedding model → vector store (OpenSearch / Aurora pgvector / Pinecone / Redis / MongoDB Atlas / Neptune / S3 Vectors) → metadata filtering → retrieval → reranking / generation → security / monitoring
+
+# Data source layer 
+1. S3 bucket / prefix design: one bucket or multiple buckets; prefixes organized by business domain, document type, date, or permissions
+2. Metadata files: whether to attach metadata such as author, department, date, and tags to each document for later metadata filtering
+3. Sync method: manual sync, API-triggered ingestion job, or event-driven sync workflow
+
+# Ingestion / sync layer
+1. Full sync versus incremental sync
+2. Sync window: run during business low-traffic periods or sync continuously as files arrive
+3. Retry strategy for failures
+
+# Chunking layer 
+Bedrock Knowledge Bases supports multiple chunking strategies.
+The main choices here are:
+
+1. Default chunking
+2. Fixed-size chunking
+3. Hierarchical chunking
+4. Semantic chunking
+5. No chunking
+
+And the key parameters include:
+
+1. chunk size
+2. overlap size
+3. hierarchical parent/child chunk size
+4. semantic breakpoint / buffer
+
+# Embedding model layer
+The Knowledge Base needs to convert chunks into vectors. The main choice here is which embedding model to use.
+1. Amazon Titan Multimodal Embeddings G1
+2. Cohere Embed Multilingual v3
+
+
+# Vector store layer
+Based on current documentation and AWS materials, Bedrock Knowledge Bases options include:
+
+1. Amazon OpenSearch Serverless (Mature integration with Bedrock Knowledge Bases/Good for standard enterprise search scenarios and stronger search capabilities)
+2. Amazon Aurora PostgreSQL / pgvector (A natural fit if your environment is already relational)
+3. Pinecone/Redis Enterprise Cloud/MongoDB Atlas (Teams that already have these external vector platforms and Teams that already know how to operate them)
+4. Amazon Neptune Analytics (This is more oriented toward graph + vector scenarios and is not the most typical first choice for plain document RAG.)
+5. Amazon S3 Vectors (cost-effective vector storage for large datasets/text and image-based document retrieval/RAG applications where cost optimization matters more than ultra-low latency) 
+
+# Metadata layer
+Besides storing vectors for the content itself, the Knowledge Base can also use metadata for filtering. You can associate metadata with either documents or chunks, such as:
+
+title
+author
+department
+date
+document type
+security label
+language
+source URI
+
+# Retrieval layer
+
+After sync is complete, the RAG query stage also involves choices such as:
+
+how large top-k should be
+whether to apply metadata filters
+whether to use hybrid search
+whether to apply reranking
+whether to use query decomposition after retrieval
+whether multi-turn conversation context should be included
+
+
+# Generation layer
+
+RAG is not just retrieval; you still need final answer generation. Decisions here include:
+
+which foundation model to use
+token limit
+prompt template
+whether to cite sources
+whether to use guardrails
+whether to support multi-turn conversations
+
+# Security / governance layer
+
+This end-to-end flow also involves:
+
+IAM roles / service roles
+S3 bucket policies
+KMS encryption
+OpenSearch / Aurora network access
+VPC configuration
+CloudTrail / logging
+document-level permission isolation
+
+
+<img width="1540" height="993" alt="image" src="https://github.com/user-attachments/assets/5cc01990-b9b8-41e9-bd5c-d5933bcd5e5e" />
+<img width="1576" height="518" alt="image" src="https://github.com/user-attachments/assets/e81eaa08-4290-4c84-9e92-a33346e425f0" />
+
+
 # The Bedrock Agent orchestration loop: every request passes through pre-processing guardrails, model reasoning, Lambda tool execution, and observation — repeating until the task is complete (2026/04/18)
 <img width="1422" height="824" alt="image" src="https://github.com/user-attachments/assets/54975c33-b932-4d3a-8687-8483fb5dfd36" />
 
