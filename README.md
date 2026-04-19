@@ -100,59 +100,52 @@ document-level permission isolation
 
 
 
-┌──────────────────────────────┐
-│           User / App         │
-│  Web / Mobile / API Gateway  │
-└──────────────┬───────────────┘
-               │ Prompt / Request
-               ▼
-┌──────────────────────────────┐
-│        Strands Agent         │
-│  - system prompt             │
-│  - session / memory          │
-│  - planning / tool choice    │
-│  - orchestration loop        │
-└───────┬───────────┬──────────┘
-        │           │
-        │           │ Tool calls
-        │           ▼
-        │    ┌───────────────────────┐
-        │    │         Tools         │
-        │    │ - Lambda / APIs       │
-        │    │ - RAG / KB retrieval  │
-        │    │ - Database / S3       │
-        │    │ - Search / MCP tools  │
-        │    └───────────────────────┘
-        │
-        │ Model invocation
-        ▼
-┌──────────────────────────────┐
-│      Bedrock Guardrails      │
-│  - denied topics             │
-│  - content filters           │
-│  - PII filters               │
-│  - grounding checks          │
-└──────────────┬───────────────┘
-               │ safe prompt / response
-               ▼
-┌──────────────────────────────┐
-│        Amazon Bedrock        │
-│  Claude / Nova / Llama etc.  │
-└──────────────┬───────────────┘
-               │
-               ▼
-┌──────────────────────────────┐
-│        Final Response        │
-│      back to User / App      │
-└──────────────────────────────┘
+
+# Amazon Bedrock AgentCore
+<img width="1662" height="860" alt="image" src="https://github.com/user-attachments/assets/9186d509-56bc-43f4-ab8c-383d160d7949" />
 
 
 
-# Built-in session management in Amazon Bedrock AgentCore Runtime
+1. Isolation First Built-in session management in Amazon Bedrock AgentCore Runtime
 <img width="1200" height="630" alt="image" src="https://github.com/user-attachments/assets/37f3a0a2-5da1-49ac-8bab-931409dee0f9" />
 
 Production AI agents serve multiple users simultaneously. Each user expects a coherent conversation — the agent remembers what was said earlier in the session and responds accordingly. At the same time, one user’s data never leaks into another user’s session.Each session gets dedicated resources with microVM-based security boundaries. The agent accesses session information through a context object, and conversation state persists across multiple invocations within the same session.
 
+Each agent session runs inside a dedicated microVM (micro virtual machine)
+→ Separate CPU
+→ Separate memory
+→ Separate filesystem
+
+This ensures strong isolation, making it enterprise-safe by design.
+
+
+
+2. Framework Agnostic
+You’re not locked into a single framework. It supports:
+
+LangGraph/AutoGen/Strands/Google ADK
+
+3. Interoperability via Protocols
+   AgentCore embraces standards like: Model Context Protocol (MCP) and  Agent-to-Agent (A2A)
+   This enables agents to communicate and collaborate seamlessly across ecosystems.
+<img width="528" height="643" alt="image" src="https://github.com/user-attachments/assets/a02d311c-dbc1-4672-87b1-2a1f3ce3cc22" />
+
+
+4. AgentCore Memory (Context Persistence)
+   <img width="864" height="669" alt="image" src="https://github.com/user-attachments/assets/e11358f6-3403-41f6-9f4f-899f0dcbe51e" />
+
+
+
+
+# Choose between Converse and InvokeModel 
+For new Bedrock apps:
+
+1. chat / assistant / agent → use Converse
+2. chat / assistant / agent with streaming → use ConverseStream
+3. custom low-level inference pipeline → use InvokeModel
+4. custom low-level pipeline with streaming → use InvokeModelWithResponseStream
+<img width="926" height="599" alt="image" src="https://github.com/user-attachments/assets/33c36dd7-2d88-4264-afe9-e8ec0fe9ffb2" />
+<img width="862" height="837" alt="image" src="https://github.com/user-attachments/assets/f372da12-c2c4-40ff-8960-c1b3b3bfddfb" />
 
 
 
