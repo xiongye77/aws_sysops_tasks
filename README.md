@@ -164,6 +164,10 @@ For new Bedrock apps:
 
 <img width="1356" height="1018" alt="image" src="https://github.com/user-attachments/assets/3ff567d2-8250-4f24-afe3-b24c8f957343" />
 
+# Production Grade Solution Architecture – Observability & Monitoring
+<img width="1265" height="671" alt="image" src="https://github.com/user-attachments/assets/0886cddd-1c0c-4cb2-9b21-f272ae00aa11" />
+
+
 
 # AWS IAM Use VS  Identity Center User (2025/10/27)
 # Okta is the Identity Provider (IdP) and AWS IAM Identity Center is the Service Provider (SP).
