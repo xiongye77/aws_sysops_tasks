@@ -4,6 +4,13 @@
 # S3 files ingestion into RAG knowledge base  (2026/04/19)
 S3 / external data source → ingestion job → parsing → chunking → embedding model → vector store (OpenSearch / Aurora pgvector / Pinecone / Redis / MongoDB Atlas / Neptune / S3 Vectors) → metadata filtering → retrieval → reranking / generation → security / monitoring
 
+
+User uploads doc to S3 ->  S3 event notification - > SQS (optional, for batching) -> Lambda -> StartIngestionJob (Bedrock KB) -> Bedrock KB scans changed files-> chunking + embeddings + write to OpenSearch
+
+1. Bedrock KB already knows how to
+crawl S3/chunk docs/generate embeddings/write to OpenSearch vector index
+2. sync jobs are incremental, so Bedrock only processes changed data rather than re-embedding everything each time.
+
 # Data source layer 
 1. S3 bucket / prefix design: one bucket or multiple buckets; prefixes organized by business domain, document type, date, or permissions
 2. Metadata files: whether to attach metadata such as author, department, date, and tags to each document for later metadata filtering
