@@ -4,14 +4,7 @@
 
 # Bedrock Agent with AgentCore Gateway with MCP servers (2026/04/22)
 
-Bedrock Agent / AgentCore-compatible app
-            |
-            v
-    AgentCore Gateway
-            |
-            +--> Lambda / API tools
-            +--> External MCP server
-            +--> AgentCore Runtime-hosted MCP server
+<img width="863" height="367" alt="image" src="https://github.com/user-attachments/assets/555986d4-f8ea-49b5-9ad8-0b905fff8902" />
 
             
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/3f022591-61a8-4090-8839-226cb2b98061" />
