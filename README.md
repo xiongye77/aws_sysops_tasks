@@ -12,6 +12,8 @@ Bedrock Agent / AgentCore-compatible app
             +--> Lambda / API tools
             +--> External MCP server
             +--> AgentCore Runtime-hosted MCP server
+
+            
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/3f022591-61a8-4090-8839-226cb2b98061" />
 
 
