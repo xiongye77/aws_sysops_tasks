@@ -6,6 +6,15 @@
 
 <img width="863" height="367" alt="image" src="https://github.com/user-attachments/assets/555986d4-f8ea-49b5-9ad8-0b905fff8902" />
 
+A practical reference architecture looks like this:
+
+1. Client / agent app: your Bedrock-powered app, Strands app, or AgentCore-compatible agent
+2. MCP server layer: either AgentCore Runtime-hosted MCP server, or your own FastMCP server on ECS/EKS/EC2
+3. Tool backends: Lambda, API Gateway, internal REST services, databases, S3, OpenSearch, Aurora, etc.
+4. Security layer: IAM role separation, Secrets Manager, VPC endpoints/private subnets, Gateway auth
+5. Observability: CloudWatch logs/metrics and request tracing across agent → MCP server → backend tools
+
+
             
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/3f022591-61a8-4090-8839-226cb2b98061" />
 
