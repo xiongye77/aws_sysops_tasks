@@ -1,6 +1,17 @@
 # AWS SYS OPS 
 
 
+
+# Bedrock Agent / AgentCore-compatible app
+   
+    AgentCore Gateway
+            |
+            +--> Lambda / API tools
+            +--> External MCP server
+            +--> AgentCore Runtime-hosted MCP server
+<img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/3f022591-61a8-4090-8839-226cb2b98061" />
+
+
 # S3 files ingestion into RAG knowledge base  (2026/04/19)
 S3 / external data source → ingestion job → parsing → chunking → embedding model → vector store (OpenSearch / Aurora pgvector / Pinecone / Redis / MongoDB Atlas / Neptune / S3 Vectors) → metadata filtering → retrieval → reranking / generation → security / monitoring
 
