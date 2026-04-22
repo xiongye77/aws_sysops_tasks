@@ -2,8 +2,11 @@
 
 
 
-# Bedrock Agent / AgentCore-compatible app
-   
+# Bedrock Agent with AgentCore Gateway with MCP servers (2026/04/22)
+
+Bedrock Agent / AgentCore-compatible app
+            |
+            v
     AgentCore Gateway
             |
             +--> Lambda / API tools
