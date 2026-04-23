@@ -51,6 +51,7 @@ Add lambda function as AgentCore Gateway target
 
 # RAG
 <img width="1264" height="640" alt="image" src="https://github.com/user-attachments/assets/8a7a796b-963b-4570-b6a5-a7784dcb9ee6" />
+<img width="1208" height="684" alt="image" src="https://github.com/user-attachments/assets/8469ca24-f0cc-442b-a11a-1ed82fd901e2" />
 
 # Chunk Strategy
 <img width="1222" height="696" alt="image" src="https://github.com/user-attachments/assets/0292783c-1d00-49a5-9543-1c71aed534ed" />
