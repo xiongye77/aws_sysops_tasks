@@ -15,8 +15,53 @@ A practical reference architecture looks like this:
 5. Observability: CloudWatch logs/metrics and request tracing across agent → MCP server → backend tools
 
 
+<img width="1682" height="874" alt="image" src="https://github.com/user-attachments/assets/c3a3d382-a5ce-4e1d-9ecf-06eef9745e6d" />
             
 <img width="1672" height="941" alt="image" src="https://github.com/user-attachments/assets/3f022591-61a8-4090-8839-226cb2b98061" />
+
+Add lambda function as AgentCore Gateway target 
+
+<img width="1242" height="510" alt="image" src="https://github.com/user-attachments/assets/86b796bd-51c1-4cdb-b8ad-56c2177ca219" />
+<img width="1274" height="436" alt="image" src="https://github.com/user-attachments/assets/b9e8ff14-0d83-465b-a73e-5b6125c48700" />
+
+<img width="1713" height="709" alt="image" src="https://github.com/user-attachments/assets/972dc883-9ca5-4756-8d50-4c4ec3a2af3b" />
+
+
+# Bedrock Agents VS Bedrock AgentCore Agents
+<img width="1233" height="635" alt="image" src="https://github.com/user-attachments/assets/5276aedc-31b8-4f3f-b174-078d38d70569" />
+<img width="2430" height="1356" alt="image" src="https://github.com/user-attachments/assets/d739f7fc-639e-4811-abc9-5e96f6f77769" />
+<img width="1208" height="665" alt="image" src="https://github.com/user-attachments/assets/7a4a4337-d8e2-4c20-b6ee-d3d3ddd52145" />
+
+# Bedrock Guardrail 
+<img width="1238" height="635" alt="image" src="https://github.com/user-attachments/assets/32a2243c-f101-416f-a614-17c37018b9de" />
+
+# Bedrock Knowledge Base in RAG
+<img width="1663" height="913" alt="image" src="https://github.com/user-attachments/assets/f72d6cc1-41b1-413f-a905-88039390f3a4" />
+
+# Bedrock Prompt Management
+<img width="1269" height="645" alt="image" src="https://github.com/user-attachments/assets/706c8552-4516-46cd-9599-caf0c2aacb39" />
+
+# SageMaker ML lifecycle 
+<img width="1277" height="649" alt="image" src="https://github.com/user-attachments/assets/4abf8218-9c92-4f75-bd57-616b2f44e327" />
+<img width="1231" height="681" alt="image" src="https://github.com/user-attachments/assets/0621fef7-e8fe-46a0-8cd1-a812b19c76f2" />
+<img width="1232" height="657" alt="image" src="https://github.com/user-attachments/assets/d14f9a79-8b0b-4e02-8e9c-df55cfd79ceb" />
+
+# SageMaker Clarify
+<img width="1257" height="642" alt="image" src="https://github.com/user-attachments/assets/70b197e4-0cb8-4da0-ad1d-6529705fc862" />
+
+# RAG
+<img width="1264" height="640" alt="image" src="https://github.com/user-attachments/assets/8a7a796b-963b-4570-b6a5-a7784dcb9ee6" />
+
+# Chunk Strategy
+<img width="1222" height="696" alt="image" src="https://github.com/user-attachments/assets/0292783c-1d00-49a5-9543-1c71aed534ed" />
+
+# Amazon Kendra
+
+<img width="1254" height="644" alt="image" src="https://github.com/user-attachments/assets/7a085d18-c4c9-4aed-ac92-411eab9221bb" />
+<img width="1214" height="666" alt="image" src="https://github.com/user-attachments/assets/2f208a82-87aa-4f0b-bb05-7723f69740bb" />
+
+# Amazon Opensearch 
+<img width="1257" height="619" alt="image" src="https://github.com/user-attachments/assets/3c679e98-aeb4-4293-aea3-4078d3c85f6f" />
 
 
 # S3 files ingestion into RAG knowledge base  (2026/04/19)
