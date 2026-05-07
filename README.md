@@ -5,6 +5,10 @@
 <img width="990" height="942" alt="image" src="https://github.com/user-attachments/assets/66e36c7b-4567-4c31-9f57-e17aa2d876b8" />
 <img width="997" height="837" alt="image" src="https://github.com/user-attachments/assets/e3d1f5c1-2d74-4aa8-85e3-725f6e8dfcf1" />
 
+# AWS Bedrock AgentCore Gateway 
+<img width="989" height="497" alt="image" src="https://github.com/user-attachments/assets/8ed2dade-0766-4cf2-b41a-07a267f1c546" />
+<img width="1036" height="544" alt="image" src="https://github.com/user-attachments/assets/108c5a9f-2517-46b9-8a75-cc913c4b2e8c" />
+
 
 # Bedrock Agent with AgentCore Gateway with MCP servers (2026/04/22)
 
