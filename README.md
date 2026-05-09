@@ -1,5 +1,8 @@
 # AWS SYS OPS 
 
+# Bedrock AgentCore Gateway is the MCP server interface and Lambda is the backend tool implementation
+            
+<img width="1094" height="805" alt="image" src="https://github.com/user-attachments/assets/bb67c4a3-9ff3-4b13-ab47-be865cc84ea9" />
 
 # An agent orchestration framework is a framework that helps you build and manage multiple AI agents working together to complete a task. (2026/05/07)
 <img width="990" height="942" alt="image" src="https://github.com/user-attachments/assets/66e36c7b-4567-4c31-9f57-e17aa2d876b8" />
