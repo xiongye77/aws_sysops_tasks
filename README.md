@@ -27,6 +27,9 @@ There are several Python frameworks for building LLM-powered agents — LangChai
 5 Open source. Strands is Apache 2.0 licensed, so there’s no vendor lock-in concern beyond the Bedrock model provider integration (and even that is pluggable — Strands supports other providers).
 
 
+# lambda as target of Backrock AgentCore Gateway (2026/05/09)
+<img width="1727" height="901" alt="image" src="https://github.com/user-attachments/assets/0200e1ee-fbcd-4c08-b78f-2ee72ee0c8be" />
+<img width="1049" height="447" alt="image" src="https://github.com/user-attachments/assets/c367f55a-815f-4f95-b0a1-c85b220fcb4b" />
 
 
 # An agent orchestration framework is a framework that helps you build and manage multiple AI agents working together to complete a task. (2026/05/07)
