@@ -1,8 +1,33 @@
 # AWS SYS OPS 
 
-# Bedrock AgentCore Gateway is the MCP server interface and Lambda is the backend tool implementation
+# Bedrock AgentCore Gateway is the MCP server interface and Lambda is the backend tool implementation (2026/05/09)
             
 <img width="1094" height="805" alt="image" src="https://github.com/user-attachments/assets/bb67c4a3-9ff3-4b13-ab47-be865cc84ea9" />
+Multi-turn conversation means the AI does not treat each message separately. It uses previous messages to understand and answer the next message.
+AgentCore Memory as supporting short-term memory for multi-turn conversations and long-term memory across sessions. It handles storage, embeddings, consolidation, and reflection behind the scenes.
+
+<img width="1083" height="361" alt="image" src="https://github.com/user-attachments/assets/b17e3dc8-5d5e-475d-a911-09f4bd5f5a9d" />
+<img width="1014" height="371" alt="image" src="https://github.com/user-attachments/assets/b2ca2e82-9f04-4b29-94e2-ca01065214d4" />
+
+# Strands SDK on AgentCore (2026/05/09)
+
+The agent is built with the Strands Agents SDK and deployed to Bedrock AgentCore. It’s a surprisingly small amount of code — the core entrypoint is about 40 lines of Python.
+
+# Why Strands SDK
+There are several Python frameworks for building LLM-powered agents — LangChain, LlamaIndex, AutoGen, CrewAI, and others. I chose Strands for a few reasons.
+
+1 Minimal abstraction. Strands doesn’t try to wrap everything in its own object model. Tools are plain Python functions decorated with @tool. The agent is constructed with a model, a system prompt, and a list of tools. There's no chain-of-thought pipeline to configure, no "memory module" to plug in, no retriever-adapter pattern. You write Python, not framework DSL. When I needed to debug why the agent was calling search_recipes twice for the same query, I could read through the Strands source in an afternoon - it's a thin layer over the Bedrock Converse API, not a 50-module abstraction.
+
+2 Native streaming. The agent exposes an async generator (agent.stream_async()) that yields events as they happen - text deltas, tool invocations, and metadata. This maps directly to the SSE pattern the frontend needs. There's no callback system to wire up and no post-processing step to convert the response into a streamable format. Each yield from the agent becomes an SSE data: line.
+
+3 First-class AgentCore integration. Strands was built alongside AgentCore, so the deployment model is native. The @app.entrypoint decorator, the BedrockAgentCoreApp class, and the AgentCoreMemorySessionManager all come from the SDK. There's no glue code needed to bridge the framework to the runtime. This also means the SDK's streaming protocol matches what AgentCore expects - you yield dicts and they become SSE events.
+
+4 Predictable behavior. The agent loop is straightforward: send prompt to LLM, if the LLM requests a tool call then execute it and feed the result back, repeat until the LLM produces a final response. The max_iterations parameter caps cycles to prevent runaway loops. There's no autonomous planning step, no chain selection logic, and no implicit retries that change behavior in surprising ways. For a recipe assistant with two tools, this simplicity is exactly right.
+
+5 Open source. Strands is Apache 2.0 licensed, so there’s no vendor lock-in concern beyond the Bedrock model provider integration (and even that is pluggable — Strands supports other providers).
+
+
+
 
 # An agent orchestration framework is a framework that helps you build and manage multiple AI agents working together to complete a task. (2026/05/07)
 <img width="990" height="942" alt="image" src="https://github.com/user-attachments/assets/66e36c7b-4567-4c31-9f57-e17aa2d876b8" />
