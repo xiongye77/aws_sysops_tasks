@@ -1,5 +1,20 @@
 # AWS SYS OPS 
 
+# Bedrock Knowledge Base 
+<img width="1367" height="699" alt="image" src="https://github.com/user-attachments/assets/803c072e-8082-4942-a0e2-b0ba76b106cd" />
+1 Embedding model = for search / retrieval
+The embedding model converts text into vectors.
+
+2 LLM = for reasoning / answer generation,The LLM, for example Claude 3 Haiku, takes:
+User question + retrieved chunks and generates a natural language answer.
+<img width="840" height="376" alt="image" src="https://github.com/user-attachments/assets/bd1d9afc-786c-4e11-af7a-d2a5cd2c6f22" />
+
+
+Strands Agent / Python Agent ->  AgentCore Gateway MCP endpoint -> Lambda target
+
+# Why Large Language Models (LLMs),Hallucinate? 
+LLM such as Claude or Titan, are trained on the public internet. They are brilliant, but their knowledge is frozen in time. When asked about private or recent data, they often “hallucinate” confidently stating facts that aren’t true.
+
 # Bedrock AgentCore Gateway is the MCP server interface and Lambda is the backend tool implementation (2026/05/09)
             
 <img width="1094" height="805" alt="image" src="https://github.com/user-attachments/assets/bb67c4a3-9ff3-4b13-ab47-be865cc84ea9" />
