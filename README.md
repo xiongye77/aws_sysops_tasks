@@ -24,9 +24,33 @@ AgentCore Memory as supporting short-term memory for multi-turn conversations an
 <img width="1083" height="361" alt="image" src="https://github.com/user-attachments/assets/b17e3dc8-5d5e-475d-a911-09f4bd5f5a9d" />
 <img width="1014" height="371" alt="image" src="https://github.com/user-attachments/assets/b2ca2e82-9f04-4b29-94e2-ca01065214d4" />
 
+
+# How Streaming Works 
+Instead of waiting for the entire response to be generated, streaming sends back pieces of text as soon as they're available. When you call converse_stream, you immediately get back an initial response that contains a stream object. This stream is a generator that yields events as the model generates text. Each event contains a small chunk of the overall response.
+
+# prompt evaluation 
+<img width="845" height="620" alt="image" src="https://github.com/user-attachments/assets/d69cdf47-13d6-41f5-a4b5-ebff05069a42" />
+
+# generate_embedding with amazon.titan-embed-text-v2:0
+A text embedding is a numerical representation of the meaning contained in some text. Think of it as converting words and sentences into a format that computers can work with mathematically.
+<img width="845" height="596" alt="image" src="https://github.com/user-attachments/assets/a5e20c2f-a50e-46ef-8aa1-2a944181b364" />
+Titan Embedding output → store in vector DB → similarity search → retrieved chunks → LLM answer
+
+# Bedrock agentcore architecture 
+<img width="1035" height="539" alt="image" src="https://github.com/user-attachments/assets/0db98f08-6188-4508-aead-a4d83f32f55d" />
+<img width="1047" height="403" alt="image" src="https://github.com/user-attachments/assets/95bd2683-ef11-49cb-b023-1a320518a944" />
+<img width="1025" height="527" alt="image" src="https://github.com/user-attachments/assets/7e5e5bd7-d38b-45f2-b438-7025e6becc39" />
+
+
 # Strands SDK on AgentCore (2026/05/09)
 
 The agent is built with the Strands Agents SDK and deployed to Bedrock AgentCore. It’s a surprisingly small amount of code — the core entrypoint is about 40 lines of Python.
+
+# Multi-Turn Conversation in Bedrock to save history 
+<img width="1028" height="931" alt="image" src="https://github.com/user-attachments/assets/718807bf-d355-40b4-9478-b06a54f933e1" />
+
+# System prompts 
+When building AI chatbots for specific use cases, you need a way to control how the AI responds. System prompts are the key to transforming a general-purpose AI into a specialized assistant that follows specific guidelines and stays on topic.
 
 # Why Strands SDK
 There are several Python frameworks for building LLM-powered agents — LangChain, LlamaIndex, AutoGen, CrewAI, and others. I chose Strands for a few reasons.
