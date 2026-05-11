@@ -84,6 +84,10 @@ There are several Python frameworks for building LLM-powered agents — LangChai
 <img width="989" height="497" alt="image" src="https://github.com/user-attachments/assets/8ed2dade-0766-4cf2-b41a-07a267f1c546" />
 <img width="1036" height="544" alt="image" src="https://github.com/user-attachments/assets/108c5a9f-2517-46b9-8a75-cc913c4b2e8c" />
 
+# AI agent frameworks comparison 
+<img width="1500" height="757" alt="image" src="https://github.com/user-attachments/assets/8e297868-aaca-4bf6-a213-1093e5e4e6e0" />
+<img width="1994" height="1574" alt="image" src="https://github.com/user-attachments/assets/b52e92a7-6afc-43f5-a009-bed90f1c7188" />
+
 
 # Bedrock Agent with AgentCore Gateway with MCP servers (2026/04/22)
 
