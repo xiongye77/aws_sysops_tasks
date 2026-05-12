@@ -107,6 +107,43 @@ Normal RAG is good for simple document Q&A, while Agentic RAG is better for comp
 Metadata filtering means using structured fields to restrict search results.Without metadata filtering, the vector search may return semantically similar but wrong documents.
 <img width="1122" height="715" alt="image" src="https://github.com/user-attachments/assets/499569d9-2ddf-4d2d-b9f8-b09fb6266e62" />
 
+# Hybrid search
+Hybrid search combines: vector search + keyword search
+
+Common hybrid approach
+1. Run vector search.
+2. Run keyword/BM25 search.
+3. Merge results.
+4. Re-rank final candidates.
+
+Good for:
+
+1. technical docs
+2. logs
+3. support tickets
+4. API documentation
+5. database errors
+6. legal clauses
+
+# Reranking
+Reranking means taking the initial search results and sorting them again using a stronger model.
+Vector search may return top 20 results that are roughly relevant. A reranker decides which are truly most relevant to the question.
+Flow:
+
+User query
+→ retrieve top 20 chunks
+→ reranker scores each chunk
+→ keep top 3–5 chunks
+→ send to LLM
+
+# Grounding
+Grounding means making the LLM answer based on retrieved evidence, not just its own memory.Grounding is very important for enterprise AI because the model should not invent policies, numbers, or customer data.
+
+# Hallucination mitigation
+1. Use strong retrieval. Better chunking, metadata filtering, hybrid search, and reranking improve the quality of retrieved context.
+2. Require citations. If every claim needs a citation, the model is less likely to invent details.
+3. Force evidence-based answers. Prompt instruction: Only answer from provided context./Do not guess./If evidence is missing, say the answer is not available.
+4. Use guardrails.Guardrails can block or warn about: unsupported answers /unsafe content /PII leakage /confidential information /off-topic answers
 
 
 # Why Large Language Models (LLMs),Hallucinate? 
