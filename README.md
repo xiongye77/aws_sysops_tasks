@@ -94,16 +94,20 @@ Does it ask clarification only when necessary?
 Does it avoid making up information?
 
 
-# Agentic RAG 
-Flow 
-User question
-→ Agent understands the goal
-→ Agent makes a plan
-→ Agent chooses retrieval/tool actions
-→ Agent retrieves documents
-→ Agent may call SQL/API/tools
-→ Agent evaluates whether more information is needed
-→ Agent generates final answer
+# Normal RAG VS Agentic RAG 
+<img width="1149" height="709" alt="image" src="https://github.com/user-attachments/assets/9af5bc5a-7352-4afd-aea5-95e65a45c665" />
+<img width="1176" height="684" alt="image" src="https://github.com/user-attachments/assets/1b9d7e2d-6a2b-450d-b08b-0be8e550070c" />
+Agentic RAG adds an agent layer. The agent can plan the task, decide which knowledge sources or tools to use, perform multiple retrieval steps, validate whether the context is enough, and call external systems like SQL databases, APIs, or Lambda functions.
+
+Normal RAG is good for simple document Q&A, while Agentic RAG is better for complex enterprise workflows that require investigation, reasoning, and tool use.
+
+
+# Metadata filtering
+
+Metadata filtering means using structured fields to restrict search results.Without metadata filtering, the vector search may return semantically similar but wrong documents.
+<img width="1122" height="715" alt="image" src="https://github.com/user-attachments/assets/499569d9-2ddf-4d2d-b9f8-b09fb6266e62" />
+
+
 
 # Why Large Language Models (LLMs),Hallucinate? 
 LLM such as Claude or Titan, are trained on the public internet. They are brilliant, but their knowledge is frozen in time. When asked about private or recent data, they often “hallucinate” confidently stating facts that aren’t true.
