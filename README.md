@@ -13,7 +13,7 @@ User question + retrieved chunks and generates a natural language answer.
 Strands Agent / Python Agent ->  AgentCore Gateway MCP endpoint -> Lambda target
 
 
-# full prompt design 
+# Full Prompt Design 
 You are a Marketing Data Agent for a digital marketing team.
 
 Your role:
@@ -78,6 +78,32 @@ Last week means Monday to Sunday in the Melbourne timezone.
 
 Next steps:
 Review the campaigns with the highest conversion growth and consider increasing budget.
+
+
+
+# Simple checklist for Prompt Design 
+Does the agent know its role?
+Does it know the user goal?
+Does it know what tools are available?
+Does it know when to use each tool?
+Does it know what not to do?
+Does it know the output format?
+Does it have examples?
+Does it handle errors safely?
+Does it ask clarification only when necessary?
+Does it avoid making up information?
+
+
+# Agentic RAG 
+Flow 
+User question
+→ Agent understands the goal
+→ Agent makes a plan
+→ Agent chooses retrieval/tool actions
+→ Agent retrieves documents
+→ Agent may call SQL/API/tools
+→ Agent evaluates whether more information is needed
+→ Agent generates final answer
 
 # Why Large Language Models (LLMs),Hallucinate? 
 LLM such as Claude or Titan, are trained on the public internet. They are brilliant, but their knowledge is frozen in time. When asked about private or recent data, they often “hallucinate” confidently stating facts that aren’t true.
