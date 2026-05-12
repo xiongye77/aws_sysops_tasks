@@ -139,11 +139,25 @@ User query
 # Grounding
 Grounding means making the LLM answer based on retrieved evidence, not just its own memory.Grounding is very important for enterprise AI because the model should not invent policies, numbers, or customer data.
 
+# Metadata extraction 
+Metadata extraction means pulling useful “extra information” from each document or chunk, then storing it alongside the text in the vector database.
+<img width="732" height="400" alt="image" src="https://github.com/user-attachments/assets/3ebdd5d8-74e2-467b-95cb-3eb72cebf1ff" />
+<img width="752" height="346" alt="image" src="https://github.com/user-attachments/assets/a19973d6-52f0-4964-8a82-5f16a3eae41c" />
+
+# A strong RAG system usually looks like this
+<img width="986" height="530" alt="image" src="https://github.com/user-attachments/assets/50bde56a-94be-459d-b104-bdf9926bc805" />
+
+
 # Hallucination mitigation
 1. Use strong retrieval. Better chunking, metadata filtering, hybrid search, and reranking improve the quality of retrieved context.
 2. Require citations. If every claim needs a citation, the model is less likely to invent details.
 3. Force evidence-based answers. Prompt instruction: Only answer from provided context./Do not guess./If evidence is missing, say the answer is not available.
 4. Use guardrails.Guardrails can block or warn about: unsupported answers /unsafe content /PII leakage /confidential information /off-topic answers
+
+# Native Amazon Bedrock Agents multi-agent collaboration 
+AWS supports creating collaborator agents first, then creating or assigning a supervisor agent, adding collaborator agents, testing, deploying, and invoking the supervisor agent. AWS currently notes a maximum of 10 collaborator agents per supervisor agent.
+<img width="592" height="197" alt="image" src="https://github.com/user-attachments/assets/dc1c065d-8609-42c0-83eb-82c144f21850" />
+
 
 
 # Why Large Language Models (LLMs),Hallucinate? 
