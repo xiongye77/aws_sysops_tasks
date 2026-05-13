@@ -157,11 +157,21 @@ Metadata extraction means pulling useful “extra information” from each docum
 # Native Amazon Bedrock Agents multi-agent collaboration 
 AWS supports creating collaborator agents first, then creating or assigning a supervisor agent, adding collaborator agents, testing, deploying, and invoking the supervisor agent. AWS currently notes a maximum of 10 collaborator agents per supervisor agent.
 <img width="592" height="197" alt="image" src="https://github.com/user-attachments/assets/dc1c065d-8609-42c0-83eb-82c144f21850" />
+<img width="1116" height="568" alt="image" src="https://github.com/user-attachments/assets/56fd0378-0508-4bc6-8cc8-8da2db8216d2" />
 
 
 
 # Why Large Language Models (LLMs),Hallucinate? 
 LLM such as Claude or Titan, are trained on the public internet. They are brilliant, but their knowledge is frozen in time. When asked about private or recent data, they often “hallucinate” confidently stating facts that aren’t true.
+
+
+# API Gateway Authorizer 
+1. IAM auth. Best for AWS-to-AWS calls.Caller signs request with SigV4. Good for internal services.
+2. Lambda Authorizer. Best when you have custom tokens.Lambda authorizer checks the token, then allows or denies the request. Good for custom apps or MCP-style tool gateway.
+3. Cognito Authorizer / JWT Authorizer. Best for user login.Good for frontend/web/mobile apps.
+4. API Key. Useful for basic throttling and identification, but not strong security by itself.Use with usage plans, but don’t rely on it alone for sensitive APIs.
+
+
 
 # Bedrock AgentCore Gateway is the MCP server interface and Lambda is the backend tool implementation (2026/05/09)
             
