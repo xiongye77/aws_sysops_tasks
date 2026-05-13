@@ -159,7 +159,23 @@ AWS supports creating collaborator agents first, then creating or assigning a su
 <img width="592" height="197" alt="image" src="https://github.com/user-attachments/assets/dc1c065d-8609-42c0-83eb-82c144f21850" />
 <img width="1116" height="568" alt="image" src="https://github.com/user-attachments/assets/56fd0378-0508-4bc6-8cc8-8da2db8216d2" />
 
+# AgentCore Runtime reserves different protocol endpoints/ports
+AgentCore Runtime as supporting multiple communication protocols, including HTTP, MCP, A2A
+<img width="1706" height="1000" alt="image" src="https://github.com/user-attachments/assets/1112ea93-5e76-411a-a9b6-3e447b9e5e53" />
+<img width="727" height="149" alt="image" src="https://github.com/user-attachments/assets/e41c9ddf-06f4-42fd-8b57-56d49aee3e29" />
+<img width="780" height="697" alt="image" src="https://github.com/user-attachments/assets/180d5081-9a9d-4ee9-a683-1974b20567ff" />
 
+# Multi-modal capabilities 
+Multi-modal means the agent can work with more than text.
+<img width="855" height="812" alt="image" src="https://github.com/user-attachments/assets/75e98009-032d-4455-b85c-f4664ce22179" />
+
+# Payload & context handling
+This means the runtime gives your agent a standard way to receive request data. Payload & context handling means designing how all this information flows into the agent safely and consistently.
+
+
+# Framework-agnostic and LLM-agnostic 
+Framework-agnostic means AgentCore Runtime does not force you to use only one agent framework. 
+LLM-agnostic means the runtime does not require your agent to use only one model provider.
 
 # Why Large Language Models (LLMs),Hallucinate? 
 LLM such as Claude or Titan, are trained on the public internet. They are brilliant, but their knowledge is frozen in time. When asked about private or recent data, they often “hallucinate” confidently stating facts that aren’t true.
@@ -181,6 +197,9 @@ AgentCore Memory as supporting short-term memory for multi-turn conversations an
 
 <img width="1083" height="361" alt="image" src="https://github.com/user-attachments/assets/b17e3dc8-5d5e-475d-a911-09f4bd5f5a9d" />
 <img width="1014" height="371" alt="image" src="https://github.com/user-attachments/assets/b2ca2e82-9f04-4b29-94e2-ca01065214d4" />
+
+<img width="919" height="479" alt="image" src="https://github.com/user-attachments/assets/037025c4-f8c5-4814-afd8-c82c75c58078" />
+<img width="897" height="466" alt="image" src="https://github.com/user-attachments/assets/d69cc306-c334-4638-a6ec-69374537cd60" />
 
 
 # How Streaming Works 
