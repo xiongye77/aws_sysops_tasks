@@ -13,6 +13,17 @@ User question + retrieved chunks and generates a natural language answer.
 Strands Agent / Python Agent ->  AgentCore Gateway MCP endpoint -> Lambda target
 
 
+# A strong production RAG pipeline often looks like this
+<img width="853" height="329" alt="image" src="https://github.com/user-attachments/assets/80d69bc7-cdfb-4240-b914-d2908832d9ea" />
+Hybrid search means combining keyword search and vector search in the same retrieval process.
+
+In RAG, it usually means:
+
+BM25(classic keyword search ranking algorithm)/ keyword search + embedding / vector search
+
+BM25 is useful for technical documents, logs, error codes, product names, IDs, and API names.
+
+
 # Full Prompt Design 
 You are a Marketing Data Agent for a digital marketing team.
 
