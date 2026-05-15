@@ -212,6 +212,27 @@ AgentCore Memory as supporting short-term memory for multi-turn conversations an
 <img width="919" height="479" alt="image" src="https://github.com/user-attachments/assets/037025c4-f8c5-4814-afd8-c82c75c58078" />
 <img width="897" height="466" alt="image" src="https://github.com/user-attachments/assets/d69cc306-c334-4638-a6ec-69374537cd60" />
 
+# Bedrock AgentCore Gateway Target 
+<img width="1079" height="376" alt="image" src="https://github.com/user-attachments/assets/0f829df3-8df6-49e2-bd2f-79aa20493750" />
+
+# Amazon Rekognition image moderation
+Amazon Rekognition image moderation means using AWS’s managed computer vision service to automatically check images for unsafe, inappropriate, or sensitive visual content.
+
+In simple terms:
+
+User uploads image
+→ Amazon Rekognition checks the image
+→ It returns labels such as "Explicit Nudity", "Violence", "Weapons", etc.
+→ Your app decides whether to allow, block, review, or blur the image
+
+If your app uses uploaded images as input to a GenAI model, you do not want the model to process unsafe images.
+
+So you can put Rekognition before Bedrock:
+
+S3 image upload
+→ Rekognition image moderation
+→ if safe, send to Bedrock
+→ if unsafe, block or send to review
 
 # How Streaming Works 
 Instead of waiting for the entire response to be generated, streaming sends back pieces of text as soon as they're available. When you call converse_stream, you immediately get back an initial response that contains a stream object. This stream is a generator that yields events as the model generates text. Each event contains a small chunk of the overall response.
