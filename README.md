@@ -146,6 +146,26 @@ Guardrail tracing/logging can help with audit and compliance.
 <img width="897" height="203" alt="image" src="https://github.com/user-attachments/assets/750a3ef5-b4c8-45c2-8a82-191817284360" />
 
 
+# AWS Lambda-hosted MCP Server
+MCP server exposes multiple tools, and the AI Agent / MCP client can choose which tool to call.
+<img width="961" height="429" alt="image" src="https://github.com/user-attachments/assets/29072ea5-8416-4684-8133-97c419e02019" />
+
+
+# Multilingual test conversations means: create the same test conversations in multiple languages to check whether the AI assistant behaves consistently across languages.
+
+
+# Amazon Bedrock Guardrails can run contextual grounding checks
+It is used to detect hallucinations by checking whether the model response is:
+
+Grounded in the provided source/context
+Example: retrieved RAG documents, company policy, approved medical guidance.
+Relevant to the user’s query
+Example: the response actually answers the question instead of giving unrelated information.
+
+AWS documentation says contextual grounding checks help detect hallucinations when model responses are not grounded in the source or are irrelevant to the user’s query. They can be used to block or flag responses in RAG applications.
+
+
+
 # Application must redact personally identifiable information (PII) before inference
 <img width="934" height="337" alt="image" src="https://github.com/user-attachments/assets/e41f9dc9-ca5b-49fc-91cd-6a2b54c4cb8d" />
 
