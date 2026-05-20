@@ -92,6 +92,9 @@ Review the campaigns with the highest conversion growth and consider increasing 
 
 
 
+# One-shot prompt vs 
+
+
 # Simple checklist for Prompt Design 
 Does the agent know its role?
 Does it know the user goal?
