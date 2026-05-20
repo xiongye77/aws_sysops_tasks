@@ -92,7 +92,13 @@ Review the campaigns with the highest conversion growth and consider increasing 
 
 
 
-# One-shot prompt vs 
+# Bedrock Flow
+Main benefit: you can build multi-step GenAI workflows with less custom orchestration code.
+
+AWS says Bedrock Flows lets you link prompts, foundation models, Bedrock resources, and AWS services such as Lambda to build end-to-end workflows with a visual builder.
+
+<img width="908" height="714" alt="image" src="https://github.com/user-attachments/assets/93399353-8f71-42fe-ae70-eb3461dbb104" />
+
 
 
 # Simple checklist for Prompt Design 
