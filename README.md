@@ -1,5 +1,10 @@
 # AWS SYS OPS 
 
+# 15 Key Architecture Considerations for building Production-Grade AWS Generative AI Applications
+<img width="1541" height="807" alt="image" src="https://github.com/user-attachments/assets/77b611eb-660a-42bc-aa71-743cc3e29318" />
+
+
+
 # Bedrock Knowledge Base 
 <img width="1367" height="699" alt="image" src="https://github.com/user-attachments/assets/803c072e-8082-4942-a0e2-b0ba76b106cd" />
 1 Embedding model = for search / retrieval
@@ -22,6 +27,20 @@ In RAG, it usually means:
 BM25(classic keyword search ranking algorithm)/ keyword search + embedding / vector search
 
 BM25 is useful for technical documents, logs, error codes, product names, IDs, and API names.
+
+# modality usually means the kind of data a model can process, 
+such as:
+Text: documents, chat messages
+Image: photos, diagrams
+Audio: speech, music
+Video: moving images
+Code: programming code
+So multimodal AI means AI that can understand or generate more than one type of data, for example text + images + audio.
+
+
+# A foundation model usually refers to a large generative model that can produce text, images, code, or other outputs, while an embedding model is used to convert text or data into numerical vectors for search, similarity matching, or RAG.
+<img width="925" height="692" alt="image" src="https://github.com/user-attachments/assets/679d8b44-f087-463f-a953-bde5f2656454" />
+
 
 
 # Full Prompt Design 
