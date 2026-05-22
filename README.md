@@ -37,11 +37,19 @@ Video: moving images
 Code: programming code
 So multimodal AI means AI that can understand or generate more than one type of data, for example text + images + audio.
 
+# Bedrock Guardrails contextual grounding
+AWS describes contextual grounding checks as a Guardrails feature that can detect and filter hallucinations in model responses when you provide a reference source and a user query. check whether the answer is supported by the provided context and relevant to the question.
+<img width="1478" height="765" alt="image" src="https://github.com/user-attachments/assets/ad1e185b-d90f-44b8-b8a9-976f70b173de" />
+
+
+
 
 # A foundation model usually refers to a large generative model that can produce text, images, code, or other outputs, while an embedding model is used to convert text or data into numerical vectors for search, similarity matching, or RAG.
 <img width="925" height="692" alt="image" src="https://github.com/user-attachments/assets/679d8b44-f087-463f-a953-bde5f2656454" />
 
 
+# Prompt Engineering Techniques
+<img width="1087" height="577" alt="image" src="https://github.com/user-attachments/assets/ad47d75c-4691-42a8-aeca-2651808d782a" />
 
 # Full Prompt Design 
 You are a Marketing Data Agent for a digital marketing team.
