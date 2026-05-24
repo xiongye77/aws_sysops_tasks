@@ -118,6 +118,27 @@ Next steps:
 Review the campaigns with the highest conversion growth and consider increasing budget.
 
 
+# CloudWatch Logs Insights for querying and log analysis
+
+<img width="3196" height="1594" alt="image" src="https://github.com/user-attachments/assets/d791e548-ea70-493c-a17d-cb716adc0aab" />
+
+# RAG structured data and unstructured data 
+<img width="1051" height="548" alt="image" src="https://github.com/user-attachments/assets/e90496e8-9630-47fd-9f62-d5bdea739404" />
+<img width="1103" height="545" alt="image" src="https://github.com/user-attachments/assets/bc5a24b0-0c21-4913-a174-8200a363de0e" />
+
+
+# Image/video ingestion into Bedrock Knowledge Base,
+multimodal content including images, audio, and video, and it can either use Nova Multimodal Embeddings directly or use BDA(Bedrock Data Automation) to convert multimedia into text such as OCR, transcripts, scene summaries, and visual descriptions. BDA is mainly used to turn unstructured documents, images, audio, and video into structured data or rich text for downstream apps, RAG, search, analytics, or workflow automation. AWS describes it as useful for document processing, media analysis, and improving RAG assistants with modality-specific extracted data.BDA can transcribe speech and create searchable text. AWS specifically recommends BDA for meeting recordings, calls, training videos, educational videos, and customer support recordings.
+<img width="778" height="632" alt="image" src="https://github.com/user-attachments/assets/115fe8b7-14ac-4f2d-a267-33fe9d2d8cc1" />
+
+
+
+
+# RAG with reranker 
+Because vector search may return chunks that are semantically similar but not the best answer evidence.
+<img width="928" height="318" alt="image" src="https://github.com/user-attachments/assets/edb003fd-52c9-46d5-95bb-32eedbe13a68" />
+<img width="1109" height="596" alt="image" src="https://github.com/user-attachments/assets/7b963363-abe3-4ecc-a3e9-7e738d886ec8" />
+
 
 # Bedrock Flow
 Main benefit: you can build multi-step GenAI workflows with less custom orchestration code.
