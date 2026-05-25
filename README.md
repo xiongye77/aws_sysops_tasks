@@ -1,5 +1,6 @@
 # AWS SYS OPS 
 
+
 # 15 Key Architecture Considerations for building Production-Grade AWS Generative AI Applications
 <img width="1541" height="807" alt="image" src="https://github.com/user-attachments/assets/77b611eb-660a-42bc-aa71-743cc3e29318" />
 
