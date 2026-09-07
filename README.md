@@ -19,8 +19,13 @@ User question + retrieved chunks and generates a natural language answer.
 Strands Agent / Python Agent ->  AgentCore Gateway MCP endpoint -> Lambda target
 
 
-# A strong production RAG pipeline often looks like this
+# A strong production RAG pipeline often looks like this （2026/09/07）
 <img width="853" height="329" alt="image" src="https://github.com/user-attachments/assets/80d69bc7-cdfb-4240-b914-d2908832d9ea" />
+<img width="793" height="246" alt="image" src="https://github.com/user-attachments/assets/bd156359-7574-4385-9c92-19089772cc19" />
+<img width="734" height="440" alt="image" src="https://github.com/user-attachments/assets/b70e70b0-1454-48bf-b93e-9c541ad05b62" />
+<img width="716" height="897" alt="image" src="https://github.com/user-attachments/assets/edb6cdf2-1c44-455a-a317-03e60e78a9d7" />
+<img width="785" height="804" alt="image" src="https://github.com/user-attachments/assets/f9231e48-4e4b-4519-8955-f297beb6b526" />
+
 Hybrid search means combining keyword search and vector search in the same retrieval process.
 
 In RAG, it usually means:
