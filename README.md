@@ -21,6 +21,8 @@ Strands Agent / Python Agent ->  AgentCore Gateway MCP endpoint -> Lambda target
 
 # A strong production RAG pipeline often looks like this （2026/09/07）
 <img width="853" height="329" alt="image" src="https://github.com/user-attachments/assets/80d69bc7-cdfb-4240-b914-d2908832d9ea" />
+<img width="724" height="621" alt="image" src="https://github.com/user-attachments/assets/cd4b4987-a862-422a-be94-ebd97feb1891" />
+
 <img width="793" height="246" alt="image" src="https://github.com/user-attachments/assets/bd156359-7574-4385-9c92-19089772cc19" />
 <img width="734" height="440" alt="image" src="https://github.com/user-attachments/assets/b70e70b0-1454-48bf-b93e-9c541ad05b62" />
 <img width="716" height="897" alt="image" src="https://github.com/user-attachments/assets/edb6cdf2-1c44-455a-a317-03e60e78a9d7" />
@@ -33,6 +35,10 @@ In RAG, it usually means:
 BM25(classic keyword search ranking algorithm)/ keyword search + embedding / vector search
 
 BM25 is useful for technical documents, logs, error codes, product names, IDs, and API names.
+
+# On-Demand, Cross-Region Inference, and Provisioned Throughput are Bedrock inference options. （2026/09/07）
+On-demand is per-token and subject to account quotas; Provisioned Throughput buys model units for committed capacity and predictable latency at a fixed hourly cost; cross-region inference profiles spread bursts across regions in a geography to absorb spikes without a commitment. For a 2-hour daily spike, cross-region inference or higher on-demand quotas usually beat paying for provisioned units that idle 22 hours a day — but say out loud that cross-region routing may move data across a region boundary, which is exactly what legal restricted. That tension is the answer they want to hear you find.
+
 
 # modality usually means the kind of data a model can process, 
 such as:
