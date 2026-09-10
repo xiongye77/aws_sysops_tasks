@@ -7,6 +7,8 @@
 
 
 # Bedrock Knowledge Base 
+<img width="734" height="647" alt="image" src="https://github.com/user-attachments/assets/e8df3c26-8dac-443e-9ef9-261986e3206c" />
+
 <img width="1367" height="699" alt="image" src="https://github.com/user-attachments/assets/803c072e-8082-4942-a0e2-b0ba76b106cd" />
 1 Embedding model = for search / retrieval
 The embedding model converts text into vectors.
@@ -18,6 +20,8 @@ User question + retrieved chunks and generates a natural language answer.
 
 Strands Agent / Python Agent ->  AgentCore Gateway MCP endpoint -> Lambda target
 
+# Guardrail input and output filter and Contextual grounding 
+<img width="1366" height="1860" alt="image" src="https://github.com/user-attachments/assets/8b04bfae-4090-4694-b03a-0163d296942a" />
 
 # A strong production RAG pipeline often looks like this （2026/09/07）
 <img width="853" height="329" alt="image" src="https://github.com/user-attachments/assets/80d69bc7-cdfb-4240-b914-d2908832d9ea" />
