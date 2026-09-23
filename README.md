@@ -20,6 +20,15 @@ User question + retrieved chunks and generates a natural language answer.
 
 Strands Agent / Python Agent ->  AgentCore Gateway MCP endpoint -> Lambda target
 
+# HNSW stands for Hierarchical Navigable Small World. It is a graph-based algorithm/index used for fast approximate nearest-neighbor (ANN) vector search.
+
+The easiest way to understand it is:
+
+HNSW helps a vector database quickly find vectors that are similar to a query vector without comparing the query against every vector.
+
+<img width="883" height="550" alt="image" src="https://github.com/user-attachments/assets/8c8dd334-dad5-4806-bddf-18283d2fc74f" />
+
+
 # Guardrail input and output filter and Contextual grounding 
 <img width="1366" height="1860" alt="image" src="https://github.com/user-attachments/assets/8b04bfae-4090-4694-b03a-0163d296942a" />
 
