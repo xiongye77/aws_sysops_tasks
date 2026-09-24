@@ -20,13 +20,20 @@ User question + retrieved chunks and generates a natural language answer.
 
 Strands Agent / Python Agent ->  AgentCore Gateway MCP endpoint -> Lambda target
 
-# HNSW stands for Hierarchical Navigable Small World. It is a graph-based algorithm/index used for fast approximate nearest-neighbor (ANN) vector search.
+# HNSW stands for Hierarchical Navigable Small World. It is a graph-based algorithm/index used for fast approximate nearest-neighbor (ANN) vector search.(23/09/2026)
 
 The easiest way to understand it is:
 
 HNSW helps a vector database quickly find vectors that are similar to a query vector without comparing the query against every vector.
 
 <img width="883" height="550" alt="image" src="https://github.com/user-attachments/assets/8c8dd334-dad5-4806-bddf-18283d2fc74f" />
+
+# Perform vector search (23/09/2026)
+<=> means cosine distance.
+
+The smaller the distance, the more similar the vectors are.
+<img width="827" height="527" alt="image" src="https://github.com/user-attachments/assets/cd6d9840-2b6c-4dbf-b10a-142d1fe71d8e" />
+
 
 
 # Guardrail input and output filter and Contextual grounding 
@@ -41,6 +48,8 @@ HNSW helps a vector database quickly find vectors that are similar to a query ve
 <img width="716" height="897" alt="image" src="https://github.com/user-attachments/assets/edb6cdf2-1c44-455a-a317-03e60e78a9d7" />
 <img width="785" height="804" alt="image" src="https://github.com/user-attachments/assets/f9231e48-4e4b-4519-8955-f297beb6b526" />
 
+# Hybrid search commonly combines BM25 keyword search and vector k-NN search, then uses a fusion method such as RRF to produce the final ranking. （2026/09/23）
+
 Hybrid search means combining keyword search and vector search in the same retrieval process.
 
 In RAG, it usually means:
@@ -48,6 +57,11 @@ In RAG, it usually means:
 BM25(classic keyword search ranking algorithm)/ keyword search + embedding / vector search
 
 BM25 is useful for technical documents, logs, error codes, product names, IDs, and API names.
+
+# When an agent has access to multiple tools, deciding which tool to call—and with what parameters—is handled through an intent-driven reasoning loop powered by the underlying Large Language Model (LLM).（2026/09/23） 
+
+You register/expose the tool to the Agent, and the Agent Framework sends the tool's definition/schema to the LLM. The LLM evaluates the user's intent against the available tool definitions, including their names, descriptions, parameter schemas, and the agent's instructions, and selects an appropriate tool.
+
 
 # On-Demand, Cross-Region Inference, and Provisioned Throughput are Bedrock inference options. （2026/09/07）
 On-demand is per-token and subject to account quotas; Provisioned Throughput buys model units for committed capacity and predictable latency at a fixed hourly cost; cross-region inference profiles spread bursts across regions in a geography to absorb spikes without a commitment. For a 2-hour daily spike, cross-region inference or higher on-demand quotas usually beat paying for provisioned units that idle 22 hours a day — but say out loud that cross-region routing may move data across a region boundary, which is exactly what legal restricted. That tension is the answer they want to hear you find.
