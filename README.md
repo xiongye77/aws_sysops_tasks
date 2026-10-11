@@ -5,6 +5,11 @@
 <img width="1541" height="807" alt="image" src="https://github.com/user-attachments/assets/77b611eb-660a-42bc-aa71-743cc3e29318" />
 
 
+# Bedrock data automation with blueprint for different modality (12/10/2026)
+<img width="1362" height="800" alt="image" src="https://github.com/user-attachments/assets/01b7b431-aff2-4bea-85eb-eb9cdc2d6774" />
+
+<img width="1382" height="1634" alt="image" src="https://github.com/user-attachments/assets/3c185cf8-1d65-4673-b180-56a51e8ba51c" />
+
 
 # Bedrock Knowledge Base 
 <img width="734" height="647" alt="image" src="https://github.com/user-attachments/assets/e8df3c26-8dac-443e-9ef9-261986e3206c" />
