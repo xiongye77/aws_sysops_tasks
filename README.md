@@ -4,6 +4,21 @@
 # 15 Key Architecture Considerations for building Production-Grade AWS Generative AI Applications
 <img width="1541" height="807" alt="image" src="https://github.com/user-attachments/assets/77b611eb-660a-42bc-aa71-743cc3e29318" />
 
+# Amazon Bedrock Prompt Management : Zero-Shot Prompting or Few-Shot Prompting or Chain of Thought (CoT) Prompting  (03/11/2026)
+In Amazon Bedrock Prompt Management, you can save multiple versions of a prompt, and invoke a specific version using its Prompt ARN.
+<img width="926" height="615" alt="image" src="https://github.com/user-attachments/assets/d3f38a6d-4df6-4258-9c79-cb42ddd8d690" />
+
+Amazon Bedrock Prompt Management allows you to store, manage and version different Few-Shot Prompt templates.
+<img width="2508" height="1368" alt="image" src="https://github.com/user-attachments/assets/4b321552-2b04-46be-8c7b-e38e9d028c81" />
+1. Zero-Shot Prompting means providing instructions to an LLM without giving any examples. The model relies on its pre-trained knowledge to perform the task.
+
+2. Few-Shot Prompting means providing a small number of input-output examples in the prompt to guide the model's behavior and improve consistency.
+
+3. Chain of Thought encourages an LLM to break a complex problem into smaller steps and reason through them before producing an answer. Instead of directly asking the model for an answer, you encourage it to consider intermediate steps.
+<img width="768" height="736" alt="image" src="https://github.com/user-attachments/assets/2e10d52b-d034-41a4-85f9-fe45975cf601" />
+
+
+
 
 # Bedrock data automation with blueprint for different modality (12/10/2026)
 <img width="1362" height="800" alt="image" src="https://github.com/user-attachments/assets/01b7b431-aff2-4bea-85eb-eb9cdc2d6774" />
