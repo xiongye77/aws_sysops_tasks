@@ -16,6 +16,8 @@ AgentCore Gateway inbound Auth Type is JWT
 
 <img width="909" height="365" alt="image" src="https://github.com/user-attachments/assets/34266914-0f98-4c46-a78c-5cde6539d509" />
 
+<img width="2766" height="1258" alt="image" src="https://github.com/user-attachments/assets/634cbc10-fef9-457a-b8a0-fc9535d78d18" />
+
 
 # Amazon Bedrock Prompt Management : Zero-Shot Prompting or Few-Shot Prompting or Chain of Thought (CoT) Prompting  (03/11/2026)
 In Amazon Bedrock Prompt Management, you can save multiple versions of a prompt, and invoke a specific version using its Prompt ARN.
