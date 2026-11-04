@@ -4,6 +4,19 @@
 # 15 Key Architecture Considerations for building Production-Grade AWS Generative AI Applications
 <img width="1541" height="807" alt="image" src="https://github.com/user-attachments/assets/77b611eb-660a-42bc-aa71-743cc3e29318" />
 
+# Amazon Cognito Server and AgentCore Identity  (04/11/2026)
+<img width="1571" height="867" alt="image" src="https://github.com/user-attachments/assets/d36b744f-af41-473f-ad38-6b44d22eac8e" />
+Cognito authenticates the user.
+Cognito issues an access token.
+AgentCore inbound JWT authentication validates that token.
+Your agent receives the authenticated request.
+
+<img width="934" height="609" alt="image" src="https://github.com/user-attachments/assets/743359da-e85b-4b09-9c33-01c2fb518915" />
+AgentCore Gateway inbound Auth Type is JWT 
+
+<img width="909" height="365" alt="image" src="https://github.com/user-attachments/assets/34266914-0f98-4c46-a78c-5cde6539d509" />
+
+
 # Amazon Bedrock Prompt Management : Zero-Shot Prompting or Few-Shot Prompting or Chain of Thought (CoT) Prompting  (03/11/2026)
 In Amazon Bedrock Prompt Management, you can save multiple versions of a prompt, and invoke a specific version using its Prompt ARN.
 <img width="926" height="615" alt="image" src="https://github.com/user-attachments/assets/d3f38a6d-4df6-4258-9c79-cb42ddd8d690" />
@@ -16,6 +29,7 @@ Amazon Bedrock Prompt Management allows you to store, manage and version differe
 
 3. Chain of Thought encourages an LLM to break a complex problem into smaller steps and reason through them before producing an answer. Instead of directly asking the model for an answer, you encourage it to consider intermediate steps.
 <img width="768" height="736" alt="image" src="https://github.com/user-attachments/assets/2e10d52b-d034-41a4-85f9-fe45975cf601" />
+<img width="1952" height="1278" alt="image" src="https://github.com/user-attachments/assets/38b1c8da-7913-4e8b-ae6b-c7a2d30928ce" />
 
 
 
