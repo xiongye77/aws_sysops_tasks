@@ -18,6 +18,21 @@ AgentCore Gateway inbound Auth Type is JWT
 
 <img width="2766" height="1258" alt="image" src="https://github.com/user-attachments/assets/634cbc10-fef9-457a-b8a0-fc9535d78d18" />
 
+<img width="824" height="311" alt="image" src="https://github.com/user-attachments/assets/6d2cd9cb-053d-4cba-8cf9-87f94405d361" />
+
+
+# Amazon Bedrock Agentcore memory  (05/11/2026)
+<img width="985" height="530" alt="image" src="https://github.com/user-attachments/assets/9352fd26-2adc-4041-8db9-85989fe6e2a0" />
+<img width="876" height="923" alt="image" src="https://github.com/user-attachments/assets/f7620662-e104-4c89-9fbd-5f3342b09f4d" />
+
+
+
+# Connect Google Drive to Amazon Bedrock AgentCore Gateway use outbound authentication with OAuth 2.0
+<img width="946" height="570" alt="image" src="https://github.com/user-attachments/assets/28afb439-d72c-427b-a1c6-2e5017efab4d" />
+Authorization Code (3-legged)	Application accesses resources on behalf of an individual user	User's personal Google Drive
+
+<img width="834" height="914" alt="image" src="https://github.com/user-attachments/assets/16a227cb-785d-461b-a91a-16424097f47c" />
+
 
 # Amazon Bedrock Prompt Management : Zero-Shot Prompting or Few-Shot Prompting or Chain of Thought (CoT) Prompting  (03/11/2026)
 In Amazon Bedrock Prompt Management, you can save multiple versions of a prompt, and invoke a specific version using its Prompt ARN.
