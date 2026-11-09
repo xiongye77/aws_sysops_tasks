@@ -4,6 +4,17 @@
 # 15 Key Architecture Considerations for building Production-Grade AWS Generative AI Applications
 <img width="1541" height="807" alt="image" src="https://github.com/user-attachments/assets/77b611eb-660a-42bc-aa71-743cc3e29318" />
 
+
+# Agent capabilities  (09/11/2026)
+how RAG strengthens LLMs by adding a retrieval step
+that allows them to search a knowledge base and use the relevant context to
+generate more accurate answers. AI agents build on this foundation and take it
+much further. They make decisions and take actions on their own, even performing complex, multi-step tasks for humans. They achieve this by:
+1. Planning: Breaking down high-level objectives into executable tasks.
+2. Acting: Utilizing tools （@tool） and information (knowledge bases) to accomplish these tasks.
+3. Reasoning: Observing the results of their actions and updating their plans until the goal is achieved.
+
+
 # Amazon Cognito Server and AgentCore Identity  (04/11/2026)
 <img width="1571" height="867" alt="image" src="https://github.com/user-attachments/assets/d36b744f-af41-473f-ad38-6b44d22eac8e" />
 Cognito authenticates the user.
