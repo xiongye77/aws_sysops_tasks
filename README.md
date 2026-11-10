@@ -46,12 +46,13 @@ Bedrock Guardrails	Detect prompt attacks and unsafe content
 
 
 4. Five important security rules to remember
-For production deployments, I would prioritize these:
-1. Never trust retrieved content. Treat documents, websites and tool responses as untrusted input.
-2. Use Bedrock Guardrails. Enable prompt attack detection, including injection and leakage detection where supported.
-3. Enforce authorization outside the LLM. Use IAM and AgentCore Policy rather than asking the LLM whether an operation is permitted.
-4. Require human approval. Especially for financial transactions, deleting records, exporting data and modifying business systems.
-5. Test adversarial scenarios. Regularly test direct injection, indirect injection, prompt leakage and memory poisoning.
+For production deployments,
+
+A. Never trust retrieved content. Treat documents, websites and tool responses as untrusted input.
+B. Use Bedrock Guardrails. Enable prompt attack detection, including injection and leakage detection where supported.
+C. Enforce authorization outside the LLM. Use IAM and AgentCore Policy rather than asking the LLM whether an operation is permitted.
+D. Require human approval. Especially for financial transactions, deleting records, exporting data and modifying business systems.
+E. Test adversarial scenarios. Regularly test direct injection, indirect injection, prompt leakage and memory poisoning.
 
 
 
