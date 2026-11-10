@@ -14,6 +14,34 @@
 - Google Drive files
 - Knowledge Base documents
 
+  
+2. AWS Bedrock security mechanisms
+- Amazon Bedrock Guardrails — first line of defence
+Enable the Prompt Attack filter in Bedrock Guardrails.
+
+It can detect:
+Attack type	            What it protects against
+Jailbreak	            Bypassing model safety instructions
+Prompt Injection	Overriding system/developer instructions
+Prompt Leakage	Extracting confidential system prompts (Standard tier) 
+  
+- Protect RAG with untrusted-content boundaries
+- AgentCore Gateway + Policy Engine (AgentCore Policy Engine can enforce authorization rules outside the agent's execution environment.
+
+For example:
+- Prevent an agent from calling unauthorized Lambda functions.
+- Restrict access to specific MCP tools.
+- Prevent unauthorized write operations.
+- Inspect tool inputs and outputs using Guardrails policies.
+- Log policy decisions for auditing.)
+
+  Component	Responsibility
+AgentCore Identity	Authenticate users and manage identity/token access
+AgentCore Gateway	Govern access to tools and targets
+AgentCore Policy	Enforce authorization decisions
+Bedrock Guardrails	Detect prompt attacks and unsafe content
+
+3. 
 
 # In modern multi-agent systems, communication between a supervisor and worker agents typically falls into one of two patterns: A2A or MCP / Native Orchestration.
 1. When They Use A2A (Coarse-Grained, Cross-Boundary) You use A2A when the worker agents are autonomous, independent services—often owned by different teams, written in different frameworks (e.g., LangGraph, Bedrock, CrewAI), or running across different microservices/clouds.
