@@ -4,6 +4,17 @@
 # 15 Key Architecture Considerations for building Production-Grade AWS Generative AI Applications
 <img width="1541" height="807" alt="image" src="https://github.com/user-attachments/assets/77b611eb-660a-42bc-aa71-743cc3e29318" />
 
+
+# To protect an Amazon Bedrock application from Prompt Injection attacks, you should use a defence-in-depth approach rather than relying on a single Bedrock feature.  (11/11/2026)
+
+1. Understand the two types of prompt injection (Direct Prompt Injection: An attacker directly enters malicious instructions into the user prompt.  Indirect Prompt Injection. Malicious instructions are hidden in external content, such as:
+- PDF documents
+- Websites
+- Emails
+- Google Drive files
+- Knowledge Base documents
+
+
 # In modern multi-agent systems, communication between a supervisor and worker agents typically falls into one of two patterns: A2A or MCP / Native Orchestration.
 1. When They Use A2A (Coarse-Grained, Cross-Boundary) You use A2A when the worker agents are autonomous, independent services—often owned by different teams, written in different frameworks (e.g., LangGraph, Bedrock, CrewAI), or running across different microservices/clouds.
 2. If the supervisor and workers exist within the same application boundary. (treating the workers as dynamic tools)
