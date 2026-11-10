@@ -6,6 +6,8 @@
 
 
 # Agent capabilities  (09/11/2026)
+<img width="846" height="451" alt="image" src="https://github.com/user-attachments/assets/18706c48-b7b6-4e2b-9c00-42f697206dac" />
+
 how RAG strengthens LLMs by adding a retrieval step
 that allows them to search a knowledge base and use the relevant context to
 generate more accurate answers. AI agents build on this foundation and take it
