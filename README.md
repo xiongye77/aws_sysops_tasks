@@ -41,7 +41,19 @@ AgentCore Gateway	Govern access to tools and targets
 AgentCore Policy	Enforce authorization decisions
 Bedrock Guardrails	Detect prompt attacks and unsafe content
 
-3. 
+3. Recommended architecture for your Bedrock application
+<img width="3150" height="2078" alt="image" src="https://github.com/user-attachments/assets/4c5b278e-7f93-4d5e-b364-2577a66a8ee4" />
+
+
+4. Five important security rules to remember
+For production deployments, I would prioritize these:
+1. Never trust retrieved content. Treat documents, websites and tool responses as untrusted input.
+2. Use Bedrock Guardrails. Enable prompt attack detection, including injection and leakage detection where supported.
+3. Enforce authorization outside the LLM. Use IAM and AgentCore Policy rather than asking the LLM whether an operation is permitted.
+4. Require human approval. Especially for financial transactions, deleting records, exporting data and modifying business systems.
+5. Test adversarial scenarios. Regularly test direct injection, indirect injection, prompt leakage and memory poisoning.
+
+
 
 # In modern multi-agent systems, communication between a supervisor and worker agents typically falls into one of two patterns: A2A or MCP / Native Orchestration.
 1. When They Use A2A (Coarse-Grained, Cross-Boundary) You use A2A when the worker agents are autonomous, independent services—often owned by different teams, written in different frameworks (e.g., LangGraph, Bedrock, CrewAI), or running across different microservices/clouds.
