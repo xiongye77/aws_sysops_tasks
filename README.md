@@ -4,6 +4,12 @@
 # 15 Key Architecture Considerations for building Production-Grade AWS Generative AI Applications
 <img width="1541" height="807" alt="image" src="https://github.com/user-attachments/assets/77b611eb-660a-42bc-aa71-743cc3e29318" />
 
+# In modern multi-agent systems, communication between a supervisor and worker agents typically falls into one of two patterns: A2A or MCP / Native Orchestration.
+1. When They Use A2A (Coarse-Grained, Cross-Boundary) You use A2A when the worker agents are autonomous, independent services—often owned by different teams, written in different frameworks (e.g., LangGraph, Bedrock, CrewAI), or running across different microservices/clouds.
+2. If the supervisor and workers exist within the same application boundary. (treating the workers as dynamic tools)
+
+
+
 
 # Agent capabilities  (09/11/2026)
 <img width="846" height="451" alt="image" src="https://github.com/user-attachments/assets/18706c48-b7b6-4e2b-9c00-42f697206dac" />
