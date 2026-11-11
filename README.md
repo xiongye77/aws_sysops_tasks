@@ -9,6 +9,18 @@
 <img width="825" height="471" alt="image" src="https://github.com/user-attachments/assets/8db9808a-3b3c-4850-b97f-b9909fc80143" />
 <img width="829" height="855" alt="image" src="https://github.com/user-attachments/assets/e2525926-dd92-4e20-a7e0-fda22676a774" />
 
+# How agents talk to each other in Multi-Agent Architecture
+1. Sequential communication
+2. Parallel communication
+3. Collaborative communication
+
+# Agent2Agent protocol
+A2A serves as a standardized bridge that allows diverse systems such as those built on LangGraph, CrewAI, or Google ADK and AWS Strands SDK to communicate, discover one another, and manage shared workflows across different organizations.Agent2Agent (A2A) protocol is designed to standardize communication between AI agents, particularly those deployed in external systems
+
+1. Agent Card can include both capabilities and skills: capabilities tell other agents how this agent communicates, while skills tell them what work it can perform.
+2.  Agents identify each other using an Agent Card (a JSON file hosted at a wellknown URL). Similar to a Swagger/OpenAPI doc, this card acts as a digital business card, detailing the agent's name, capabilities, supported protocols, media types, and authentication requirements.
+
+
 
 # To protect an Amazon Bedrock application from Prompt Injection attacks, you should use a defence-in-depth approach rather than relying on a single Bedrock feature.  (11/11/2026)
 
