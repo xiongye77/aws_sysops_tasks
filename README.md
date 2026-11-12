@@ -4,7 +4,9 @@
 # 15 Key Architecture Considerations for building Production-Grade AWS Generative AI Applications
 <img width="1541" height="807" alt="image" src="https://github.com/user-attachments/assets/77b611eb-660a-42bc-aa71-743cc3e29318" />
 
-# Multi-Agent Architecture in Strands Agents (11/11/2026)
+# Multi-Agent Architecture in Strands Agents with A2A and MCP (11/11/2026)
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/43b92a37-90cb-4c5a-bc8a-b258eacff99a" />
+
 <img width="1674" height="1136" alt="image" src="https://github.com/user-attachments/assets/ec901381-eeb0-44a5-a4be-0ce3a21947de" />
 <img width="825" height="471" alt="image" src="https://github.com/user-attachments/assets/8db9808a-3b3c-4850-b97f-b9909fc80143" />
 <img width="829" height="855" alt="image" src="https://github.com/user-attachments/assets/e2525926-dd92-4e20-a7e0-fda22676a774" />
