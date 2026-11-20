@@ -22,6 +22,22 @@ A2A serves as a standardized bridge that allows diverse systems such as those bu
 1. Agent Card can include both capabilities and skills: capabilities tell other agents how this agent communicates, while skills tell them what work it can perform.
 2.  Agents identify each other using an Agent Card (a JSON file hosted at a wellknown URL). Similar to a Swagger/OpenAPI doc, this card acts as a digital business card, detailing the agent's name, capabilities, supported protocols, media types, and authentication requirements.
 
+# Agent Loop (20/11/2026)
+Agent Loop is the execution cycle that allows an AI agent to repeatedly think, decide, use tools and observe results until it can complete a task.
+
+In simple terms:
+- A normal LLM receives a question and generates an answer.
+- An AI agent can receive a question, call tools, inspect the results, and decide what to do next.
+- The Agent Loop manages this repeated process.
+
+<img width="958" height="884" alt="image" src="https://github.com/user-attachments/assets/576f5e76-5ed4-48d7-a1f3-9ca20a1aa048" />
+
+Concept	Meaning
+1. Agent Loop:	Repeated reasoning and action cycle
+2. Tool Calling:	LLM requests execution of an external function
+3. Stop Condition:	Determines when the agent should finish
+
+
 
 
 # To protect an Amazon Bedrock application from Prompt Injection attacks, you should use a defence-in-depth approach rather than relying on a single Bedrock feature.  (11/11/2026)
