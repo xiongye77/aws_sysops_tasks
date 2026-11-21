@@ -30,6 +30,12 @@ A2A serves as a standardized bridge that allows diverse systems such as those bu
 <img width="692" height="292" alt="image" src="https://github.com/user-attachments/assets/08767168-0bbc-410b-aea0-dbb828e6ced3" />
 <img width="887" height="681" alt="image" src="https://github.com/user-attachments/assets/398fdbf7-fe0e-4150-9fb1-54c415b86e12" />
 
+Main  omponents of LangChain
+<img width="618" height="379" alt="image" src="https://github.com/user-attachments/assets/d9f8f291-06a9-4736-95a7-44d51741262d" />
+
+Main Components of LangGraph
+<img width="1148" height="720" alt="image" src="https://github.com/user-attachments/assets/4450fb75-8575-47c1-ae56-eecacef3609e" />
+<img width="850" height="719" alt="image" src="https://github.com/user-attachments/assets/dbab2b2c-a198-441a-b189-caad39714ab7" />
 
 
 # Agent Loop (20/11/2026)
