@@ -22,6 +22,16 @@ A2A serves as a standardized bridge that allows diverse systems such as those bu
 1. Agent Card can include both capabilities and skills: capabilities tell other agents how this agent communicates, while skills tell them what work it can perform.
 2.  Agents identify each other using an Agent Card (a JSON file hosted at a wellknown URL). Similar to a Swagger/OpenAPI doc, this card acts as a digital business card, detailing the agent's name, capabilities, supported protocols, media types, and authentication requirements.
 
+
+# LangChain and LangGraph and LangSmith (21/11/2026) 
+1. LangChain	The building blocks (LLM wrappers, prompt templates, tool integrations).
+2. LangGraph	The orchestrator (manages state, loops, and multi-agent workflows).
+3. LangSmith	The control center (traces, debugs, tests, and monitors what LangGraph is doing). 
+<img width="692" height="292" alt="image" src="https://github.com/user-attachments/assets/08767168-0bbc-410b-aea0-dbb828e6ced3" />
+<img width="887" height="681" alt="image" src="https://github.com/user-attachments/assets/398fdbf7-fe0e-4150-9fb1-54c415b86e12" />
+
+
+
 # Agent Loop (20/11/2026)
 Agent Loop is the execution cycle that allows an AI agent to repeatedly think, decide, use tools and observe results until it can complete a task.
 
