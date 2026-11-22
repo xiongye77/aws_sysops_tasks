@@ -38,6 +38,38 @@ Main Components of LangGraph
 <img width="850" height="719" alt="image" src="https://github.com/user-attachments/assets/dbab2b2c-a198-441a-b189-caad39714ab7" />
 
 
+
+# Chain Workflow in LangChain (22/11/2026)
+In LangChain, a Chain Workflow means connecting multiple components (or operations) together so that the output of one component becomes the input of the next component.
+Chain = a sequence of connected processing steps.
+
+Different types of Chains / Workflows
+1. Sequential Chain	Execute steps one after another
+2. Parallel Chain	Execute independent tasks simultaneously
+3. Conditional Chain	Select a processing path based on conditions
+4. Retrieval Chain	Retrieve documents before generating an answer
+
+<img width="723" height="396" alt="image" src="https://github.com/user-attachments/assets/74de7bfb-a10c-4233-a791-6ce9d52d5773" />
+
+
+# LangSmith is a SaaS-based observability and evaluation platform for LLM applications and AI agents
+It allows you to trace, monitor, debug and evaluate the execution of your LangChain applications, including individual agent runs and tool calls.
+<img width="803" height="736" alt="image" src="https://github.com/user-attachments/assets/8888e375-60cc-42b0-94ca-aef7b86f399b" />
+What information can LangSmith capture?
+For each trace/run, you can inspect:
+- Input: User question and prompt.
+- Output: LLM response.
+- Tool calls: Which API or external tool was invoked.
+- Latency: Execution time for each step.
+- Tokens and cost: Model usage and estimated cost.
+- Errors: Failed model calls, tool errors and exceptions.
+- Retrieved context: Documents retrieved from a RAG knowledge base.
+
+
+<img width="1964" height="1206" alt="image" src="https://github.com/user-attachments/assets/2289e3bd-5e51-43f5-92e8-ceb800f364c5" />
+
+
+
 # Agent Loop (20/11/2026)
 Agent Loop is the execution cycle that allows an AI agent to repeatedly think, decide, use tools and observe results until it can complete a task.
 
