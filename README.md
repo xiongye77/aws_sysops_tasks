@@ -22,6 +22,9 @@ A2A serves as a standardized bridge that allows diverse systems such as those bu
 1. Agent Card can include both capabilities and skills: capabilities tell other agents how this agent communicates, while skills tell them what work it can perform.
 2.  Agents identify each other using an Agent Card (a JSON file hosted at a wellknown URL). Similar to a Swagger/OpenAPI doc, this card acts as a digital business card, detailing the agent's name, capabilities, supported protocols, media types, and authentication requirements.
 
+# LangChain Agent VS	AWS Strands VS	LangGraph (22/11/2026) 
+
+<img width="1074" height="446" alt="image" src="https://github.com/user-attachments/assets/0a60d08d-414c-4d81-8af1-ec8bd2afe20a" />
 
 # LangChain and LangGraph and LangSmith (21/11/2026) 
 1. LangChain	The building blocks (LLM wrappers, prompt templates, tool integrations).
