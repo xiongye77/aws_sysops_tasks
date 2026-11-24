@@ -20,7 +20,7 @@
 A2A serves as a standardized bridge that allows diverse systems such as those built on LangGraph, CrewAI, or Google ADK and AWS Strands SDK to communicate, discover one another, and manage shared workflows across different organizations.Agent2Agent (A2A) protocol is designed to standardize communication between AI agents, particularly those deployed in external systems
 
 1. Agent Card can include both capabilities and skills: capabilities tell other agents how this agent communicates, while skills tell them what work it can perform.
-2.  Agents identify each other using an Agent Card (a JSON file hosted at a wellknown URL). Similar to a Swagger/OpenAPI doc, this card acts as a digital business card, detailing the agent's name, capabilities, supported protocols, media types, and authentication requirements.
+2. Agents identify each other using an Agent Card (a JSON file hosted at a wellknown URL). Similar to a Swagger/OpenAPI doc, this card acts as a digital business card, detailing the agent's name, capabilities, supported protocols, media types, and authentication requirements.
 
 # LangChain Agent VS	AWS Strands VS	LangGraph (22/11/2026) 
 
@@ -33,12 +33,13 @@ A2A serves as a standardized bridge that allows diverse systems such as those bu
 <img width="692" height="292" alt="image" src="https://github.com/user-attachments/assets/08767168-0bbc-410b-aea0-dbb828e6ced3" />
 <img width="887" height="681" alt="image" src="https://github.com/user-attachments/assets/398fdbf7-fe0e-4150-9fb1-54c415b86e12" />
 
-Main  omponents of LangChain
+Main components of LangChain
 <img width="618" height="379" alt="image" src="https://github.com/user-attachments/assets/d9f8f291-06a9-4736-95a7-44d51741262d" />
 
 Main Components of LangGraph
 <img width="1148" height="720" alt="image" src="https://github.com/user-attachments/assets/4450fb75-8575-47c1-ae56-eecacef3609e" />
 <img width="850" height="719" alt="image" src="https://github.com/user-attachments/assets/dbab2b2c-a198-441a-b189-caad39714ab7" />
+<img width="1566" height="438" alt="image" src="https://github.com/user-attachments/assets/1058ab24-03d1-4b78-b87e-1dd3069accd8" />
 
 
 
