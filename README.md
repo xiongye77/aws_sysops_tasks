@@ -40,6 +40,9 @@ Main Components of LangGraph
 <img width="1148" height="720" alt="image" src="https://github.com/user-attachments/assets/4450fb75-8575-47c1-ae56-eecacef3609e" />
 <img width="850" height="719" alt="image" src="https://github.com/user-attachments/assets/dbab2b2c-a198-441a-b189-caad39714ab7" />
 <img width="1566" height="438" alt="image" src="https://github.com/user-attachments/assets/1058ab24-03d1-4b78-b87e-1dd3069accd8" />
+<img width="1179" height="592" alt="image" src="https://github.com/user-attachments/assets/03c3361f-06fc-423e-bec3-37c21ba4dac5" />
+<img width="1201" height="672" alt="image" src="https://github.com/user-attachments/assets/7996d828-649f-4840-9fde-66f91b75400c" />
+<img width="1198" height="611" alt="image" src="https://github.com/user-attachments/assets/a63a8f3e-08de-47ae-8d21-e1ac807cc4f7" />
 
 
 
